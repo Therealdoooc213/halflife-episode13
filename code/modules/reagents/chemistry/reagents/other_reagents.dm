@@ -227,6 +227,9 @@
 	var/cooling_temperature = 2
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED|REAGENT_CLEANS
 	default_container = /obj/item/reagent_containers/cup/glass/waterbottle
+	var/hydration = 5
+	var/toxicity = 0
+	var/disgust = 0
 
 /datum/glass_style/shot_glass/water
 	required_drink_type = /datum/reagent/water
@@ -237,6 +240,37 @@
 	name = "glass of water"
 	desc = "The father of all refreshments."
 	icon_state = "glass_clear"
+
+/datum/reagent/water/dirty
+	name = "Dirty Water"
+	description = "Contaminated water that is really bad for your health."
+	color = "#22330e"
+	taste_description = "filthy water"
+	toxicity = 2
+	disgust = 5
+
+/datum/reagent/water/dirty/sewer
+	name = "Sewer Water"
+	description = "A cocktail of raw sewage. Absolutely disgusting."
+	color = "#705a43"
+	taste_description = "sewer water"
+
+/datum/reagent/water/unpurified
+	name = "Unpurified Water"
+	description = "Water which contains small amounts of harmful particulates."
+	color = "#0497d1"
+	taste_description = "unpurified water"
+	disgust = 1.25
+	//toxicity = 0.1
+
+/datum/reagent/water/unpurified/river
+	name = "River Water"
+	description = "Unpurified river water. May not be safe to drink."
+
+/datum/reagent/water/unpurified/river/on_mob_life(mob/living/L, methods=TOUCH, reac_volume, show_message = TRUE, permeability = 1)
+	if((methods & (PATCH|INGEST|INJECT)) || ((methods & VAPOR) && prob(min(reac_volume,100)*permeability)))
+		if(prob(10))
+			L.ForceContractDisease(new /datum/disease/gutworms(), FALSE, TRUE) //Unclean water causes diseases
 
 /*
  * Water reaction to turf
@@ -341,6 +375,9 @@
 		need_mob_update += affected_mob.adjustFireLoss(-0.25 * REM * seconds_per_tick, updating_health = FALSE, required_bodytype = affected_bodytype)
 		need_mob_update += affected_mob.adjustBruteLoss(-0.25 * REM * seconds_per_tick, updating_health = FALSE, required_bodytype = affected_bodytype)
 		return need_mob_update ? UPDATE_MOB_HEALTH : .
+	if(ishuman(affected_mob))
+		if(!HAS_TRAIT(affected_mob, TRAIT_NOHUNGER))
+			affected_mob.adjust_hydration(hydration)
 
 // For weird backwards situations where water manages to get added to trays nutrients, as opposed to being snowflaked away like usual.
 /datum/reagent/water/on_hydroponics_apply(obj/machinery/hydroponics/mytray, mob/user)

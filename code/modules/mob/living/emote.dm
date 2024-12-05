@@ -113,7 +113,7 @@
 		playsound(carbon_user, carbon_user.wear_mask.unique_death, 200, TRUE, TRUE)
 		return
 	if(user.death_sound)
-		playsound(user, user.death_sound, 200, TRUE, TRUE)
+		playsound(user, user.death_sound, 200, FALSE, TRUE)
 
 /datum/emote/living/drool
 	key = "drool"

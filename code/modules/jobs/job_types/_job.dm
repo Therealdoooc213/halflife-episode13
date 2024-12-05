@@ -135,6 +135,12 @@
 	/// If set, look for a policy with this instead of the job title
 	var/policy_override
 
+	/// Some jobs have unique combat mode music, because why not?
+	var/cmode_music = 'hl13/sound/music/combat/abandonedinplace.ogg'
+
+	/// Any bonuses to ration quality this job gets.
+	var/ration_bonus = 0
+
 /datum/job/New()
 	. = ..()
 	var/new_spawn_positions = CHECK_MAP_JOB_CHANGE(title, "spawn_positions")
@@ -172,6 +178,9 @@
 	if(roundstart_experience)
 		for(var/i in roundstart_experience)
 			spawned_human.mind.adjust_experience(i, roundstart_experience[i], TRUE)
+
+	if(cmode_music)
+		spawned.cmode_music = cmode_music
 
 /// Return the outfit to use
 /datum/job/proc/get_outfit(consistent)

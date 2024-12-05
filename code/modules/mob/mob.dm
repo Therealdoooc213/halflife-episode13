@@ -90,6 +90,7 @@
 		alt_hud.apply_to_new_mob(src)
 
 	set_nutrition(rand(NUTRITION_LEVEL_START_MIN, NUTRITION_LEVEL_START_MAX))
+	set_hydration(rand(HYDRATION_LEVEL_START_MIN, HYDRATION_LEVEL_START_MAX))
 	. = ..()
 	setup_hud_traits()
 	update_config_movespeed()
@@ -1463,6 +1464,20 @@
 /mob/living/set_nutrition(set_to, forced)
 	. = ..()
 	mob_mood?.update_nutrition_moodlets()
+
+/mob/proc/adjust_hydration(change)
+	if(HAS_TRAIT(src, TRAIT_NOHUNGER))
+		hydration = HYDRATION_LEVEL_FULL
+	hydration = max(0, hydration + change)
+	if(hydration > HYDRATION_LEVEL_FULL)
+		hydration = HYDRATION_LEVEL_FULL
+
+/mob/proc/set_hydration(change)
+	if(HAS_TRAIT(src, TRAIT_NOHUNGER))
+		hydration = HYDRATION_LEVEL_FULL
+	hydration = max(0, change)
+	if(hydration > HYDRATION_LEVEL_FULL)
+		hydration = HYDRATION_LEVEL_FULL
 
 ///Apply a proper movespeed modifier based on items we have equipped
 /mob/proc/update_equipment_speed_mods()

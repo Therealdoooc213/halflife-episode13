@@ -12,6 +12,7 @@
 	armor_type = /datum/armor/obj_structure
 	burning_particles = /particles/smoke/burning
 	var/broken = FALSE
+	var/projectile_passchance = 0 //projectile passthrough chance 100% always goes through, 0% never goes through. Definition isn't required if structure doesn't have density, duh.
 
 /datum/armor/obj_structure
 	fire = 50
@@ -79,3 +80,19 @@
 	flying_mob.apply_damage(damage = rand(5, 15), damagetype = BRUTE, wound_bonus = 15, bare_wound_bonus = 25, sharpness = SHARP_EDGED, attack_direction = get_dir(src, oldloc))
 	new /obj/effect/decal/cleanable/glass(get_step(flying_mob, flying_mob.dir))
 	deconstruct(disassembled = FALSE)
+
+/obj/structure/CanAllowThrough(atom/movable/mover, turf/target)
+	. = ..()
+	if(istype(loc, /obj/structure) in get_turf(mover))
+		return TRUE
+	else if(istype(mover, /obj/projectile))
+		if(!projectile_passchance)
+			return
+		if(!anchored)
+			return TRUE
+		var/obj/projectile/proj = mover
+		if(proj.firer && Adjacent(proj.firer))
+			return TRUE
+		if(prob((projectile_passchance)))
+			return TRUE
+		return FALSE

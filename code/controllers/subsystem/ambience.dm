@@ -138,3 +138,24 @@ SUBSYSTEM_DEF(ambience)
 
 		client.current_ambient_sound = sound_to_use
 		SEND_SOUND(src, sound(my_area.ambient_buzz, repeat = 1, wait = 0, volume = my_area.ambient_buzz_vol, channel = CHANNEL_BUZZ))
+
+/datum/controller/subsystem/ambience/proc/play_combat_music(music = null, client/dreamer)
+	if(!music || !dreamer)
+		return
+
+	var/sound/combat_music = sound(pick(music), repeat = TRUE, wait = 0, channel = CHANNEL_AMBIENCE, volume = 30)
+	var/sound/sound_killer = sound()
+	sound_killer.channel = CHANNEL_AMBIENCE
+	SEND_SOUND(dreamer, sound_killer) //first clears the sound channel from ambient music
+	SEND_SOUND(dreamer, combat_music) //then starts playing music
+	dreamer.droning_sound = combat_music
+	dreamer.last_droning_sound = combat_music.file
+
+/datum/controller/subsystem/ambience/proc/kill_droning(client/victim)
+	if(!victim?.droning_sound)
+		return
+	var/sound/sound_killer = sound()
+	sound_killer.channel = CHANNEL_AMBIENCE
+	SEND_SOUND(victim, sound_killer)
+	victim.droning_sound = null
+	victim.last_droning_sound = null

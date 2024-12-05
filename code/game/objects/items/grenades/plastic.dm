@@ -1,6 +1,7 @@
 /obj/item/grenade/c4
 	name = "C-4 charge"
 	desc = "Used to put holes in specific areas without too much extra hole. A saboteur's favorite."
+	icon = 'hl13/icons/obj/grenade.dmi'
 	icon_state = "plastic-explosive0"
 	inhand_icon_state = "plastic-explosive"
 	worn_icon_state = "c4"

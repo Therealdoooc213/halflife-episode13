@@ -262,6 +262,20 @@ GLOBAL_LIST_INIT(metal_recipes, list ( \
 	new/obj/structure/girder/displaced(build_on)
 	return ITEM_INTERACT_SUCCESS
 
+/obj/item/stack/sheet/scrap_metal
+	name = "scrap metal"
+	desc = "Pieces of scrap metal. Not very useful on it's own, but maybe with the right tools you can make it more usable."
+	singular_name = "scrap metal"
+	icon_state = "sheet-scrapmetal"
+	inhand_icon_state = "sheet-metal"
+	throwforce = 10
+	obj_flags = CONDUCTS_ELECTRICITY
+	resistance_flags = FIRE_PROOF
+	merge_type = /obj/item/stack/sheet/scrap_metal
+	grind_results = list(/datum/reagent/iron = 10)
+	tableVariant = /obj/structure/table/halflife/metal/constructed/cobbled
+	matter_amount = 2
+
 /*
  * Plasteel
  */
@@ -413,6 +427,18 @@ GLOBAL_LIST_INIT(wood_recipes, list ( \
 		return ITEM_INTERACT_SUCCESS
 	else
 		return NONE
+
+/obj/item/stack/sheet/mineral/scrap_wood
+	name = "scrap wood"
+	desc = "Destroyed scraps of wood. Not very useful by itself, but maybe with enough you can sift through for a usable plank of wood."
+	singular_name = "scrap wood"
+	icon_state = "sheet-scrapwood"
+	inhand_icon_state = "sheet-wood"
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 50, ACID = 0)
+	resistance_flags = FLAMMABLE
+	merge_type = /obj/item/stack/sheet/mineral/scrap_wood
+	grind_results = list(/datum/reagent/cellulose = 10) //no lignocellulose or lignin reagents yet
+
 /*
  * Bamboo
  */

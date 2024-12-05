@@ -150,6 +150,8 @@
 #define NO_GRAVITY_TRAIT "no-gravity"
 #define NEGATIVE_GRAVITY_TRAIT "negative-gravity"
 
+#define COMBINESUIT_TRAIT "combinesuit"
+
 /// A trait gained from a mob's leap action, like the leaper
 #define LEAPING_TRAIT "leaping"
 /// A trait gained from a mob's vanish action, like the herophant

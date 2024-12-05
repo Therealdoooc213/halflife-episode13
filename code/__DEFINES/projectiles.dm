@@ -62,6 +62,10 @@
 #define CALIBER_TENTACLE "tentacle"
 /// The caliber used by pipeguns and pipe pistols
 #define CALIBER_JUNK "junk"
+/// The caliber used by the m4a1
+#define CALIBER_556NATO "556nato"
+/// OSIPR pulse rounds
+#define CALIBER_PULSROUND "pulsround"
 
 /// For gunpoints, how many tiles around the target the shooter can roam without losing their shot
 #define GUNPOINT_SHOOTER_STRAY_RANGE 2

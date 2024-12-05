@@ -52,3 +52,23 @@
 //while using the SKILLCHIP_RESTRICTED_CATEGORIES flag
 #define SKILLCHIP_CATEGORY_GENERAL "general"
 #define SKILLCHIP_CATEGORY_JOB "job"
+
+// Skillchip skills ------
+
+/// This person fires guns with more accuracy
+#define TRAIT_GOOD_AIM	"good_aim"
+
+//faster tool usage
+#define TRAIT_ENGINEER	"engineer"
+
+//faster surgical tool usage
+#define TRAIT_DOCTOR	"doctor"
+
+//Less stamina drain when running
+#define TRAIT_ATHLETIC	"ATHLETIC"
+
+#define TRAIT_NOPAIN "nopain"
+#define TRAIT_LESSPAIN "lesspain"
+#define TRAIT_MASOCHIST "masochist"
+
+#define TRAIT_NOSLEEP "nosleep"

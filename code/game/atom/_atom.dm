@@ -24,6 +24,8 @@
 	///When a projectile ricochets off this atom, it deals the normal damage * this modifier to this atom
 	var/receive_ricochet_damage_coeff = 0.33
 
+	var/halflife_flags_1
+
 	///Reagents holder
 	var/datum/reagents/reagents = null
 
@@ -140,6 +142,8 @@
 	var/interaction_flags_click = NONE
 	/// Flags to check for in can_perform_action for mouse drag & drop checks. To bypass checks see interaction_flags_atom mouse drop flags
 	var/interaction_flags_mouse_drop = NONE
+
+	var/hitted_sound
 
 /**
  * Top level of the destroy chain for most atoms

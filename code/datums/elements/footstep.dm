@@ -50,6 +50,14 @@
 			footstep_sounds = 'sound/effects/tank_treads.ogg'
 			RegisterSignal(target, COMSIG_MOVABLE_MOVED, PROC_REF(play_simplestep_machine))
 			return
+		if(FOOTSTEP_MOB_HUNTER)
+			footstep_sounds ='hl13/sound/creatures/hunter/hunter_footstep1.ogg'
+			RegisterSignal(target, COMSIG_MOVABLE_MOVED, PROC_REF(play_simplestep_machine))
+			return
+		if(FOOTSTEP_MOB_ANTLION)
+			footstep_sounds = list('hl13/sound/creatures/antlion/foot1.ogg')
+			RegisterSignal(target, COMSIG_MOVABLE_MOVED, PROC_REF(play_simplestep_machine))
+			return
 	RegisterSignal(target, COMSIG_MOVABLE_MOVED, PROC_REF(play_simplestep))
 	steps_for_living[target] = 0
 

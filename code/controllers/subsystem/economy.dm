@@ -70,8 +70,7 @@ SUBSYSTEM_DEF(economy)
 /datum/controller/subsystem/economy/Initialize()
 	//removes cargo from the split
 	var/budget_to_hand_out = round(budget_pool / department_accounts.len -1)
-	if(time2text(world.timeofday, "DDD") == SUNDAY)
-		mail_blocked = TRUE
+	mail_blocked = TRUE
 	for(var/dep_id in department_accounts)
 		if(dep_id == ACCOUNT_CAR) //cargo starts with NOTHING
 			new /datum/bank_account/department(dep_id, 0, player_account = FALSE)
@@ -230,6 +229,34 @@ SUBSYSTEM_DEF(economy)
 	for(var/i in 1 to length(prices_to_update))
 		var/obj/machinery/vending/V = prices_to_update[i]
 		V.reset_prices(V.product_records, V.coin_records)
+
+/// Spawns a given amount of money in optimal stacks at the given location.
+/datum/controller/subsystem/economy/proc/spawn_cash_for_amount(amt, spawn_loc)
+	amt = round(amt) // Don't pass in decimals you twat
+	var/thousands = 0
+	var/hundreds = 0
+	var/tens = 0
+	var/ones = 0
+
+	thousands = floor(amt / 1000)
+	amt -= thousands * 1000
+
+	hundreds = floor(amt / 100)
+	amt -= hundreds * 100
+
+	tens = floor(amt / 10)
+	amt -= tens * 10
+
+	ones = amt
+
+	if(thousands)
+		new /obj/item/stack/spacecash/c1000(spawn_loc, thousands)
+	if(hundreds)
+		new /obj/item/stack/spacecash/c100(spawn_loc, hundreds)
+	if(tens)
+		new /obj/item/stack/spacecash/c10(spawn_loc, tens)
+	if(ones)
+		new /obj/item/stack/spacecash/c1(spawn_loc, ones)
 
 #undef ECON_DEPARTMENT_STEP
 #undef ECON_ACCOUNT_STEP

@@ -105,14 +105,17 @@
 
 ///the sound played when the atom is damaged.
 /atom/proc/play_attack_sound(damage_amount, damage_type = BRUTE, damage_flag = 0)
-	switch(damage_type)
-		if(BRUTE)
-			if(damage_amount)
-				playsound(src, 'sound/items/weapons/smash.ogg', 50, TRUE)
-			else
-				playsound(src, 'sound/items/weapons/tap.ogg', 50, TRUE)
-		if(BURN)
-			playsound(src.loc, 'sound/items/tools/welder.ogg', 100, TRUE)
+	if(hitted_sound && damage_amount)
+		playsound(src, hitted_sound, 50, TRUE)
+	else if(!(hitted_sound))
+		switch(damage_type)
+			if(BRUTE)
+				if(damage_amount)
+					playsound(src, 'sound/items/weapons/smash.ogg', 50, TRUE)
+				else
+					playsound(src, 'sound/items/weapons/tap.ogg', 50, TRUE)
+			if(BURN)
+				playsound(src.loc, 'sound/items/tools/welder.ogg', 100, TRUE)
 
 ///Called to get the damage that hulks will deal to the atom.
 /atom/proc/hulk_damage()

@@ -517,3 +517,6 @@ GLOBAL_LIST_INIT(prototype_language_holders, init_language_holder_prototypes())
 /datum/language_holder/universal/New()
 	. = ..()
 	grant_all_languages(source = LANGUAGE_MIND)
+
+/datum/language_holder/stalker
+	understood_languages = list(/datum/language/common = list(LANGUAGE_ATOM))

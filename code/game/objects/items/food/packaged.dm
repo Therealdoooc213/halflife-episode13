@@ -354,25 +354,3 @@
 	icon_state = "ready_donk_chicken_warm"
 	tastes = list("country-fried chicken" = 2, "laziness" = 1)
 	foodtypes = MEAT | DAIRY | VEGETABLES | JUNKFOOD
-
-// Rations
-/obj/item/food/rationpack
-	name = "ration pack"
-	desc = "A square bar that sadly <i>looks</i> like chocolate, packaged in a nondescript grey wrapper. Has saved soldiers' lives before - usually by stopping bullets."
-	icon_state = "rationpack"
-	bite_consumption = 3
-	junkiness = 15
-	tastes = list("cardboard" = 3, "sadness" = 3)
-	foodtypes = null //Don't ask what went into them. You're better off not knowing.
-	food_reagents = list(
-		/datum/reagent/consumable/nutriment/stabilized = 10,
-		/datum/reagent/consumable/nutriment = 2,
-	) //Won't make you fat. Will make you question your sanity.
-
-///Override for checkliked callback
-/obj/item/food/rationpack/make_edible()
-	. = ..()
-	AddComponent(/datum/component/edible, check_liked = CALLBACK(src, PROC_REF(check_liked)))
-
-/obj/item/food/rationpack/proc/check_liked(mob/mob) //Nobody likes rationpacks. Nobody.
-	return FOOD_DISLIKED

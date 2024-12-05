@@ -121,6 +121,8 @@ GLOBAL_LIST_INIT(turfs_pass_meteor, typecacheof(list(
 #define isandroid(A) (is_species(A, /datum/species/android))
 #define isnightmare(A) (is_species(A, /datum/species/shadow/nightmare))
 
+#define isvortigaunt(A) (is_species(A, /datum/species/vortigaunt))
+#define isstalker(A) (is_species(A, /datum/species/stalker))
 
 //More carbon mobs
 #define isalien(A) (istype(A, /mob/living/carbon/alien))

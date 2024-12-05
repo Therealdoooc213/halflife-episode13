@@ -139,6 +139,8 @@
 #define SPECIES_ZOMBIE_INFECTIOUS "memezombie"
 #define SPECIES_ZOMBIE_KROKODIL "krokodil_zombie"
 #define SPECIES_VOIDWALKER "voidwalker"
+#define SPECIES_VORTIGAUNT "vortigaunt"
+#define SPECIES_STALKER "stalker"
 
 // Like species IDs, but not specifically attached a species.
 #define BODYPART_ID_ALIEN "alien"
@@ -286,6 +288,16 @@
 
 #define NUTRITION_LEVEL_START_MIN 250
 #define NUTRITION_LEVEL_START_MAX 400
+
+//Hydration levels for humans
+#define HYDRATION_LEVEL_FULL 1000
+#define HYDRATION_LEVEL_HYDRATED 700
+#define HYDRATION_LEVEL_SMALLTHIRST 500
+#define HYDRATION_LEVEL_THIRSTY 300
+#define HYDRATION_LEVEL_DEHYDRATED 100
+
+#define HYDRATION_LEVEL_START_MIN 500
+#define HYDRATION_LEVEL_START_MAX 600
 
 //Disgust levels for humans
 #define DISGUST_LEVEL_MAXEDOUT 150

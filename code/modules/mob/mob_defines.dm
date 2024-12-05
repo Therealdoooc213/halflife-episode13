@@ -110,6 +110,7 @@
 
 	/// Hunger level of the mob
 	var/nutrition = NUTRITION_LEVEL_START_MIN // randomised in Initialize
+	var/hydration = HYDRATION_LEVEL_START_MIN
 	/// Satiation level of the mob
 	var/satiety = 0//Carbon
 
@@ -208,3 +209,5 @@
 
 	/// A ref of the area we're taking our ambient loop from.
 	var/area/ambience_tracked_area
+
+	var/cmode_music = 'hl13/sound/music/combat/abandonedinplace.ogg'

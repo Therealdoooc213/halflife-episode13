@@ -37,6 +37,19 @@
 	var/list/transaction_history = list()
 	///A lazylist of coupons redeemed with the Coupon Master pda app associated with this account.
 	var/list/redeemed_coupons
+	///Do we have a ration voucher assigned to our account right now?
+	var/ration_voucher = FALSE
+	/// A randomly generated 5-digit pin to access the bank account. This is stored as a string!
+	var/account_pin
+
+/datum/bank_account/proc/rationvoucher()
+	if(ration_voucher)
+		bank_card_talk("Your account's previous ration voucher was not used in time, and has been replaced with a new one.")
+		return FALSE
+	else
+		bank_card_talk("A ration voucher has been transferred to your account.")
+		ration_voucher = TRUE
+		return TRUE
 
 /datum/bank_account/New(newname, job, modifier = 1, player_account = TRUE)
 	account_holder = newname
@@ -46,6 +59,9 @@
 	setup_unique_account_id()
 	update_account_job_lists(job)
 	pay_token = uppertext("[copytext(newname, 1, 2)][copytext(newname, -1)]-[random_capital_letter()]-[rand(1111,9999)]")
+
+	for(var/i in 1 to 4)
+		account_pin = "[account_pin][rand(0, 9)]"
 
 /datum/bank_account/Destroy()
 	if(add_to_accounts)

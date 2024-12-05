@@ -374,6 +374,11 @@
 	medium_light_cutoff = list(0, 20, 35)
 	high_light_cutoff = list(0, 40, 50)
 
+/obj/item/organ/eyes/night_vision/vort
+	low_light_cutoff = list(0, 15, 20)
+	medium_light_cutoff = list(0, 20, 35)
+	high_light_cutoff = list(0, 40, 50)
+
 /obj/item/organ/eyes/zombie
 	name = "undead eyes"
 	desc = "Somewhat counterintuitively, these half-rotten eyes actually have superior vision to those of a living human."

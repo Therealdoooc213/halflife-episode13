@@ -36,9 +36,11 @@
 	return
 
 /obj/item/grenade/spawnergrenade/manhacks
-	name = "viscerator delivery grenade"
-	spawner_type = /mob/living/basic/viscerator
-	deliveryamt = 10
+	name = "inactive viscerator"
+	icon = 'hl13/icons/obj/grenade.dmi'
+	icon_state = "manhack"
+	spawner_type = /mob/living/simple_animal/hostile/halflife/viscerator
+	deliveryamt = 1
 
 /obj/item/grenade/spawnergrenade/spesscarp
 	name = "carp delivery grenade"

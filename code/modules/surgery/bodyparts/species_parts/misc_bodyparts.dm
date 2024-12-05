@@ -622,3 +622,81 @@
 	. = ..()
 	ADD_TRAIT(src, TRAIT_IGNORED_BY_LIVING_FLESH, BODYPART_TRAIT)
 	AddElement(/datum/element/living_limb_initialiser)
+
+///vortigaunt
+/obj/item/bodypart/head/vortigaunt
+	limb_id = SPECIES_VORTIGAUNT
+	head_flags = NONE
+	teeth_count = 4
+
+/obj/item/bodypart/chest/vortigaunt
+	limb_id = SPECIES_VORTIGAUNT
+	bodypart_traits = list(TRAIT_NO_JUMPSUIT)
+
+/obj/item/bodypart/arm/left/vortigaunt
+	limb_id = SPECIES_VORTIGAUNT
+	unarmed_damage_low = 8
+	unarmed_damage_high = 16
+	unarmed_effectiveness = 15
+	burn_modifier = 1.25
+
+/obj/item/bodypart/arm/right/vortigaunt
+	limb_id = SPECIES_VORTIGAUNT
+	unarmed_damage_low = 8
+	unarmed_damage_high = 16
+	unarmed_effectiveness = 15
+
+/obj/item/bodypart/leg/left/vortigaunt
+	limb_id = SPECIES_VORTIGAUNT
+	unarmed_damage_low = 9
+	unarmed_damage_high = 18
+	unarmed_effectiveness = 20
+	speed_modifier = 0.33
+	special_footstep_sounds = list('hl13/sound/movement/vort/vort_foot1.ogg', 'hl13/sound/movement/vort/vort_foot2.ogg', 'hl13/sound/movement/vort/vort_foot3.ogg', 'hl13/sound/movement/vort/vort_foot4.ogg' )
+
+/obj/item/bodypart/leg/right/vortigaunt
+	limb_id = SPECIES_VORTIGAUNT
+	unarmed_damage_low = 9
+	unarmed_damage_high = 18
+	unarmed_effectiveness = 20
+	speed_modifier = 0.33
+	special_footstep_sounds = list('hl13/sound/movement/vort/vort_foot1.ogg', 'hl13/sound/movement/vort/vort_foot2.ogg', 'hl13/sound/movement/vort/vort_foot3.ogg', 'hl13/sound/movement/vort/vort_foot4.ogg' )
+
+///stalker
+/obj/item/bodypart/head/stalker
+	limb_id = SPECIES_STALKER
+	head_flags = NONE
+	teeth_count = 0
+
+/obj/item/bodypart/chest/stalker
+	limb_id = SPECIES_STALKER
+	bodypart_traits = list(TRAIT_NO_JUMPSUIT)
+
+/obj/item/bodypart/arm/left/stalker
+	limb_id = SPECIES_STALKER
+	unarmed_damage_low = 4
+	unarmed_damage_high = 8
+	unarmed_effectiveness = 5
+	burn_modifier = 1.25
+
+/obj/item/bodypart/arm/right/stalker
+	limb_id = SPECIES_STALKER
+	unarmed_damage_low = 4
+	unarmed_damage_high = 8
+	unarmed_effectiveness = 5
+
+/obj/item/bodypart/leg/left/stalker
+	limb_id = SPECIES_STALKER
+	unarmed_damage_low = 4
+	unarmed_damage_high = 8
+	unarmed_effectiveness = 5
+	speed_modifier = 0.66
+	special_footstep_sounds = list('hl13/sound/movement/stalker/stalker_footstep1.ogg', 'hl13/sound/movement/stalker/stalker_footstep2.ogg', 'hl13/sound/movement/stalker/stalker_footstep3.ogg', 'hl13/sound/movement/stalker/stalker_footstep4.ogg' )
+
+/obj/item/bodypart/leg/right/stalker
+	limb_id = SPECIES_STALKER
+	unarmed_damage_low = 4
+	unarmed_damage_high = 8
+	unarmed_effectiveness = 5
+	speed_modifier = 0.66
+	special_footstep_sounds = list('hl13/sound/movement/stalker/stalker_footstep1.ogg', 'hl13/sound/movement/stalker/stalker_footstep2.ogg', 'hl13/sound/movement/stalker/stalker_footstep3.ogg', 'hl13/sound/movement/stalker/stalker_footstep4.ogg' )

@@ -15,6 +15,8 @@
 	var/rename_with_volume = FALSE
 	var/self_delay = 0 //pills are instant, this is because patches inheret their aplication from pills
 	var/dissolvable = TRUE
+	///Should it play a sound when succesfully applied?
+	var/apply_sound = FALSE
 
 /obj/item/reagent_containers/pill/Initialize(mapload)
 	. = ..()
@@ -34,6 +36,10 @@
 		SEND_SIGNAL(src, COMSIG_PILL_CONSUMED, eater = consumer, feeder = giver)
 	if(reagents.total_volume)
 		reagents.trans_to(consumer, reagents.total_volume, transferred_by = giver, methods = apply_type)
+
+	if(apply_sound)
+		playsound(src, apply_sound, 40, FALSE)
+
 	qdel(src)
 
 /obj/item/reagent_containers/pill/interact_with_atom(atom/target, mob/living/user, list/modifiers)

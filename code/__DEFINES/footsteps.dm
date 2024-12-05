@@ -28,6 +28,8 @@
 #define FOOTSTEP_MOB_RUST "footstep_rust"
 #define FOOTSTEP_OBJ_MACHINE "footstep_machine"
 #define FOOTSTEP_OBJ_ROBOT "footstep_robot"
+#define FOOTSTEP_MOB_HUNTER "footstep_hunter"
+#define FOOTSTEP_MOB_ANTLION "footstep_antlion"
 
 //priority defines for the footstep_override element
 #define STEP_SOUND_NO_PRIORITY 0

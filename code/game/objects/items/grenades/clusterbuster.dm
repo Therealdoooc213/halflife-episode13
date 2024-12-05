@@ -176,7 +176,9 @@
 	payload = /obj/item/grenade/syndieminibomb
 
 /obj/item/grenade/clusterbuster/spawner_manhacks
-	name = "iViscerator"
+	name = "Inactive Viscerator"
+	icon = 'hl13/icons/obj/grenade.dmi'
+	icon_state = "manhack"
 	payload = /obj/item/grenade/spawnergrenade/manhacks
 
 /obj/item/grenade/clusterbuster/spawner_spesscarp

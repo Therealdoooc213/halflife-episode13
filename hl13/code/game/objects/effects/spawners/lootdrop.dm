@@ -7,8 +7,8 @@
 			/obj/item/storage/medkit/toxin
 			)
 
-/*
 
+/*
 	loot = list(
 				/obj/item/crowbar/large = 2,
 				/obj/item/toy/crayon/spraycan,
@@ -34,7 +34,7 @@
 				/obj/item/camera,
 				/obj/item/stack/cable_coil/yellow = 2,
 				/obj/item/stack/sheet/cloth,
-				/obj/item/stack/sheet/metal/five,
+				/obj/item/stack/sheet/iron/five,
 				/obj/item/stack/sheet/scrap_metal = 3,
 				/obj/item/stack/sheet/glass = 2,
 				/obj/item/stack/sheet/mineral/uranium,
@@ -53,14 +53,20 @@
 				/obj/item/customlock,
 				/obj/item/stack/spacecash/c10,
 				/obj/item/stack/spacecash/c20,
-				/obj/item/storage/firstaid/toxin
+				/obj/item/storage/medkit/toxin
 				)
+
+*/
 
 //only consumable loot. Food, drinks, drugs, cigarettes, etc.
 /obj/effect/spawner/random/halflife/loot/consumables
 	name = "consumables loot"
-	lootcount = 1
+	loot = list(
+			/obj/item/crowbar/large = 2,
+			/obj/item/storage/medkit/toxin
+			)
 
+/*
 	loot = list(
 				/obj/item/reagent_containers/food/drinks/soda_cans/breenwater = 2,
 				/obj/item/reagent_containers/food/drinks/soda_cans/breenwater/red,
@@ -88,11 +94,16 @@
 				/obj/item/reagent_containers/glass/bottle/welding_fuel,
 				/obj/item/reagent_containers/glass/bottle/morphine
 				)
+*/
 
 //specifically only alcohol
 /obj/effect/spawner/random/halflife/loot/alcohol
 	name = "alcohol loot"
-	lootcount = 1
+	loot = list(
+			/obj/item/crowbar/large = 2,
+			/obj/item/storage/medkit/toxin
+			)
+/*
 
 	loot = list(
 				/obj/item/reagent_containers/food/drinks/beer,
@@ -102,12 +113,17 @@
 				/obj/item/reagent_containers/food/drinks/bottle/hcider,
 				/obj/item/reagent_containers/food/drinks/bottle/fernet
 				)
+*/
 
 //only clothing items
 /obj/effect/spawner/random/halflife/loot/clothing
 	name = "clothing loot"
-	lootcount = 1
+	loot = list(
+			/obj/item/crowbar/large = 2,
+			/obj/item/storage/medkit/toxin
+			)
 
+/*
 	loot = list(
 				/obj/item/clothing/under/citizen/refugee,
 				/obj/item/clothing/head/beanie/black = 2,
@@ -131,11 +147,16 @@
 				/obj/item/clothing/suit/bio_suit/boiler,
 				/obj/item/clothing/head/bio_hood/boiler
 				)
+*/
 
 //ammo
 /obj/effect/spawner/random/halflife/loot/ammo
 	name = "ammo loot"
-
+	loot = list(
+			/obj/item/crowbar/large = 2,
+			/obj/item/storage/medkit/toxin
+			)
+/*
 	loot = list(
 				/obj/item/ammo_box/magazine/mp7 = 2,
 				/obj/item/storage/box/lethalshot,
@@ -145,11 +166,16 @@
 				/obj/item/ammo_box/magazine/m4a1,
 				/obj/item/ammo_box/magazine/m45
 				)
+*/
 
 //guns, armor, and some lesser items occasionally
 /obj/effect/spawner/random/halflife/loot/rare
 	name = "rare loot"
-
+	loot = list(
+			/obj/item/crowbar/large = 2,
+			/obj/item/storage/medkit/toxin
+			)
+/*
 	loot = list(
 				/obj/item/gun/ballistic/automatic/pistol/usp,
 				/obj/item/gun/ballistic/automatic/pistol/usp/no_mag,

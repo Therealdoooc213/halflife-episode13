@@ -190,6 +190,68 @@ GLOBAL_LIST_INIT(creepy_ambience,list(
 	'sound/effects/hallucinations/wail.ogg',
 ))
 
+GLOBAL_LIST_INIT(hloutside_ambience,list(
+	'hl13/sound/ambience/trainstation.ogg',
+	'hl13/sound/ambience/vaguevoices.ogg',
+	'hl13/sound/ambience/escapearray.ogg',
+	'hl13/sound/ambience/resurrectedteleport.ogg',
+	'hl13/sound/ambience/calabiyaumodel.ogg',
+	'hl13/sound/ambience/suppressionfield.ogg',
+	'hl13/sound/ambience/vlvx_song3.ogg',
+	'hl13/sound/ambience/hl2_song2.ogg',
+	'sound/ambience/ruin/ambiruin6.ogg', ))
+
+GLOBAL_LIST_INIT(hlinside_ambience,list(
+	'hl13/sound/ambience/trainstation.ogg',
+	'hl13/sound/ambience/vaguevoices.ogg',
+	'hl13/sound/ambience/escapearray.ogg',
+	'hl13/sound/ambience/resurrectedteleport.ogg',
+	'hl13/sound/ambience/calabiyaumodel.ogg',
+	'hl13/sound/ambience/suppressionfield.ogg',
+	'hl13/sound/ambience/vlvx_song3.ogg',
+	'hl13/sound/ambience/hl2_song2.ogg',
+	'sound/ambience/ruin/ambiruin6.ogg', ))
+
+GLOBAL_LIST_INIT(hlsewers_ambience,list(
+	'sound/ambience/maintenance/ambimaint1.ogg',
+	'sound/ambience/maintenance/ambimaint2.ogg',
+	'sound/ambience/maintenance/ambimaint3.ogg',
+	'sound/ambience/maintenance/ambimaint4.ogg',
+	'sound/ambience/maintenance/ambimaint5.ogg',
+	'hl13/sound/ambience/probablynotaproblem.ogg',
+	'hl13/sound/ambience/vlvx_song3.ogg',
+	'hl13/sound/ambience/hl2_song2.ogg'))
+
+
+GLOBAL_LIST_INIT(hlforest_ambience,list(
+	'hl13/sound/ambience/forest/chicka1.ogg',
+	'hl13/sound/ambience/forest/crik1.ogg',
+	'hl13/sound/ambience/forest/dist_birds1.ogg',
+	'hl13/sound/ambience/forest/dist_birds2.ogg',
+	'hl13/sound/ambience/forest/dist_birds3.ogg',
+	'hl13/sound/ambience/forest/peckr1.ogg',
+	'hl13/sound/ambience/forest/squeek1.ogg',
+	'hl13/sound/ambience/forest/buzz1.ogg',))
+
+GLOBAL_LIST_INIT(hlantcaves_ambience,list(
+	'hl13/sound/ambience/antcaves/dist_growl3.ogg',
+	'hl13/sound/ambience/antcaves/dist_grub1.ogg',
+	'hl13/sound/ambience/antcaves/dist_grub2.ogg',
+	'hl13/sound/ambience/antcaves/dist_grub3.ogg',
+	'hl13/sound/ambience/antcaves/dist_grub4.ogg',
+	'hl13/sound/ambience/antcaves/dist_grub5.ogg',
+	'hl13/sound/ambience/antcaves/rumble1.ogg',
+	'hl13/sound/ambience/antcaves/rumble2.ogg',
+	'hl13/sound/ambience/antcaves/rumble3.ogg',
+	'hl13/sound/ambience/antcaves/dist_growl4.ogg',))
+
+GLOBAL_LIST_INIT(halflife_ambient_music,list(
+	'hl13/sound/ambience/trainstation.ogg',
+	'hl13/sound/ambience/vaguevoices.ogg',
+	'hl13/sound/ambience/escapearray.ogg',
+	'hl13/sound/ambience/resurrectedteleport.ogg',
+	'hl13/sound/ambience/calabiyaumodel.ogg',))
+
 GLOBAL_LIST_INIT(ambience_assoc,list(
 	AMBIENCE_AWAY = GLOB.away_ambience,
 	AMBIENCE_CREEPY = GLOB.creepy_ambience,
@@ -206,4 +268,9 @@ GLOBAL_LIST_INIT(ambience_assoc,list(
 	AMBIENCE_RUINS = GLOB.ruins_ambience,
 	AMBIENCE_SPACE = GLOB.space_ambience,
 	AMBIENCE_SPOOKY = GLOB.spooky_ambience,
+	AMBIENCE_HLOUTSIDE = GLOB.hloutside_ambience,
+	AMBIENCE_HLINSIDE = GLOB.hlinside_ambience,
+	AMBIENCE_HLSEWERS = GLOB.hlsewers_ambience,
+	AMBIENCE_HLANTCAVES = GLOB.hlantcaves_ambience,
+	AMBIENCE_HLFOREST = GLOB.hlforest_ambience,
 ))

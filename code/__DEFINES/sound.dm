@@ -55,6 +55,13 @@
 #define AMBIENCE_REEBE "reebe" //unused
 #define AMBIENCE_CREEPY "creepy" //not to be confused with spooky
 
+#define AMBIENCE_HLOUTSIDE "hloutside"
+#define AMBIENCE_HLINSIDE "hloutside"
+#define AMBIENCE_HLSEWERS "hlsewers"
+#define AMBIENCE_HLANTCAVES "hlantcaves"
+#define AMBIENCE_HLFOREST "hlforest"
+#define AMBIENCE_HLMUSIC "hlmusic"
+
 //default byond sound environments
 #define SOUND_ENVIRONMENT_NONE -1
 #define SOUND_ENVIRONMENT_GENERIC 0

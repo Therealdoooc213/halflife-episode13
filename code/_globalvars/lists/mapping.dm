@@ -179,3 +179,6 @@ GLOBAL_LIST_INIT(ore_vent_sizes, list(
 	MEDIUM_VENT_TYPE = 0,
 	SMALL_VENT_TYPE = 0,
 ))
+
+///list of all spawns for stationrooms
+GLOBAL_LIST_EMPTY(stationroom_landmarks)

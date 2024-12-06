@@ -1,0 +1,187 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"d" = (
+/obj/structure/chair/halflife/metal{
+	dir = 4
+	},
+/turf/open/floor/plating/indoor/grooved2,
+/area/halflife/indoors)
+"f" = (
+/obj/structure/chair/halflife/metal{
+	dir = 8
+	},
+/turf/open/floor/plating/indoor/grooved2,
+/area/halflife/indoors)
+"h" = (
+/turf/open/floor/plating/indoor/grooved2,
+/area/halflife/indoors)
+"p" = (
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors)
+"r" = (
+/obj/machinery/washing_machine,
+/turf/open/floor/plating/indoor/grooved2,
+/area/halflife/indoors)
+"t" = (
+/obj/machinery/door/unpowered/halflife/seethrough/metal,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors)
+"x" = (
+/obj/structure/table/halflife/no_smooth/metal,
+/obj/machinery/light/small,
+/turf/open/floor/plating/indoor/grooved2,
+/area/halflife/indoors)
+"F" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors)
+"I" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors)
+"J" = (
+/obj/structure/halflife/trash/garbage,
+/turf/open/floor/plating/indoor/grooved2,
+/area/halflife/indoors)
+"K" = (
+/obj/structure/table/halflife/no_smooth/metal,
+/turf/open/floor/plating/indoor/grooved2,
+/area/halflife/indoors)
+"S" = (
+/obj/structure/table/halflife/no_smooth/metal,
+/obj/structure/halflife/trash/glass/cans,
+/turf/open/floor/plating/indoor/grooved2,
+/area/halflife/indoors)
+"W" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors)
+"Y" = (
+/turf/closed/wall/halflife/brick,
+/area/halflife/indoors)
+
+(1,1,1) = {"
+Y
+Y
+Y
+Y
+Y
+Y
+Y
+Y
+Y
+Y
+"}
+(2,1,1) = {"
+Y
+r
+h
+d
+W
+d
+h
+h
+r
+Y
+"}
+(3,1,1) = {"
+Y
+K
+h
+h
+p
+h
+h
+h
+K
+Y
+"}
+(4,1,1) = {"
+Y
+r
+h
+h
+p
+h
+h
+h
+r
+Y
+"}
+(5,1,1) = {"
+Y
+F
+p
+p
+p
+p
+p
+p
+p
+t
+"}
+(6,1,1) = {"
+Y
+r
+h
+h
+p
+h
+h
+h
+r
+Y
+"}
+(7,1,1) = {"
+Y
+K
+h
+h
+p
+h
+h
+h
+x
+Y
+"}
+(8,1,1) = {"
+Y
+K
+h
+h
+p
+h
+h
+h
+S
+Y
+"}
+(9,1,1) = {"
+Y
+r
+h
+f
+I
+f
+J
+h
+r
+Y
+"}
+(10,1,1) = {"
+Y
+Y
+Y
+Y
+Y
+Y
+Y
+Y
+Y
+Y
+"}

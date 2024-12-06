@@ -33,8 +33,8 @@ COMMENDATION_PERCENT_POLL 0.05
 ## To speed things up make the number negative, to slow things down, make the number positive.
 
 ## These modify the run/walk speed of all mobs before the mob-specific modifiers are applied.
-RUN_DELAY 1.5
-WALK_DELAY 4
+RUN_DELAY 2.35
+WALK_DELAY 3.35
 
 ## The variables below affect the movement of specific mob types. THIS AFFECTS ALL SUBTYPES OF THE TYPE YOU CHOOSE!
 ## Entries completely override all subtypes. Later entries have precedence over earlier entries.
@@ -156,11 +156,11 @@ EVENTS_MIN_PLAYERS_MUL 1
 
 ## The lower bound, in deciseconds, for how soon another random event can be scheduled.
 ## Defaults to 1500 deciseconds or 2.5 minutes
-EVENTS_FREQUENCY_LOWER 1500
+EVENTS_FREQUENCY_LOWER 1800
 
 ## The upper bound, in deciseconds, for how soon another random event can be scheduled.
 ## Defaults to 4200 deciseconds or 7 minutes
-EVENTS_FREQUENCY_UPPER 4200
+EVENTS_FREQUENCY_UPPER 4500
 
 ## AI ###
 
@@ -232,7 +232,7 @@ DEPSEC_ACCESS_LEVEL 1
 
 ## NEAR-DEATH EXPERIENCE ###
 ## Comment this out to disable mobs hearing ghosts when unconscious and very close to death
-NEAR_DEATH_EXPERIENCE
+#NEAR_DEATH_EXPERIENCE
 
 ## NON-VOCAL SILICONS ###
 ## Uncomment these to stop the AI, or cyborgs, from having vocal communication.
@@ -360,15 +360,15 @@ SILICON_MAX_LAW_AMOUNT 12
 ROUNDSTART_RACES human
 
 ## Races that are strictly worse than humans that could probably be turned on without balance concerns
-ROUNDSTART_RACES felinid
-ROUNDSTART_RACES lizard
+#ROUNDSTART_RACES felinid
+#ROUNDSTART_RACES lizard
 #ROUNDSTART_RACES fly
-ROUNDSTART_RACES moth
-ROUNDSTART_RACES plasmaman
+#ROUNDSTART_RACES moth
+#ROUNDSTART_RACES plasmaman
 #ROUNDSTART_RACES shadow
 
 ## Races that are better than humans in some ways, but worse in others
-ROUNDSTART_RACES ethereal
+#ROUNDSTART_RACES ethereal
 #ROUNDSTART_RACES jelly
 #ROUNDSTART_RACES abductor
 #ROUNDSTART_RACES snail
@@ -391,7 +391,7 @@ ROUNDSTART_RACES ethereal
 ## Disable roundstart species morgue cadavers?
 ## Cadavers in the morgue at the start of the round will be randomly picked from all enabled ROUNDSTART_RACES
 ## Recommended to leave this commented out so nonhuman species will have viable replacement bodies / organs when they die.
-# MORGUE_CADAVER_DISABLE_NONHUMANS
+MORGUE_CADAVER_DISABLE_NONHUMANS
 
 ## Morgue Cadaver Species Probability
 ## The probability for nonhuman cadavers to spawn in the morgue.
@@ -511,7 +511,7 @@ MAXFINE 2000
 #DRONE_AREA_INTERACTION_RESTRICT 1
 
 ## Whether native FoV is enabled for all people.
-#NATIVE_FOV
+NATIVE_FOV
 
 ## Whether circuit sounds are allowed to be played or not.
 #DISALLOW_CIRCUIT_SOUNDS

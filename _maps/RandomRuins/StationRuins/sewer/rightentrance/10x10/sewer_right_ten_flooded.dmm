@@ -1,0 +1,147 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"d" = (
+/obj/machinery/door/unpowered/halflife/metal{
+	dir = 4
+	},
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors/sewer)
+"k" = (
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors/sewer)
+"m" = (
+/turf/open/halflife/water/sewer/shallow,
+/area/halflife/indoors/sewer)
+"p" = (
+/turf/open/halflife/water/sewer/deep,
+/area/halflife/indoors/sewer)
+"x" = (
+/turf/closed/wall/halflife/metal,
+/area/halflife/indoors/sewer)
+"N" = (
+/obj/effect/spawner/random/halflife/loot,
+/turf/open/halflife/water/sewer/deep,
+/area/halflife/indoors/sewer)
+"W" = (
+/turf/open/halflife/water/sewer/medium,
+/area/halflife/indoors/sewer)
+
+(1,1,1) = {"
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+"}
+(2,1,1) = {"
+x
+W
+W
+W
+W
+W
+p
+p
+N
+x
+"}
+(3,1,1) = {"
+x
+W
+m
+W
+W
+W
+W
+p
+p
+x
+"}
+(4,1,1) = {"
+x
+m
+m
+m
+W
+W
+W
+p
+p
+x
+"}
+(5,1,1) = {"
+x
+m
+m
+m
+W
+W
+W
+W
+p
+x
+"}
+(6,1,1) = {"
+x
+m
+m
+m
+m
+m
+W
+W
+p
+x
+"}
+(7,1,1) = {"
+x
+m
+m
+m
+m
+m
+W
+W
+W
+x
+"}
+(8,1,1) = {"
+x
+m
+m
+k
+m
+m
+W
+W
+W
+x
+"}
+(9,1,1) = {"
+x
+m
+k
+k
+m
+m
+m
+W
+W
+x
+"}
+(10,1,1) = {"
+x
+x
+x
+d
+x
+x
+x
+x
+x
+x
+"}

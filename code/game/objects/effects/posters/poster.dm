@@ -108,6 +108,9 @@
 	///A sharp shard of material can be hidden inside of a poster, attempts to embed when it is torn down.
 	var/datum/weakref/trap
 
+	///tearing down some posters may effect sociostability
+	var/socio_modify = FALSE
+
 /obj/structure/sign/poster/Initialize(mapload)
 	. = ..()
 	if(random_basetype)
@@ -273,6 +276,10 @@
 	torn_poster.pixel_y = pixel_y
 	torn_poster.pixel_x = pixel_x
 	torn_poster.add_fingerprint(user)
+
+	if(socio_modify) //tearing down some posters may effect sociostability
+		SSsociostability.modifystability(-5)
+
 	qdel(src)
 
 // Various possible posters follow

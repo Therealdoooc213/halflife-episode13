@@ -176,8 +176,7 @@ do { \
 	flags_cover = MASKCOVERSEYES | MASKCOVERSMOUTH
 	w_class = WEIGHT_CLASS_SMALL
 	actions_types = list(/datum/action/item_action/chameleon/change/mask)
-	/// Is our voice changer enabled or disabled?
-	var/voice_change = TRUE
+	voice_change = TRUE
 
 /obj/item/clothing/mask/chameleon/attack_self(mob/user)
 	voice_change = !voice_change

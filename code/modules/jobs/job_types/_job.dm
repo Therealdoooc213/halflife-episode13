@@ -208,8 +208,9 @@
 		var/datum/bank_account/bank_account = new(real_name, equipping, dna.species.payday_modifier)
 		bank_account.payday(STARTING_PAYCHECKS, TRUE)
 		account_id = bank_account.account_id
+		account_pin = bank_account.account_pin
 		bank_account.replaceable = FALSE
-		add_mob_memory(/datum/memory/key/account, remembered_id = account_id)
+		add_mob_memory(/datum/memory/key/account, remembered_id = account_id, remembered_pin = account_pin)
 
 	dress_up_as_job(
 		equipping = equipping,
@@ -345,11 +346,7 @@
 
 	uniform = /obj/item/clothing/under/color/grey
 	id = /obj/item/card/id/advanced
-	ears = /obj/item/radio/headset
-	belt = /obj/item/modular_computer/pda
-	back = /obj/item/storage/backpack
 	shoes = /obj/item/clothing/shoes/sneakers/black
-	box = /obj/item/storage/box/survival
 
 	preload = TRUE // These are used by the prefs ui, and also just kinda could use the extra help at roundstart
 
@@ -360,6 +357,7 @@
 
 	var/pda_slot = ITEM_SLOT_BELT
 
+/*
 /datum/outfit/job/pre_equip(mob/living/carbon/human/H, visuals_only = FALSE)
 	if(ispath(back, /obj/item/storage/backpack))
 		switch(H.backpack)
@@ -396,6 +394,7 @@
 
 	if(client?.is_veteran() && client?.prefs.read_preference(/datum/preference/toggle/playtime_reward_cloak))
 		neck = /obj/item/clothing/neck/cloak/skill_reward/playing
+*/
 
 /datum/outfit/job/post_equip(mob/living/carbon/human/equipped, visuals_only = FALSE)
 	if(visuals_only)

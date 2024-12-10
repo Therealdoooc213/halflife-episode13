@@ -642,6 +642,11 @@
 /obj/item/radio/off // Station bounced radios, their only difference is spawning with the speakers off, this was made to help the lag.
 	dog_fashion = /datum/dog_fashion/back
 
+/obj/item/radio/off/halflife
+	icon_state = "radio"
+	name = "old radio"
+	desc = "An old radio that can communicate over specified radio waves."
+
 /obj/item/radio/off/Initialize(mapload)
 	. = ..()
 	set_listening(FALSE)

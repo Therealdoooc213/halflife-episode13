@@ -2,7 +2,6 @@
 	title = JOB_ROBOTICIST
 	description = "Build and repair the AI and cyborgs, create mechs."
 	department_head = list(JOB_RESEARCH_DIRECTOR)
-	faction = FACTION_STATION
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = SUPERVISOR_RD
@@ -32,7 +31,6 @@
 
 	family_heirlooms = list(/obj/item/toy/plush/pkplush)
 	rpg_title = "Necromancer"
-	job_flags = STATION_JOB_FLAGS
 
 
 /datum/job/roboticist/New()

@@ -3,7 +3,6 @@
 	description = "Hold services and funerals, cremate people, preach your \
 		religion, protect the crew against cults."
 	department_head = list(JOB_HEAD_OF_PERSONNEL)
-	faction = FACTION_STATION
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = SUPERVISOR_HOP
@@ -30,7 +29,6 @@
 		/obj/item/toy/plush/ratplush = 1
 	)
 	rpg_title = "Paladin"
-	job_flags = STATION_JOB_FLAGS
 
 	voice_of_god_power = 2 //Chaplains are very good at speaking with the voice of god
 

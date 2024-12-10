@@ -278,6 +278,12 @@
 /// Equal to the highest sanity level
 #define SANITY_LEVEL_MAX SANITY_LEVEL_INSANE
 
+//Exhaustion levels for humans
+#define TIREDNESS_MAXIMUM_THRESHOLD 800 //~100 second grace period till movement slowdown sets in
+#define TIREDNESS_SLEEPY_THRESHOLD 750 //sleepy about every 25 minutes
+#define TIREDNESS_TIRED_THRESHOLD 500
+#define TIREDNESS_CLEAR_THRESHOLD 350
+
 //Nutrition levels for humans
 #define NUTRITION_LEVEL_FAT 600
 #define NUTRITION_LEVEL_FULL 550
@@ -454,7 +460,7 @@
 #define OFFSET_HELD "held"
 
 //MINOR TWEAKS/MISC
-#define AGE_MIN 17 //youngest a character can be
+#define AGE_MIN 21 //youngest a character can be
 #define AGE_MAX 85 //oldest a character can be
 #define AGE_MINOR 20 //legal age of space drinking and smoking
 #define WIZARD_AGE_MIN 30 //youngest a wizard can be
@@ -463,7 +469,7 @@
 #define POCKET_STRIP_DELAY (4 SECONDS) //time taken to search somebody's pockets
 #define DOOR_CRUSH_DAMAGE 15 //the amount of damage that airlocks deal when they crush you
 
-#define HUNGER_FACTOR 0.05 //factor at which mob nutrition decreases
+#define HUNGER_FACTOR 0.15 //factor at which mob nutrition decreases
 #define ETHEREAL_DISCHARGE_RATE (8e-3 * STANDARD_CELL_CHARGE) // Rate at which ethereal stomach charge decreases
 /// How much nutrition eating clothes as moth gives and drains
 #define CLOTHING_NUTRITION_GAIN 15

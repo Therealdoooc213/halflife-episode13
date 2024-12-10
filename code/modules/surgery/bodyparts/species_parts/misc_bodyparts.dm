@@ -626,12 +626,18 @@
 ///vortigaunt
 /obj/item/bodypart/head/vortigaunt
 	limb_id = SPECIES_VORTIGAUNT
+	icon_state = "vortigaunt_head"
 	head_flags = NONE
 	teeth_count = 4
+	should_draw_greyscale = FALSE
+	is_dimorphic = FALSE
 
 /obj/item/bodypart/chest/vortigaunt
 	limb_id = SPECIES_VORTIGAUNT
+	icon_state = "vortigaunt_chest"
 	bodypart_traits = list(TRAIT_NO_JUMPSUIT)
+	should_draw_greyscale = FALSE
+	is_dimorphic = FALSE
 
 /obj/item/bodypart/arm/left/vortigaunt
 	limb_id = SPECIES_VORTIGAUNT
@@ -639,12 +645,14 @@
 	unarmed_damage_high = 16
 	unarmed_effectiveness = 15
 	burn_modifier = 1.25
+	should_draw_greyscale = FALSE
 
 /obj/item/bodypart/arm/right/vortigaunt
 	limb_id = SPECIES_VORTIGAUNT
 	unarmed_damage_low = 8
 	unarmed_damage_high = 16
 	unarmed_effectiveness = 15
+	should_draw_greyscale = FALSE
 
 /obj/item/bodypart/leg/left/vortigaunt
 	limb_id = SPECIES_VORTIGAUNT
@@ -652,7 +660,8 @@
 	unarmed_damage_high = 18
 	unarmed_effectiveness = 20
 	speed_modifier = 0.33
-	special_footstep_sounds = list('hl13/sound/movement/vort/vort_foot1.ogg', 'hl13/sound/movement/vort/vort_foot2.ogg', 'hl13/sound/movement/vort/vort_foot3.ogg', 'hl13/sound/movement/vort/vort_foot4.ogg' )
+	special_footstep_sounds = list('hl13/sound/movement/vort/vort_foot1.ogg', 'hl13/sound/movement/vort/vort_foot2.ogg', 'hl13/sound/movement/vort/vort_foot3.ogg', 'hl13/sound/movement/vort/vort_foot4.ogg')
+	should_draw_greyscale = FALSE
 
 /obj/item/bodypart/leg/right/vortigaunt
 	limb_id = SPECIES_VORTIGAUNT
@@ -660,17 +669,24 @@
 	unarmed_damage_high = 18
 	unarmed_effectiveness = 20
 	speed_modifier = 0.33
-	special_footstep_sounds = list('hl13/sound/movement/vort/vort_foot1.ogg', 'hl13/sound/movement/vort/vort_foot2.ogg', 'hl13/sound/movement/vort/vort_foot3.ogg', 'hl13/sound/movement/vort/vort_foot4.ogg' )
+	special_footstep_sounds = list('hl13/sound/movement/vort/vort_foot1.ogg', 'hl13/sound/movement/vort/vort_foot2.ogg', 'hl13/sound/movement/vort/vort_foot3.ogg', 'hl13/sound/movement/vort/vort_foot4.ogg')
+	should_draw_greyscale = FALSE
 
 ///stalker
 /obj/item/bodypart/head/stalker
 	limb_id = SPECIES_STALKER
+	icon_state = "stalker_head"
 	head_flags = NONE
 	teeth_count = 0
+	should_draw_greyscale = FALSE
+	is_dimorphic = FALSE
 
 /obj/item/bodypart/chest/stalker
 	limb_id = SPECIES_STALKER
+	icon_state = "stalker_chest"
 	bodypart_traits = list(TRAIT_NO_JUMPSUIT)
+	should_draw_greyscale = FALSE
+	is_dimorphic = FALSE
 
 /obj/item/bodypart/arm/left/stalker
 	limb_id = SPECIES_STALKER
@@ -678,12 +694,14 @@
 	unarmed_damage_high = 8
 	unarmed_effectiveness = 5
 	burn_modifier = 1.25
+	should_draw_greyscale = FALSE
 
 /obj/item/bodypart/arm/right/stalker
 	limb_id = SPECIES_STALKER
 	unarmed_damage_low = 4
 	unarmed_damage_high = 8
 	unarmed_effectiveness = 5
+	should_draw_greyscale = FALSE
 
 /obj/item/bodypart/leg/left/stalker
 	limb_id = SPECIES_STALKER
@@ -692,6 +710,7 @@
 	unarmed_effectiveness = 5
 	speed_modifier = 0.66
 	special_footstep_sounds = list('hl13/sound/movement/stalker/stalker_footstep1.ogg', 'hl13/sound/movement/stalker/stalker_footstep2.ogg', 'hl13/sound/movement/stalker/stalker_footstep3.ogg', 'hl13/sound/movement/stalker/stalker_footstep4.ogg' )
+	should_draw_greyscale = FALSE
 
 /obj/item/bodypart/leg/right/stalker
 	limb_id = SPECIES_STALKER
@@ -700,3 +719,4 @@
 	unarmed_effectiveness = 5
 	speed_modifier = 0.66
 	special_footstep_sounds = list('hl13/sound/movement/stalker/stalker_footstep1.ogg', 'hl13/sound/movement/stalker/stalker_footstep2.ogg', 'hl13/sound/movement/stalker/stalker_footstep3.ogg', 'hl13/sound/movement/stalker/stalker_footstep4.ogg' )
+	should_draw_greyscale = FALSE

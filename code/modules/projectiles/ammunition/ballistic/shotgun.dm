@@ -9,6 +9,7 @@
 	custom_materials = list(/datum/material/iron=SHEET_MATERIAL_AMOUNT*2)
 	projectile_type = /obj/projectile/bullet/shotgun_slug
 	newtonian_force = 1.25
+	firing_effect_type = /obj/effect/temp_visual/dir_setting/firing_effect/medium
 
 /obj/item/ammo_casing/shotgun/executioner
 	name = "executioner slug"

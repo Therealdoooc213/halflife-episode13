@@ -5,6 +5,7 @@
 	desc = "A .357 bullet casing."
 	caliber = CALIBER_357
 	projectile_type = /obj/projectile/bullet/a357
+	firing_effect_type = /obj/effect/temp_visual/dir_setting/firing_effect/medium
 
 /obj/item/ammo_casing/a357/spent
 	projectile_type = null

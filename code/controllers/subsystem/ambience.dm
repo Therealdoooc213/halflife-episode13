@@ -143,7 +143,7 @@ SUBSYSTEM_DEF(ambience)
 	if(!music || !dreamer)
 		return
 
-	var/sound/combat_music = sound(pick(music), repeat = TRUE, wait = 0, channel = CHANNEL_AMBIENCE, volume = 30)
+	var/sound/combat_music = sound(pick(music), repeat = TRUE, wait = 0, channel = CHANNEL_BOSS_MUSIC, volume = 30)
 	var/sound/sound_killer = sound()
 	sound_killer.channel = CHANNEL_AMBIENCE
 	SEND_SOUND(dreamer, sound_killer) //first clears the sound channel from ambient music
@@ -155,7 +155,7 @@ SUBSYSTEM_DEF(ambience)
 	if(!victim?.droning_sound)
 		return
 	var/sound/sound_killer = sound()
-	sound_killer.channel = CHANNEL_AMBIENCE
+	sound_killer.channel = CHANNEL_BOSS_MUSIC
 	SEND_SOUND(victim, sound_killer)
 	victim.droning_sound = null
 	victim.last_droning_sound = null

@@ -48,8 +48,34 @@
 	name = get_visible_name()
 
 	if(stat != DEAD)
+		if(IsSleeping())
+			if((locate(/obj/structure/bed) in loc)) //sleeping on a bed or something is far nicer than on the hard floor, and will FULLY rest you.
+				adjust_tiredness(-40) //sleep is 40 seconds, so 20 life ticks, so -800 tiredness, so full restore
+			else
+				adjust_tiredness(-10) //-200 tiredness on a standard 40 second sleep.
+		else
+			if(!HAS_TRAIT(src, TRAIT_NOSLEEP))
+				adjust_tiredness(1)
+				if(nutrition < NUTRITION_LEVEL_STARVING - 50) //starvation and dehydration both make you feel extra tired and weak.
+					adjust_tiredness(1)
+				if(hydration < HYDRATION_LEVEL_DEHYDRATED)
+					adjust_tiredness(1)
 		return TRUE
 
+/mob/living/carbon/proc/adjust_tiredness(amount)
+	tiredness += amount
+	if(tiredness > TIREDNESS_MAXIMUM_THRESHOLD)
+		tiredness = TIREDNESS_MAXIMUM_THRESHOLD
+	else if(tiredness > TIREDNESS_SLEEPY_THRESHOLD)
+		throw_alert("sleepy", /atom/movable/screen/alert/sleepy)
+		add_mood_event("sleepy", /datum/mood_event/sleepy)
+	else if(tiredness > TIREDNESS_TIRED_THRESHOLD)
+		add_mood_event("sleepy", /datum/mood_event/sleepy/small)
+	else if(tiredness < TIREDNESS_CLEAR_THRESHOLD)
+		clear_alert("sleepy")
+		clear_mood_event("sleepy")
+	else if(tiredness < 0)
+		tiredness = 0
 
 /mob/living/carbon/human/calculate_affecting_pressure(pressure)
 	var/chest_covered = !get_bodypart(BODY_ZONE_CHEST)

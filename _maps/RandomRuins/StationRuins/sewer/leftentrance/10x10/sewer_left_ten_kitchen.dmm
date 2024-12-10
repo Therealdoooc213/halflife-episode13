@@ -27,7 +27,7 @@
 /area/halflife/indoors/sewer)
 "p" = (
 /obj/structure/table/halflife/metal/alt,
-/obj/item/reagent_containers/glass/pot,
+/obj/item/reagent_containers/cup/soup_pot,
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors/sewer)
 "s" = (

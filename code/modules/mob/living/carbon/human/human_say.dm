@@ -33,9 +33,8 @@
 	if(HAS_TRAIT(src, TRAIT_UNKNOWN))
 		return ("Unknown")
 
-	if(istype(wear_mask, /obj/item/clothing/mask/chameleon))
-		var/obj/item/clothing/mask/chameleon/V = wear_mask
-		if(V.voice_change && wear_id)
+	if(wear_mask.voice_change == TRUE)
+		if(wear_id)
 			var/obj/item/card/id/idcard = wear_id.GetID()
 			if(istype(idcard))
 				return idcard.registered_name

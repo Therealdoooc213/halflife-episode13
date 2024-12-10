@@ -41,7 +41,6 @@
 	damage_type = BURN
 	armour_penetration = 20
 	hitsound = 'hl13/sound/weapons/attack_shoot.ogg'
-	speed = 0.4
 
 /datum/action/cooldown/spell/touch/vort_heal
 	name = "Mend"

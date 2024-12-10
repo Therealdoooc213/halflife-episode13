@@ -30,7 +30,7 @@
 	var/no_crab_state = "zombie_dead_nocrab"
 	var/crabless_possible = TRUE
 	var/headcrabspawn = /mob/living/simple_animal/hostile/halflife/headcrab
-	var/idle_sound_chance = 30
+	var/idle_sound_chance = 20
 	var/sound_vary = TRUE
 	var/fungalheal = FALSE
 	var/aggro_sound = 'hl13/sound/creatures/zombieaggro.ogg'
@@ -349,7 +349,7 @@
 	..()
 	if(stat)
 		return
-	if(prob(25))
+	if(prob(20))
 		var/chosen_sound = pick(idle_sounds)
 		playsound(src, chosen_sound, 50, soundvary)
 
@@ -463,8 +463,8 @@
 	visible_message(span_boldwarning("[src] prepares to charge!"))
 	addtimer(CALLBACK(src, PROC_REF(hunter_charge), dir_to_target, 0), 5)
 
-/mob/living/simple_animal/hostile/halflife/hunter/click_alt(atom/A)
-	hunter_begincharge(A)
+/mob/living/simple_animal/hostile/halflife/hunter/AltClickOn(atom/target)
+	hunter_begincharge(target)
 
 /mob/living/simple_animal/hostile/halflife/hunter/Login()
 	..()

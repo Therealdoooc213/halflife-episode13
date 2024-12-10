@@ -337,6 +337,21 @@ or shoot a gun to move around via Newton's 3rd Law of Motion."
 	context[SCREENTIP_CONTEXT_SHIFT_LMB] = "Examine"
 	return CONTEXTUAL_SCREENTIP_SET
 
+/atom/movable/screen/alert/thirsty
+	name = "Thirsty"
+	desc = "Something to drink would be nice."
+	icon_state = "thirsty"
+
+/atom/movable/screen/alert/dehydrated
+	name = "Dehydrated"
+	desc = "You're severely dehydrated. Your body is sluggish and hard to move."
+	icon_state = "dehydrated"
+
+/atom/movable/screen/alert/sleepy
+	name = "Sleepy"
+	desc = "You're very tired. Find somewhere comfortable to lay, and fall asleep. (You can use the Sleep Verb in the IC tab at the top right of your screen)"
+	icon_state = "sleepy"
+
 /**
  * Handles assigning most of the variables for the alert that pops up when an item is offered
  *

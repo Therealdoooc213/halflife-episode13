@@ -2,7 +2,6 @@
 	title = JOB_PRISONER
 	description = "Keep yourself occupied in permabrig."
 	department_head = list("The Security Team")
-	faction = FACTION_STATION
 	total_positions = 0
 	spawn_positions = 2
 	supervisors = "the security team"
@@ -23,7 +22,6 @@
 
 	family_heirlooms = list(/obj/item/pen/blue)
 	rpg_title = "Defeated Miniboss"
-	job_flags = STATION_JOB_FLAGS | JOB_CANNOT_OPEN_SLOTS & ~JOB_REOPEN_ON_ROUNDSTART_LOSS
 
 /datum/job/prisoner/New()
 	. = ..()

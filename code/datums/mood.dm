@@ -1,6 +1,7 @@
 #define MINOR_INSANITY_PEN 5
 #define MAJOR_INSANITY_PEN 10
 #define MOOD_CATEGORY_NUTRITION "nutrition"
+#define MOOD_CATEGORY_HYDRATION "hydration"
 #define MOOD_CATEGORY_AREA_BEAUTY "area_beauty"
 
 /**
@@ -145,6 +146,19 @@
 			add_mood_event(MOOD_CATEGORY_NUTRITION, /datum/mood_event/hungry)
 		if(0 to NUTRITION_LEVEL_STARVING)
 			add_mood_event(MOOD_CATEGORY_NUTRITION, /datum/mood_event/starving)
+	switch(mob_parent.hydration)
+		if(HYDRATION_LEVEL_FULL to INFINITY)
+			add_mood_event(MOOD_CATEGORY_HYDRATION, /datum/mood_event/too_wellhydrated)
+		if(HYDRATION_LEVEL_HYDRATED to HYDRATION_LEVEL_FULL)
+			add_mood_event(MOOD_CATEGORY_HYDRATION, /datum/mood_event/wellhydrated)
+		if( HYDRATION_LEVEL_SMALLTHIRST to HYDRATION_LEVEL_HYDRATED)
+			add_mood_event(MOOD_CATEGORY_HYDRATION, /datum/mood_event/hydrated)
+		if(HYDRATION_LEVEL_THIRSTY to HYDRATION_LEVEL_SMALLTHIRST)
+			clear_mood_event(MOOD_CATEGORY_HYDRATION)
+		if(HYDRATION_LEVEL_DEHYDRATED to HYDRATION_LEVEL_THIRSTY)
+			add_mood_event(MOOD_CATEGORY_HYDRATION, /datum/mood_event/thirsty)
+		if(0 to HYDRATION_LEVEL_DEHYDRATED)
+			add_mood_event(MOOD_CATEGORY_HYDRATION, /datum/mood_event/dehydrated)
 
 	return TRUE
 
@@ -262,7 +276,7 @@
 		return
 
 	mood_screen_object.cut_overlays()
-	mood_screen_object.color = initial(mood_screen_object.color)
+	//mood_screen_object.color = initial(mood_screen_object.color)
 
 	// lets see if we have an special icons to show instead of the normal mood levels
 	var/list/conflicting_moodies = list()
@@ -278,6 +292,7 @@
 			var/absmood = abs(the_event.mood_change)
 			highest_absolute_mood = absmood > highest_absolute_mood ? absmood : highest_absolute_mood
 
+/*
 	switch(sanity_level)
 		if (SANITY_LEVEL_GREAT)
 			mood_screen_object.color = "#2eeb9a"
@@ -291,6 +306,7 @@
 			mood_screen_object.color = "#f38943"
 		if (SANITY_LEVEL_INSANE)
 			mood_screen_object.color = "#f15d36"
+*/
 
 	if (!conflicting_moodies.len) // there's no special icons, use the normal icon states
 		mood_screen_object.icon_state = "mood[mood_level]"

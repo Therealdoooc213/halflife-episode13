@@ -17,3 +17,8 @@
 	desc = "A flechette."
 	caliber = CALIBER_10MM
 	projectile_type = /obj/projectile/bullet/flechette
+	firing_effect_type = /obj/effect/temp_visual/dir_setting/firing_effect/pulse
+
+/obj/item/ammo_casing/caseless/Initialize(mapload)
+	. = ..()
+	AddElement(/datum/element/caseless)

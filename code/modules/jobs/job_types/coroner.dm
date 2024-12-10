@@ -3,7 +3,6 @@
 	description = "Perform Autopsies whenever needed, \
 		Update medical records accordingly, apply formaldehyde."
 	department_head = list(JOB_CHIEF_MEDICAL_OFFICER)
-	faction = FACTION_STATION
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Head of Personnel and the Chief Medical Officer"
@@ -38,8 +37,6 @@
 	)
 
 	family_heirlooms = list(/obj/item/clothing/head/helmet/skull, /obj/item/table_clock, /obj/item/shovel, /obj/item/storage/fancy/pickles_jar)
-
-	job_flags = STATION_JOB_FLAGS
 
 	rpg_title = "Undertaker"
 

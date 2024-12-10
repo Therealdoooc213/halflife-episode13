@@ -17,12 +17,28 @@
 	var/use_radio_beeps_tts = FALSE
 	/// The unique sound effect of dying while wearing this
 	var/unique_death
+	/// Is our voice changer enabled or disabled?
+	var/voice_change = FALSE
+	var/modifies_speech = FALSE
 
 /obj/item/clothing/mask/attack_self(mob/user)
 	if((clothing_flags & VOICEBOX_TOGGLABLE))
 		clothing_flags ^= (VOICEBOX_DISABLED)
 		var/status = !(clothing_flags & VOICEBOX_DISABLED)
 		to_chat(user, span_notice("You turn the voice box in [src] [status ? "on" : "off"]."))
+
+/obj/item/clothing/mask/equipped(mob/M, slot)
+	. = ..()
+	if (slot == ITEM_SLOT_MASK && modifies_speech)
+		RegisterSignal(M, COMSIG_MOB_SAY, PROC_REF(handle_speech))
+	else
+		UnregisterSignal(M, COMSIG_MOB_SAY)
+
+/obj/item/clothing/mask/dropped(mob/M)
+	. = ..()
+	UnregisterSignal(M, COMSIG_MOB_SAY)
+
+/obj/item/clothing/mask/proc/handle_speech()
 
 /obj/item/clothing/mask/worn_overlays(mutable_appearance/standing, isinhands = FALSE)
 	. = ..()

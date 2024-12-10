@@ -35,6 +35,7 @@
 	caliber = CALIBER_9MM
 	projectile_type = /obj/projectile/bullet/c9mm
 	newtonian_force = 0.75
+	firing_effect_type = /obj/effect/temp_visual/dir_setting/firing_effect/light
 
 /obj/item/ammo_casing/c9mm/ap
 	name = "9mm armor-piercing bullet casing"

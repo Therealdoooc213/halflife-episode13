@@ -9,11 +9,11 @@
 ///Default paygrade for the Unassigned Job/Unpaid job assignments.
 #define PAYCHECK_ZERO 0
 ///Paygrade for Prisoners and Assistants.
-#define PAYCHECK_LOWER 25
+#define PAYCHECK_LOWER 3
 ///Paygrade for all regular crew not belonging to PAYGRADE_LOWER or PAYGRADE_COMMAND.
-#define PAYCHECK_CREW 50
+#define PAYCHECK_CREW 8
 ///Paygrade for Heads of Staff.
-#define PAYCHECK_COMMAND 100
+#define PAYCHECK_COMMAND 20
 
 
 
@@ -25,7 +25,7 @@
 #define MAX_GRANT_DPT 500
 
 //What should vending machines charge when you buy something in-department.
-#define DEPARTMENT_DISCOUNT 0.2
+#define DEPARTMENT_DISCOUNT 0.5
 
 #define ACCOUNT_CIV "CIV"
 #define ACCOUNT_CIV_NAME "Civil Budget"

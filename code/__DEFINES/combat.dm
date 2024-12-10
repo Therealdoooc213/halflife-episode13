@@ -160,13 +160,13 @@ DEFINE_BITFIELD(status_flags, list(
 #define DEFAULT_MESSAGE_RANGE 7
 
 //Shove knockdown lengths (deciseconds)
-#define SHOVE_KNOCKDOWN_SOLID 2 SECONDS
+#define SHOVE_KNOCKDOWN_SOLID 0.75 SECONDS
 #define SHOVE_KNOCKDOWN_HUMAN 2 SECONDS
-#define SHOVE_KNOCKDOWN_TABLE 2 SECONDS
+#define SHOVE_KNOCKDOWN_TABLE 1.5 SECONDS
 #define SHOVE_KNOCKDOWN_COLLATERAL 1
-#define SHOVE_CHAIN_PARALYZE 3 SECONDS
+#define SHOVE_CHAIN_PARALYZE 2.5 SECONDS
 //Staggered slowdown, an effect caused by shoving and a few other features, such as tackling
-#define STAGGERED_SLOWDOWN_LENGTH 3 SECONDS
+#define STAGGERED_SLOWDOWN_LENGTH 2 SECONDS
 #define STAGGERED_SLOWDOWN_STRENGTH 0.85 //multiplier
 //Shove disarming item list
 GLOBAL_LIST_INIT(shove_disarming_types, typecacheof(list(

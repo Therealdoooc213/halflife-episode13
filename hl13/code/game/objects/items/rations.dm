@@ -1,3 +1,6 @@
+/obj/item/storage/box/halflife/ration
+	icon = 'icons/obj/storage/storage.dmi'
+
 /obj/item/storage/box/halflife/Initialize(mapload)
 	. = ..()
 	atom_storage.max_slots = 4

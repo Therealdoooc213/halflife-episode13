@@ -193,6 +193,7 @@
 	AddComponent(/datum/component/hat_stabilizer, loose_hat = TRUE)
 
 /datum/armor/utility_radiation
+	melee = 50
 	bio = 60
 	fire = 30
 	acid = 30
@@ -214,7 +215,7 @@
 		/obj/item/geiger_counter,
 		/obj/item/tank/internals,
 		)
-	slowdown = 1.5
+	slowdown = 0.5
 	armor_type = /datum/armor/utility_radiation
 	strip_delay = 60
 	equip_delay_other = 60

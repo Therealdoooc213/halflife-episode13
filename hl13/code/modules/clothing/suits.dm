@@ -3,6 +3,7 @@
 	desc = "Kevlar weave protective vest. Provides a good level of protection to the chest."
 	icon_state = "civilprotection"
 	inhand_icon_state = "armoralt"
+	icon = 'hl13/icons/obj/clothing/suits.dmi'
 
 /obj/item/clothing/suit/armor/civilprotection/medical
 	name = "medical officer vest"
@@ -38,6 +39,7 @@
 	inhand_icon_state = "armoralt"
 	slowdown = 0.25
 	armor = list(MELEE = 40, BULLET = 40, LASER = 40, ENERGY = 30, BOMB = 40, BIO = 50, RAD = 30, FIRE = 50, ACID = 50, WOUND = 20)
+	icon = 'hl13/icons/obj/clothing/suits.dmi'
 
 /obj/item/clothing/suit/armor/overwatch/red
 	icon_state = "overwatch_red"
@@ -77,3 +79,4 @@
 	heat_protection = CHEST|GROIN|LEGS|ARMS
 	strip_delay = 80
 	clothing_flags = THICKMATERIAL
+	icon = 'hl13/icons/obj/clothing/suits.dmi'

@@ -8,6 +8,7 @@
 	sensor_mode = SENSOR_COORDS
 	random_sensor = FALSE
 	worn_icon = 'hl13/icons/mob/clothing/uniform.dmi'
+	icon = 'hl13/icons/obj/clothing/uniforms.dmi'
 
 	powered_suit = TRUE
 	suit_power = 50
@@ -153,6 +154,7 @@
 	sensor_mode = SENSOR_VITALS
 	random_sensor = FALSE
 	worn_icon = 'hl13/icons/mob/clothing/uniform.dmi'
+	icon = 'hl13/icons/obj/clothing/uniforms.dmi'
 
 /obj/item/clothing/under/citizen/refugee
 	name = "refugee clothes"
@@ -172,6 +174,7 @@
 	name = "administrator suit"
 	desc = "A well made, though aged, burgundy suit. Specially designed for the district administrator."
 	worn_icon = 'hl13/icons/mob/clothing/uniform.dmi'
+	icon = 'hl13/icons/obj/clothing/uniforms.dmi'
 	can_adjust = FALSE
 	has_sensor = LOCKED_SENSORS
 	sensor_mode = SENSOR_COORDS
@@ -181,7 +184,6 @@
 
 /obj/item/clothing/under/administrator/black
 	name = "administrator suit"
-	worn_icon = 'hl13/icons/mob/clothing/uniform.dmi'
 	desc = "A well made black suit, specially designed for the district administrator."
 	icon_state = "formal"
 	inhand_icon_state = "lawyer_black"

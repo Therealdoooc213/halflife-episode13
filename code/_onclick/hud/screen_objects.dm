@@ -970,6 +970,13 @@ INITIALIZE_IMMEDIATE(/atom/movable/screen/splash)
 			state = HUNGER_STATE_HUNGRY
 		if(0 to NUTRITION_LEVEL_STARVING)
 			state = HUNGER_STATE_STARVING
+	switch(hungry.hydration)
+		if(HYDRATION_LEVEL_HYDRATED to INFINITY)
+			hungry.clear_alert("thirsty")
+		if(HYDRATION_LEVEL_THIRSTY to HYDRATION_LEVEL_SMALLTHIRST)
+			hungry.throw_alert("thirsty", /atom/movable/screen/alert/thirsty)
+		if(HYDRATION_LEVEL_DEHYDRATED to HYDRATION_LEVEL_THIRSTY)
+			hungry.throw_alert("thirsty", /atom/movable/screen/alert/dehydrated)
 
 /atom/movable/screen/hunger/update_appearance(updates)
 	var/old_state = state

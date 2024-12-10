@@ -7,11 +7,19 @@
 	no_equip_flags = ITEM_SLOT_MASK | ITEM_SLOT_OCLOTHING | ITEM_SLOT_GLOVES | ITEM_SLOT_FEET | ITEM_SLOT_ICLOTHING | ITEM_SLOT_SUITSTORE | ITEM_SLOT_HEAD
 	inherent_traits = list(TRAIT_NOGUNS, TRAIT_RESISTCOLD, TRAIT_RESISTHIGHPRESSURE,TRAIT_RESISTLOWPRESSURE,
 							TRAIT_NOBREATH, TRAIT_RADIMMUNE, TRAIT_VIRUSIMMUNE,
-							TRAIT_NOCRITDAMAGE, TRAIT_GENELESS, TRAIT_NOSOFTCRIT, TRAIT_NOHARDCRIT, TRAIT_NOPAIN)
+							TRAIT_NOCRITDAMAGE, TRAIT_GENELESS, TRAIT_NOSOFTCRIT, TRAIT_NOHARDCRIT, TRAIT_NOPAIN, TRAIT_NO_UNDERWEAR)
 	mutanteyes = /obj/item/organ/eyes/robotic
 	species_language_holder = /datum/language_holder/stalker
 	var/info_text = "You are a <span class='danger'>Stalker</span>, a subservient mutant engineered by the combine. \
 			you have an unquestioning loyalty to your masters, and have lost many normal human functions."
+	bodypart_overrides = list(
+		BODY_ZONE_HEAD = /obj/item/bodypart/head/stalker,
+		BODY_ZONE_CHEST = /obj/item/bodypart/chest/stalker,
+		BODY_ZONE_L_ARM = /obj/item/bodypart/arm/left/stalker,
+		BODY_ZONE_R_ARM = /obj/item/bodypart/arm/right/stalker,
+		BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/stalker,
+		BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/stalker,
+	)
 
 /datum/species/stalker/on_species_gain(mob/living/carbon/C, datum/species/old_species)
 	. = ..()

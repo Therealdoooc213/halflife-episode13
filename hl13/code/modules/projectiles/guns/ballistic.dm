@@ -9,7 +9,7 @@
 	accepted_magazine_type = /obj/item/ammo_box/magazine/ar2
 	force = 10
 	spread = 12
-	recoil = 0.8
+	recoil = 0.6
 	fire_delay = 2
 	burst_size = 1
 	mag_display = TRUE
@@ -42,7 +42,7 @@
 	fire_delay = 2
 	burst_size = 1
 	spread = 14
-	recoil = 1
+	recoil = 0.8
 	can_suppress = FALSE
 	mag_display = TRUE
 	weapon_weight = WEAPON_MEDIUM
@@ -155,7 +155,7 @@
 	icon = 'hl13/icons/obj/guns/projectile.dmi'
 	icon_state = "spas12"
 	fire_sound = "hl13/sound/weapons/shotgunfire.ogg"
-	rack_sound = "sound/weapons/shotgunpump.ogg"
+	rack_sound = "hl13/sound/weapons/shotgunpump.ogg"
 	load_sound = "hl13/sound/weapons/shotgunreload.ogg"
 	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/shot/com
 	recoil = 1.5

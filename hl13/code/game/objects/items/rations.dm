@@ -76,6 +76,7 @@
 /obj/item/food/rationpack
 	name = "nutriment bar"
 	desc = "A 'water' flavored ration nutriment bar. Tastes gross, but at least you won't be hungry"
+	icon = 'hl13/icons/obj/food.dmi'
 	icon_state = "rationpack"
 	bite_consumption = 1
 	tastes = list("gross water" = 3, "sadness" = 3)

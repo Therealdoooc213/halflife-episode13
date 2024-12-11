@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "ai" = (
-/obj/structure/flora/ausbushes/pointybush,
+/obj/structure/flora/bush/pointy/style_random,
 /turf/open/floor/plating/ground/dirt,
 /area/halflife/outdoors/forest)
 "az" = (
@@ -519,7 +519,7 @@
 /turf/closed/indestructible/syndicate,
 /area/halflife/outdoors)
 "Jl" = (
-/obj/structure/flora/ausbushes/pointybush,
+/obj/structure/flora/bush/pointy/style_random,
 /turf/open/floor/plating/ground/dirt/alt,
 /area/halflife/outdoors/forest)
 "JK" = (

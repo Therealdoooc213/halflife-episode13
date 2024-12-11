@@ -58,6 +58,8 @@
 	var/atom/movable/screen/using
 	var/atom/movable/screen/inventory/inv_box
 
+	owner.overlay_fullscreen("grain", /atom/movable/screen/fullscreen/grain)
+
 	using = new /atom/movable/screen/language_menu(null, src)
 	using.icon = ui_style
 	static_inventory += using

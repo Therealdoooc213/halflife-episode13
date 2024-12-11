@@ -23,11 +23,3 @@
 /datum/loadout_item/inhand/cane_white
 	name = "White Cane"
 	item_path = /obj/item/cane/white
-
-/datum/loadout_item/inhand/briefcase
-	name = "Briefcase (Leather)"
-	item_path = /obj/item/storage/briefcase
-
-/datum/loadout_item/inhand/briefcase_secure
-	name = "Briefcase (Secure)"
-	item_path = /obj/item/storage/briefcase/secure

@@ -474,3 +474,29 @@
 
 /datum/action/item_action/activate_injector
 	name = "Activate Injector"
+
+//CWU cleanup tank
+/obj/item/watertank/cleanup
+	name = "backpack cleaner tank"
+	desc = "A cleaner tank that goes on your back, equipped with a nozzle to spray down and remove xenian infestations."
+	inhand_icon_state = "waterbackpackatmos"
+	icon_state = "waterbackpackatmos"
+	custom_price = 100
+
+/obj/item/watertank/cleanup/Initialize(mapload)
+	. = ..()
+	reagents.add_reagent(/datum/reagent/toxin/cleanupsolution, 500)
+
+/obj/item/reagent_containers/spray/mister/cleanup
+	name = "cleanup spray nozzle"
+	desc = "A cleanup spray nozzle attached to a back mounted tank. Spray on Xenian growths to get rid of them."
+	icon_state = "misteratmos"
+	inhand_icon_state = "misteratmos"
+	lefthand_file = 'icons/mob/inhands/equipment/mister_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/equipment/mister_righthand.dmi'
+	amount_per_transfer_from_this = 5
+	possible_transfer_amounts = list()
+
+/obj/item/watertank/cleanup/make_noz()
+	return new /obj/item/reagent_containers/spray/mister/cleanup(src)
+

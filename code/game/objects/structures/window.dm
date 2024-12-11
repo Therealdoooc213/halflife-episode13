@@ -700,9 +700,9 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/window/reinforced/tinted/frosted/spaw
 /obj/structure/window/fulltile
 	name = "full tile window"
 	desc = "A full tile window."
-	icon = 'icons/obj/smooth_structures/window.dmi'
-	icon_state = "window-0"
-	base_icon_state = "window"
+	icon = 'icons/obj/smooth_structures/cmwindow.dmi'
+	icon_state = "cmwindow-0"
+	base_icon_state = "cmwindow"
 	max_integrity = 100
 	fulltile = TRUE
 	flags_1 = PREVENT_CLICK_UNDER_1

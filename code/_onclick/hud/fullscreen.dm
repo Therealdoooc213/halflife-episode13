@@ -133,6 +133,12 @@ INITIALIZE_IMMEDIATE(/atom/movable/screen/fullscreen)
 	layer = CURSE_LAYER
 	plane = FULLSCREEN_PLANE
 
+/atom/movable/screen/fullscreen/grain
+	icon_state = "grain"
+	alpha = 5
+	layer = GRAIN_LAYER
+	plane = FULLSCREEN_PLANE
+
 /atom/movable/screen/fullscreen/ivanov_display
 	icon_state = "ivanov"
 	alpha = 180

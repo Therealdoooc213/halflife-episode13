@@ -852,3 +852,18 @@
 	else
 		stuff_in_hand.forceMove(user.drop_location())
 		stuff_in_hand.loc.visible_message(span_warning("[stuff_in_hand] suddenly appears!"))
+
+/obj/item/melee/baton/security/heavy
+	name = "heavy stun baton"
+	desc = "A heavy version of the standard civil protection baton. Excels at beating people's skulls in. Pretty good for stunning too."
+	//icon_state = "heavybaton"
+	slot_flags = ITEM_SLOT_BELT
+	force = 20
+	wound_bonus = 10
+	throwforce = 10
+	w_class = WEIGHT_CLASS_BULKY
+	stamina_damage = 55
+	cooldown = 2 SECONDS
+
+/obj/item/melee/baton/security/heavy/loaded //this one starts with a cell pre-installed.
+	preload_cell_type = /obj/item/stock_parts/power_store/cell/high

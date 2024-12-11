@@ -1,7 +1,9 @@
 /turf/open/space/transit
 	name = "\proper hyperspace"
 	desc = "What is this, light-speed? We need to go to plaid speed!"  // spaceballs was a great movie
-	icon_state = "black"
+	icon_state = "dirtmoving"
+	base_icon_state = "dirtmoving"
+	icon = 'icons/turf/floors.dmi'
 	dir = SOUTH
 	baseturfs = /turf/open/space/transit
 	turf_flags = NOJAUNT //This line goes out to every wizard that ever managed to escape the den. I'm sorry.
@@ -20,6 +22,7 @@
 
 	return ..()
 
+/*
 /turf/open/space/transit/get_smooth_underlay_icon(mutable_appearance/underlay_appearance, turf/asking_turf, adjacency_dir)
 	. = ..()
 	underlay_appearance.icon_state = "speedspace_ns_[get_transit_state(asking_turf)]"
@@ -32,6 +35,7 @@
 /turf/open/space/transit/update_icon_state()
 	icon_state = "speedspace_ns_[get_transit_state(src)]"
 	return ..()
+*/
 
 /turf/open/space/transit/proc/initialize_drifting(atom/entered, atom/movable/enterer)
 	SIGNAL_HANDLER

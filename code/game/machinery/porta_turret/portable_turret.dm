@@ -169,7 +169,7 @@ DEFINE_BITFIELD(turret_flags, list(
 			begin_processing()
 
 /obj/machinery/porta_turret/update_icon_state()
-	if(!anchored)
+	if(!anchored && !alwaysmovable)
 		icon_state = "turretCover"
 		return ..()
 	if(machine_stat & BROKEN)
@@ -269,7 +269,7 @@ DEFINE_BITFIELD(turret_flags, list(
 
 	switch(action)
 		if("power")
-			if(anchored)
+			if(anchored || alwaysmovable)
 				toggle_on(!on)
 				return TRUE
 			else
@@ -310,7 +310,7 @@ DEFINE_BITFIELD(turret_flags, list(
 
 /obj/machinery/porta_turret/power_change()
 	. = ..()
-	if(!anchored || (machine_stat & BROKEN) || !powered())
+	if(!anchored && !alwaysmovable || (machine_stat & BROKEN) || !powered())
 		update_appearance()
 		remove_control()
 	check_should_process()
@@ -345,7 +345,7 @@ DEFINE_BITFIELD(turret_flags, list(
 				qdel(src)
 
 	else if((I.tool_behaviour == TOOL_WRENCH) && (!on))
-		if(raised)
+		if(raised && !alwaysmovable)
 			return
 
 		//This code handles moving the turret around. After all, it's a portable turret!

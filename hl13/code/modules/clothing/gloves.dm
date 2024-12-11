@@ -10,6 +10,7 @@
 	resistance_flags = NONE
 	strip_delay = 40
 	worn_icon = 'hl13/icons/mob/clothing/hands.dmi'
+	icon = 'hl13/icons/obj/clothing/gloves.dmi'
 
 /obj/item/clothing/gloves/combat/overwatch
 	name = "combat gloves"

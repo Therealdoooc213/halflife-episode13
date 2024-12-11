@@ -2302,6 +2302,17 @@
 	security_level = 1
 	damage_deflection = 30
 
+/obj/machinery/door/airlock/highsecurity/combine
+	name = "heavy combine door"
+	icon = 'icons/obj/doors/airlocks/highsec/combine.dmi'
+	assemblytype = /obj/structure/door_assembly/door_assembly_highsecurity/combine
+	doorOpen = 'hl13/sound/machines/combinedoor_open.ogg'
+	doorClose = 'hl13/sound/machines/combinedoor_close.ogg'
+	doorDeni = 'hl13/sound/machines/combine_button_locked.ogg'
+	boltUp = 'hl13/sound/machines/combine_button5.ogg'
+	boltDown = 'hl13/sound/machines/combine_button2.ogg'
+	noPower = 'hl13/sound/machines/combine_button7.ogg'
+
 // Shuttle Airlocks
 
 /obj/machinery/door/airlock/shuttle

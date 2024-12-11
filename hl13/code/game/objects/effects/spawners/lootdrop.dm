@@ -68,9 +68,9 @@
 
 /*
 	loot = list(
-				/obj/item/reagent_containers/food/drinks/soda_cans/breenwater = 2,
-				/obj/item/reagent_containers/food/drinks/soda_cans/breenwater/red,
-				/obj/item/reagent_containers/food/drinks/soda_cans/breenwater/yellow,
+				/obj/item/reagent_containers/cup/soda_cans/breenwater = 2,
+				/obj/item/reagent_containers/cup/soda_cans/breenwater/red,
+				/obj/item/reagent_containers/cup/soda_cans/breenwater/yellow,
 				/obj/item/reagent_containers/glass/beaker/waterbottle/empty = 2,
 				/obj/item/storage/box/halflife/ration,
 				/obj/item/storage/box/halflife/worstration,
@@ -192,7 +192,7 @@
 				/obj/item/machinepiece/multifunctiontool = 2,
 				/obj/item/grenade/syndieminibomb/bouncer,
 				/obj/item/knife/combat = 2,
-				/obj/item/melee/baton/loaded,
+				/obj/item/melee/baton/security/loaded,
 				/obj/item/stack/telecrystal/five,
 				/obj/item/clothing/suit/armor/kevlar = 2,
 				/obj/item/clothing/head/helmet/military

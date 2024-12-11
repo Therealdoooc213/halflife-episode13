@@ -69,24 +69,6 @@
 		equipped_item.above_suit = !!preference_list[item_path]?[INFO_LAYER]
 		. |= (ITEM_SLOT_OCLOTHING|ITEM_SLOT_ICLOTHING)
 
-/datum/loadout_item/accessory/maid_apron
-	name = "Maid Apron"
-	item_path = /obj/item/clothing/accessory/maidapron
-
-/datum/loadout_item/accessory/waistcoat
-	name = "Waistcoat"
-	item_path = /obj/item/clothing/accessory/waistcoat
-
 /datum/loadout_item/accessory/pocket_protector
 	name = "Pocket Protector"
 	item_path = /obj/item/clothing/accessory/pocketprotector
-
-/datum/loadout_item/accessory/full_pocket_protector
-	name = "Pocket Protector (Filled)"
-	item_path = /obj/item/clothing/accessory/pocketprotector/full
-	additional_displayed_text = list("Contains pens")
-
-/datum/loadout_item/accessory/pride
-	name = "Pride Pin"
-	item_path = /obj/item/clothing/accessory/pride
-	can_be_reskinned = TRUE

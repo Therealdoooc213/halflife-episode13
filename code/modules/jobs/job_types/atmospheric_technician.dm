@@ -1,7 +1,7 @@
 /datum/job/atmospheric_technician
 	title = JOB_ATMOSPHERIC_TECHNICIAN
-	description = "Ensure the air is breathable on the station, fill oxygen tanks, fight fires, purify the air."
-	department_head = list(JOB_CHIEF_ENGINEER)
+	description = "Remove xenian infestations from hotspots in the city."
+	department_head = list(JOB_QUARTERMASTER)
 	total_positions = 3
 	spawn_positions = 2
 	supervisors = SUPERVISOR_CE
@@ -37,24 +37,13 @@
 	rpg_title = "Aeromancer"
 
 /datum/outfit/job/atmos
-	name = "Atmospheric Technician"
+	name = "Infestation Control"
 	jobtype = /datum/job/atmospheric_technician
 
 	id_trim = /datum/id_trim/job/atmospheric_technician
-	uniform = /obj/item/clothing/under/rank/engineering/atmospheric_technician
-	suit = /obj/item/clothing/suit/atmos_overalls
-	belt = /obj/item/storage/belt/utility/atmostech
-	ears = /obj/item/radio/headset/headset_eng
-	l_pocket = /obj/item/modular_computer/pda/atmos
-	r_pocket = /obj/item/analyzer
-
-	backpack = /obj/item/storage/backpack/industrial
-	satchel = /obj/item/storage/backpack/satchel/eng
-	duffelbag = /obj/item/storage/backpack/duffelbag/engineering
-	messenger = /obj/item/storage/backpack/messenger/eng
-
-	box = /obj/item/storage/box/survival/engineer
-	pda_slot = ITEM_SLOT_LPOCKET
+	ears = /obj/item/radio/headset
+	uniform = /obj/item/clothing/under/citizen
+	r_pocket = /obj/item/hl2key/factory
 
 /datum/outfit/job/atmos/mod
 	name = "Atmospheric Technician (MODsuit)"

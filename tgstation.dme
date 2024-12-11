@@ -6500,6 +6500,7 @@
 #include "hl13\code\game\objects\effects\temporary_visuals\muzzle_flash.dm"
 #include "hl13\code\game\objects\items\emag.dm"
 #include "hl13\code\game\objects\items\explosives.dm"
+#include "hl13\code\game\objects\items\implants.dm"
 #include "hl13\code\game\objects\items\keys.dm"
 #include "hl13\code\game\objects\items\lock.dm"
 #include "hl13\code\game\objects\items\materials.dm"

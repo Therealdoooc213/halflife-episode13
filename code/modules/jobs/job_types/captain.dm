@@ -1,14 +1,14 @@
 /datum/job/captain
 	title = JOB_CAPTAIN
-	description = "Be responsible for the station, manage your Heads of Staff, \
-		keep the crew alive, be prepared to do anything and everything or die \
+	description = "Be responsible for the city, manage your underlings, \
+		keep the city functioning, be prepared to do anything and everything or die \
 		horribly trying."
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD|DEADMIN_POSITION_SECURITY
 	department_head = list("CentCom")
 	faction = FACTION_STATION
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "Nanotrasen officials and Space Law"
+	supervisors = "Overwatch"
 	req_admin_notify = 1
 	minimal_player_age = 14
 	exp_requirements = 180
@@ -50,73 +50,32 @@
 
 	voice_of_god_power = 1.4 //Command staff has authority
 
+	ration_bonus = 3
 
 /datum/job/captain/get_captaincy_announcement(mob/living/captain)
-	return "Captain [captain.real_name] on deck!"
+	return "District Administrator [captain.real_name] will be managing this district."
 
 /datum/job/captain/get_radio_information()
 	. = ..()
 	. += "\nYou have access to all radio channels, but they are not automatically tuned. Check your radio for more information."
 
 /datum/outfit/job/captain
-	name = "Captain"
+	name = "District Administrator"
 	jobtype = /datum/job/captain
 
 	id = /obj/item/card/id/advanced/gold
 	id_trim = /datum/id_trim/job/captain
-	uniform = /obj/item/clothing/under/rank/captain
-	suit = /obj/item/clothing/suit/armor/vest/capcarapace
-	backpack_contents = list(
-		/obj/item/melee/baton/telescopic = 1,
-		/obj/item/station_charter = 1,
-		)
-	belt = /obj/item/modular_computer/pda/heads/captain
 	ears = /obj/item/radio/headset/heads/captain/alt
-	glasses = /obj/item/clothing/glasses/sunglasses
-	gloves = /obj/item/clothing/gloves/captain
-	head = /obj/item/clothing/head/hats/caphat
+	uniform =  /obj/item/clothing/under/administrator
 	shoes = /obj/item/clothing/shoes/laceup
+	r_pocket = /obj/item/hl2key/master
 
+	belt = /obj/item/melee/baton/telescopic
 
-	backpack = /obj/item/storage/backpack/captain
-	satchel = /obj/item/storage/backpack/satchel/cap
-	duffelbag = /obj/item/storage/backpack/duffelbag/captain
-	messenger = /obj/item/storage/backpack/messenger/cap
-
-	accessory = /obj/item/clothing/accessory/medal/gold/captain
-	chameleon_extras = list(
-		/obj/item/gun/energy/e_gun,
-		/obj/item/stamp/head/captain,
-		)
 	implants = list(/obj/item/implant/mindshield)
 	skillchips = list(/obj/item/skillchip/disk_verifier)
 
 	var/special_charter
-
-/datum/outfit/job/captain/pre_equip(mob/living/carbon/human/H, visuals_only)
-	. = ..()
-	special_charter = CHECK_MAP_JOB_CHANGE(JOB_CAPTAIN, "special_charter")
-	if(!special_charter)
-		return
-
-	backpack_contents -= /obj/item/station_charter
-
-	if(!l_hand)
-		l_hand = /obj/item/station_charter/banner
-	else if(!r_hand)
-		r_hand = /obj/item/station_charter/banner
-
-/datum/outfit/job/captain/post_equip(mob/living/carbon/human/equipped, visuals_only)
-	. = ..()
-	if(visuals_only || !special_charter)
-		return
-
-	var/obj/item/station_charter/banner/celestial_charter = locate() in equipped.held_items
-	if(isnull(celestial_charter))
-		// failed to give out the unique charter, plop on the ground
-		celestial_charter = new(get_turf(equipped))
-
-	celestial_charter.name_type = special_charter
 
 /datum/outfit/job/captain/mod
 	name = "Captain (MODsuit)"

@@ -1,7 +1,6 @@
 /datum/job/doctor
 	title = JOB_MEDICAL_DOCTOR
-	description = "Save lives, run around the station looking for victims, \
-		scan everyone in sight"
+	description = "Operate the public hospital, negotiate funding with the labor lead, ask the labor lead to get you nurses and assistants."
 	department_head = list(JOB_CHIEF_MEDICAL_OFFICER)
 	faction = FACTION_STATION
 	total_positions = 6
@@ -38,27 +37,19 @@
 	rpg_title = "Cleric"
 	job_flags = STATION_JOB_FLAGS
 
+	ration_bonus = 1
 
 /datum/outfit/job/doctor
 	name = "Medical Doctor"
 	jobtype = /datum/job/doctor
 
 	id_trim = /datum/id_trim/job/medical_doctor
-	uniform = /obj/item/clothing/under/rank/medical/doctor
+	uniform = /obj/item/clothing/under/citizen
 	suit = /obj/item/clothing/suit/toggle/labcoat
-	suit_store = /obj/item/flashlight/pen
-	belt = /obj/item/modular_computer/pda/medical
-	ears = /obj/item/radio/headset/headset_med
+	accessory = /obj/item/clothing/accessory/armband/medblue
+	ears = /obj/item/radio/headset
 	shoes = /obj/item/clothing/shoes/sneakers/white
-	l_hand = /obj/item/storage/medkit/surgery
-
-	backpack = /obj/item/storage/backpack/medic
-	satchel = /obj/item/storage/backpack/satchel/med
-	duffelbag = /obj/item/storage/backpack/duffelbag/med
-	messenger = /obj/item/storage/backpack/messenger/med
-
-	box = /obj/item/storage/box/survival/medical
-	chameleon_extras = /obj/item/gun/syringe
+	gloves = /obj/item/clothing/gloves/latex/nitrile
 	skillchips = list(/obj/item/skillchip/entrails_reader)
 
 /datum/outfit/job/doctor/mod

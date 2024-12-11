@@ -1,4 +1,4 @@
-/obj/item/storage/box/halflife/ration
+/obj/item/storage/box/halflife
 	icon = 'icons/obj/storage/storage.dmi'
 
 /obj/item/storage/box/halflife/Initialize(mapload)

@@ -1,9 +1,9 @@
 /datum/job/cook
 	title = JOB_COOK
-	description = "Serve food, cook meat, keep the crew fed."
+	description = "Operate the city's restaurant, listen to the labor lead, and try not to get shut down."
 	department_head = list(JOB_HEAD_OF_PERSONNEL)
 	faction = FACTION_STATION
-	total_positions = 2
+	total_positions = 1
 	spawn_positions = 1
 	supervisors = SUPERVISOR_HOP
 	exp_granted_type = EXP_TYPE_CREW
@@ -67,17 +67,10 @@
 	jobtype = /datum/job/cook
 
 	id_trim = /datum/id_trim/job/cook/chef
-	uniform = /obj/item/clothing/under/costume/buttondown/slacks/service
-	suit = /obj/item/clothing/suit/toggle/chef
-	backpack_contents = list(
-		/obj/item/choice_beacon/ingredient = 1,
-		/obj/item/sharpener = 1,
-	)
-	belt = /obj/item/modular_computer/pda/cook
-	ears = /obj/item/radio/headset/headset_srv
+	suit = /obj/item/clothing/suit/apron/chef
 	head = /obj/item/clothing/head/utility/chefhat
-	mask = /obj/item/clothing/mask/fakemoustache/italian
-
+	uniform = /obj/item/clothing/under/citizen
+	r_pocket = /obj/item/hl2key/kitchen
 	skillchips = list(/obj/item/skillchip/job/chef)
 
 /datum/outfit/job/cook/pre_equip(mob/living/carbon/human/H, visuals_only = FALSE)

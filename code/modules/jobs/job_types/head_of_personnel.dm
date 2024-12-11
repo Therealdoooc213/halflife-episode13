@@ -1,7 +1,6 @@
 /datum/job/head_of_personnel
 	title = JOB_HEAD_OF_PERSONNEL
-	description = "Alter access on ID cards, manage the service department, \
-		protect Ian, run the station when the captain dies."
+	description = "Organize work tasks for the citizens, and order any necessary materials you see fit."
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD
 	department_head = list(JOB_CAPTAIN)
 	head_announce = list(RADIO_CHANNEL_SERVICE)
@@ -46,31 +45,28 @@
 
 	voice_of_god_power = 1.4 //Command staff has authority
 
+	ration_bonus = 3
 
 /datum/job/head_of_personnel/get_captaincy_announcement(mob/living/captain)
-	return "Due to staffing shortages, newly promoted Acting Captain [captain.real_name] on deck!"
+	return "Due to staffing shortages, newly promoted Acting District Administrator [captain.real_name] assuming command."
 
 
 /datum/outfit/job/hop
-	name = "Head of Personnel"
+	name = "Labor Lead"
 	jobtype = /datum/job/head_of_personnel
 
 	id = /obj/item/card/id/advanced/silver
 	id_trim = /datum/id_trim/job/head_of_personnel
-	uniform = /obj/item/clothing/under/rank/civilian/head_of_personnel
-	backpack_contents = list(
-		/obj/item/melee/baton/telescopic = 1,
-		)
-	belt = /obj/item/modular_computer/pda/heads/hop
 	ears = /obj/item/radio/headset/heads/hop
-	head = /obj/item/clothing/head/hats/hopcap
-	shoes = /obj/item/clothing/shoes/laceup
-	suit = /obj/item/clothing/suit/armor/vest/hop
+	uniform = /obj/item/clothing/under/citizen
+	head = /obj/item/clothing/head/utility/hardhat/white
+	gloves = /obj/item/clothing/gloves/color/yellow
+	belt = /obj/item/melee/baton/telescopic
 
-	chameleon_extras = list(
-		/obj/item/gun/energy/e_gun,
-		/obj/item/stamp/head/hop,
-		)
+	r_pocket = /obj/item/hl2key/townhall
+
+	implants = list(/obj/item/implant/mindshield)
+
 
 /datum/outfit/job/hop/pre_equip(mob/living/carbon/human/H)
 	..()

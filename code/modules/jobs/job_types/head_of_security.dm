@@ -1,7 +1,6 @@
 /datum/job/head_of_security
 	title = JOB_HEAD_OF_SECURITY
-	description = "Coordinate security personnel, ensure they are not corrupt, \
-		make sure every department is protected."
+	description = "Command the civil protection team, and act as Overwatch's ground agent in the city. Should a conflict of interest occur, you are expected to side with Overwatch."
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD|DEADMIN_POSITION_SECURITY
 	department_head = list(JOB_CAPTAIN)
 	head_announce = list(RADIO_CHANNEL_SECURITY)
@@ -41,43 +40,34 @@
 
 	voice_of_god_power = 1.4 //Command staff has authority
 
+	ration_bonus = 3
+
 
 /datum/job/head_of_security/get_captaincy_announcement(mob/living/captain)
-	return "Due to staffing shortages, newly promoted Acting Captain [captain.real_name] on deck!"
+	return "Due to staffing shortages, newly promoted Acting District Administrator [captain.real_name] assuming command."
 
 
 /datum/outfit/job/hos
-	name = "Head of Security"
+	name = "Divisional Lead"
 	jobtype = /datum/job/head_of_security
 
 	id = /obj/item/card/id/advanced/silver
 	id_trim = /datum/id_trim/job/head_of_security
-	uniform = /obj/item/clothing/under/rank/security/head_of_security
-	suit = /obj/item/clothing/suit/armor/hos/trenchcoat
-	suit_store = /obj/item/gun/energy/e_gun
-	backpack_contents = list(
-		/obj/item/evidencebag = 1,
-		)
-	belt = /obj/item/modular_computer/pda/heads/hos
-	ears = /obj/item/radio/headset/heads/hos/alt
-	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
-	gloves = /obj/item/clothing/gloves/color/black/security
-	head = /obj/item/clothing/head/hats/hos/beret
-	shoes = /obj/item/clothing/shoes/jackboots/sec
-	l_pocket = /obj/item/restraints/handcuffs
-	r_pocket = /obj/item/assembly/flash/handheld
+	ears = /obj/item/radio/headset/civilprotection/divisional
+	uniform = /obj/item/clothing/under/combine/civilprotection/divisionallead
+	gloves = /obj/item/clothing/gloves/color/civilprotection
+	suit = /obj/item/clothing/suit/armor/civilprotection/divisional
+	suit_store = /obj/item/gun/ballistic/revolver/coltpython
+	shoes = /obj/item/clothing/shoes/jackboots/civilprotection
+	glasses = /obj/item/clothing/glasses/hud/security
 
-	backpack = /obj/item/storage/backpack/security
-	satchel = /obj/item/storage/backpack/satchel/sec
-	duffelbag = /obj/item/storage/backpack/duffelbag/sec
-	messenger = /obj/item/storage/backpack/messenger/sec
+	mask = /obj/item/clothing/mask/gas/civilprotection/divisional
+	belt = /obj/item/storage/belt/civilprotection/divisionleadfull
 
-	box = /obj/item/storage/box/survival/security
-	chameleon_extras = list(
-		/obj/item/gun/energy/e_gun/hos,
-		/obj/item/stamp/head/hos,
-		)
-	implants = list(/obj/item/implant/mindshield)
+	r_pocket = /obj/item/hl2key/townhall
+
+	//skillchips = list(/obj/item/skillchip/aiming, /obj/item/skillchip/fitness) //The DvL comes pre-augmented
+	implants = list(/obj/item/implant/mindshield, /obj/item/implant/biosig_ert)
 
 /datum/outfit/job/hos/mod
 	name = "Head of Security (MODsuit)"

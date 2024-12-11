@@ -1,7 +1,6 @@
 /datum/job/shaft_miner
 	title = JOB_SHAFT_MINER
-	description = "Travel to strange lands. Mine ores. \
-		Meet strange creatures. Kill them for their gold."
+	description = "Travel underground to the mines. Bring ores back to the factory for processing, loot underground regions."
 	department_head = list(JOB_QUARTERMASTER)
 	faction = FACTION_STATION
 	total_positions = 3
@@ -28,35 +27,18 @@
 	rpg_title = "Adventurer"
 	job_flags = STATION_JOB_FLAGS
 
+	ration_bonus = 1
+
 
 /datum/outfit/job/miner
 	name = "Shaft Miner"
 	jobtype = /datum/job/shaft_miner
 
 	id_trim = /datum/id_trim/job/shaft_miner
-	uniform = /obj/item/clothing/under/rank/cargo/miner/lavaland
-	skillchips = list(/obj/item/skillchip/job/miner)
-	backpack_contents = list(
-		/obj/item/flashlight/seclite = 1,
-		/obj/item/knife/combat/survival = 1,
-		/obj/item/mining_voucher = 1,
-		/obj/item/stack/marker_beacon/ten = 1,
-		/obj/item/t_scanner/adv_mining_scanner/lesser = 1,
-	)
-	belt = /obj/item/modular_computer/pda/shaftminer
-	ears = /obj/item/radio/headset/headset_cargo/mining
-	gloves = /obj/item/clothing/gloves/color/black
-	shoes = /obj/item/clothing/shoes/workboots/mining
-	l_pocket = /obj/item/reagent_containers/hypospray/medipen/survival
-	r_pocket = /obj/item/storage/bag/ore //causes issues if spawned in backpack
 
-	backpack = /obj/item/storage/backpack/explorer
-	satchel = /obj/item/storage/backpack/satchel/explorer
-	duffelbag = /obj/item/storage/backpack/duffelbag/explorer
-	messenger = /obj/item/storage/backpack/messenger/explorer
-
-	box = /obj/item/storage/box/survival/mining
-	chameleon_extras = /obj/item/gun/energy/recharge/kinetic_accelerator
+	uniform = /obj/item/clothing/under/citizen
+	head = /obj/item/clothing/head/utility/hardhat
+	r_pocket = /obj/item/hl2key/factory
 
 /datum/outfit/job/miner/equipped
 	name = "Shaft Miner (Equipment)"

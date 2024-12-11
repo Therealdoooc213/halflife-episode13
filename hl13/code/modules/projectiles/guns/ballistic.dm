@@ -30,7 +30,7 @@
 	icon = 'hl13/icons/obj/guns/projectile.dmi'
 	icon_state = "m4a1"
 	inhand_icon_state = "lwt650"
-	fire_sound = "sound/weapons/gun/rifle/shot.ogg"
+	fire_sound = "sound/items/weapons/gun/rifle/shot.ogg"
 	vary_fire_sound = FALSE
 	load_sound = "sound/items/weapons/gun/rifle/rifleload.ogg"
 	load_empty_sound = "sound/items/weapons/gun/rifle/rifleload.ogg"

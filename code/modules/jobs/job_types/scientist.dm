@@ -1,6 +1,6 @@
 /datum/job/scientist
 	title = JOB_SCIENTIST
-	description = "Do experiments, perform research, feed the slimes, make bombs."
+	description = "Operate your minature science station under the supervision of the labor lead, requesting assistants if necessary."
 	department_head = list(JOB_RESEARCH_DIRECTOR)
 	faction = FACTION_STATION
 	total_positions = 5
@@ -36,22 +36,19 @@
 
 	job_tone = "boom"
 
+	ration_bonus = 1
 
 /datum/outfit/job/scientist
 	name = "Scientist"
 	jobtype = /datum/job/scientist
 
 	id_trim = /datum/id_trim/job/scientist
-	uniform = /obj/item/clothing/under/rank/rnd/scientist
-	suit = /obj/item/clothing/suit/toggle/labcoat/science
-	belt = /obj/item/modular_computer/pda/science
-	ears = /obj/item/radio/headset/headset_sci
+	uniform = /obj/item/clothing/under/citizen
+	suit = /obj/item/clothing/suit/toggle/labcoat
+	accessory = /obj/item/clothing/accessory/armband/science
+	ears = /obj/item/radio/headset
 	shoes = /obj/item/clothing/shoes/sneakers/white
-
-	backpack = /obj/item/storage/backpack/science
-	satchel = /obj/item/storage/backpack/satchel/science
-	duffelbag = /obj/item/storage/backpack/duffelbag/science
-	messenger = /obj/item/storage/backpack/messenger/science
+	gloves = /obj/item/clothing/gloves/latex
 
 /datum/outfit/job/scientist/pre_equip(mob/living/carbon/human/H)
 	..()

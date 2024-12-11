@@ -18,7 +18,7 @@
 /turf/open/floor/plating/ground/dirt/alt,
 /area/halflife/outdoors/forest)
 "by" = (
-/obj/structure/flora/ausbushes/lavendergrass,
+/obj/structure/flora/bush/lavendergrass/style_random,
 /turf/open/floor/plating/ground/dirt,
 /area/halflife/outdoors/forest)
 "bY" = (
@@ -47,7 +47,7 @@
 	},
 /area/halflife/indoors/sewer/tunnel)
 "dg" = (
-/obj/structure/flora/ausbushes/fullgrass,
+/obj/structure/flora/bush/fullgrass,
 /turf/open/floor/plating/ground/dirt/alt,
 /area/halflife/outdoors/forest)
 "do" = (
@@ -65,7 +65,7 @@
 	dir = 8;
 	pixel_y = -4
 	},
-/obj/structure/drain,
+/obj/structure/fluff/shower_drain,
 /turf/open/floor/plating/indoor/lino,
 /area/halflife/indoors/bunker)
 "dZ" = (
@@ -105,12 +105,12 @@
 /turf/open/floor/plating/indoor/concrete/small,
 /area/halflife/indoors/bunker)
 "hI" = (
-/mob/living/simple_animal/mouse,
+/mob/living/basic/mouse/gray,
 /turf/open/floor/plating/ground/dirt,
 /area/halflife/indoors/sewer/outlandscave)
 "hU" = (
 /obj/structure/table/halflife/metal/grate,
-/obj/effect/spawner/lootdrop/halflife/loot/ammo,
+/obj/effect/spawner/random/halflife/loot/ammo,
 /turf/open/floor/plating/indoor/metal,
 /area/halflife/outdoors/forest)
 "im" = (
@@ -164,7 +164,7 @@
 /area/halflife/indoors/bunker)
 "jT" = (
 /obj/structure/table/halflife/no_smooth/cable_reel,
-/obj/effect/spawner/lootdrop/halflife/loot,
+/obj/effect/spawner/random/halflife/loot,
 /turf/open/floor/plating/indoor/metal/grate/border/warning,
 /area/halflife/indoors/bunker)
 "jY" = (
@@ -273,7 +273,7 @@
 /turf/open/floor/plating/ground/brickroad,
 /area/halflife/indoors/sewer/tunnel)
 "sD" = (
-/obj/structure/flora/ausbushes/sparsegrass,
+/obj/structure/flora/bush/sparsegrass/style_random,
 /turf/open/floor/plating/ground/dirt/alt,
 /area/halflife/outdoors/forest)
 "sL" = (
@@ -311,7 +311,6 @@
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors/bunker)
 "tN" = (
-/obj/item/reagent_containers/food/snacks/bait/worm,
 /turf/open/floor/plating/ground/dirt,
 /area/halflife/outdoors/forest)
 "vl" = (
@@ -325,7 +324,7 @@
 /turf/open/floor/plating/indoor/woodc,
 /area/halflife/outdoors)
 "wn" = (
-/obj/structure/flora/ausbushes/grassybush,
+/obj/structure/flora/bush/grassy/style_random,
 /turf/open/floor/plating/ground/dirt,
 /area/halflife/outdoors/forest)
 "wv" = (
@@ -371,7 +370,7 @@
 /turf/open/floor/plating/indoor/concrete/small,
 /area/halflife/indoors/bunker)
 "xZ" = (
-/obj/structure/flora/ausbushes/palebush,
+/obj/structure/flora/bush/pale/style_random,
 /turf/open/floor/plating/ground/dirt,
 /area/halflife/outdoors/forest)
 "yS" = (
@@ -391,7 +390,7 @@
 /turf/open/floor/plating/ground/dirt,
 /area/halflife/outdoors/forest)
 "BL" = (
-/obj/structure/flora/ausbushes/lavendergrass,
+/obj/structure/flora/bush/lavendergrass/style_random,
 /turf/open/floor/plating/ground/dirt/alt,
 /area/halflife/outdoors/forest)
 "BN" = (
@@ -406,7 +405,7 @@
 /obj/structure/table/halflife/no_smooth/large/metal/desk{
 	dir = 8
 	},
-/obj/effect/spawner/lootdrop/halflife/loot,
+/obj/effect/spawner/random/halflife/loot,
 /turf/open/floor/plating/indoor/concrete/small,
 /area/halflife/indoors/bunker)
 "Df" = (
@@ -441,11 +440,11 @@
 /turf/open/floor/plating/indoor/concrete/small,
 /area/halflife/indoors/bunker)
 "EQ" = (
-/obj/structure/flora/ausbushes/sparsegrass,
+/obj/structure/flora/bush/sparsegrass/style_random,
 /turf/open/floor/plating/ground/dirt,
 /area/halflife/outdoors/forest)
 "EU" = (
-/obj/effect/spawner/lootdrop/halflife/loot,
+/obj/effect/spawner/random/halflife/loot,
 /turf/open/floor/plating/ground/dirt,
 /area/halflife/outdoors/forest)
 "Fk" = (
@@ -455,7 +454,7 @@
 /turf/open/floor/plating/ground/sidewalk,
 /area/halflife/indoors/sewer/tunnel)
 "Fo" = (
-/obj/structure/flora/ausbushes/grassybush,
+/obj/structure/flora/bush/grassy/style_random,
 /turf/open/floor/plating/ground/dirt/alt,
 /area/halflife/outdoors/forest)
 "FC" = (
@@ -530,7 +529,7 @@
 /area/halflife/indoors/bunker)
 "KM" = (
 /obj/structure/table/halflife/metal/grate,
-/obj/effect/spawner/lootdrop/halflife/loot,
+/obj/effect/spawner/random/halflife/loot,
 /turf/open/floor/plating/indoor/metal,
 /area/halflife/outdoors/forest)
 "Lx" = (
@@ -540,7 +539,7 @@
 /turf/open/floor/plating/indoor/lino,
 /area/halflife/indoors/bunker)
 "LN" = (
-/obj/structure/flora/ausbushes/fullgrass,
+/obj/structure/flora/bush/fullgrass,
 /turf/open/floor/plating/ground/dirt,
 /area/halflife/outdoors/forest)
 "MP" = (
@@ -566,7 +565,7 @@
 /turf/open/floor/plating/indoor/metal/plate,
 /area/halflife/indoors/bunker)
 "NB" = (
-/obj/effect/spawner/lootdrop/halflife/loot/consumables,
+/obj/effect/spawner/random/halflife/loot/consumables,
 /turf/open/floor/plating/ground/dirt/alt,
 /area/halflife/outdoors/forest)
 "NE" = (
@@ -580,7 +579,7 @@
 /turf/open/floor/plating/indoor/concrete/small,
 /area/halflife/indoors/bunker)
 "NN" = (
-/obj/effect/spawner/lootdrop/halflife/loot/clothing,
+/obj/effect/spawner/random/halflife/loot/clothing,
 /obj/effect/decal/cleanable/blood/gibs/old,
 /turf/open/floor/plating/ground/dirt,
 /area/halflife/indoors/sewer/outlandscave)
@@ -589,7 +588,7 @@
 /turf/open/floor/plating/indoor/concrete/small,
 /area/halflife/indoors/bunker)
 "OA" = (
-/obj/effect/spawner/lootdrop/halflife/loot,
+/obj/effect/spawner/random/halflife/loot,
 /turf/open/floor/plating/ground/dirt,
 /area/halflife/indoors/sewer/outlandscave)
 "OH" = (
@@ -605,7 +604,7 @@
 /turf/open/floor/plating/indoor/concrete/small,
 /area/halflife/indoors/bunker)
 "Pi" = (
-/mob/living/simple_animal/mouse,
+/mob/living/basic/mouse/gray,
 /turf/open/floor/plating/ground/dirt,
 /area/halflife/outdoors/forest)
 "PI" = (
@@ -681,7 +680,7 @@
 /turf/open/floor/plating/indoor/metal/plate,
 /area/halflife/indoors/bunker)
 "Tm" = (
-/obj/effect/spawner/lootdrop/halflife/loot/ammo,
+/obj/effect/spawner/random/halflife/loot/ammo,
 /turf/open/floor/plating/ground/dirt,
 /area/halflife/indoors/sewer/outlandscave)
 "Tq" = (
@@ -690,13 +689,13 @@
 /area/halflife/outdoors/forest)
 "Ua" = (
 /obj/structure/table/halflife/metal/grate,
-/obj/item/stack/tape,
-/obj/item/stack/tape,
-/obj/item/stack/tape,
+/obj/item/stack/sticky_tape,
+/obj/item/stack/sticky_tape,
+/obj/item/stack/sticky_tape,
 /turf/open/floor/plating/indoor/metal/plate,
 /area/halflife/indoors/bunker)
 "Uf" = (
-/obj/structure/flora/ausbushes/genericbush,
+/obj/structure/flora/bush/generic/style_random,
 /turf/open/floor/plating/ground/dirt/alt,
 /area/halflife/outdoors/forest)
 "Ul" = (
@@ -719,7 +718,7 @@
 /turf/open/floor/plating/indoor/metal/plate,
 /area/halflife/indoors/bunker)
 "Vj" = (
-/obj/structure/flora/ausbushes/genericbush,
+/obj/structure/flora/bush/generic/style_random,
 /turf/open/floor/plating/ground/dirt,
 /area/halflife/outdoors/forest)
 "Vn" = (
@@ -749,7 +748,7 @@
 	},
 /area/halflife/outdoors/forest)
 "VV" = (
-/obj/effect/spawner/lootdrop/halflife/loot/alcohol,
+/obj/effect/spawner/random/halflife/loot/alcohol,
 /turf/open/floor/plating/ground/dirt/alt,
 /area/halflife/outdoors/forest)
 "Ws" = (
@@ -811,7 +810,7 @@
 /turf/open/halflife/water/shallow,
 /area/halflife/outdoors/forest)
 "Yo" = (
-/obj/effect/spawner/lootdrop/halflife/loot/rare,
+/obj/effect/spawner/random/halflife/loot/rare,
 /turf/open/floor/plating/ground/dirt,
 /area/halflife/indoors/sewer/outlandscave)
 "YG" = (

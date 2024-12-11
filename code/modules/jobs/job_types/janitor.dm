@@ -1,6 +1,6 @@
 /datum/job/janitor
 	title = JOB_JANITOR
-	description = "Clean up trash and blood. Replace broken lights. Slip people over."
+	description = "Obey the combine, clean up messes."
 	department_head = list(JOB_HEAD_OF_PERSONNEL)
 	faction = FACTION_STATION
 	total_positions = 2
@@ -12,7 +12,7 @@
 	outfit = /datum/outfit/job/janitor
 	plasmaman_outfit = /datum/outfit/plasmaman/janitor
 
-	paycheck = PAYCHECK_CREW
+	paycheck = PAYCHECK_ZERO
 	paycheck_department = ACCOUNT_SRV
 
 	display_order = JOB_DISPLAY_ORDER_JANITOR
@@ -32,25 +32,23 @@
 
 	job_tone = "slip"
 
+	ration_bonus = -1
+
 /datum/outfit/job/janitor
-	name = "Janitor"
+	name = "Vortigaunt Slave"
 	jobtype = /datum/job/janitor
 
 	id_trim = /datum/id_trim/job/janitor
-	uniform = /obj/item/clothing/under/rank/civilian/janitor
-	belt = /obj/item/modular_computer/pda/janitor
-	ears = /obj/item/radio/headset/headset_srv
-	skillchips = list(/obj/item/skillchip/job/janitor)
-	backpack_contents = list(/obj/item/access_key)
+	neck = /obj/item/clothing/neck/anti_magic_collar
+	r_pocket = /obj/item/radio/off/halflife/vort //so they can hear orders given to them
+	uniform = null
+	shoes = null
 
-/datum/outfit/job/janitor/pre_equip(mob/living/carbon/human/human_equipper, visuals_only)
-	. = ..()
-	if(check_holidays(GARBAGEDAY))
-		backpack_contents += list(/obj/item/gun/ballistic/revolver)
-		r_pocket = /obj/item/ammo_box/a357
+/datum/outfit/job/janitor/pre_equip(mob/living/carbon/human/H)
+	H.set_species(/datum/species/vortigaunt)
 
-/datum/outfit/job/janitor/get_types_to_preload()
+/*
+/datum/job/janitor/after_spawn(mob/living/carbon/human/H, mob/M)
 	. = ..()
-	if(check_holidays(GARBAGEDAY))
-		. += /obj/item/gun/ballistic/revolver
-		. += /obj/item/ammo_box/a357
+	H.remove_all_quirks()
+*/

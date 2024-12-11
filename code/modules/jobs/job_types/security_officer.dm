@@ -41,13 +41,11 @@
 	alternate_titles = list(
 		JOB_SECURITY_OFFICER_MEDICAL,
 		JOB_SECURITY_OFFICER_ENGINEERING,
-		JOB_SECURITY_OFFICER_SUPPLY,
-		JOB_SECURITY_OFFICER_SCIENCE,
 	)
 	job_flags = STATION_JOB_FLAGS
 
 
-GLOBAL_LIST_INIT(available_depts, list(SEC_DEPT_ENGINEERING, SEC_DEPT_MEDICAL, SEC_DEPT_SCIENCE, SEC_DEPT_SUPPLY))
+GLOBAL_LIST_INIT(available_depts, list(SEC_DEPT_ENGINEERING, SEC_DEPT_MEDICAL))
 
 /**
  * The department distribution of the security officers.
@@ -210,33 +208,18 @@ GLOBAL_LIST_EMPTY(security_officer_distribution)
 	jobtype = /datum/job/security_officer
 
 	id_trim = /datum/id_trim/job/security_officer
-	uniform = /obj/item/clothing/under/rank/security/officer
-	suit = /obj/item/clothing/suit/armor/vest/alt/sec
-	suit_store = /obj/item/gun/energy/disabler
-	backpack_contents = list(
-		/obj/item/evidencebag = 1,
-		)
-	belt = /obj/item/modular_computer/pda/security
-	ears = /obj/item/radio/headset/headset_sec/alt
-	gloves = /obj/item/clothing/gloves/color/black/security
-	head = /obj/item/clothing/head/helmet/sec
-	shoes = /obj/item/clothing/shoes/jackboots/sec
-	l_pocket = /obj/item/restraints/handcuffs
-	r_pocket = /obj/item/assembly/flash/handheld
+	ears = /obj/item/radio/headset/civilprotection
+	uniform = /obj/item/clothing/under/combine/civilprotection
+	gloves = /obj/item/clothing/gloves/color/civilprotection
+	suit = /obj/item/clothing/suit/armor/civilprotection
+	suit_store = /obj/item/gun/ballistic/automatic/pistol/usp
+	shoes = /obj/item/clothing/shoes/jackboots/civilprotection
+	glasses = /obj/item/clothing/glasses/hud/security
 
-	backpack = /obj/item/storage/backpack/security
-	satchel = /obj/item/storage/backpack/satchel/sec
-	duffelbag = /obj/item/storage/backpack/duffelbag/sec
-	messenger = /obj/item/storage/backpack/messenger/sec
+	mask = /obj/item/clothing/mask/gas/civilprotection
+	belt = /obj/item/storage/belt/civilprotection/full
 
-	box = /obj/item/storage/box/survival/security
-	chameleon_extras = list(
-		/obj/item/clothing/glasses/hud/security/sunglasses,
-		/obj/item/clothing/head/helmet,
-		/obj/item/gun/energy/disabler,
-		)
-		//The helmet is necessary because /obj/item/clothing/head/helmet/sec is overwritten in the chameleon list by the standard helmet, which has the same name and icon state
-	implants = list(/obj/item/implant/mindshield)
+	implants = list(/obj/item/implant/mindshield, /obj/item/implant/biosig_ert)
 
 /datum/outfit/job/security/mod
 	name = "Security Officer (MODsuit)"

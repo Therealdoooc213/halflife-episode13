@@ -1,6 +1,6 @@
 /datum/job/botanist
 	title = JOB_BOTANIST
-	description = "Grow plants for the cook, for medicine, and for recreation."
+	description = "Grow combine approved produce substitutes for citizen consumptions and combine biofuel use."
 	department_head = list(JOB_HEAD_OF_PERSONNEL)
 	faction = FACTION_STATION
 	total_positions = 3
@@ -44,14 +44,5 @@
 	jobtype = /datum/job/botanist
 
 	id_trim = /datum/id_trim/job/botanist
-	uniform = /obj/item/clothing/under/rank/civilian/hydroponics
-	suit = /obj/item/clothing/suit/apron
-	suit_store = /obj/item/plant_analyzer
-	belt = /obj/item/modular_computer/pda/botanist
-	ears = /obj/item/radio/headset/headset_srv
-	gloves = /obj/item/clothing/gloves/botanic_leather
-
-	backpack = /obj/item/storage/backpack/botany
-	satchel = /obj/item/storage/backpack/satchel/hyd
-	duffelbag = /obj/item/storage/backpack/duffelbag/hydroponics
-	messenger = /obj/item/storage/backpack/messenger/hyd
+	uniform = /obj/item/clothing/under/citizen
+	gloves  =/obj/item/clothing/gloves/botanic_leather

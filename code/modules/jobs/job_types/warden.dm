@@ -1,8 +1,6 @@
 /datum/job/warden
 	title = JOB_WARDEN
-	description = "Watch over the Brig and Prison Wing, release prisoners when \
-		their time is up, issue equipment to security, be a security officer when \
-		they all eventually die."
+	description = "You are an officer tasked with monitoring prisoners and the armory first and foremost. Elsewise, you are the Divisonal Lead's second in command."
 	auto_deadmin_role_flags = DEADMIN_POSITION_SECURITY
 	department_head = list(JOB_HEAD_OF_SECURITY)
 	faction = FACTION_STATION
@@ -42,30 +40,22 @@
 	rpg_title = "Jailor"
 	job_flags = STATION_JOB_FLAGS | JOB_BOLD_SELECT_TEXT
 
+	ration_bonus = 2
+
 /datum/outfit/job/warden
-	name = "Warden"
+	name = "Overseer"
 	jobtype = /datum/job/warden
 
 	id_trim = /datum/id_trim/job/warden
-	uniform = /obj/item/clothing/under/rank/security/warden
-	suit = /obj/item/clothing/suit/armor/vest/warden/alt
-	suit_store = /obj/item/gun/energy/disabler
-	backpack_contents = list(
-		/obj/item/evidencebag = 1,
-		)
-	belt = /obj/item/modular_computer/pda/warden
-	ears = /obj/item/radio/headset/headset_sec/alt
-	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
-	gloves = /obj/item/clothing/gloves/color/black/security
-	head = /obj/item/clothing/head/hats/warden/red
-	shoes = /obj/item/clothing/shoes/jackboots/sec
-	l_pocket = /obj/item/restraints/handcuffs
-	r_pocket = /obj/item/assembly/flash/handheld
+	ears = /obj/item/radio/headset/civilprotection
+	uniform = /obj/item/clothing/under/combine/civilprotection
+	gloves = /obj/item/clothing/gloves/color/civilprotection
+	suit = /obj/item/clothing/suit/armor/civilprotection/trenchcoat/overseer
+	suit_store = /obj/item/gun/ballistic/automatic/pistol/usp
+	shoes = /obj/item/clothing/shoes/jackboots/civilprotection
+	glasses = /obj/item/clothing/glasses/hud/security
 
-	backpack = /obj/item/storage/backpack/security
-	satchel = /obj/item/storage/backpack/satchel/sec
-	duffelbag = /obj/item/storage/backpack/duffelbag/sec
-	messenger = /obj/item/storage/backpack/messenger/sec
+	mask = /obj/item/clothing/mask/gas/civilprotection/overseer
+	belt = /obj/item/storage/belt/civilprotection/full
 
-	box = /obj/item/storage/box/survival/security
-	implants = list(/obj/item/implant/mindshield)
+	implants = list(/obj/item/implant/mindshield, /obj/item/implant/biosig_ert)

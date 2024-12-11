@@ -1,7 +1,6 @@
 /datum/job/quartermaster
 	title = JOB_QUARTERMASTER
-	description = "Coordinate cargo technicians and shaft miners, assist with \
-		economical purchasing."
+	description = "Carry out the orders of the labor lead, keep the factory and mines running, request funding and workers."
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD
 	department_head = list(JOB_CAPTAIN)
 	head_announce = list(RADIO_CHANNEL_SUPPLY)
@@ -38,20 +37,14 @@
 	voice_of_god_power = 1.4 //Command staff has authority
 	human_authority = JOB_AUTHORITY_NON_HUMANS_ALLOWED
 
-/datum/outfit/job/quartermaster
-	name = "Quartermaster"
-	jobtype = /datum/job/quartermaster
-	backpack_contents = list(
-		/obj/item/melee/baton/telescopic = 1,
-	)
-	id_trim = /datum/id_trim/job/quartermaster
-	id = /obj/item/card/id/advanced/silver
-	uniform = /obj/item/clothing/under/rank/cargo/qm
-	belt = /obj/item/modular_computer/pda/heads/quartermaster
-	suit = /obj/item/clothing/suit/jacket/quartermaster
-	ears = /obj/item/radio/headset/heads/qm
-	glasses = /obj/item/clothing/glasses/sunglasses
-	shoes = /obj/item/clothing/shoes/laceup
-	l_hand = /obj/item/clipboard
+	ration_bonus = 1
 
-	chameleon_extras = /obj/item/stamp/head/qm
+/datum/outfit/job/quartermaster
+	name = "Foreman"
+	jobtype = /datum/job/quartermaster
+
+	id_trim = /datum/id_trim/job/quartermaster
+	ears = /obj/item/radio/headset
+	uniform = /obj/item/clothing/under/citizen
+	head = /obj/item/clothing/head/utility/hardhat/dblue
+	r_pocket = /obj/item/hl2key/factory

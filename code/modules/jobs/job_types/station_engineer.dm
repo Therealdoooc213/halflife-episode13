@@ -1,8 +1,7 @@
 /datum/job/station_engineer
 	title = JOB_STATION_ENGINEER
-	description = "Start the Supermatter, wire the solars, repair station hull \
-		and wiring damage."
-	department_head = list(JOB_CHIEF_ENGINEER)
+	description = "Maintain and construct new structures, electronics, and machines."
+	department_head = list(JOB_QUARTERMASTER)
 	faction = FACTION_STATION
 	total_positions = 5
 	spawn_positions = 5
@@ -39,31 +38,19 @@
 	rpg_title = "Crystallomancer"
 	job_flags = STATION_JOB_FLAGS
 
+	ration_bonus = 1
 
 /datum/outfit/job/engineer
 	name = "Station Engineer"
 	jobtype = /datum/job/station_engineer
 
 	id_trim = /datum/id_trim/job/station_engineer
-	uniform = /obj/item/clothing/under/rank/engineering/engineer
-	belt = /obj/item/storage/belt/utility/full/engi
-	ears = /obj/item/radio/headset/headset_eng
-	head = /obj/item/clothing/head/utility/hardhat/welding/up
-	shoes = /obj/item/clothing/shoes/workboots
-	l_pocket = /obj/item/modular_computer/pda/engineering
-	r_pocket = /obj/item/t_scanner
-
-	backpack = /obj/item/storage/backpack/industrial
-	satchel = /obj/item/storage/backpack/satchel/eng
-	duffelbag = /obj/item/storage/backpack/duffelbag/engineering
-	messenger = /obj/item/storage/backpack/messenger/eng
-
-	backpack_contents = list(
-		/obj/item/construction/rcd/loaded,
-	)
-
-	box = /obj/item/storage/box/survival/engineer
-	pda_slot = ITEM_SLOT_LPOCKET
+	ears = /obj/item/radio/headset
+	uniform = /obj/item/clothing/under/citizen
+	suit = /obj/item/clothing/suit/utility/radiation/engineer
+	mask = /obj/item/clothing/mask/gas/cwuengi
+	gloves = /obj/item/clothing/gloves/color/yellow
+	r_pocket = /obj/item/hl2key/factory
 	skillchips = list(/obj/item/skillchip/job/engineer)
 
 /datum/outfit/job/engineer/gloved

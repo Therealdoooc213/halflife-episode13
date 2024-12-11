@@ -134,3 +134,28 @@
 	name = "overwatch elite soldier mask"
 	icon_state = "overwatch_white"
 	armor = list(MELEE = 20, BULLET = 45, LASER = 20, ENERGY = 20, BOMB = 25, BIO = 80, RAD = 80, FIRE = 80, ACID = 80, WOUND = 10)
+
+/obj/item/clothing/mask/gas/cwuengi
+	name = "gas mask"
+	desc = "An engineering grade gas mask for civil union workers."
+	icon = 'hl13/icons/obj/clothing/masks.dmi'
+	worn_icon = 'hl13/icons/mob/clothing/masks.dmi'
+	icon_state = "cwuengi"
+	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR
+
+/obj/item/clothing/mask/gas/hl2
+	desc = "An old, but still relatively good looking gas mask. Hopefully it's filters hold up still."
+	icon = 'hl13/icons/obj/clothing/masks.dmi'
+	worn_icon = 'hl13/icons/mob/clothing/masks.dmi'
+
+/obj/item/clothing/mask/gas/hl2/modern
+	icon_state = "moderngasmask"
+
+/obj/item/clothing/mask/gas/hl2/military
+	icon_state = "military_gasmask"
+
+/obj/item/clothing/mask/gas/hl2/russia
+	icon_state = "russiamask"
+
+/obj/item/clothing/mask/gas/hl2/swat
+	icon_state = "swatmask"

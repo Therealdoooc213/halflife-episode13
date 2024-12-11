@@ -1,6 +1,6 @@
 /datum/job/ai
 	title = JOB_AI
-	description = "Assist the crew, follow your laws, coordinate your cyborgs."
+	description = "Monitor cameras and biosignals, while utilizing remote access to operate machinery such as forcefields and turrets. In addition act as an extension of Overwatch, and carry out any orders they may give."
 	auto_deadmin_role_flags = DEADMIN_POSITION_SILICON
 	faction = FACTION_STATION
 	total_positions = 1
@@ -76,7 +76,7 @@
 /datum/job/ai/announce_job(mob/living/joining_mob)
 	. = ..()
 	if(SSticker.HasRoundStarted())
-		minor_announce("[joining_mob] has been downloaded to an empty bluespace-networked AI core at [AREACOORD(joining_mob)].")
+		minor_announce("An artificial Dispatch unit has been assigned to the district's network.")
 
 
 /datum/job/ai/config_check()

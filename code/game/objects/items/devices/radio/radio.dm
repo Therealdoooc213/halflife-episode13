@@ -647,6 +647,10 @@
 	name = "old radio"
 	desc = "An old radio that can communicate over specified radio waves."
 
+/obj/item/radio/off/halflife/vort
+	name = "vortigaunt radio"
+	desc = "A standard issue old world radio assigned to vorts so that they can listen to orders given to them over radio waves."
+
 /obj/item/radio/off/Initialize(mapload)
 	. = ..()
 	set_listening(FALSE)

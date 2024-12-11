@@ -30,7 +30,7 @@
 				/obj/item/knife/kitchen,
 				/obj/item/lighter/greyscale = 2,
 				/obj/item/storage/box/matches,
-				/obj/item/stack/tape = 3,
+				/obj/item/stack/sticky_tape = 3,
 				/obj/item/camera,
 				/obj/item/stack/cable_coil/yellow = 2,
 				/obj/item/stack/sheet/cloth,

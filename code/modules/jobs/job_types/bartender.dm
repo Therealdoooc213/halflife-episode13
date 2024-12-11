@@ -1,6 +1,6 @@
 /datum/job/bartender
 	title = JOB_BARTENDER
-	description = "Serve booze, mix drinks, keep the crew drunk."
+	description = "Operate the city's bar, listen to the labor lead, try not to get shut down."
 	department_head = list(JOB_HEAD_OF_PERSONNEL)
 	faction = FACTION_STATION
 	total_positions = 1
@@ -48,16 +48,10 @@
 	jobtype = /datum/job/bartender
 
 	id_trim = /datum/id_trim/job/bartender
-	neck = /obj/item/clothing/neck/bowtie
-	uniform = /obj/item/clothing/under/costume/buttondown/slacks/service
-	suit = /obj/item/clothing/suit/armor/vest
-	backpack_contents = list(
-		/obj/item/storage/box/beanbag = 1,
-		)
-	belt = /obj/item/modular_computer/pda/bar
-	ears = /obj/item/radio/headset/headset_srv
 	glasses = /obj/item/clothing/glasses/sunglasses/reagent
-	shoes = /obj/item/clothing/shoes/laceup
+	uniform = /obj/item/clothing/under/citizen
+	r_pocket = /obj/item/hl2key/bar
+
 
 	skillchips = list(/obj/item/skillchip/drunken_brawler)
 

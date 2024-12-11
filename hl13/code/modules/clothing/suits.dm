@@ -90,3 +90,11 @@
 	allowed = list(/obj/item/flashlight, /obj/item/tank/internals/emergency_oxygen, /obj/item/geiger_counter)
 	slowdown = 0
 	armor = list(MELEE = 5, BULLET = 5, LASER = 0,ENERGY = 0, BOMB = 5, BIO = 60, RAD = 60, FIRE = 30, ACID = 30)
+
+//Siggraph boiler bio suit
+/obj/item/clothing/suit/bio_suit/boiler
+	icon_state = "bio_boiler"
+	slowdown = 0
+
+/obj/item/clothing/head/bio_hood/boiler
+	icon_state = "bio_boiler"

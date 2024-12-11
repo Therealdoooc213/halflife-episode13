@@ -166,3 +166,10 @@
 	desc = "A special can of Breen's private reserve water, for the best of the best. Flavored, and topped off to full."
 	icon_state = "breenwatergreen"
 	list_reagents = list(/datum/reagent/water = 30, /datum/reagent/consumable/tonic = 10, /datum/reagent/consumable/sugar = 10)
+
+/obj/item/reagent_containers/cup/glass/mouthwash
+	name = "Mouthwash Bottle"
+	desc = "A bottle of old mouthwash. There's enough sugar in the thing you wonder how it would ever clean your mouth, let alone with how old it is."
+	isGlass = FALSE
+	icon_state = "mouthwash"
+	list_reagents = list(/datum/reagent/consumable/sugar = 15, /datum/reagent/consumable/ethanol = 7, /datum/reagent/water = 28)

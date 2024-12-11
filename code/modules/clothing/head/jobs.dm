@@ -785,6 +785,10 @@
 	acid = 5
 	wound = 4
 
+/obj/item/clothing/head/beret/durathread/unitednations
+	name = "old blue beret"
+	desc = "An old blue beret, moderately armored and adorned with a heavily faded united nations symbol."
+
 /obj/item/clothing/head/beret/highlander
 	desc = "That was white fabric. <i>Was.</i>"
 	dog_fashion = null //THIS IS FOR SLAUGHTER, NOT PUPPIES

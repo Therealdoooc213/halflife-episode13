@@ -462,6 +462,8 @@
 	var/modified_delay = fire_delay
 	if(user && HAS_TRAIT(user, TRAIT_DOUBLE_TAP))
 		modified_delay = ROUND_UP(fire_delay * 0.5)
+	if(user && HAS_TRAIT(user, TRAIT_GOOD_AIM))
+		bonus_spread -= 5
 
 	if(burst_size > 1)
 		firing_burst = TRUE

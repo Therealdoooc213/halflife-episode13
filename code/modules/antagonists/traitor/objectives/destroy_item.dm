@@ -19,19 +19,7 @@
 	telecrystal_reward = 1
 
 	possible_items = list(
-		/datum/objective_item/steal/traitor/bartender_shotgun,
 		/datum/objective_item/steal/traitor/fireaxe,
-		/datum/objective_item/steal/traitor/nullrod,
-		/datum/objective_item/steal/traitor/big_crowbar,
-	)
-
-/datum/traitor_objective/destroy_item/very_risky
-	progression_minimum = 40 MINUTES
-	progression_reward = 15 MINUTES
-	telecrystal_reward = list(6, 9)
-
-	possible_items = list(
-		/datum/objective_item/steal/blackbox,
 	)
 
 /// Super early-game destroy objective intended to be items easily tided that the crew tends to value.
@@ -46,12 +34,8 @@
 	telecrystal_reward = list(0, 1)
 
 	possible_items = list(
-		/datum/objective_item/steal/traitor/rpd,
-		/datum/objective_item/steal/traitor/space_law,
 		/datum/objective_item/steal/traitor/granted_stamp,
 		/datum/objective_item/steal/traitor/denied_stamp,
-		/datum/objective_item/steal/traitor/lizard_plush,
-		/datum/objective_item/steal/traitor/moth_plush,
 		/datum/objective_item/steal/traitor/insuls,
 	)
 

@@ -81,11 +81,6 @@
 "V" = (
 /turf/open/floor/plating/indoor/woodc/mosaic,
 /area/halflife/indoors)
-"W" = (
-/obj/structure/table/halflife/no_smooth/dice/pristine,
-/obj/item/storage/pill_bottle/dice,
-/turf/open/floor/plating/indoor/carpet/violet,
-/area/halflife/indoors)
 "Y" = (
 /turf/open/floor/plating/indoor/carpet/violet,
 /area/halflife/indoors)
@@ -141,7 +136,7 @@ G
 (5,1,1) = {"
 G
 Y
-W
+c
 Y
 c
 Y

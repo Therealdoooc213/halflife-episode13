@@ -202,8 +202,7 @@
 	VAR_FINAL/datum/objective_item/desired_item
 	/// Typecache of objective items that should not be selected.
 	var/static/list/blacklisted_item_types = typecacheof(list(
-		/datum/objective_item/steal/functionalai,
-		/datum/objective_item/steal/nukedisc,
+		/datum/objective_item/steal/functionalai
 	))
 
 /datum/spy_bounty/objective_item/can_claim(mob/user)

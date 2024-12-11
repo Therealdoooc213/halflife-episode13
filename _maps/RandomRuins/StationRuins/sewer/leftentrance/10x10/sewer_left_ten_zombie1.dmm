@@ -10,7 +10,7 @@
 /turf/open/floor/plating/indoor/metal/plate,
 /area/halflife/indoors/sewer)
 "u" = (
-/obj/structure/table,
+/obj/structure/table/halflife/metal/heavy,
 /turf/open/floor/plating/indoor/metal/plate,
 /area/halflife/indoors/sewer)
 "y" = (
@@ -20,8 +20,8 @@
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors/sewer)
 "z" = (
-/obj/structure/table,
 /obj/effect/spawner/random/halflife/loot,
+/obj/structure/table/halflife/metal/heavy,
 /turf/open/floor/plating/indoor/metal/plate,
 /area/halflife/indoors/sewer)
 "A" = (
@@ -38,8 +38,8 @@
 /turf/open/floor/plating/indoor/metal/grate,
 /area/halflife/indoors/sewer)
 "J" = (
-/obj/structure/table,
 /obj/effect/spawner/random/halflife/loot/rare,
+/obj/structure/table/halflife/metal/heavy,
 /turf/open/floor/plating/indoor/metal/plate,
 /area/halflife/indoors/sewer)
 "M" = (

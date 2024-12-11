@@ -25,10 +25,6 @@
 /obj/machinery/light/small,
 /turf/open/floor/plating/indoor/concrete,
 /area/halflife/indoors)
-"t" = (
-/obj/machinery/paystand/register,
-/turf/open/floor/plating/indoor/concrete,
-/area/halflife/indoors)
 "w" = (
 /obj/structure/sign/poster/halflife/combine/four{
 	pixel_y = 32
@@ -162,7 +158,7 @@ d
 d
 d
 d
-t
+d
 d
 d
 e

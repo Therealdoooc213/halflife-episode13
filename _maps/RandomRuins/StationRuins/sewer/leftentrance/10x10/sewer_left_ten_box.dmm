@@ -3,7 +3,6 @@
 /turf/open/halflife/water/sewer/shallow,
 /area/halflife/indoors/sewer)
 "t" = (
-/obj/structure/mopbucket,
 /obj/item/mop,
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors/sewer)

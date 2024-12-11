@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "b" = (
-/obj/item/fishingrod,
+/obj/item/fishing_lure,
 /turf/open/floor/plating/indoor/concrete/small,
 /area/halflife/indoors/sewer)
 "i" = (
@@ -39,12 +39,12 @@
 /area/halflife/indoors/sewer)
 "M" = (
 /obj/structure/halflife/storage/large/shelf,
-/obj/item/clothing/head/fishing,
+/obj/item/fishing_hook,
 /turf/open/floor/plating/indoor/concrete/small,
 /area/halflife/indoors/sewer)
 "U" = (
 /obj/structure/halflife/storage/large/shelf,
-/obj/item/reagent_containers/food/snacks/bait/worm,
+/obj/item/fishing_rod,
 /turf/open/floor/plating/indoor/concrete/small,
 /area/halflife/indoors/sewer)
 "Z" = (
@@ -82,7 +82,7 @@ I
 K
 K
 i
-b
+K
 K
 H
 w
@@ -154,7 +154,7 @@ k
 K
 K
 i
-K
+b
 K
 H
 w

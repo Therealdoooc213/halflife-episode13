@@ -49,7 +49,7 @@
 /datum/security_level/green
 	name = "green"
 	announcement_color = "green"
-	sound = 'sound/announcer/notice/notice2.ogg' // Friendly beep
+	sound = 'hl13/sound/voice/securitylevel/inaction_conspiracy.ogg'
 	number_level = SEC_LEVEL_GREEN
 	status_display_icon_state = "greenalert"
 	fire_alarm_light_color = LIGHT_COLOR_BLUEGREEN
@@ -64,7 +64,7 @@
 /datum/security_level/blue
 	name = "blue"
 	announcement_color = "blue"
-	sound = 'sound/announcer/notice/notice1.ogg' // Angry alarm
+	sound = 'hl13/sound/voice/securitylevel/anticivil_evidence.ogg'
 	number_level = SEC_LEVEL_BLUE
 	status_display_icon_state = "bluealert"
 	fire_alarm_light_color = LIGHT_COLOR_ELECTRIC_CYAN
@@ -80,7 +80,7 @@
 /datum/security_level/red
 	name = "red"
 	announcement_color = "red"
-	sound = 'sound/announcer/notice/notice3.ogg' // More angry alarm
+	sound = 'hl13/sound/voice/securitylevel/judgement_waiver.ogg'
 	number_level = SEC_LEVEL_RED
 	status_display_icon_state = "redalert"
 	fire_alarm_light_color = LIGHT_COLOR_FLARE
@@ -96,7 +96,7 @@
 /datum/security_level/delta
 	name = "delta"
 	announcement_color = "purple"
-	sound = 'sound/announcer/alarm/airraid.ogg' // Air alarm to signify importance
+	sound = 'hl13/sound/voice/securitylevel/auto_judgement.ogg'
 	number_level = SEC_LEVEL_DELTA
 	status_display_icon_state = "deltaalert"
 	fire_alarm_light_color = LIGHT_COLOR_INTENSE_RED

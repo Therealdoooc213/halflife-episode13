@@ -28,10 +28,6 @@
 		ADD_TRAIT(subject, TRAIT_PACIFISM, ROUNDSTART_TRAIT)
 
 /datum/antagonist/highlander/forge_objectives()
-	var/datum/objective/steal/steal_objective = new
-	steal_objective.owner = owner
-	steal_objective.set_target(new /datum/objective_item/steal/nukedisc)
-	objectives += steal_objective
 	var/datum/objective/elimination/highlander/elimination_objective = new
 	elimination_objective.owner = owner
 	objectives += elimination_objective

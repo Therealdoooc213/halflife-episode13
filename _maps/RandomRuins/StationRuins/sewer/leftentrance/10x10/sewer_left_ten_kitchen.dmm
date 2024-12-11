@@ -44,7 +44,7 @@
 /area/halflife/indoors/sewer)
 "K" = (
 /obj/structure/table/halflife/metal/alt,
-/obj/item/reagent_containers/food/snacks/deadmouse,
+/obj/item/food/deadmouse,
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors/sewer)
 "N" = (
@@ -61,7 +61,7 @@
 /area/halflife/indoors/sewer)
 "V" = (
 /obj/structure/table/halflife/metal/alt,
-/obj/item/reagent_containers/food/snacks/xenbranch,
+/obj/item/food/xenbranch,
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors/sewer)
 "W" = (
@@ -160,7 +160,7 @@ U
 N
 s
 P
-K
+v
 W
 d
 P
@@ -172,8 +172,8 @@ N
 N
 s
 P
-v
 K
+v
 v
 P
 "}

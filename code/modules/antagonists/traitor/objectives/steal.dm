@@ -7,7 +7,6 @@
 		) = 1,
 		/datum/traitor_objective/steal_item/somewhat_risky = 1,
 		list(
-			/datum/traitor_objective/destroy_item/very_risky = 1,
 			/datum/traitor_objective/steal_item/very_risky = 1,
 		) = 1,
 		/datum/traitor_objective/steal_item/most_risky = 1
@@ -98,10 +97,6 @@ GLOBAL_DATUM_INIT(steal_item_handler, /datum/objective_item_handler, new())
 
 	possible_items = list(
 		/datum/objective_item/steal/traitor/cargo_budget,
-		/datum/objective_item/steal/traitor/clown_shoes,
-		/datum/objective_item/steal/traitor/lawyers_badge,
-		/datum/objective_item/steal/traitor/chef_moustache,
-		/datum/objective_item/steal/traitor/pka,
 	)
 
 /datum/traitor_objective/steal_item/somewhat_risky
@@ -111,7 +106,7 @@ GLOBAL_DATUM_INIT(steal_item_handler, /datum/objective_item_handler, new())
 	telecrystal_reward = 2
 
 	possible_items = list(
-		/datum/objective_item/steal/traitor/chief_engineer_belt
+		/datum/objective_item/steal/viscerator,
 	)
 
 /datum/traitor_objective/steal_item/very_risky
@@ -120,7 +115,7 @@ GLOBAL_DATUM_INIT(steal_item_handler, /datum/objective_item_handler, new())
 	telecrystal_reward = 3
 
 	possible_items = list(
-		/datum/objective_item/steal/traitor/det_revolver,
+		/datum/objective_item/steal/viscerator,
 	)
 
 /datum/traitor_objective/steal_item/most_risky
@@ -129,8 +124,7 @@ GLOBAL_DATUM_INIT(steal_item_handler, /datum/objective_item_handler, new())
 	telecrystal_reward = 5
 
 	possible_items = list(
-		/datum/objective_item/steal/traitor/captain_modsuit,
-		/datum/objective_item/steal/traitor/captain_spare,
+		/datum/objective_item/steal/townhall_key,
 	)
 
 /datum/traitor_objective/steal_item/most_risky/generate_objective(datum/mind/generating_for, list/possible_duplicates)

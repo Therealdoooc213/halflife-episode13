@@ -434,7 +434,7 @@ Used by the AI doomsday and the self-destruct nuke.
 	station_start = world.maxz + 1
 	INIT_ANNOUNCE("Loading [current_map.map_name]...")
 	LoadGroup(FailedZs, "Station", current_map.map_path, current_map.map_file, current_map.traits, ZTRAITS_STATION, height_autosetup = current_map.height_autosetup)
-	LoadGroup(FailedZs, "Outlands", "map_files/generic", "outlands.dmm")
+	LoadGroup(FailedZs, "outlands", "map_files/generic", "outlands.dmm")
 
 	if(SSdbcore.Connect())
 		var/datum/db_query/query_round_map_name = SSdbcore.NewQuery({"
@@ -442,8 +442,6 @@ Used by the AI doomsday and the self-destruct nuke.
 		"}, list("map_name" = current_map.map_name, "round_id" = GLOB.round_id))
 		query_round_map_name.Execute()
 		qdel(query_round_map_name)
-
-	LoadGroup(FailedZs, "Outlands", "map_files/generic", "outlands.dmm")
 
 #ifndef LOWMEMORYMODE
 

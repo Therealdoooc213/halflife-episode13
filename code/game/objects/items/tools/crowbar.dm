@@ -56,7 +56,7 @@
 /obj/item/crowbar/large
 	name = "large crowbar"
 	desc = "It's a big crowbar. It doesn't fit in your pockets, because it's big."
-	force = 12
+	force = 20
 	w_class = WEIGHT_CLASS_NORMAL
 	throw_speed = 3
 	throw_range = 3
@@ -72,7 +72,7 @@
 
 /obj/item/crowbar/hammer
 	name = "claw hammer"
-	desc = "It's a heavy hammer with a pry bar on the back of its head. Nails aren't common in space, but this tool can still be used as a weapon or a crowbar."
+	desc = "It's a heavy hammer with a pry bar on the back of its head."
 	force = 11
 	w_class = WEIGHT_CLASS_NORMAL
 	icon = 'icons/obj/weapons/hammer.dmi'

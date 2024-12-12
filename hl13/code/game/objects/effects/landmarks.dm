@@ -86,82 +86,22 @@ GLOBAL_LIST_EMPTY(chosen_station_templates)
 	name = "Clerk"
 	icon_state = "Clerk"
 
+/obj/modular_map_root/citynorth
+	config_file = "strings/modular_maps/sewercity.toml"
+	key = "citynorth";
+	name = "citynorth"
 
-/obj/effect/landmark/stationroom
-	var/list/template_names = list()
-	/// Whether or not we can choose templates that have already been chosen
-	var/unique = FALSE
+/obj/modular_map_root/citysouth
+	config_file = "strings/modular_maps/sewercity.toml"
+	key = "citysouth";
+	name = "citysouth"
 
-/obj/effect/landmark/stationroom/Initialize(mapload)
-	. = ..()
-	GLOB.stationroom_landmarks += src
+/obj/modular_map_root/sewerleft
+	config_file = "strings/modular_maps/sewercity.toml"
+	key = "sewerleft";
+	name = "sewerleft"
 
-/obj/effect/landmark/stationroom/Destroy()
-	GLOB.stationroom_landmarks -= src
-	return ..()
-
-/obj/effect/landmark/stationroom/proc/load(template_name)
-	var/turf/T = get_turf(src)
-	if(!T)
-		return FALSE
-	if(!template_name)
-		for(var/t in template_names)
-			if(!SSmapping.station_room_templates[t] && t != EMPTY_SPAWN)
-				stack_trace("Station room spawner placed at ([T.x], [T.y], [T.z]) has invalid ruin name of \"[t]\" in its list")
-				template_names -= t
-		template_name = choose()
-	if(!template_name)
-		stack_trace("Station room spawner [src] at ([T.x], [T.y], [T.z]) has a null template.")
-	if(!template_name || template_name == EMPTY_SPAWN)
-		GLOB.stationroom_landmarks -= src
-		qdel(src)
-		return FALSE
-	GLOB.chosen_station_templates += template_name
-	var/datum/map_template/template = SSmapping.station_room_templates[template_name]
-	if(!template)
-		return FALSE
-	testing("Ruin \"[template_name]\" placed at ([T.x], [T.y], [T.z])")
-	template.load(T, centered = FALSE)
-	template.loaded++
-	GLOB.stationroom_landmarks -= src
-	qdel(src)
-	return TRUE
-
-// Proc to allow you to add conditions for choosing templates, instead of just randomly picking from the template list.
-// Examples where this would be useful, would be choosing certain templates depending on conditions such as holidays,
-// Or co-dependent templates, such as having a template for the core and one for the satelite, and swapping AI and comms.git
-/obj/effect/landmark/stationroom/proc/choose()
-	var/list/current_templates = template_names
-	if(unique)
-		for(var/i in GLOB.chosen_station_templates)
-			template_names -= i
-		if(!template_names.len)
-			stack_trace("Station room spawner (type: [type]) has run out of ruins, unique will be ignored")
-			template_names = current_templates
-	var/chosen_template = pick_weight(template_names)
-	if(unique && chosen_template == EMPTY_SPAWN)
-		template_names -= EMPTY_SPAWN
-		if(!template_names.len)
-			stack_trace("Station room spawner (type: [type]) has run out of ruins from an EMPTY_SPAWN, unique will be ignored")
-			template_names = current_templates
-	return chosen_template
-
-/obj/effect/landmark/stationroom/sewer/
-	unique = TRUE
-
-/obj/effect/landmark/stationroom/sewer/leftentrance/tenxten
-	template_names = list("sewer left_ten_box", "sewer left_ten_zombie1", "sewer left_ten_zombine1", "sewer left_ten_medical", "sewer left_ten_locked", "sewer left_ten_mining", "sewer left_ten_forcefield", "sewer left_ten_radiation", "sewer left_ten_poisoncrab", "sewer left_ten_weaponcraft", "sewer left_ten_kitchen")
-
-/obj/effect/landmark/stationroom/sewer/rightentrance/tenxten
-	template_names = list("sewer right_ten_box", "sewer right_ten_flooded", "sewer right_ten_headcrabs", "sewer right_ten_headcrabs2", "sewer right_ten_infested1", "sewer right_ten_infested2", "sewer right_ten_doors", "sewer right_ten_factory", "sewer right_ten_armory", "sewer right_ten_fishing")
-
-/obj/effect/landmark/stationroom/city
-	unique = TRUE
-
-/obj/effect/landmark/stationroom/city/southentrance/tenxten
-	template_names = list("city south_ten_gambling", "city south_ten_lockedapartment", "city south_ten_oldapartment", "city south_ten_laundromat")
-
-/obj/effect/landmark/stationroom/city/northentrance/tenxten
-	template_names = list("city north_ten_niceapartment", "city north_ten_store")
-
-#undef EMPTY_SPAWN
+/obj/modular_map_root/sewerright
+	config_file = "strings/modular_maps/sewercity.toml"
+	key = "sewerright";
+	name = "sewerright"

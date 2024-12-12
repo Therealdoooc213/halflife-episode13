@@ -346,7 +346,7 @@
 /turf/open/floor/plating/indoor/carpet/blue,
 /area/halflife/indoors/distributioncenter)
 "bD" = (
-/obj/effect/landmark/stationroom/sewer/rightentrance/tenxten,
+/obj/modular_map_root/sewerright,
 /turf/template_noop,
 /area/halflife/indoors/sewer)
 "bE" = (
@@ -3580,7 +3580,9 @@
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors/productioncenter)
 "rr" = (
-/obj/machinery/recycler,
+/obj/machinery/recycler{
+	dir = 8
+	},
 /turf/open/floor/plating/indoor/metal/industrial,
 /area/halflife/indoors/productioncenter)
 "rs" = (
@@ -3685,7 +3687,7 @@
 /turf/open/floor/plating/ground/brickroad,
 /area/halflife/outdoors/alley)
 "rQ" = (
-/obj/machinery/oven,
+/obj/machinery/oven/range,
 /turf/open/floor/plating/indoor/showroom,
 /area/halflife/indoors/restaurant)
 "rR" = (
@@ -4032,6 +4034,10 @@
 "ty" = (
 /turf/closed/wall/halflife/brick,
 /area/halflife/indoors/productioncenter)
+"tz" = (
+/obj/structure/weightmachine,
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors)
 "tB" = (
 /obj/machinery/door/unpowered/halflife/wood,
 /turf/open/floor/plating/indoor/woodc/wide,
@@ -5302,6 +5308,11 @@
 "zN" = (
 /turf/open/floor/plating/indoor/metal/industrial,
 /area/halflife/indoors/productioncenter)
+"zO" = (
+/obj/structure/table/halflife/wood,
+/obj/structure/secure_safe/caps_spare,
+/turf/open/floor/plating/indoor/woodc/fancy,
+/area/halflife/indoors/townhall)
 "zQ" = (
 /obj/machinery/light/small,
 /turf/open/floor/plating/indoor/tile/navy,
@@ -5899,6 +5910,10 @@
 /obj/item/documents/nanotrasen,
 /turf/open/floor/plating/indoor/woodc/fancy,
 /area/halflife/indoors/townhall)
+"CM" = (
+/obj/structure/weightmachine/weightlifter,
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors)
 "CN" = (
 /obj/machinery/power/terminal{
 	dir = 1
@@ -5946,8 +5961,8 @@
 /area/halflife/outdoors)
 "CZ" = (
 /obj/structure/table/halflife/no_smooth/metal,
-/obj/item/melee/baton/security/heavy,
-/obj/item/melee/baton/security/heavy,
+/obj/item/melee/baton/security/heavy/loaded,
+/obj/item/melee/baton/security/heavy/loaded,
 /turf/open/floor/plating/indoor/tile,
 /area/halflife/indoors/townhall)
 "Da" = (
@@ -6190,6 +6205,12 @@
 /obj/structure/halflife/trash/food/misc,
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors/sewer)
+"Eh" = (
+/obj/structure/window/fulltile{
+	max_integrity = 150
+	},
+/turf/open/floor/plating/indoor/woodc/mosaic,
+/area/halflife/indoors)
 "Ej" = (
 /obj/structure/closet/crate,
 /obj/item/storage/box/halflife/ration,
@@ -6208,7 +6229,7 @@
 /turf/open/floor/plating/indoor/metal/plate,
 /area/halflife/indoors/scienceunion)
 "Em" = (
-/obj/effect/landmark/stationroom/sewer/leftentrance/tenxten,
+/obj/modular_map_root/sewerleft,
 /turf/template_noop,
 /area/halflife/indoors/sewer)
 "En" = (
@@ -7589,8 +7610,7 @@
 "KT" = (
 /obj/structure/table/halflife/wood/bar,
 /obj/machinery/coffeemaker/impressa,
-/obj/item/food/grown/coffee,
-/obj/item/food/grown/coffee,
+/obj/item/storage/box/coffeepack,
 /turf/open/floor/plating/indoor/woodc/mosaic,
 /area/halflife/indoors/bar)
 "KU" = (
@@ -8538,7 +8558,7 @@
 /turf/open/floor/plating/indoor/tile,
 /area/halflife/indoors/scienceunion)
 "PD" = (
-/obj/effect/landmark/stationroom/city/southentrance/tenxten,
+/obj/modular_map_root/citysouth,
 /turf/open/floor/plating/indoor/woodc,
 /area/halflife/indoors)
 "PE" = (
@@ -8855,7 +8875,7 @@
 /turf/open/floor/plating/indoor/woodc/mosaic,
 /area/halflife/indoors/townhall)
 "Rk" = (
-/obj/effect/landmark/stationroom/sewer/leftentrance/tenxten,
+/obj/modular_map_root/sewerleft,
 /turf/template_noop,
 /area/halflife/indoors/sewer/cave)
 "Rl" = (
@@ -10260,6 +10280,10 @@
 	dir = 1
 	},
 /area/halflife/outdoors)
+"XW" = (
+/obj/structure/table/halflife/no_smooth/large/metal,
+/turf/open/floor/plating/indoor/woodc/mosaic,
+/area/halflife/indoors)
 "XY" = (
 /obj/structure/table/halflife/no_smooth/large/metal/desk,
 /obj/machinery/light/small{
@@ -10313,7 +10337,7 @@
 /turf/open/floor/plating/indoor/grooved,
 /area/halflife/indoors/hospital)
 "Yk" = (
-/obj/effect/landmark/stationroom/city/northentrance/tenxten,
+/obj/modular_map_root/citynorth,
 /turf/open/floor/plating/indoor/woodc,
 /area/halflife/indoors)
 "Yl" = (
@@ -30943,12 +30967,12 @@ Iw
 Iw
 Iw
 Iw
-Iw
-Iw
-Iw
-Iw
-Iw
-Iw
+rj
+rj
+rj
+no
+no
+zt
 fT
 IN
 Kw
@@ -31064,11 +31088,11 @@ Iw
 Iw
 Iw
 Iw
-Iw
-Iw
-Iw
-Iw
-Iw
+rj
+CM
+rj
+no
+no
 Iw
 fT
 IN
@@ -31185,11 +31209,11 @@ lj
 lj
 Iw
 Iw
-Iw
-Iw
-Iw
-Iw
-Iw
+Pb
+rj
+rj
+no
+no
 Iw
 fT
 IN
@@ -31306,12 +31330,12 @@ UT
 lj
 Iw
 Iw
-Iw
-Iw
-Iw
-Iw
-Iw
-Iw
+rj
+tz
+rj
+no
+no
+Eh
 fT
 IN
 Kw
@@ -31427,12 +31451,12 @@ RO
 lj
 Iw
 Iw
-Iw
-Iw
-Iw
-Iw
-Iw
-Iw
+rj
+rj
+rj
+no
+no
+Eh
 fT
 IN
 Kw
@@ -31548,11 +31572,11 @@ rB
 lj
 Iw
 Iw
-Iw
-Iw
-Iw
-Iw
-Iw
+rj
+CM
+rj
+no
+XW
 Iw
 fT
 IN
@@ -31669,11 +31693,11 @@ RO
 lj
 Iw
 Iw
-Iw
-Iw
-Iw
-Iw
-Iw
+rj
+rj
+rj
+NJ
+no
 Iw
 Iw
 do
@@ -39475,7 +39499,7 @@ Iw
 Iw
 Iw
 XQ
-Rc
+zO
 Na
 Xf
 Xf

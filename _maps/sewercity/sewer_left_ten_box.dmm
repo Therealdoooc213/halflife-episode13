@@ -1,0 +1,168 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"s" = (
+/turf/open/halflife/water/sewer/shallow,
+/area/halflife/indoors/sewer)
+"t" = (
+/obj/item/mop,
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors/sewer)
+"x" = (
+/obj/item/reagent_containers/cup/bucket,
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors/sewer)
+"y" = (
+/obj/structure/halflife/barrel/single/grey/one,
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors/sewer)
+"z" = (
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors/sewer)
+"B" = (
+/obj/structure/halflife/barrel/single/grey/three,
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors/sewer)
+"I" = (
+/obj/machinery/door/unpowered/halflife/metal{
+	dir = 8
+	},
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors/sewer)
+"O" = (
+/obj/structure/halflife/barrel/single/grey/two,
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors/sewer)
+"Q" = (
+/turf/open/floor/plating/indoor/metal/grate,
+/area/halflife/indoors/sewer)
+"S" = (
+/obj/modular_map_connector,
+/turf/closed/wall/halflife/metal,
+/area/halflife/indoors/sewer)
+"W" = (
+/obj/structure/halflife/barrel/quadruple/grey,
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors/sewer)
+"Z" = (
+/turf/closed/wall/halflife/metal,
+/area/halflife/indoors/sewer)
+
+(1,1,1) = {"
+Z
+Z
+Z
+Z
+I
+Z
+Z
+Z
+Z
+S
+"}
+(2,1,1) = {"
+Z
+t
+z
+z
+z
+z
+z
+W
+z
+Z
+"}
+(3,1,1) = {"
+Z
+z
+z
+z
+z
+z
+z
+z
+z
+Z
+"}
+(4,1,1) = {"
+Z
+z
+z
+Q
+Q
+Q
+Q
+z
+z
+Z
+"}
+(5,1,1) = {"
+Z
+B
+z
+Q
+s
+s
+Q
+z
+z
+Z
+"}
+(6,1,1) = {"
+Z
+z
+x
+Q
+s
+s
+Q
+z
+O
+Z
+"}
+(7,1,1) = {"
+Z
+z
+z
+Q
+Q
+Q
+Q
+z
+z
+Z
+"}
+(8,1,1) = {"
+Z
+z
+z
+z
+z
+z
+z
+z
+z
+Z
+"}
+(9,1,1) = {"
+Z
+z
+z
+z
+z
+z
+z
+z
+y
+Z
+"}
+(10,1,1) = {"
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+"}

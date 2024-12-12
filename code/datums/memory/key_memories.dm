@@ -47,7 +47,7 @@
 	return ..()
 
 /datum/memory/key/captains_spare_code/get_names()
-	return list("The code to the golden safe on the bridge, [safe_code].")
+	return list("The code to the golden safe in the town hall, [safe_code].")
 
 /datum/memory/key/captains_spare_code/get_starts()
 	return list(

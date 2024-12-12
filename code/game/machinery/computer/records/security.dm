@@ -8,8 +8,9 @@
 /obj/machinery/computer/records/security
 	name = "security records console"
 	desc = "Used to view and edit personnel's security records."
-	icon_screen = "security"
-	icon_keyboard = "security_key"
+	icon_state = "sr_console"
+	icon_screen = null
+	icon_keyboard = null
 	req_one_access = list(ACCESS_SECURITY, ACCESS_HOP)
 	circuit = /obj/item/circuitboard/computer/secure_data
 	light_color = COLOR_SOFT_RED

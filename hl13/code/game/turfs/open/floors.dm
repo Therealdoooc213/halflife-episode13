@@ -241,6 +241,7 @@
 
 	smoothing_groups = SMOOTH_GROUP_OPEN_FLOOR
 	canSmoothWith = SMOOTH_GROUP_OPEN_FLOOR
+	initial_gas_mix = OPENTURF_DEFAULT_ATMOS
 
 /turf/open/floor/plating/ground/Initialize()
 	. = ..()

@@ -18,7 +18,7 @@
 /turf/open/misc/dirt/station
 	name = "dirt flooring" //FOR THE LOVE OF GOD USE THIS INSTEAD OF DIRT FOR STATION MAPS
 	desc = "You heard this place was dirty, but this is just absurd."
-	baseturfs = /turf/open/floor/plating
+	baseturfs = /turf/open/misc/dirt/station
 	initial_gas_mix = OPENTURF_DEFAULT_ATMOS
 	planetary_atmos = FALSE
 

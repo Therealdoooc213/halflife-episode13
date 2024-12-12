@@ -5,6 +5,8 @@
 	ambience_index = AMBIENCE_HLOUTSIDE
 	flags_1 = CAN_BE_DIRTY_1
 	requires_power = FALSE
+	max_ambience_cooldown = 200 SECONDS
+	min_ambience_cooldown = 150 SECONDS
 
 /area/halflife/outdoors
 	name = "\improper Outdoors"

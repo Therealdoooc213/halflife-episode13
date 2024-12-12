@@ -9,8 +9,9 @@
 /obj/machinery/computer/shuttle
 	name = "shuttle console"
 	desc = "A shuttle control computer."
-	icon_screen = "shuttle"
-	icon_keyboard = "tech_key"
+	icon_state = "sr_console"
+	icon_screen = null
+	icon_keyboard = null
 	light_color = LIGHT_COLOR_CYAN
 	req_access = list()
 	interaction_flags_machine = INTERACT_MACHINE_ALLOW_SILICON

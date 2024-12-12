@@ -11,7 +11,7 @@ Assistant
 	spawn_positions = 5
 	supervisors = "absolutely everyone"
 	exp_granted_type = EXP_TYPE_CREW
-	outfit = /datum/outfit/job/assistant
+	outfit = /datum/outfit/job/assistant/consistent
 	plasmaman_outfit = /datum/outfit/plasmaman
 	paycheck = PAYCHECK_LOWER // Get a job. Job reassignment changes your paycheck now. Get over it.
 
@@ -86,13 +86,13 @@ Assistant
 		uniform = GLOB.colored_assistant.jumpskirts[index]
 
 /datum/outfit/job/assistant/consistent
-	name = "Assistant - Consistent"
+	name = "Citizen - Consistent"
 
 /datum/outfit/job/assistant/consistent/give_holiday_hat(mob/living/carbon/human/target)
 	return
 
 /datum/outfit/job/assistant/consistent/give_jumpsuit(mob/living/carbon/human/target)
-	uniform = /obj/item/clothing/under/color/grey
+	uniform = /obj/item/clothing/under/citizen
 
 /datum/outfit/job/assistant/consistent/post_equip(mob/living/carbon/human/H, visuals_only)
 	..()

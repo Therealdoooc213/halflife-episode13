@@ -278,6 +278,7 @@
 	var/mineralChance = 13
 	/// Does this mineral determine its random chance and mineral contents based on proximity to a vent? Overrides mineralChance and mineralAmt.
 	var/proximity_based = FALSE
+	initial_gas_mix = OPENTURF_DEFAULT_ATMOS
 
 /// Returns a list of the chances for minerals to spawn.
 /// Will only run once, and will then be cached.

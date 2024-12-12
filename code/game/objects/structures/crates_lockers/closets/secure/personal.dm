@@ -45,8 +45,3 @@
 	open_sound_volume = 25
 	close_sound_volume = 50
 	door_anim_time = 0 // no animation
-
-/obj/structure/closet/secure_closet/personal/cabinet/PopulateContents()
-	new /obj/item/storage/backpack/satchel/leather/withwallet( src )
-	new /obj/item/instrument/piano_synth(src)
-	new /obj/item/radio/headset( src )

@@ -127,6 +127,7 @@
 /obj/item/food/flavorbar
 	name = "flavor bar"
 	desc = "A slightly sweet, and very small bar of... something. It's not nearly as flavorful as the name may suggest, but it is far better than the nutriment dense bars."
+	icon = 'hl13/icons/obj/food.dmi'
 	icon_state = "flavorbar"
 	bite_consumption = 1
 	tastes = list("artifical flavor" = 3)

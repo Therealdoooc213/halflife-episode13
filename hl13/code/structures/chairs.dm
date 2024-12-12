@@ -353,7 +353,7 @@
 	buildstacktype = /obj/item/stack/sheet/iron
 	buildstackamount = 1
 
-/obj/structure/chair/sofa/bench
+/obj/structure/chair/sofa/hl13bench
 	name = "bench"
 	desc = "An old bench, for you to sit upon and think about where it all went so wrong."
 	icon = 'hl13/icons/obj/bench.dmi'

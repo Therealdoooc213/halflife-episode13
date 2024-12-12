@@ -25,9 +25,9 @@
 	/// Set to true when we announce something to ghosts, to prevent duplicate announcements
 	var/hasAnnounced = FALSE
 	/// Most common mob type to spawn, must be a child of /mob/living/basic/carp
-	var/carp_type = /mob/living/basic/carp
+	var/carp_type = /mob/living/simple_animal/hostile/zombie
 	/// Rarer mob type to spawn, must also be a child of /mob/living/basic/carp. If one of these is created, it will take priority to show ghosts.
-	var/boss_type = /mob/living/basic/carp/mega
+	var/boss_type = /mob/living/simple_animal/hostile/zombie/poison
 	/// What to describe detecting near the station
 	var/fluff_signal = "Unknown biological entities"
 	/// Associated lists of z level to a list of points to travel to, so that grouped fish move to the same places
@@ -41,7 +41,7 @@
 
 /datum/round_event/carp_migration/start()
 	// Stores the most recent fish we spawn
-	var/mob/living/basic/carp/fish
+	var/mob/living/simple_animal/hostile/zombie/fish
 
 	for(var/obj/effect/landmark/carpspawn/spawn_point in GLOB.landmarks_list)
 		if(prob(95))

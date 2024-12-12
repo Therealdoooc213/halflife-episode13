@@ -15,7 +15,7 @@
 	name = "Cursed Items"
 	weight = 3
 	typepath = /datum/round_event/wizard/cursed_items
-	max_occurrences = 3
+	max_occurrences = 0
 	earliest_start = 0 MINUTES
 	description = "Gives everyone a cursed item."
 

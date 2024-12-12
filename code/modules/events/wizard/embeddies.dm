@@ -2,7 +2,7 @@
 	name = "Make Everything Embeddable"
 	weight = 2
 	typepath = /datum/round_event/wizard/embedpocalypse
-	max_occurrences = 1
+	max_occurrences = 0
 	earliest_start = 0 MINUTES
 	description = "Everything becomes pointy enough to embed in people when thrown."
 	min_wizard_trigger_potency = 3
@@ -25,7 +25,7 @@
 	name = "Make Everything Sticky"
 	weight = 6
 	typepath = /datum/round_event/wizard/embedpocalypse/sticky
-	max_occurrences = 1
+	max_occurrences = 0
 	earliest_start = 0 MINUTES
 	description = "Everything becomes sticky enough to be glued to people when thrown."
 

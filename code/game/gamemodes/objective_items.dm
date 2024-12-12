@@ -220,7 +220,7 @@
 	return FALSE
 
 /datum/objective_item/steal/blueprints
-	name = "the station blueprints"
+	name = "the district blueprints"
 	targetitem = /obj/item/blueprints
 	excludefromjob = list(JOB_CHIEF_ENGINEER)
 	item_owner = list(JOB_CHIEF_ENGINEER)

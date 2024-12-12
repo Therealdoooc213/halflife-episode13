@@ -2,7 +2,7 @@
 	name = "False Alarm"
 	typepath = /datum/round_event/falsealarm
 	weight = 20
-	max_occurrences = 5
+	max_occurrences = 0
 	category = EVENT_CATEGORY_BUREAUCRATIC
 	description = "Fakes an event announcement."
 	admin_setup = list(/datum/event_admin_setup/listed_options/false_alarm)

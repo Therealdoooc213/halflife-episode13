@@ -2,7 +2,7 @@
 	name = "Magicarp"
 	weight = 1
 	typepath = /datum/round_event/carp_migration/wizard
-	max_occurrences = 1
+	max_occurrences = 0
 	earliest_start = 0 MINUTES
 	description = "Summons a school of carps with magic projectiles."
 	min_wizard_trigger_potency = 4

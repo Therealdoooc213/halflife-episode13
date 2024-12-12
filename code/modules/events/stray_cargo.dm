@@ -42,7 +42,7 @@
 /datum/round_event/stray_cargo/announce(fake)
 	if(fake)
 		impact_area = find_event_area()
-	priority_announce("Stray cargo pod detected on long-range scanners. Expected location of impact: [impact_area.name].", "Collision Alert")
+	priority_announce("Stray cargo pod detected on long-range scanners. Expected location of impact: [impact_area.name].", "Airwatch Alert")
 
 /**
 * Tries to find a valid area, throws an error if none are found
@@ -134,7 +134,7 @@
 	name = "Stray Syndicate Cargo Pod"
 	typepath = /datum/round_event/stray_cargo/syndicate
 	weight = 6
-	max_occurrences = 1
+	max_occurrences = 0
 	earliest_start = 30 MINUTES
 	description = "A pod containing syndicate gear lands on the station."
 	min_wizard_trigger_potency = 3

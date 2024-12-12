@@ -2,7 +2,7 @@
 	name = "Imposter Wizard"
 	weight = 1
 	typepath = /datum/round_event/wizard/imposter
-	max_occurrences = 1
+	max_occurrences = 0
 	earliest_start = 0 MINUTES
 	description = "Spawns a doppelganger of the wizard."
 	min_wizard_trigger_potency = 2

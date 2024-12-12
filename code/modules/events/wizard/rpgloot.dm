@@ -2,7 +2,7 @@
 	name = "RPG Loot"
 	weight = 3
 	typepath = /datum/round_event/wizard/rpgloot
-	max_occurrences = 1
+	max_occurrences = 0
 	earliest_start = 0 MINUTES
 	description = "Every item in the world will have fantastical names."
 	min_wizard_trigger_potency = 4

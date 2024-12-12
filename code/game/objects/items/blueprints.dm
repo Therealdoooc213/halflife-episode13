@@ -17,8 +17,8 @@
  * Used by the station, cyborgs, and golems.
  */
 /obj/item/blueprints
-	name = "station blueprints"
-	desc = "Blueprints of the station. There is a \"Classified\" stamp and several coffee stains on it."
+	name = "district blueprints"
+	desc = "Blueprints of the district. There is a \"Classified\" stamp and several coffee stains on it."
 	icon = 'icons/obj/scrolls.dmi'
 	icon_state = "blueprints"
 	inhand_icon_state = "blueprints"
@@ -28,7 +28,7 @@
 	interaction_flags_atom = parent_type::interaction_flags_atom | INTERACT_ATOM_ALLOW_USER_LOCATION | INTERACT_ATOM_IGNORE_MOBILITY
 
 	///A string of flavortext to be displayed at the top of the UI, related to the type of blueprints we are.
-	var/fluffnotice = "Property of Nanotrasen. For heads of staff only. Store in high-secure storage."
+	var/fluffnotice = "Property of City 13. For command staff only. Store in high-secure storage."
 	///Boolean on whether the blueprints are currently being used, which prevents double-using them to rename/create areas.
 	var/in_use = FALSE
 	///The type of area we'll create when we make a new area. This is a typepath.

@@ -18,7 +18,7 @@
 	name = "Summon Magic"
 	weight = 1
 	typepath = /datum/round_event/wizard/summonmagic
-	max_occurrences = 1
+	max_occurrences = 0
 	earliest_start = 0 MINUTES
 	description = "Summons a magic item for everyone. Might turn people into survivalists."
 

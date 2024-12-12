@@ -72,7 +72,7 @@
 	holidayID = CHRISTMAS
 	typepath = /datum/round_event/ghost_role/santa
 	weight = 20
-	max_occurrences = 1
+	max_occurrences = 0
 	earliest_start = 30 MINUTES
 	category = EVENT_CATEGORY_HOLIDAY
 	description = "Spawns santa, who shall roam the station, handing out gifts."

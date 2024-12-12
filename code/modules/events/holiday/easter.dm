@@ -3,7 +3,7 @@
 	holidayID = EASTER
 	typepath = /datum/round_event/easter
 	weight = -1
-	max_occurrences = 1
+	max_occurrences = 0
 	earliest_start = 0 MINUTES
 	category = EVENT_CATEGORY_HOLIDAY
 	description = "Hides surprise filled easter eggs in maintenance."
@@ -17,7 +17,7 @@
 	holidayID = EASTER
 	typepath = /datum/round_event/rabbitrelease
 	weight = 5
-	max_occurrences = 10
+	max_occurrences = 0
 	category = EVENT_CATEGORY_HOLIDAY
 	description = "Summons a wave of cute rabbits."
 

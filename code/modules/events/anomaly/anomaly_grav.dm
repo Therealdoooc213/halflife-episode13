@@ -2,7 +2,7 @@
 	name = "Anomaly: Gravitational"
 	typepath = /datum/round_event/anomaly/anomaly_grav
 
-	max_occurrences = 5
+	max_occurrences = 0
 	weight = 25
 	description = "This anomaly throws things around."
 	min_wizard_trigger_potency = 1

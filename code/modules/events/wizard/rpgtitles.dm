@@ -2,7 +2,7 @@
 	name = "RPG Titles"
 	weight = 3
 	typepath = /datum/round_event/wizard/rpgtitles
-	max_occurrences = 1
+	max_occurrences = 0
 	earliest_start = 0 MINUTES
 	description = "Everyone gains an RPG title hovering below them."
 	min_wizard_trigger_potency = 4

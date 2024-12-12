@@ -5,7 +5,7 @@
 	name = "Robeless Casting"
 	weight = 2
 	typepath = /datum/round_event/wizard/robelesscasting
-	max_occurrences = 1
+	max_occurrences = 0
 	earliest_start = 0 MINUTES
 	description = "Wizard no longer needs robes to cast spells."
 	min_wizard_trigger_potency = 4

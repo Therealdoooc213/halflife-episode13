@@ -1188,8 +1188,8 @@
 		..()
 
 /obj/item/card/id/advanced/centcom
-	name = "\improper CentCom ID"
-	desc = "An ID straight from Central Command."
+	name = "\improper Overwatch ID"
+	desc = "An ID straight from Overwatch."
 	icon_state = "card_centcom"
 	assigned_icon_state = "assigned_centcom"
 	registered_name = JOB_CENTCOM
@@ -1198,7 +1198,7 @@
 	wildcard_slots = WILDCARD_LIMIT_CENTCOM
 
 /obj/item/card/id/advanced/centcom/ert
-	name = "\improper CentCom ID"
+	name = "\improper Overwatch ID"
 	desc = "An ERT ID card."
 	registered_age = null
 	registered_name = "Emergency Response Intern"

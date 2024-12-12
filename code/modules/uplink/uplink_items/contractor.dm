@@ -1,3 +1,5 @@
+/*
+
 /datum/uplink_category/contractor
 	name = "Contractor"
 	weight = 10
@@ -88,3 +90,5 @@
 	item = /obj/item/antag_spawner/loadout/contractor
 	limited_stock = 1
 	cost = 2
+
+*/

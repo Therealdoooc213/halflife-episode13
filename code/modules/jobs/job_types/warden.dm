@@ -41,6 +41,19 @@
 	job_flags = STATION_JOB_FLAGS | JOB_BOLD_SELECT_TEXT
 
 	ration_bonus = 2
+	var/static/list/used_numbers = list()
+
+/datum/job/warden/after_spawn(mob/living/carbon/human/H, mob/M)
+	. = ..()
+	H.faction += "combine"
+	var/r = rand(100,900)
+	while (used_numbers.Find(r))
+		r = rand(100,900)
+	used_numbers += r
+	if(istype(H.wear_id, /obj/item/card/id))
+		var/obj/item/card/id/ID = H.wear_id
+		ID.registered_name = "OV-[used_numbers[used_numbers.len]]"
+		ID.update_label()
 
 /datum/outfit/job/warden
 	name = "Overseer"

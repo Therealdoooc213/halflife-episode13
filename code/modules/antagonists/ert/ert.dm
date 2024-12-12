@@ -301,3 +301,40 @@
 	role = "Emergency Medical Technician"
 	outfit = /datum/outfit/centcom/ert/medical_technician
 	plasmaman_outfit = /datum/outfit/plasmaman/medical_technician
+
+
+/datum/antagonist/ert/overwatch
+	outfit = /datum/outfit/ert/overwatch
+	role = "UNIT-"
+
+/datum/antagonist/ert/overwatch/mp7
+	outfit = /datum/outfit/ert/overwatch/mp7
+
+/datum/antagonist/ert/overwatch/spas12
+	outfit = /datum/outfit/ert/overwatch/spas12
+
+/datum/antagonist/ert/overwatch/ar2
+	outfit = /datum/outfit/ert/overwatch/ar2
+
+/*
+/datum/antagonist/ert/overwatch/sniper
+	outfit = /datum/outfit/ert/overwatch/sniper
+*/
+
+/datum/antagonist/ert/overwatch/ar2/elite
+	outfit = /datum/outfit/ert/overwatch/ar2/elite
+
+/datum/antagonist/ert/overwatch/New()
+	. = ..()
+	name_source = "OTA [rand(111,999)]"
+
+/datum/antagonist/ert/riotpolice
+	outfit = /datum/outfit/ert/riotpolice
+	role = "UNIT-"
+
+/datum/antagonist/ert/riotpolice/pistol
+	outfit = /datum/outfit/ert/riotpolice/pistol
+
+/datum/antagonist/ert/riotpolice/New()
+	. = ..()
+	name_source = "VICE [rand(111,999)]"

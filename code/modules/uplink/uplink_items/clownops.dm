@@ -1,6 +1,7 @@
 
 // Clown Operative Stuff
 // Maybe someday, someone will care to maintain this
+/*
 
 /datum/uplink_item/weapon_kits/pie_cannon
 	name = "Banana Cream Pie Cannon"
@@ -158,3 +159,5 @@
 	cost = 1
 	purchasable_from = UPLINK_CLOWN_OPS
 	uplink_item_flags = SYNDIE_TRIPS_CONTRABAND
+
+*/

@@ -41,7 +41,7 @@
 	voice_of_god_power = 1.4 //Command staff has authority
 
 	ration_bonus = 3
-
+	var/static/list/used_numbers = list()
 
 /datum/job/head_of_security/get_captaincy_announcement(mob/living/captain)
 	return "Due to staffing shortages, newly promoted Acting District Administrator [captain.real_name] assuming command."
@@ -68,6 +68,18 @@
 
 	skillchips = list(/obj/item/skillchip/aiming, /obj/item/skillchip/fitness) //The DvL comes pre-augmented
 	implants = list(/obj/item/implant/mindshield, /obj/item/implant/biosig_ert)
+
+/datum/job/head_of_security/after_spawn(mob/living/carbon/human/H, mob/M)
+	. = ..()
+	H.faction += "combine"
+	var/r = rand(100,900)
+	while (used_numbers.Find(r))
+		r = rand(100,900)
+	used_numbers += r
+	if(istype(H.wear_id, /obj/item/card/id))
+		var/obj/item/card/id/ID = H.wear_id
+		ID.registered_name = "DV-[used_numbers[used_numbers.len]]"
+		ID.update_label()
 
 /datum/outfit/job/hos/mod
 	name = "Head of Security (MODsuit)"

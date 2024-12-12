@@ -98,15 +98,6 @@
 	inhand_icon_state = "syndicate-black"
 	has_sensor = LOCKED_SENSORS
 
-/obj/item/clothing/under/combine/civilprotection/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/squeak, list('hl13/sound/movement/civilprotection/gear1.ogg',\
-												'hl13/sound/movement/civilprotection/gear2.ogg',\
-												'hl13/sound/movement/civilprotection/gear3.ogg',\
-												'hl13/sound/movement/civilprotection/gear4.ogg',\
-												'hl13/sound/movement/civilprotection/gear5.ogg',\
-												'hl13/sound/movement/civilprotection/gear6.ogg'), 30, 100, 0)
-
 /obj/item/clothing/under/combine/civilprotection/divisionallead
 	name = "divisional lead jumpsuit"
 	desc = "A version of the standard civil protection suit with slightly more protection, and red highlights."
@@ -122,17 +113,6 @@
 	max_integrity = 400
 	suit_power = 100
 	armor = list(MELEE = 20, BULLET = 20, LASER = 25,ENERGY = 25, BOMB = 25, BIO = 30, RAD = 30, FIRE = 30, ACID = 30, WOUND = 10)
-
-/obj/item/clothing/under/combine/overwatch/Initialize(mapload)
-	. = ..()
-	ADD_TRAIT(src, TRAIT_NODROP, COMBINESUIT_TRAIT)
-	AddComponent(/datum/component/squeak, list('hl13/sound/movement/overwatch/gear1.ogg',\
-												'hl13/sound/movement/overwatch/gear2.ogg',\
-												'hl13/sound/movement/overwatch/gear3.ogg',\
-												'hl13/sound/movement/overwatch/gear4.ogg',\
-												'hl13/sound/movement/overwatch/gear5.ogg',\
-												'hl13/sound/movement/overwatch/gear6.ogg'), 30, 100, 0)
-
 
 /obj/item/clothing/under/combine/overwatch/red
 	desc = "Red full-body suit which includes kevlar weaving to provide extra protection."

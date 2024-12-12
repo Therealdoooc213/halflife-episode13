@@ -497,13 +497,6 @@
 	},
 /turf/open/floor/plating/ground/dirt,
 /area/halflife/outdoors)
-"cu" = (
-/obj/machinery/portable_atmospherics/canister/nitrogen,
-/obj/machinery/atmospherics/components/unary/portables_connector/visible{
-	dir = 1
-	},
-/turf/open/floor/plating/indoor/tile/navy,
-/area/halflife/indoors)
 "cv" = (
 /obj/machinery/light/small,
 /turf/open/floor/plating/indoor/trainfloor,
@@ -961,7 +954,6 @@
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors/townhall)
 "eM" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on,
 /obj/machinery/button/door{
 	id = "aisecdoor";
 	name = "AI Chamber entrance shutters control";
@@ -2407,10 +2399,6 @@
 	},
 /turf/open/floor/plating/indoor/tiled10,
 /area/halflife/indoors/distributioncenter)
-"lS" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on,
-/turf/open/floor/plating/indoor/tile/navy,
-/area/halflife/indoors)
 "lT" = (
 /obj/structure/flora/bush/sparsegrass,
 /turf/open/floor/plating/ground/dirt,
@@ -2737,10 +2725,6 @@
 	},
 /turf/open/floor/plating/ground/brickroad,
 /area/halflife/outdoors/alley)
-"nq" = (
-/obj/machinery/atmospherics/components/unary/thermomachine/freezer/on,
-/turf/open/floor/plating/indoor/tile/navy,
-/area/halflife/indoors)
 "nr" = (
 /obj/structure/sign/block/twofour{
 	pixel_y = 32
@@ -4135,14 +4119,6 @@
 /obj/effect/landmark/event_spawn,
 /turf/open/floor/plating/indoor/sterilesquares,
 /area/halflife/indoors/hospital)
-"ub" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on{
-	external_pressure_bound = 140;
-	plane = -2;
-	pressure_checks = 0
-	},
-/turf/open/floor/plating/indoor/tile/navy,
-/area/halflife/indoors)
 "ud" = (
 /obj/structure/railing{
 	dir = 8
@@ -4323,19 +4299,7 @@
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors/sewer)
 "ve" = (
-/obj/item/radio/intercom{
-	freerange = 1;
-	frequency = 1447;
-	name = "Private Channel";
-	pixel_y = 20
-	},
-/obj/machinery/button/door{
-	id = "aicoredoor";
-	name = "AI Chamber entrance shutters control";
-	pixel_x = -23;
-	pixel_y = 21;
-	req_access = list("ai_master")
-	},
+/obj/effect/landmark/start/ai,
 /turf/open/floor/plating/indoor/tile/navy,
 /area/halflife/indoors)
 "vf" = (
@@ -4421,13 +4385,6 @@
 	},
 /turf/open/floor/plating/indoor/lino,
 /area/halflife/indoors/bar)
-"vy" = (
-/obj/machinery/camera{
-	c_tag = "Dispatch Secondary Core Room";
-	dir = 1
-	},
-/turf/open/floor/plating/indoor/tile/navy,
-/area/halflife/indoors)
 "vz" = (
 /obj/structure/halflife/road_barrier,
 /turf/open/floor/plating/ground/brickroad,
@@ -4841,13 +4798,6 @@
 	dir = 8
 	},
 /turf/open/floor/plating/indoor/woodc/mosaic,
-/area/halflife/indoors)
-"xz" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/on{
-	external_pressure_bound = 120;
-	name = "server vent"
-	},
-/turf/open/floor/plating/indoor/tile/navy,
 /area/halflife/indoors)
 "xA" = (
 /obj/structure/table/halflife/no_smooth/dice,
@@ -5510,12 +5460,10 @@
 /turf/open/floor/plating/indoor/sterilesquares,
 /area/halflife/indoors/hospital)
 "AH" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on{
-	dir = 4;
-	external_pressure_bound = 140;
-	plane = -2;
-	pressure_checks = 0
+/obj/machinery/light/small{
+	dir = 8
 	},
+/obj/structure/table/halflife/metal/alt,
 /turf/open/floor/plating/indoor/tile/navy,
 /area/halflife/indoors)
 "AJ" = (
@@ -6280,8 +6228,11 @@
 /turf/open/floor/plating/indoor/metal/plate,
 /area/halflife/indoors/hospital)
 "Ez" = (
-/obj/machinery/atmospherics/components/unary/thermomachine/freezer/on{
-	dir = 1
+/obj/item/radio/intercom{
+	freerange = 1;
+	frequency = 1447;
+	name = "Private Channel";
+	pixel_y = 20
 	},
 /turf/open/floor/plating/indoor/tile/navy,
 /area/halflife/indoors)
@@ -6957,14 +6908,6 @@
 	},
 /turf/open/floor/plating/indoor/tile/navy,
 /area/halflife/indoors/townhall)
-"HO" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/on{
-	dir = 8;
-	external_pressure_bound = 120;
-	plane = -2
-	},
-/turf/open/floor/plating/indoor/tile/navy,
-/area/halflife/indoors)
 "HT" = (
 /obj/structure/table/halflife/no_smooth/large/crafting/weaponbench,
 /turf/open/floor/plating/indoor/metal/industrial,
@@ -7927,14 +7870,6 @@
 	max_integrity = 150
 	},
 /turf/open/floor/plating/indoor/woodc/mosaic,
-/area/halflife/indoors)
-"Mu" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/on{
-	dir = 4;
-	external_pressure_bound = 120;
-	plane = -2
-	},
-/turf/open/floor/plating/indoor/tile/navy,
 /area/halflife/indoors)
 "Mv" = (
 /obj/structure/halflife/barrel/double/red/two,
@@ -29303,9 +29238,9 @@ rj
 vi
 fJ
 Iw
-nq
+BO
 dc
-Ez
+BO
 Iw
 Iw
 Iw
@@ -29424,7 +29359,7 @@ rj
 rj
 fJ
 iR
-xz
+BO
 BO
 BO
 Iw
@@ -29545,9 +29480,9 @@ Iw
 Pb
 fJ
 iR
-xz
 BO
-vy
+BO
+BO
 Iw
 Iw
 Iw
@@ -29669,7 +29604,7 @@ Iw
 kz
 BO
 BO
-BO
+Iw
 Iw
 Iw
 NC
@@ -29908,7 +29843,7 @@ Iw
 Iw
 Iw
 Iw
-lS
+BO
 BO
 BO
 Iw
@@ -42681,14 +42616,14 @@ Iw
 Iw
 BO
 BO
-Mu
+BO
 Iw
 Iw
 Iw
 Jd
 Iw
 HV
-BO
+HV
 Iw
 fT
 fT
@@ -42804,7 +42739,7 @@ MW
 BO
 BO
 OK
-dc
+AH
 eF
 BO
 su
@@ -42920,12 +42855,12 @@ Iw
 Iw
 Iw
 Iw
-Iw
 ve
+kz
 BO
 BO
 Ec
-Ez
+HV
 BO
 BO
 Bl
@@ -43042,11 +42977,11 @@ Iw
 Iw
 Iw
 Iw
-BO
+Ez
 BO
 BO
 Ec
-cu
+BO
 BO
 BO
 BO
@@ -43164,7 +43099,7 @@ Iw
 Iw
 Iw
 Uj
-AH
+BO
 BO
 Iw
 HV
@@ -43284,7 +43219,7 @@ Iw
 Iw
 Iw
 Iw
-ub
+BO
 BO
 BO
 Iw
@@ -43406,7 +43341,7 @@ Iw
 Iw
 Iw
 BO
-HO
+BO
 pY
 Iw
 Iw

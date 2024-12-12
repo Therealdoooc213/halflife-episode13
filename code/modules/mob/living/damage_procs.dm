@@ -47,6 +47,15 @@
 	var/damage_dealt = 0
 	switch(damagetype)
 		if(BRUTE)
+
+			if(damage_dealt < 10)
+				flash_fullscreen("redflash1")
+			else if(damage < 25)
+				flash_fullscreen("redflash2")
+				shake_camera(src, 1, 1)
+			else if(damage >= 25)
+				flash_fullscreen("redflash3")
+
 			if(isbodypart(def_zone))
 				var/obj/item/bodypart/actual_hit = def_zone
 				var/delta = actual_hit.get_damage()
@@ -66,6 +75,15 @@
 			else
 				damage_dealt = -1 * adjustBruteLoss(damage_amount, forced = forced)
 		if(BURN)
+
+			if(damage_dealt < 10)
+				flash_fullscreen("redflash1")
+			else if(damage < 25)
+				flash_fullscreen("redflash2")
+				shake_camera(src, 1, 1)
+			else if(damage >= 25)
+				flash_fullscreen("redflash3")
+
 			if(isbodypart(def_zone))
 				var/obj/item/bodypart/actual_hit = def_zone
 				var/delta = actual_hit.get_damage()

@@ -25,9 +25,9 @@
 	/// Set to true when we announce something to ghosts, to prevent duplicate announcements
 	var/hasAnnounced = FALSE
 	/// Most common mob type to spawn, must be a child of /mob/living/basic/carp
-	var/carp_type = /mob/living/simple_animal/hostile/zombie
+	var/carp_type = /mob/living/simple_animal/hostile/halflife/zombie
 	/// Rarer mob type to spawn, must also be a child of /mob/living/basic/carp. If one of these is created, it will take priority to show ghosts.
-	var/boss_type = /mob/living/simple_animal/hostile/zombie/poison
+	var/boss_type = /mob/living/simple_animal/hostile/halflife/zombie/poison
 	/// What to describe detecting near the station
 	var/fluff_signal = "Unknown biological entities"
 	/// Associated lists of z level to a list of points to travel to, so that grouped fish move to the same places
@@ -49,12 +49,6 @@
 		else
 			fish = new boss_type(spawn_point.loc)
 			fishannounce(fish) //Prefer to announce the megacarps over the regular fishies
-
-		var/z_level_key = "[spawn_point.z]"
-		if (!z_migration_paths[z_level_key])
-			z_migration_paths[z_level_key] = pick_carp_migration_points(z_level_key)
-		if (z_migration_paths[z_level_key]) // Still possible we failed to set anything here if we're unlucky
-			fish.migrate_to(z_migration_paths[z_level_key])
 
 	fishannounce(fish)
 

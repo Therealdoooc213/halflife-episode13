@@ -104,6 +104,9 @@
 /// Trait given to you by shapeshifting
 #define SHAPESHIFT_TRAIT "shapeshift_trait"
 
+//applied by outfits
+#define OUTFIT_TRAIT "outfit"
+
 // unique trait sources, still defines
 #define EMP_TRAIT "emp_trait"
 #define STATUE_MUTE "statue"

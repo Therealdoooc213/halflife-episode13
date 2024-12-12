@@ -63,6 +63,38 @@
 	polldesc = "an 'elite' Nanotrasen Strike Team"
 	opendoors = FALSE
 
+/datum/ert/overwatch
+	leader_role = /datum/antagonist/ert/overwatch/ar2/elite
+	roles = list(/datum/antagonist/ert/overwatch/ar2, /datum/antagonist/ert/overwatch/mp7, /datum/antagonist/ert/overwatch/spas12)
+	rename_team = "Overwatch Strike Team"
+	code = "Delta"
+	mission = "Stabilize the city, detain city officials, kill all citizens who do not comply."
+	polldesc = "an elite Overwatch Strike Team"
+
+/datum/ert/overwatch/light
+	roles = list(/datum/antagonist/ert/overwatch/mp7, /datum/antagonist/ert/overwatch/spas12)
+	leader_role = /datum/antagonist/ert/overwatch/ar2
+	rename_team = "Overwatch Light Strike Team"
+	code = "Delta"
+	mission = "Stabilize the city, detain city officials, kill all citizens who do not comply."
+	polldesc = "an elite Overwatch Strike Team"
+
+/datum/ert/overwatch/elite
+	roles = list(/datum/antagonist/ert/overwatch/ar2/elite)
+	leader_role = /datum/antagonist/ert/overwatch/ar2/elite
+	rename_team = "Overwatch Elite Strike Team"
+	code = "Delta"
+	mission = "Stabilize the city, detain city officials, kill all citizens who do not comply."
+	polldesc = "an ultra elite Overwatch Strike Team"
+
+/datum/ert/riotpolice
+	roles = list(/datum/antagonist/ert/riotpolice)
+	leader_role = /datum/antagonist/ert/riotpolice/pistol
+	rename_team = "Metropolice Riot Team"
+	code = "Red"
+	mission = "Stabilize the city, and detain or kill any malignant citizens."
+	polldesc = "a metropolice riot team"
+
 /datum/ert/centcom_official
 	code = "Green"
 	teamsize = 1

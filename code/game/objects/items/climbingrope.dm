@@ -103,7 +103,7 @@
 
 /obj/item/climbing_hook/syndicate
 	name = "suspicious climbing hook"
-	desc = "REALLY suspicious climbing hook to scale up holes. The hook has a syndicate logo engraved on it, and the rope appears rather durable."
+	desc = "REALLY suspicious climbing hook to scale up holes. The hook has a lambda logo engraved on it, and the rope appears rather durable."
 	icon_state = "climbingrope_s"
 	uses = 10
 	climb_time = 1.5 SECONDS

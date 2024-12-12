@@ -1,4 +1,4 @@
-#define KIT_RECON "recon"
+#define KIT_REBEL "rebel"
 #define KIT_BLOODY_SPAI "bloodyspai"
 #define KIT_STEALTHY "stealth"
 #define KIT_SCREWED "screwed"
@@ -29,158 +29,40 @@
 
 /obj/item/storage/box/syndicate/bundle_a/PopulateContents()
 	switch (pick_weight(list(
-		KIT_RECON = 2,
-		KIT_BLOODY_SPAI = 3,
-		KIT_STEALTHY = 2,
-		KIT_SCREWED = 2,
+		KIT_REBEL = 2,
+		KIT_STEALTHY = 3,
 		KIT_SABOTAGE = 3,
-		KIT_GUN = 2,
-		KIT_MURDER = 2,
-		KIT_IMPLANTS = 1,
-		KIT_HACKER = 3,
-		KIT_SNIPER = 1,
-		KIT_NUKEOPS_METAGAME = 1,
-		KIT_REVOLUTIONARY = 2
 		)))
-		if(KIT_RECON)
-			new /obj/item/clothing/glasses/thermal/xray(src) // ~8 tc?
-			new /obj/item/storage/briefcase/launchpad(src) //6 tc
-			new /obj/item/binoculars(src) // 2 tc?
-			new /obj/item/encryptionkey/syndicate(src) // 2 tc
-			new /obj/item/storage/box/syndie_kit/space(src) //4 tc
-			new /obj/item/grenade/frag(src) // ~2 tc each?
-			new /obj/item/grenade/frag(src)
-			new /obj/item/flashlight/emp(src) // 4 tc
-
-		if(KIT_BLOODY_SPAI)
-			new /obj/item/card/id/advanced/chameleon(src) // 2 tc
-			new /obj/item/clothing/under/chameleon(src) // 2 tc since it's not the full set
-			new /obj/item/clothing/mask/chameleon(src) // Goes with above
-			new /obj/item/clothing/shoes/chameleon/noslip(src) // 2 tc
-			new /obj/item/computer_disk/syndicate/camera_app(src) // 1 tc
-			new /obj/item/multitool/ai_detect(src) // 1 tc
-			new /obj/item/encryptionkey/syndicate(src) // 2 tc
-			new /obj/item/reagent_containers/syringe/mulligan(src) // 4 tc
-			new /obj/item/switchblade(src) //basically 1 tc as it can be bought from BM kits
-			new /obj/item/storage/fancy/cigarettes/cigpack_syndicate (src) // 2 tc this shit heals
-			new /obj/item/flashlight/emp(src) // 2 tc
-			new /obj/item/chameleon(src) // 7 tc
-			new /obj/item/implanter/storage(src) // 6 tc
+		if(KIT_REBEL)
+			new /obj/item/gun/ballistic/automatic/mp7(src) // ~13 tc?
+			new /obj/item/ammo_box/magazine/mp7(src) //~4 tc?
+			new /obj/item/clothing/under/citizen/rebel(src) // 3 tc
+			new /obj/item/clothing/suit/armor/civilprotection(src) //3 tc
+			new /obj/item/reagent_containers/pill/patch/medkit/vial(src) // 1 tc
+			new /obj/item/reagent_containers/pill/patch/medkit/vial(src) // 1 tc
+			new /obj/item/storage/belt/civilprotection(src) //3 tc
+			new /obj/item/clothing/head/beanie(src) //no tc
 
 		if(KIT_STEALTHY)
-			new /obj/item/gun/energy/recharge/ebow(src) // 10 tc
-			new /obj/item/pen/sleepy(src) // 4 tc
-			new /obj/item/healthanalyzer/rad_laser(src) // 3 tc
-			new /obj/item/chameleon(src) // 7 tc
-			new /obj/item/soap/syndie(src) // 1 tc
+			new /obj/item/storage/box/syndie_kit/smoke(src) // 2 tc
 			new /obj/item/clothing/glasses/thermal/syndi(src) // 4 tc
-			new /obj/item/flashlight/emp(src) // 2 tc
+			new /obj/item/flashlight/emp(src) // 2 tc?
+			new /obj/item/switchblade(src) //3 tc?
 			new /obj/item/jammer(src) // 5 tc
-
-		if(KIT_GUN)
-			new /obj/item/gun/ballistic/revolver(src) // 13 tc
-			new /obj/item/ammo_box/a357(src) // 4tc
-			new /obj/item/ammo_box/a357(src)
-			new /obj/item/storage/belt/holster/chameleon(src) // 1 tc
-			new /obj/item/card/emag/doorjack(src) // 3 tc replaced the emag with the doorjack
-			new /obj/item/grenade/c4(src) // 1 tc
-			new /obj/item/clothing/gloves/latex/nitrile(src) // ~1 tc for whole outfit
-			new /obj/item/clothing/mask/gas/clown_hat(src)
-			new /obj/item/clothing/under/suit/black_really(src)
-			new /obj/item/clothing/neck/tie/red/hitman(src)
-
-		if(KIT_SCREWED)
-			new /obj/item/sbeacondrop/bomb(src) // 11 tc
-			new /obj/item/grenade/syndieminibomb(src) // 6 tc
-			new /obj/item/sbeacondrop/powersink(src) // 11 tc
-			var/obj/item/clothing/suit/space/syndicate/spess_suit = pick(GLOB.syndicate_space_suits_to_helmets)
-			new spess_suit(src) // Above allows me to get the helmet from a variable on the object
-			var/obj/item/clothing/head/helmet/space/syndicate/spess_helmet = GLOB.syndicate_space_suits_to_helmets[spess_suit]
-			new spess_helmet(src) // 4 TC for the space gear
-			new /obj/item/encryptionkey/syndicate(src) // 2 tc
-
-		if(KIT_MURDER)
-			new /obj/item/melee/energy/sword/saber(src) // 8 tc
-			new /obj/item/clothing/glasses/thermal/syndi(src) // 4 tc
-			new /obj/item/card/emag/doorjack(src) // 3 tc
-			new /obj/item/clothing/shoes/chameleon/noslip(src) // 2 tc
-			new /obj/item/encryptionkey/syndicate(src) // 2 tc
-			new /obj/item/grenade/syndieminibomb(src) // 6 tc
-
-		if(KIT_IMPLANTS)
-			new /obj/item/implanter/freedom(src) // 5 tc
-			new /obj/item/implanter/uplink/precharged(src) // 10 tc is inside this thing
-			new /obj/item/implanter/emp(src) // 1 tc
-			new /obj/item/implanter/explosive(src) // 2 tc
-			new /obj/item/implanter/storage(src) // 8 tc
-
-		if(KIT_HACKER) //L-L--LOOK AT YOU, HACKER
-			new /obj/item/ai_module/syndicate(src) // 4 tc
-			new /obj/item/card/emag(src) // 4 tc
-			new /obj/item/card/emag/doorjack(src) // 3 tc
-			new /obj/item/encryptionkey/binary(src) // 5 tc
-			new /obj/item/ai_module/toy_ai(src) // ~6 tc
-			new /obj/item/multitool/ai_detect(src) // 1 tc
-			new /obj/item/storage/toolbox/syndicate(src) // 1 tc
-			new /obj/item/computer_disk/syndicate/camera_app(src) // 1 tc
-			new /obj/item/clothing/glasses/thermal/syndi(src) // 4 tc
-			new /obj/item/card/id/advanced/chameleon(src) // 2 tc
-
-		if(KIT_LORD_SINGULOTH) //currently disabled, i might return with another anti-engine kit
-			new /obj/item/sbeacondrop(src) // 10 tc
-			var/obj/item/clothing/suit/space/syndicate/spess_suit = pick(GLOB.syndicate_space_suits_to_helmets)
-			new spess_suit(src) // Above allows me to get the helmet from a variable on the object
-			var/obj/item/clothing/head/helmet/space/syndicate/spess_helmet = GLOB.syndicate_space_suits_to_helmets[spess_suit]
-			new spess_helmet(src) // 4 TC for the space gear
-			new /obj/item/card/emag(src) // 4 tc
-			new /obj/item/storage/toolbox/syndicate(src) // 1 tc
-			new /obj/item/card/id/advanced/mining(src)
-			new /obj/item/stack/spacecash/c10000(src) // this is technically 10 tc but not really
-			if(prob(70))
-				new /obj/item/toy/spinningtoy(src) //lol
-			else
-				new /obj/item/toy/spinningtoy/dark_matter(src) //edgy lol
+			new /obj/item/storage/box/syndie_kit/chemical //8 tc
+			new /obj/item/reagent_containers/syringe/mulligan //4 tc
+			new /obj/item/binoculars(src) // 2 tc?
+			new /obj/item/card/id/advanced/chameleon(src) //4 tc
 
 		if(KIT_SABOTAGE)
-			new /obj/item/storage/backpack/duffelbag/syndie/sabotage(src) // 5 tc for 3 c4 and 2 x4
-			new /obj/item/computer_disk/syndicate/camera_app(src) // 1 tc
-			new /obj/item/sbeacondrop/powersink(src) // 11 tc
-			new /obj/item/computer_disk/virus/detomatix(src) // 6 tc
+			new /obj/item/grenade/c4(src) // 3 tc
+			new /obj/item/grenade/c4(src) // 3 tc
+			new /obj/item/grenade/syndieminibomb/bouncer(src) // 5 tc
+			new /obj/item/grenade/syndieminibomb/bouncer(src) // 5 tc
+			new /obj/item/grenade/syndieminibomb/bouncer(src) // 5 tc
+			new /obj/item/storage/belt/civilprotection(src) //3 tc
+			new /obj/item/card/emag/halflife(src) // 4 tc
 			new /obj/item/storage/toolbox/syndicate(src) // 1 tc
-			new /obj/item/pizzabox/bomb(src) // 6 tc
-			new /obj/item/storage/box/syndie_kit/emp(src) // 2 tc
-
-		if(KIT_SNIPER) //This shit is unique so can't really balance it around tc, also no silencer because getting killed without ANY indicator on what killed you sucks
-			new /obj/item/gun/ballistic/rifle/sniper_rifle(src) // 12 tc
-			new /obj/item/ammo_box/magazine/sniper_rounds/penetrator(src) // 5 tc
-			new /obj/item/clothing/glasses/thermal/syndi(src) // 4 tc
-			new /obj/item/clothing/gloves/latex/nitrile(src) // ~ 1 tc for outfit
-			new /obj/item/clothing/mask/gas/clown_hat(src)
-			new /obj/item/clothing/under/suit/black_really(src)
-			new /obj/item/clothing/neck/tie/red/hitman(src)
-
-		if(KIT_NUKEOPS_METAGAME)
-			new /obj/item/mod/control/pre_equipped/nuclear/unrestricted(src) // 8 tc
-			new /obj/item/gun/ballistic/shotgun/bulldog/unrestricted(src) // 8 tc
-			new /obj/item/implanter/explosive(src) // 2 tc
-			new /obj/item/ammo_box/magazine/m12g(src) // 2 tc
-			new /obj/item/ammo_box/magazine/m12g(src) // 2 tc
-			new /obj/item/grenade/c4 (src) // 1 tc
-			new /obj/item/grenade/c4 (src) // 1 tc
-			new /obj/item/card/emag(src) // 4 tc
-			new /obj/item/card/emag/doorjack(src) // 3 tc
-
-		if(KIT_REVOLUTIONARY)
-			new /obj/item/healthanalyzer/rad_laser(src) // 3 TC
-			new /obj/item/assembly/flash/hypnotic(src) // 7 TC
-			new /obj/item/storage/pill_bottle/lsd(src) // ~1 TC
-			new /obj/item/pen/sleepy(src) // 4 TC
-			new /obj/item/gun/ballistic/revolver/nagant(src) // 13 TC comparable to 357. revolvers
-			new /obj/item/megaphone(src)
-			new /obj/item/bedsheet/rev(src)
-			new /obj/item/clothing/suit/armor/vest/russian_coat(src)
-			new /obj/item/clothing/head/helmet/rus_ushanka(src)
-			new /obj/item/storage/box/syndie_kit/poster_box(src)
 
 /obj/item/storage/box/syndicate/bundle_b/PopulateContents()
 	switch (pick_weight(list(

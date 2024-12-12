@@ -9,8 +9,8 @@
 	purchasable_from = NONE
 
 /datum/uplink_item/special/autosurgeon
-	name = "Syndicate Autosurgeon"
-	desc = "A multi-use autosurgeon for implanting whatever you want into yourself. Rip that station apart and make it part of you."
+	name = "Rebel Autosurgeon"
+	desc = "A multi-use autosurgeon for implanting whatever you want into yourself. Rip that district apart and make it part of you."
 	item = /obj/item/autosurgeon/syndicate
 	cost = 5
 

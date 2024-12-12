@@ -17,3 +17,4 @@
 	desc = "These tactical gloves are fireproof and shock resistant."
 	icon_state = "overwatch"
 	worn_icon = 'hl13/icons/mob/clothing/hands.dmi'
+	icon = 'hl13/icons/obj/clothing/gloves.dmi'

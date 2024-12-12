@@ -4,20 +4,20 @@
 #define FLAVOR_FACTION_NANOTRASEN "nanotrasen"
 
 /datum/antagonist/traitor
-	name = "\improper Traitor"
-	roundend_category = "traitors"
-	antagpanel_category = "Traitor"
+	name = "\improper Rebel Spy"
+	roundend_category = "rebel spies"
+	antagpanel_category = "Rebel Spy"
 	job_rank = ROLE_TRAITOR
 	antag_moodlet = /datum/mood_event/focused
 	antag_hud_name = "traitor"
 	hijack_speed = 0.5 //10 seconds per hijack stage by default
 	ui_name = "AntagInfoTraitor"
-	suicide_cry = "FOR THE SYNDICATE!!"
+	suicide_cry = "FOR LAMBDA!!"
 	preview_outfit = /datum/outfit/traitor
 	can_assign_self_objectives = TRUE
-	default_custom_objective = "Perform an overcomplicated heist on valuable Nanotrasen assets."
+	default_custom_objective = "Perform an overcomplicated heist on valuable Combine assets."
 	hardcore_random_bonus = TRUE
-	stinger_sound = 'sound/music/antag/traitor/tatoralert.ogg'
+	stinger_sound = 'hl13/sound/ambience/particleghost.ogg'
 
 	///The flag of uplink that this traitor is supposed to have.
 	var/uplink_flag_given = UPLINK_TRAITORS

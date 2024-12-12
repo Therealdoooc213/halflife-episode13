@@ -24,7 +24,7 @@
 	/// For directional charges, which cardinal direction is the charge facing?
 	var/aim_dir = NORTH
 	/// List of explosion radii (DEV, HEAVY, LIGHT)
-	var/boom_sizes = list(0, 0, 3)
+	var/boom_sizes = list(0, 1, 3)
 	/// Do we apply the full force of a heavy ex_act() to mob targets
 	var/full_damage_on_mobs = FALSE
 	/// Minimum timer for c4 charges

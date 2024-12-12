@@ -325,7 +325,7 @@
 
 /obj/item/syndicate_teleporter
 	name = "experimental teleporter"
-	desc = "A reverse-engineered version of the Nanotrasen handheld teleporter. Lacks the advanced safety features of its counterpart. A three-headed serpent can be seen on the back."
+	desc = "A compact and unstable version of rebel teleportation systems. Lacks the advanced safety features of its counterpart."
 	icon = 'icons/obj/devices/tracker.dmi'
 	icon_state = "syndi-tele"
 	throwforce = 5
@@ -567,7 +567,7 @@
 		"}
 
 /obj/item/storage/box/syndie_kit/syndicate_teleporter
-	name = "syndicate teleporter kit"
+	name = "rebel teleporter kit"
 
 /obj/item/storage/box/syndie_kit/syndicate_teleporter/PopulateContents()
 	new /obj/item/syndicate_teleporter(src)

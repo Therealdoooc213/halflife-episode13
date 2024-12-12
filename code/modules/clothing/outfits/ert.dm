@@ -643,3 +643,103 @@
 ///Identical to medical MODsuit, but uses the alternate skin by default.
 /datum/mod_theme/medical/corpsman
 	default_skin = "corpsman"
+
+
+/datum/outfit/ert/overwatch
+	name = "OTA Unit"
+
+	id = /obj/item/card/id/advanced/centcom
+	glasses = /obj/item/clothing/glasses/hud/security/night/combine
+	mask = /obj/item/clothing/mask/gas/civilprotection/overwatch
+	uniform = /obj/item/clothing/under/combine/overwatch
+	suit = /obj/item/clothing/suit/armor/overwatch
+	shoes = /obj/item/clothing/shoes/jackboots/civilprotection/overwatch
+	gloves = /obj/item/clothing/gloves/combat/overwatch
+	ears = /obj/item/radio/headset/civilprotection/divisional/overwatch
+	belt = /obj/item/storage/belt/civilprotection/overwatch
+	l_pocket = /obj/item/reagent_containers/pill/patch/medkit
+	skillchips = list(/obj/item/skillchip/overwatch) //Skilled soldiers
+	implants = list(/obj/item/implant/mindshield, /obj/item/implant/biosig_ert)
+
+	back = null
+
+/datum/outfit/ert/overwatch/pre_equip(mob/living/carbon/human/H)
+	H.faction += "combine"
+	H.cmode_music = 'hl13/sound/music/combat/guarddown.ogg'
+	H.skin_tone = "#e3cfbf"
+	H.set_facial_hairstyle("Shaved", update = FALSE)
+	H.set_hairstyle("Bald") //this will call update_body_parts()
+	H.eye_color_left = "#b9b9b9"
+	H.eye_color_right = "#b9b9b9"
+	H.update_body()
+	ADD_TRAIT(H, TRAIT_NOHUNGER, OUTFIT_TRAIT) //OTA dont need to eat or drink
+
+/datum/outfit/ert/overwatch/spas12
+	name = "OTA Shotgun Unit"
+	suit_store = /obj/item/gun/ballistic/shotgun/spas12
+	belt = /obj/item/storage/belt/civilprotection/overwatch/spas12
+	mask = /obj/item/clothing/mask/gas/civilprotection/overwatch/red
+	uniform = /obj/item/clothing/under/combine/overwatch/red
+	suit = /obj/item/clothing/suit/armor/overwatch/red
+
+/datum/outfit/ert/overwatch/mp7
+	name = "OTA SMG Unit"
+	suit_store = /obj/item/gun/ballistic/automatic/mp7
+	belt = /obj/item/storage/belt/civilprotection/overwatch/mp7
+
+/datum/outfit/ert/overwatch/ar2
+	name = "OTA Rifle Unit"
+	suit_store = /obj/item/gun/ballistic/automatic/ar2
+	belt = /obj/item/storage/belt/civilprotection/overwatch/ar2
+
+/*
+/datum/outfit/ert/overwatch/sniper
+	name = "OTA Sniper Unit"
+	suit_store = /obj/item/gun/ballistic/combine_sniper
+	belt = /obj/item/storage/belt/civilprotection/overwatch/sniper
+*/
+
+/datum/outfit/ert/overwatch/ar2/elite
+	name = "OTA Elite Unit"
+	mask = /obj/item/clothing/mask/gas/civilprotection/overwatch/elite
+	uniform = /obj/item/clothing/under/combine/overwatch/elite
+	suit = /obj/item/clothing/suit/armor/overwatch/elite
+
+/datum/outfit/ert/overwatch/ar2/elite/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	var/datum/martial_art/cqc/elitecqc = new
+	elitecqc.teach(H)
+
+/datum/outfit/ert/riotpolice
+	name = "Metropolice Riot Unit"
+
+	id = /obj/item/card/id/advanced/centcom
+	ears = /obj/item/radio/headset/civilprotection
+	uniform = /obj/item/clothing/under/combine/civilprotection
+	gloves = /obj/item/clothing/gloves/color/civilprotection
+	suit = /obj/item/clothing/suit/armor/riot
+	suit_store = /obj/item/melee/baton/security/heavy/loaded
+	shoes = /obj/item/clothing/shoes/jackboots/civilprotection
+	glasses = /obj/item/clothing/glasses/hud/security
+	head = /obj/item/clothing/head/helmet/toggleable/riot
+
+	mask = /obj/item/clothing/mask/gas/civilprotection
+	belt = /obj/item/storage/belt/civilprotection/full
+
+	implants = list(/obj/item/implant/mindshield, /obj/item/implant/biosig_ert)
+
+	back = /obj/item/shield/riot
+
+/datum/outfit/ert/riotpolice/pre_equip(mob/living/carbon/human/H)
+	H.faction += "combine"
+	H.cmode_music = 'hl13/sound/music/combat/apprehensionandevasion.ogg'
+	H.set_facial_hairstyle("Shaved", update = FALSE)
+	H.set_hairstyle("Bald") //this will call update_body_parts()
+
+/datum/outfit/ert/riotpolice/pistol
+	name = "Metropolice Riot Pistol Unit"
+
+	suit_store = /obj/item/gun/ballistic/automatic/pistol/usp
+	ears = /obj/item/radio/headset/civilprotection/divisional/overwatch

@@ -7,7 +7,7 @@ export const TRAITOR_MECHANICAL_DESCRIPTION = `
 
 const Traitor: Antagonist = {
   key: 'traitor',
-  name: 'Rebel Spy',
+  name: 'Rebel Insurgent',
   description: [
     `
       People join the resistance for many reasons. Some want to help others,

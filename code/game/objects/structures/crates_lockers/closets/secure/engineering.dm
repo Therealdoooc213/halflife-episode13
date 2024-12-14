@@ -68,12 +68,10 @@
 
 /obj/structure/closet/secure_closet/engineering_personal/PopulateContents()
 	..()
-	new /obj/item/radio/headset/headset_eng(src)
 	new /obj/item/storage/toolbox/mechanical(src)
 	new /obj/item/tank/internals/emergency_oxygen/engi(src)
-	new /obj/item/holosign_creator/engineering(src)
-	new /obj/item/clothing/mask/gas(src)
-	new /obj/item/clothing/glasses/meson/engine(src)
+	new /obj/item/clothing/gloves/color/yellow(src)
+	new /obj/item/clothing/mask/gas/cwuengi(src)
 	new /obj/item/storage/box/emptysandbags(src)
 	new /obj/item/storage/bag/construction(src)
 

@@ -1,6 +1,6 @@
 /datum/traitor_objective/destroy_item
 	name = "Steal %ITEM% and destroy it"
-	description = "Find %ITEM% and destroy it using any means necessary. We can't allow the crew to have %ITEM% as it conflicts with our interests."
+	description = "Find %ITEM% and destroy it using any means necessary. We can't allow the district to have %ITEM% as it conflicts with our interests."
 
 	var/list/possible_items = list()
 	/// The current target item that we are stealing.
@@ -25,7 +25,7 @@
 /// Super early-game destroy objective intended to be items easily tided that the crew tends to value.
 /datum/traitor_objective/destroy_item/demoralise
 	description = "Find %ITEM% and destroy it using any means necessary. \
-		We believe this luxury item is important for crew morale. \
+		We believe this item is somehow tied to combine interests. \
 		Destruction of this item will help our recruitment efforts."
 
 	progression_minimum = 0 MINUTES

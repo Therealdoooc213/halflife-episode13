@@ -35,7 +35,7 @@
 	client.mob?.hud_used?.screentip_color = value
 
 /datum/preference/color/screentip_color/create_default_value()
-	return LIGHT_COLOR_FAINT_BLUE
+	return LIGHT_COLOR_FAINT_GREYBLUE
 
 /datum/preference/toggle/screentip_images
 	category = PREFERENCE_CATEGORY_GAME_PREFERENCES

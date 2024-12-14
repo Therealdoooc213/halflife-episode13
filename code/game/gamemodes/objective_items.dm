@@ -277,6 +277,17 @@
 /obj/item/stamp/granted/add_stealing_item_objective()
 	return add_item_to_steal(src, /obj/item/stamp/granted)
 
+/datum/objective_item/steal/traitor/hardhat
+	name = "a hardhat"
+	targetitem = /obj/item/clothing/head/utility/hardhat
+	excludefromjob = list(JOB_CARGO_TECHNICIAN, JOB_QUARTERMASTER, JOB_SHAFT_MINER, JOB_STATION_ENGINEER, JOB_ATMOSPHERIC_TECHNICIAN)
+	exists_on_map = TRUE
+	difficulty = 1
+	steal_hint = "The factory usually has these in abundance."
+
+/obj/item/clothing/head/utility/hardhat/add_stealing_item_objective()
+	return add_item_to_steal(src, /obj/item/clothing/head/utility/hardhat)
+
 /datum/objective_item/steal/spy
 	objective_type = OBJECTIVE_ITEM_TYPE_SPY
 

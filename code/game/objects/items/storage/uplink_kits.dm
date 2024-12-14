@@ -34,7 +34,7 @@
 		KIT_SABOTAGE = 3,
 		)))
 		if(KIT_REBEL)
-			new /obj/item/gun/ballistic/automatic/mp7(src) // ~13 tc?
+			new /obj/item/gun/ballistic/automatic/mp7(src) // 13 tc?
 			new /obj/item/ammo_box/magazine/mp7(src) //~4 tc?
 			new /obj/item/clothing/under/citizen/rebel(src) // 3 tc
 			new /obj/item/clothing/suit/armor/civilprotection(src) //3 tc

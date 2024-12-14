@@ -254,7 +254,7 @@ GLOBAL_LIST_INIT(leather_recipes, list ( \
 	// As bone and sinew have just a little too many recipes for this, we'll just split them up.
 	// Sinew slapcrafting will mostly-sinew recipes, and bones will have mostly-bones recipes.
 	var/static/list/slapcraft_recipe_list = list(\
-		/datum/crafting_recipe/goliathcloak, /datum/crafting_recipe/skilt, /datum/crafting_recipe/drakecloak,\
+		/datum/crafting_recipe/goliathcloak, /datum/crafting_recipe/skilt\
 		)
 
 	AddElement(
@@ -311,16 +311,6 @@ GLOBAL_LIST_INIT(sinew_recipes, list ( \
 	w_class = WEIGHT_CLASS_NORMAL
 	layer = MOB_LAYER
 	merge_type = /obj/item/stack/sheet/animalhide/ashdrake
-
-/obj/item/stack/sheet/animalhide/ashdrake/Initialize(mapload, new_amount, merge, list/mat_override, mat_amt)
-	. = ..()
-
-	var/static/list/slapcraft_recipe_list = list(/datum/crafting_recipe/drakecloak)
-
-	AddElement(
-		/datum/element/slapcrafting,\
-		slapcraft_recipes = slapcraft_recipe_list,\
-	)
 
 //Step one - dehairing.
 

@@ -125,7 +125,6 @@
 	accepted_magazine_type = /obj/item/ammo_box/magazine/usp9mm
 	can_suppress = TRUE
 	fire_sound = "hl13/sound/weapons/uspfire.ogg"
-	rack_sound = "sound/weapons/pistolrack.ogg"
 	bolt_drop_sound = "sound/weapons/pistolslidedrop.ogg"
 	recoil = 0.4
 	vary_fire_sound = FALSE
@@ -154,6 +153,7 @@
 	desc = "A pump action shotgun."
 	icon = 'hl13/icons/obj/guns/projectile.dmi'
 	icon_state = "spas12"
+	inhand_icon_state = "shotgun_combat"
 	fire_sound = "hl13/sound/weapons/shotgunfire.ogg"
 	rack_sound = "hl13/sound/weapons/shotgunpump.ogg"
 	load_sound = "hl13/sound/weapons/shotgunreload.ogg"

@@ -22,7 +22,7 @@
 	light_system = OVERLAY_LIGHT_DIRECTIONAL
 	light_color = COLOR_LIGHT_ORANGE
 	light_range = 4
-	light_power = 1
+	light_power = 0.5
 	light_on = FALSE
 	/// If we've been forcibly disabled for a temporary amount of time.
 	COOLDOWN_DECLARE(disabled_time)
@@ -357,7 +357,7 @@
 	righthand_file = 'icons/mob/inhands/equipment/security_righthand.dmi'
 	force = 9 // Not as good as a stun baton.
 	light_range = 5 // A little better than the standard flashlight.
-	light_power = 0.8
+	light_power = 0.6
 	light_color = "#99ccff"
 	hitsound = 'sound/items/weapons/genhit1.ogg'
 

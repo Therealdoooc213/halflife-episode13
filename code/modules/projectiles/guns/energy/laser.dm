@@ -9,18 +9,6 @@
 	ammo_x_offset = 1
 	shaded_charge = 1
 
-/obj/item/gun/energy/laser/Initialize(mapload)
-	. = ..()
-	// Only actual lasguns can be converted
-	if(type != /obj/item/gun/energy/laser)
-		return
-	var/static/list/slapcraft_recipe_list = list(/datum/crafting_recipe/xraylaser, /datum/crafting_recipe/hellgun, /datum/crafting_recipe/ioncarbine)
-
-	AddElement(
-		/datum/element/slapcrafting,\
-		slapcraft_recipes = slapcraft_recipe_list,\
-	)
-
 /obj/item/gun/energy/laser/practice
 	name = "practice laser gun"
 	desc = "A modified version of the basic laser gun, this one fires less concentrated energy bolts designed for target practice."

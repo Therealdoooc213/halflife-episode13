@@ -1,13 +1,8 @@
 /datum/traitor_objective_category/final_objective
 	name = "Final Objective"
 	objectives = list(
-		/datum/traitor_objective/ultimate/battlecruiser = 1,
-		/datum/traitor_objective/ultimate/battle_royale = 1,
-		/datum/traitor_objective/ultimate/dark_matteor = 1,
 		/datum/traitor_objective/ultimate/infect_ai = 1,
 		/datum/traitor_objective/ultimate/romerol = 1,
-		/datum/traitor_objective/ultimate/supermatter_cascade = 1,
-		/datum/traitor_objective/ultimate/no_escape = 1,
 	)
 	weight = 100
 

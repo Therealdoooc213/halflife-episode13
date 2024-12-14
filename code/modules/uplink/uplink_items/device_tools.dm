@@ -79,3 +79,10 @@
 	desc = "A vial of biogel for healing wounds."
 	item = /obj/item/reagent_containers/pill/patch/medkit/vial
 	cost = 1
+
+/datum/uplink_item/device_tools/medkit
+	name = "Medkit"
+	desc = "A larger kit with biogel. Holds twice as much healing power as a vial, but fits in less places and requires a minimum threat level to purchase."
+	item = /obj/item/reagent_containers/pill/patch/medkit
+	cost = 1
+	progression_minimum = 10 MINUTES

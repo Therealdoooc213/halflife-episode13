@@ -3561,6 +3561,10 @@
 /obj/structure/kitchenspike,
 /turf/open/floor/plating/indoor/showroom,
 /area/halflife/indoors/restaurant)
+"rn" = (
+/obj/structure/weightmachine/weightlifter,
+/turf/open/floor/plating/indoor/grooved2,
+/area/halflife/indoors/townhall)
 "rp" = (
 /obj/machinery/door/unpowered/halflife/wood{
 	dir = 8
@@ -4376,13 +4380,10 @@
 /turf/open/floor/plating/indoor/sterilesquares,
 /area/halflife/indoors/townhall)
 "vw" = (
-/obj/structure/sink{
-	dir = 4;
-	pixel_x = 11
-	},
 /obj/structure/mirror{
 	pixel_x = 24
 	},
+/obj/structure/sink/directional/west,
 /turf/open/floor/plating/indoor/lino,
 /area/halflife/indoors/bar)
 "vz" = (
@@ -4934,9 +4935,11 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/obj/machinery/hydroponics/constructable,
 /obj/effect/turf_decal/trimline/dark_green/filled/line{
 	dir = 8
+	},
+/obj/machinery/hydroponics/constructable{
+	dir = 4
 	},
 /turf/open/floor/plating/indoor/tile/navy,
 /area/halflife/indoors/hydroponics)
@@ -5143,9 +5146,11 @@
 /turf/open/floor/plating/indoor/metal/plate,
 /area/halflife/indoors/restaurant)
 "zk" = (
-/obj/machinery/hydroponics/constructable,
 /obj/effect/turf_decal/trimline/dark_green/filled/line{
 	dir = 8
+	},
+/obj/machinery/hydroponics/constructable{
+	dir = 4
 	},
 /turf/open/floor/plating/indoor/tile/navy,
 /area/halflife/indoors/hydroponics)
@@ -5662,11 +5667,8 @@
 /turf/open/floor/plating/indoor/metal/plate,
 /area/halflife/indoors/sewer)
 "BL" = (
-/obj/machinery/shower{
-	dir = 8;
-	pixel_y = -4
-	},
 /obj/structure/fluff/shower_drain,
+/obj/machinery/shower/directional/west,
 /turf/open/floor/plating/indoor/lino,
 /area/halflife/indoors/townhall)
 "BM" = (
@@ -6797,11 +6799,8 @@
 /turf/open/floor/plating/indoor/tile,
 /area/halflife/indoors/townhall)
 "Hk" = (
-/obj/machinery/shower{
-	dir = 4;
-	pixel_y = -4
-	},
 /obj/structure/fluff/shower_drain,
+/obj/machinery/shower/directional/east,
 /turf/open/floor/plating/indoor/lino,
 /area/halflife/indoors/bar)
 "Hm" = (
@@ -8253,9 +8252,11 @@
 /turf/open/floor/plating/indoor/woodc/wide,
 /area/halflife/indoors)
 "Oz" = (
-/obj/machinery/hydroponics/constructable,
 /obj/effect/turf_decal/trimline/dark_green/filled/line{
 	dir = 9
+	},
+/obj/machinery/hydroponics/constructable{
+	dir = 4
 	},
 /turf/open/floor/plating/indoor/tile/navy,
 /area/halflife/indoors/hydroponics)
@@ -9295,9 +9296,11 @@
 /turf/open/floor/plating/indoor/woodc,
 /area/halflife/outdoors)
 "TG" = (
-/obj/machinery/hydroponics/constructable,
 /obj/effect/turf_decal/trimline/dark_green/filled/line{
 	dir = 10
+	},
+/obj/machinery/hydroponics/constructable{
+	dir = 4
 	},
 /turf/open/floor/plating/indoor/tile/navy,
 /area/halflife/indoors/hydroponics)
@@ -9377,10 +9380,7 @@
 /turf/open/floor/plating/indoor/concrete,
 /area/halflife/outdoors)
 "TZ" = (
-/obj/structure/sink/kitchen{
-	dir = 4;
-	pixel_x = -12
-	},
+/obj/structure/sink/kitchen/directional/east,
 /turf/open/floor/plating/indoor/showroom,
 /area/halflife/indoors/restaurant)
 "Ua" = (
@@ -9974,9 +9974,7 @@
 /turf/open/floor/plating/indoor/woodc/fancy,
 /area/halflife/indoors/townhall)
 "WA" = (
-/obj/machinery/computer/cargo{
-	dir = 1
-	},
+/obj/machinery/computer/cargo,
 /turf/open/floor/plating/ground/sidewalk,
 /area/halflife/outdoors)
 "WB" = (
@@ -10013,6 +10011,13 @@
 /obj/structure/halflife/barrel/triple/grey,
 /turf/open/floor/plating/indoor/metal/plate,
 /area/halflife/indoors/distributioncenter)
+"WO" = (
+/obj/effect/turf_decal/siding/thinplating{
+	dir = 4
+	},
+/obj/machinery/hydroponics/constructable,
+/turf/open/floor/plating/ground/brickroad,
+/area/halflife/outdoors)
 "WQ" = (
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 6
@@ -10196,6 +10201,10 @@
 /obj/machinery/door/unpowered/halflife/metal,
 /turf/open/floor/plating/indoor/concrete/small,
 /area/halflife/indoors/sewer)
+"XM" = (
+/obj/structure/weightmachine,
+/turf/open/floor/plating/indoor/grooved2,
+/area/halflife/indoors/townhall)
 "XN" = (
 /obj/machinery/camera{
 	c_tag = "Prison Cell 1";
@@ -10582,6 +10591,7 @@
 "ZJ" = (
 /obj/structure/closet/cabinet,
 /obj/item/blueprints,
+/obj/item/clothing/head/utility/hardhat,
 /turf/open/floor/plating/indoor/woodc/mosaic,
 /area/halflife/indoors/productioncenter)
 "ZL" = (
@@ -37103,7 +37113,7 @@ wp
 be
 wp
 wp
-wp
+WO
 wp
 wp
 wp
@@ -40809,7 +40819,7 @@ XQ
 XQ
 XQ
 XQ
-qW
+kJ
 XQ
 fT
 IN
@@ -40928,9 +40938,9 @@ kJ
 wc
 XQ
 XQ
-XQ
-pW
-zK
+rn
+sj
+kJ
 XQ
 fT
 IN
@@ -41049,9 +41059,9 @@ XQ
 XQ
 XQ
 XQ
-XQ
-ha
-BL
+kJ
+kJ
+kJ
 XQ
 wY
 IN
@@ -41156,7 +41166,6 @@ sv
 sv
 Iw
 Iw
-Iw
 Zv
 Gx
 Gx
@@ -41171,8 +41180,9 @@ Gx
 Gx
 Gx
 XQ
-XQ
-XQ
+XM
+kJ
+kJ
 XQ
 fT
 IN
@@ -41277,7 +41287,6 @@ sv
 sv
 Iw
 Iw
-Iw
 Gx
 QD
 TN
@@ -41291,10 +41300,11 @@ No
 Hq
 Ym
 Gx
-Iw
-Iw
-Iw
-Iw
+XQ
+XQ
+XQ
+qW
+XQ
 fT
 IN
 Kw
@@ -41398,7 +41408,6 @@ sv
 sv
 Iw
 Iw
-Iw
 Gx
 Ml
 VZ
@@ -41412,10 +41421,11 @@ eW
 wo
 HE
 Zv
-Iw
-Iw
-Iw
-Iw
+XQ
+XQ
+pW
+zK
+XQ
 fT
 IN
 Kw
@@ -41519,7 +41529,6 @@ sv
 sv
 Iw
 Iw
-Iw
 Gx
 GA
 qY
@@ -41533,10 +41542,11 @@ vD
 Qy
 LF
 Gx
-Iw
-Iw
-Iw
-Iw
+XQ
+XQ
+ha
+BL
+XQ
 fT
 IN
 Kw
@@ -41640,7 +41650,6 @@ sv
 sv
 Iw
 Iw
-Iw
 Gx
 Gx
 Gx
@@ -41654,10 +41663,11 @@ Gx
 Gx
 Gx
 Gx
-Iw
-Iw
-Iw
-Iw
+XQ
+XQ
+XQ
+XQ
+XQ
 fT
 IN
 Kw
@@ -41957,7 +41967,7 @@ Gx
 dj
 Gx
 Gx
-Gx
+eh
 Gx
 Gx
 Gx
@@ -57803,7 +57813,7 @@ DL
 DL
 le
 DL
-DL
+xr
 DL
 DL
 xr

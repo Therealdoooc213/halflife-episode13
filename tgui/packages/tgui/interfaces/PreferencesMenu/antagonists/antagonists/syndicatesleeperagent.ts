@@ -6,7 +6,7 @@ const SyndicateSleeperAgent: Antagonist = {
   name: 'Rebel Sleeper Agent',
   description: [
     `
-      A form of rebel spy that can activate at any point in the middle
+      A form of rebel insurgent that can activate at any point in the middle
       of the shift.
     `,
     TRAITOR_MECHANICAL_DESCRIPTION,

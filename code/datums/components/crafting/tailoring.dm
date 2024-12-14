@@ -16,51 +16,6 @@
 	time = 5 SECONDS
 	category = CAT_CLOTHING
 
-/datum/crafting_recipe/durathread_robe_fire
-	name = "Durathread Pyromancer Robe"
-	result = /obj/item/clothing/suit/wizrobe/durathread/fire
-	reqs = list(/obj/item/clothing/suit/wizrobe/durathread = 1,
-				/obj/item/grown/novaflower = 1,
-				/obj/item/seeds/chili = 3)
-	time = 2 SECONDS
-	category = CAT_CLOTHING
-
-/datum/crafting_recipe/durathread_robe_ice
-	name = "Durathread Ice-o-mancer Robe"
-	result = /obj/item/clothing/suit/wizrobe/durathread/ice
-	reqs = list(/obj/item/clothing/suit/wizrobe/durathread = 1,
-				/obj/item/seeds/chili/ice = 1,
-				/obj/item/food/grown/herbs = 3)
-	time = 2 SECONDS
-	category = CAT_CLOTHING
-
-/datum/crafting_recipe/durathread_robe_electric
-	name = "Durathread Electromancer Robe"
-	result = /obj/item/clothing/suit/wizrobe/durathread/electric
-	reqs = list(/obj/item/clothing/suit/wizrobe/durathread = 1,
-				/obj/item/food/grown/mushroom/jupitercup = 1,
-				/obj/item/food/grown/sunflower = 3)
-	time = 2 SECONDS
-	category = CAT_CLOTHING
-
-/datum/crafting_recipe/durathread_robe_earth
-	name = "Durathread Geomancer Robe"
-	result = /obj/item/clothing/suit/wizrobe/durathread/earth
-	reqs = list(/obj/item/clothing/suit/wizrobe/durathread = 1,
-				/obj/item/food/grown/cahnroot = 1,
-				/obj/item/food/grown/potato = 3)
-	time = 2 SECONDS
-	category = CAT_CLOTHING
-
-/datum/crafting_recipe/durathread_robe_necro
-	name = "Durathread Necromancer Robe"
-	result = /obj/item/clothing/suit/wizrobe/durathread/necro
-	reqs = list(/obj/item/clothing/suit/wizrobe/durathread = 1,
-				/obj/item/food/grown/cannabis/death = 2,
-				/obj/item/food/grown/mushroom/angel = 2)
-	time = 2 SECONDS
-	category = CAT_CLOTHING
-
 /datum/crafting_recipe/durathread_helmet
 	name = "Durathread Helmet"
 	result = /obj/item/clothing/head/helmet/durathread
@@ -116,14 +71,6 @@
 				/obj/item/stack/sheet/durathread = 1)
 	time = 4 SECONDS
 	category = CAT_CLOTHING
-
-/datum/crafting_recipe/grass_sheath
-	name = "Grass Sabre Sheath"
-	result = /obj/item/storage/belt/grass_sabre
-	reqs = list(/obj/item/food/grown/grass = 4,
-				/obj/item/food/grown/grass/fairy = 2)
-	time = 4 SECONDS
-	category = CAT_CONTAINERS
 
 /datum/crafting_recipe/fannypack
 	name = "Fannypack"
@@ -213,13 +160,6 @@
 	reqs = list(/obj/item/bedsheet = 1)
 	category = CAT_CLOTHING
 
-/datum/crafting_recipe/lizardboots
-	name = "Lizard Skin Boots"
-	result = /obj/effect/spawner/random/clothing/lizardboots
-	reqs = list(/obj/item/stack/sheet/animalhide/lizard = 1, /obj/item/stack/sheet/leather = 1)
-	time = 6 SECONDS
-	category = CAT_CLOTHING
-
 /datum/crafting_recipe/prisonsuit
 	name = "Prisoner Uniform (Suit)"
 	result = /obj/item/clothing/under/rank/prisoner
@@ -247,30 +187,6 @@
 	tool_behaviors = list(TOOL_SCREWDRIVER, TOOL_CROWBAR)
 	reqs = list(/obj/item/wallframe/status_display = 1)
 	time = 2 SECONDS
-	category = CAT_CLOTHING
-
-/datum/crafting_recipe/lizardhat
-	name = "Lizard Cloche Hat"
-	result = /obj/item/clothing/head/costume/lizard
-	time = 1 SECONDS
-	reqs = list(/obj/item/organ/tail/lizard = 1)
-	category = CAT_CLOTHING
-
-/datum/crafting_recipe/lizardhat_alternate
-	name = "Lizard Cloche Hat"
-	result = /obj/item/clothing/head/costume/lizard
-	time = 1 SECONDS
-	reqs = list(/obj/item/stack/sheet/animalhide/lizard = 1)
-	category = CAT_CLOTHING
-
-/datum/crafting_recipe/kittyears
-	name = "Kitty Ears"
-	result = /obj/item/clothing/head/costume/kitty/genuine
-	time = 1 SECONDS
-	reqs = list(
-		/obj/item/organ/tail/cat = 1,
-		/obj/item/organ/ears/cat = 1,
-	)
 	category = CAT_CLOTHING
 
 /datum/crafting_recipe/bonearmor
@@ -313,29 +229,6 @@
 	)
 	category = CAT_CLOTHING
 
-/datum/crafting_recipe/wreath
-	name = "Watcher Wreath"
-	result = /obj/item/clothing/neck/wreath
-	time = 2 SECONDS
-	reqs = list(
-		/obj/item/stack/sheet/bone = 2,
-		/obj/item/stack/sheet/sinew = 2,
-		/obj/item/stack/ore/diamond = 2,
-	)
-	category = CAT_CLOTHING
-
-/datum/crafting_recipe/icewreath
-	name = "Icewing Wreath"
-	result = /obj/item/clothing/neck/wreath/icewing
-	time = 2 SECONDS
-	reqs = list(
-		/obj/item/stack/sheet/bone = 1,
-		/obj/item/stack/sheet/sinew = 1,
-		/obj/item/stack/ore/diamond = 2,
-		/obj/item/crusher_trophy/watcher_wing/ice_wing = 1,
-	)
-	category = CAT_CLOTHING
-
 /datum/crafting_recipe/bracers
 	name = "Bone Bracers"
 	result = /obj/item/clothing/gloves/bracer
@@ -360,37 +253,6 @@
 	reqs = list(
 		/obj/item/stack/sheet/sinew = 3,
 		/obj/item/stack/sheet/animalhide/goliath_hide = 9,
-	)
-	category = CAT_CLOTHING
-
-/datum/crafting_recipe/drakecloak
-	name = "Ash Drake Armour"
-	result = /obj/item/clothing/suit/hooded/cloak/drake
-	time = 4 SECONDS
-	reqs = list(
-		/obj/item/stack/sheet/sinew = 2,
-		/obj/item/drake_remains = 1,
-	)
-	category = CAT_CLOTHING
-
-/datum/crafting_recipe/drakeremains
-	name = "Drake Remains"
-	result = /obj/item/drake_remains
-	time = 1 SECONDS
-	reqs = list(
-		/obj/item/stack/sheet/bone = 10,
-		/obj/item/stack/sheet/animalhide/ashdrake = 5,
-	)
-	category = CAT_CLOTHING
-
-/datum/crafting_recipe/godslayer
-	name = "Godslayer Armour"
-	result = /obj/item/clothing/suit/hooded/cloak/godslayer
-	time = 6 SECONDS
-	reqs = list(
-		/obj/item/ice_energy_crystal = 1,
-		/obj/item/wendigo_skull = 1,
-		/obj/item/clockwork_alloy = 1,
 	)
 	category = CAT_CLOTHING
 

@@ -238,6 +238,8 @@
 #define LIGHT_COLOR_BLUE "#6496FA"
 /// Faint white blue. rgb(222, 239, 255)
 #define LIGHT_COLOR_FAINT_BLUE "#DEEFFF"
+/// Faint greyish blue.
+#define LIGHT_COLOR_FAINT_GREYBLUE "#878e9b"
 /// Light blueish green. rgb(125, 225, 175)
 #define LIGHT_COLOR_BLUEGREEN "#7DE1AF"
 /// Diluted cyan. rgb(125, 225, 225)

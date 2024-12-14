@@ -31,27 +31,11 @@
 	icon = 'icons/obj/weapons/improvised.dmi'
 	icon_state = "riflestock"
 
-/obj/item/weaponcrafting/stock/create_slapcraft_component()
-	var/static/list/slapcraft_recipe_list = list(/datum/crafting_recipe/smoothbore_disabler, /datum/crafting_recipe/laser_musket)
-
-	AddElement(
-		/datum/element/slapcrafting,\
-		slapcraft_recipes = slapcraft_recipe_list,\
-	)
-
 /obj/item/weaponcrafting/giant_wrench
 	name = "Big Slappy parts kit"
 	desc = "Illegal parts to make a giant like wrench commonly known as a Big Slappy."
 	icon = 'icons/obj/weapons/improvised.dmi'
 	icon_state = "weaponkit_gw"
-
-/obj/item/weaponcrafting/giant_wrench/create_slapcraft_component() // slappycraft
-	var/static/list/slapcraft_recipe_list = list(/datum/crafting_recipe/giant_wrench)
-
-	AddElement(
-		/datum/element/slapcrafting,\
-		slapcraft_recipes = slapcraft_recipe_list,\
-	)
 
 ///These gun kits are printed from the security protolathe to then be used in making new weapons
 

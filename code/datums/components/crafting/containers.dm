@@ -12,15 +12,6 @@
 	reqs = list(/obj/item/paper = 2)
 	category = CAT_CONTAINERS
 
-/datum/crafting_recipe/boh
-	name = "Bag of Holding"
-	reqs = list(
-		/obj/item/bag_of_holding_inert = 1,
-		/obj/item/assembly/signaler/anomaly/bluespace = 1,
-	)
-	result = /obj/item/storage/backpack/holding
-	category = CAT_CONTAINERS
-
 /datum/crafting_recipe/underwater_basket
 	name = "Underwater Basket (Bamboo)"
 	reqs = list(
@@ -29,7 +20,7 @@
 	result = /obj/item/storage/basket
 	category = CAT_CONTAINERS
 	steps = list(
-		"master the art of underwater basketweaving", 
+		"master the art of underwater basketweaving",
 		"be underwater"
 	)
 

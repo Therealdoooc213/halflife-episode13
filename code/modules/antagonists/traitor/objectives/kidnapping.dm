@@ -1,6 +1,6 @@
 /datum/traitor_objective/target_player/kidnapping
 	name = "Kidnap %TARGET% the %JOB TITLE% and deliver them to %AREA%"
-	description = "%TARGET% holds extremely important information regarding secret NT projects - and you'll need to kidnap and deliver them to %AREA%, where our transport pod will be waiting. \
+	description = "%TARGET% saw some things regarding combine secrets, but won't budge since they fear retaliation - and you'll need to kidnap and deliver them to %AREA%, where our transport pod will be waiting. \
 		If %TARGET% is delivered alive, you will be rewarded with an additional %TC% telecrystals."
 
 	abstract_type = /datum/traitor_objective/target_player/kidnapping
@@ -39,29 +39,16 @@
 	progression_reward = list(2 MINUTES, 4 MINUTES)
 	telecrystal_reward = list(1, 2)
 	target_jobs = list(
-		// Cargo
-		/datum/job/cargo_technician,
 		// Engineering
 		/datum/job/atmospheric_technician,
 		/datum/job/station_engineer,
 		// Medical
-		/datum/job/chemist,
 		/datum/job/doctor,
-		/datum/job/psychologist,
-		/datum/job/coroner,
-		// Science
-		/datum/job/geneticist,
-		/datum/job/roboticist,
 		/datum/job/scientist,
 		// Service
 		/datum/job/bartender,
 		/datum/job/botanist,
-		/datum/job/chaplain,
-		/datum/job/clown,
-		/datum/job/curator,
 		/datum/job/janitor,
-		/datum/job/lawyer,
-		/datum/job/mime,
 	)
 	alive_bonus = 2
 
@@ -80,10 +67,7 @@
 
 	target_jobs = list(
 		// Cargo
-		/datum/job/bitrunner,
 		/datum/job/shaft_miner,
-		// Medical
-		/datum/job/paramedic,
 		// Service
 		/datum/job/cook,
 	)
@@ -96,13 +80,9 @@
 	telecrystal_reward = list(2, 3)
 	target_jobs = list(
 		// Heads of staff
-		/datum/job/chief_engineer,
-		/datum/job/chief_medical_officer,
 		/datum/job/head_of_personnel,
-		/datum/job/research_director,
 		/datum/job/quartermaster,
 		// Security
-		/datum/job/detective,
 		/datum/job/security_officer,
 		/datum/job/warden,
 	)
@@ -265,7 +245,7 @@
 	sent_mob.set_eye_blur_if_lower(100 SECONDS)
 	sent_mob.dna.species.give_important_for_life(sent_mob) // so plasmamen do not get left for dead
 	to_chat(sent_mob, span_hypnophrase("A million voices echo in your head... <i>\"Your mind held many valuable secrets - \
-		we thank you for providing them. Your value is expended, and you will be ransomed back to your station. We always get paid, \
+		we thank you for providing them. Your value is expended, and you will be ransomed back to your district. We always get paid, \
 		so it's only a matter of time before we ship you back...\"</i>"))
 
 /datum/traitor_objective/target_player/kidnapping/proc/return_target(mob/living/carbon/human/sent_mob)

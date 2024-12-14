@@ -4,15 +4,15 @@
 #define FLAVOR_FACTION_NANOTRASEN "nanotrasen"
 
 /datum/antagonist/traitor
-	name = "\improper Rebel Spy"
-	roundend_category = "rebel spies"
-	antagpanel_category = "Rebel Spy"
+	name = "\improper Rebel Insurgent"
+	roundend_category = "rebel insurgents"
+	antagpanel_category = "Rebel Insurgent"
 	job_rank = ROLE_TRAITOR
 	antag_moodlet = /datum/mood_event/focused
 	antag_hud_name = "traitor"
 	hijack_speed = 0.5 //10 seconds per hijack stage by default
 	ui_name = "AntagInfoTraitor"
-	suicide_cry = "FOR LAMBDA!!"
+	suicide_cry = "FOR THE RESISTANCE!!"
 	preview_outfit = /datum/outfit/traitor
 	can_assign_self_objectives = TRUE
 	default_custom_objective = "Perform an overcomplicated heist on valuable Combine assets."

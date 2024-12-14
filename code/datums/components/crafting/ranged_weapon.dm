@@ -8,17 +8,6 @@
 	time = 2 SECONDS //faster than crafting them by hand!
 	category = CAT_WEAPON_RANGED
 
-/datum/crafting_recipe/gonbola
-	name = "Gonbola"
-	result = /obj/item/restraints/legcuffs/bola/gonbola
-	reqs = list(
-		/obj/item/restraints/handcuffs/cable = 1,
-		/obj/item/stack/sheet/iron = 6,
-		/obj/item/stack/sheet/animalhide/gondola = 1,
-	)
-	time = 4 SECONDS
-	category = CAT_WEAPON_RANGED
-
 /datum/crafting_recipe/receiver
 	name = "Modular Rifle Receiver"
 	tool_behaviors = list(TOOL_WRENCH, TOOL_WELDER, TOOL_SAW)
@@ -41,110 +30,6 @@
 		/obj/item/stack/sticky_tape = 1,
 	)
 	time = 5 SECONDS
-	category = CAT_WEAPON_RANGED
-
-/datum/crafting_recipe/advancedegun
-	name = "Advanced Energy Gun"
-	result = /obj/item/gun/energy/e_gun/nuclear
-	reqs = list(
-		/obj/item/gun/energy/e_gun = 1,
-		/obj/item/weaponcrafting/gunkit/nuclear = 1,
-	)
-	time = 10 SECONDS
-	category = CAT_WEAPON_RANGED
-
-/datum/crafting_recipe/advancedegun/New()
-	..()
-	blacklist += subtypesof(/obj/item/gun/energy/e_gun)
-
-/datum/crafting_recipe/tempgun
-	name = "Temperature Gun"
-	result = /obj/item/gun/energy/temperature
-	reqs = list(
-		/obj/item/gun/energy/disabler = 1,
-		/obj/item/weaponcrafting/gunkit/temperature = 1,
-	)
-	time = 10 SECONDS
-	category = CAT_WEAPON_RANGED
-
-/datum/crafting_recipe/tempgun/New()
-	..()
-	blacklist += subtypesof(/obj/item/gun/energy/e_gun)
-
-/datum/crafting_recipe/beam_rifle
-	name = "Event Horizon Anti-Existential Beam Rifle"
-	result = /obj/item/gun/energy/event_horizon
-	reqs = list(
-		/obj/item/assembly/signaler/anomaly/flux = 2,
-		/obj/item/assembly/signaler/anomaly/grav = 1,
-		/obj/item/assembly/signaler/anomaly/vortex = (MAX_CORES_VORTEX - 1),
-		/obj/item/assembly/signaler/anomaly/bluespace = 1,
-		/obj/item/weaponcrafting/gunkit/beam_rifle = 1,
-	)
-	time = 30 SECONDS //Maybe the delay will make you reconsider your choices
-	category = CAT_WEAPON_RANGED
-
-/datum/crafting_recipe/ebow
-	name = "Energy Crossbow"
-	result = /obj/item/gun/energy/recharge/ebow/large
-	reqs = list(
-		/obj/item/gun/energy/recharge/kinetic_accelerator = 1,
-		/obj/item/weaponcrafting/gunkit/ebow = 1,
-		/datum/reagent/uranium/radium = 15,
-	)
-	time = 10 SECONDS
-	category = CAT_WEAPON_RANGED
-
-/datum/crafting_recipe/xraylaser
-	name = "X-ray Laser Gun"
-	result = /obj/item/gun/energy/xray
-	reqs = list(
-		/obj/item/gun/energy/laser = 1,
-		/obj/item/weaponcrafting/gunkit/xray = 1,
-	)
-	time = 10 SECONDS
-	category = CAT_WEAPON_RANGED
-
-/datum/crafting_recipe/xraylaser/New()
-	..()
-	blacklist += subtypesof(/obj/item/gun/energy/laser)
-
-/datum/crafting_recipe/hellgun
-	name = "Hellfire Laser Gun"
-	result = /obj/item/gun/energy/laser/hellgun
-	reqs = list(
-		/obj/item/gun/energy/laser = 1,
-		/obj/item/weaponcrafting/gunkit/hellgun = 1,
-	)
-	time = 10 SECONDS
-	category = CAT_WEAPON_RANGED
-
-/datum/crafting_recipe/hellgun/New()
-	..()
-	blacklist += subtypesof(/obj/item/gun/energy/laser)
-
-/datum/crafting_recipe/ioncarbine
-	name = "Ion Carbine"
-	result = /obj/item/gun/energy/ionrifle/carbine
-	reqs = list(
-		/obj/item/gun/energy/laser = 1,
-		/obj/item/weaponcrafting/gunkit/ion = 1,
-	)
-	time = 10 SECONDS
-	category = CAT_WEAPON_RANGED
-
-/datum/crafting_recipe/ioncarbine/New()
-	..()
-	blacklist += subtypesof(/obj/item/gun/energy/laser)
-
-/datum/crafting_recipe/teslacannon
-	name = "Tesla Cannon"
-	result = /obj/item/gun/energy/tesla_cannon
-	reqs = list(
-		/obj/item/assembly/signaler/anomaly/flux = 1,
-		/obj/item/weaponcrafting/gunkit/tesla = 1,
-	)
-	time = 10 SECONDS
 	category = CAT_WEAPON_RANGED
 
 /datum/crafting_recipe/improvised_pneumatic_cannon //Pretty easy to obtain but
@@ -330,21 +215,6 @@
 	category = CAT_WEAPON_RANGED
 	crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_MUST_BE_LEARNED
 
-/datum/crafting_recipe/laser_musket
-	name = "Laser Musket"
-	result = /obj/item/gun/energy/laser/musket
-	reqs = list(
-		/obj/item/weaponcrafting/stock = 1,
-		/obj/item/stack/cable_coil = 15,
-		/obj/item/stack/rods = 4,
-		/obj/item/stock_parts/micro_laser = 1,
-		/obj/item/stock_parts/capacitor = 1,
-		/obj/item/reagent_containers/cup/glass/drinkingglass = 2,
-	)
-	tool_behaviors = list(TOOL_SCREWDRIVER, TOOL_WIRECUTTER)
-	time = 10 SECONDS
-	category = CAT_WEAPON_RANGED
-
 /datum/crafting_recipe/laser_musket_prime
 	name = "Heroic Laser Musket"
 	result = /obj/item/gun/energy/laser/musket/prime
@@ -360,21 +230,6 @@
 	time = 30 SECONDS //contemplate for a bit
 	category = CAT_WEAPON_RANGED
 	crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_MUST_BE_LEARNED
-
-/datum/crafting_recipe/smoothbore_disabler
-	name = "Smoothbore Disabler"
-	result = /obj/item/gun/energy/disabler/smoothbore
-	reqs = list(
-		/obj/item/weaponcrafting/stock = 1, //it becomes the grip
-		/obj/item/stack/cable_coil = 5,
-		/obj/item/pipe = 1,
-		/obj/item/stock_parts/micro_laser = 1,
-		/obj/item/stock_parts/power_store/cell = 1,
-		/obj/item/assembly/mousetrap = 1,
-	)
-	tool_behaviors = list(TOOL_SCREWDRIVER, TOOL_WRENCH)
-	time = 10 SECONDS
-	category = CAT_WEAPON_RANGED
 
 /datum/crafting_recipe/smoothbore_disabler_prime
 	name = "Elite Smoothbore Disabler"
@@ -405,12 +260,3 @@
 	category = CAT_WEAPON_RANGED
 	crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_MUST_BE_LEARNED
 
-/datum/crafting_recipe/photoncannon
-	name = "Photon Cannon"
-	result = /obj/item/gun/energy/photon
-	reqs = list(
-		/obj/item/assembly/signaler/anomaly/flux = 1,
-		/obj/item/weaponcrafting/gunkit/photon = 1,
-	)
-	time = 10 SECONDS
-	category = CAT_WEAPON_RANGED

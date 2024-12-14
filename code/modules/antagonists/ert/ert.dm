@@ -10,7 +10,7 @@
 	show_to_ghosts = TRUE
 	antag_moodlet = /datum/mood_event/focused
 	antagpanel_category = ANTAG_GROUP_ERT
-	suicide_cry = "FOR NANOTRASEN!!"
+	suicide_cry = "Final Extractor Deployed."
 	count_against_dynamic_roll_chance = FALSE
 	// Not 'true' antags, this disables certain interactions that assume the owner is a baddie
 	antag_flags = FLAG_FAKE_ANTAG

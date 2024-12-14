@@ -67,6 +67,8 @@
 		vortigaunt = TRUE
 	ration_quality += account?.account_job.ration_bonus //applies job specific ration bonuses
 
+	account.ration_voucher = FALSE
+
 	say("Ration reward determined. Please wait for ration to be dispensed.")
 
 	playsound(src, 'hl13/sound/machines/combine_button5.ogg', 50, TRUE, extrarange = -3)
@@ -79,7 +81,6 @@
 
 	sleep(2 SECONDS)
 
-	account.ration_voucher = FALSE
 	dispense(ration_quality, vortigaunt)
 	return
 

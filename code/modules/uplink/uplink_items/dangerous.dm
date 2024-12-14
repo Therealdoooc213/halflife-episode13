@@ -20,10 +20,17 @@
 	name = "Colt Python Revolver"
 	desc = "A deadly revolver that fires .357 Magnum rounds and has 7 chambers."
 	item = /obj/item/gun/ballistic/revolver/coltpython
-	cost = 14
+	cost = 13
 	progression_minimum = 30 MINUTES
 	surplus = 50
-	purchasable_from = ~UPLINK_ALL_SYNDIE_OPS //only traitors get the original revolver
+
+/datum/uplink_item/dangerous/mp7
+	name = "MP7 SMG"
+	desc = "A full auto SMG with a 45 round magazine."
+	item = /obj/item/gun/ballistic/automatic/mp7
+	cost = 13
+	progression_minimum = 30 MINUTES
+	surplus = 50
 
 /datum/uplink_item/dangerous/knife
 	name = "Combat Knife"

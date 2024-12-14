@@ -13,9 +13,11 @@
 	desc = "A partially armored jumpsuit with no sensors built in."
 	item = /obj/item/clothing/under/citizen/rebel
 	cost = 3
+	progression_minimum = 5 MINUTES
 
 /datum/uplink_item/suits/copsuit
 	name = "Civil protection vest"
 	desc = "An armored vest that civil protection like to use, and rebels like to steal."
 	item = /obj/item/clothing/suit/armor/civilprotection
 	cost = 3
+	progression_minimum = 5 MINUTES

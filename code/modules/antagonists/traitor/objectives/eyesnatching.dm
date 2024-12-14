@@ -8,7 +8,7 @@
 
 /datum/traitor_objective/target_player/eyesnatching
 	name = "Steal the eyes of %TARGET% the %JOB TITLE%"
-	description = "%TARGET% messed with the wrong people. Steal their eyes to teach them a lesson. You will be provided an experimental eyesnatcher device to aid you in your mission."
+	description = "%TARGET% is a snitch, make sure they can't ever see us again. Steal their eyes to teach them a lesson. You will be provided an experimental eyesnatcher device to aid you in your mission."
 
 	progression_minimum = 10 MINUTES
 

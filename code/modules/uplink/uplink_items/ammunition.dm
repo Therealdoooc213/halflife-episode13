@@ -11,6 +11,11 @@
 	desc = "An additional 18-round 9mm magazine, for the USP Match pistol."
 	item = /obj/item/ammo_box/magazine/usp9mm
 	cost = 3
-	purchasable_from = ~UPLINK_ALL_SYNDIE_OPS
 	uplink_item_flags = SYNDIE_TRIPS_CONTRABAND
 
+/datum/uplink_item/ammo/smg
+	name = "4.6x30mm SMG Magazine"
+	desc = "An additional 45-round 4.6x30mm magazine, for the MP7 smg."
+	item = /obj/item/ammo_box/magazine/mp7
+	cost = 4
+	uplink_item_flags = SYNDIE_TRIPS_CONTRABAND

@@ -834,7 +834,7 @@
 	)
 	required_enemies = list(2,2,1,1,1,1,1,0,0,0)
 	required_candidates = 1
-	weight = 0
+	weight = 2
 	cost = 3 // Doesn't have the same impact on rounds as revenants, dragons, sentient disease (10) or syndicate infiltrators (5).
 	repeatable = TRUE
 
@@ -902,7 +902,7 @@
 	)
 	required_enemies = list(2, 2, 1, 1, 1, 1, 1, 0, 0, 0)
 	required_candidates = 1
-	weight = 0
+	weight = 1
 	cost = 3
 	repeatable = TRUE
 	signup_item_path = /obj/effect/bluespace_stream

@@ -22,7 +22,7 @@
 /datum/uplink_item/explosives/syndicate_minibomb
 	name = "MK3A2 Grenade"
 	desc = "A handheld grenade with a decent blast radius and some shrapnel."
-	progression_minimum = 30 MINUTES
+	progression_minimum = 15 MINUTES
 	item = /obj/item/grenade/syndieminibomb/bouncer
 	cost = 5
 	purchasable_from = ~UPLINK_CLOWN_OPS

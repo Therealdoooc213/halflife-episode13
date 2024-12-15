@@ -554,12 +554,15 @@
 	if(bolt_type == BOLT_TYPE_NO_BOLT)
 		var/num_unloaded = 0
 		for(var/obj/item/ammo_casing/casing as anything in get_ammo_list(FALSE))
-			casing.forceMove(drop_location())
-			casing.bounce_away(FALSE, NONE)
+			casing.forceMove(drop_location()) //Eject casing onto ground.
+			pixel_x = rand(-4, 4)
+			pixel_y = rand(-4, 4)
+			if(ismob(user))
+				pixel_z = 8 //bounce time
+				casing.SpinAnimation(speed = 1 SECONDS, loops = 1)
+				var/angle_of_movement = !isnull(user) ? (rand(-3000, 3000) / 100) + dir2angle(turn(user.dir, 180)) : rand(-3000, 3000) / 100
+				casing.AddComponent(/datum/component/movable_physics, _horizontal_velocity = rand(450, 550) / 100, _vertical_velocity = rand(400, 450) / 100, _horizontal_friction = rand(20, 24) / 100, _z_gravity = 9.80665, _z_floor = 0, _angle_of_movement = angle_of_movement)
 			num_unloaded++
-			var/turf/T = get_turf(drop_location())
-			if(T && is_station_level(T.z))
-				SSblackbox.record_feedback("tally", "station_mess_created", 1, casing.name)
 		if (num_unloaded)
 			balloon_alert(user, "[num_unloaded] [cartridge_wording]\s unloaded")
 			playsound(user, eject_sound, eject_sound_volume, eject_sound_vary)

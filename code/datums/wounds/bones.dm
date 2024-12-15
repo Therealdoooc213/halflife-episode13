@@ -248,6 +248,8 @@
 	simple_treat_text = "<b>Bandaging</b> the wound will reduce its impact until treated with a bonesetter. Most commonly, it is treated by aggressively grabbing someone and helpfully wrenching the limb in place, though there's room for malfeasance when doing this."
 	homemade_treat_text = "Besides bandaging and wrenching, <b>bone setters</b> can be printed in lathes and utilized on oneself at the cost of great pain. As a last resort, <b>crushing</b> the patient with a <b>firelock</b> has sometimes been noted to fix their dislocated limb."
 
+	woundpain = 20
+
 /datum/wound_pregen_data/bone/dislocate
 	abstract = FALSE
 
@@ -392,6 +394,7 @@
 	simple_treat_text = "<b>Bandaging</b> the wound will reduce its impact until <b>surgically treated</b> with bone gel and surgical tape."
 	homemade_treat_text = "<b>Bone gel and surgical tape</b> may be applied directly to the wound, though this is quite difficult for most people to do so individually unless they've dosed themselves with one or more <b>painkillers</b> (Morphine and Miner's Salve have been known to help)"
 
+	woundpain = 30
 
 /datum/wound_pregen_data/bone/hairline
 	abstract = FALSE
@@ -430,6 +433,8 @@
 	simple_desc = "Patient's bones have effectively shattered completely, causing total immobilization of the limb."
 	simple_treat_text = "<b>Bandaging</b> the wound will slightly reduce its impact until <b>surgically treated</b> with bone gel and surgical tape."
 	homemade_treat_text = "Although this is extremely difficult and slow to function, <b>Bone gel and surgical tape</b> may be applied directly to the wound, though this is nigh-impossible for most people to do so individually unless they've dosed themselves with one or more <b>painkillers</b> (Morphine and Miner's Salve have been known to help)"
+
+	woundpain = 40
 
 /datum/wound_pregen_data/bone/compound
 	abstract = FALSE

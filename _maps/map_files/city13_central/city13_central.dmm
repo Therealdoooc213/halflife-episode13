@@ -564,6 +564,10 @@
 	},
 /turf/open/floor/plating/indoor/sterilesquares,
 /area/halflife/indoors/hospital)
+"cH" = (
+/obj/effect/landmark/start/depsec/engineering,
+/turf/open/floor/plating/indoor/tile/navy,
+/area/halflife/indoors/townhall)
 "cJ" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -1525,6 +1529,11 @@
 	},
 /turf/open/floor/plating/ground/sidewalk,
 /area/halflife/outdoors)
+"ho" = (
+/obj/machinery/light/small,
+/obj/effect/landmark/start/depsec/engineering,
+/turf/open/floor/plating/indoor/tile/navy,
+/area/halflife/indoors/townhall)
 "hp" = (
 /obj/machinery/door/unpowered/halflife/metal,
 /turf/open/floor/plating/indoor/metal/plate,
@@ -2224,7 +2233,7 @@
 	height = 25;
 	name = "MetaStation emergency evac bay";
 	shuttle_id = "emergency_home";
-	width = 29
+	width = 7
 	},
 /turf/open/floor/plating/indoor/metal/grate,
 /area/halflife/outdoors)
@@ -3040,6 +3049,15 @@
 "oC" = (
 /obj/structure/table/halflife/metal/alt,
 /obj/machinery/light/small,
+/turf/open/floor/plating/indoor/sterilesquares,
+/area/halflife/indoors/hospital)
+"oD" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/yellow/warning{
+	dir = 4
+	},
 /turf/open/floor/plating/indoor/sterilesquares,
 /area/halflife/indoors/hospital)
 "oE" = (
@@ -4258,13 +4276,13 @@
 /area/halflife/outdoors/plaza)
 "uy" = (
 /obj/docking_port/stationary{
-	dir = 2;
-	dwidth = 3;
-	height = 15;
 	name = "arrivals";
-	roundstart_template = /datum/map_template/shuttle/arrival/box;
+	width = 7;
+	height = 15;
 	shuttle_id = "arrival_stationary";
-	width = 7
+	dwidth = 3;
+	roundstart_template = /datum/map_template/shuttle/arrival/box;
+	dir = 2
 	},
 /turf/open/floor/plating/indoor/metal/grate,
 /area/halflife/outdoors)
@@ -5436,15 +5454,6 @@
 /obj/effect/turf_decal/arrows,
 /turf/open/floor/plating/indoor/trainfloor,
 /area/halflife/indoors/trainstation)
-"Ag" = (
-/obj/machinery/light/small{
-	dir = 4
-	},
-/obj/effect/turf_decal/trimline/yellow/warning{
-	dir = 4
-	},
-/turf/open/floor/plating/indoor/sterilesquares,
-/area/halflife/indoors/hospital)
 "Ah" = (
 /turf/open/floor/plating/ground/dirt,
 /area/halflife/outdoors/alley)
@@ -39355,7 +39364,7 @@ Iw
 Gx
 hK
 nA
-Ag
+oD
 lG
 hK
 hK
@@ -39444,7 +39453,7 @@ JG
 LD
 Wu
 gN
-zQ
+ho
 XQ
 kJ
 Sf
@@ -39565,7 +39574,7 @@ nx
 nx
 LD
 LD
-LD
+cH
 XQ
 XQ
 XQ

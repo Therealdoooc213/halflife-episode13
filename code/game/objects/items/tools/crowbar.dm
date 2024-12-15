@@ -70,7 +70,7 @@
 	force = 30
 
 /obj/item/crowbar/large/freeman/extreme
-	desc = "You might've dropped this in black mesa. Or, er... what the hell is black mesa?"
+	desc = "An extraordinarily deadly crowbar that will down just about anyone in only two hits."
 	force = 80
 
 /obj/item/crowbar/large/emergency

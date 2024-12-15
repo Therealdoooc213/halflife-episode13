@@ -43,6 +43,8 @@
 	ration_bonus = 2
 	var/static/list/used_numbers = list()
 
+	cmode_music = 'hl13/sound/music/combat/apprehensionandevasion.ogg'
+
 /datum/job/warden/after_spawn(mob/living/carbon/human/H, mob/M)
 	. = ..()
 	H.faction += "combine"

@@ -20,7 +20,7 @@
 					text = "[SSshuttle.emergency] has docked with the station. You have [DisplayTimeText(SSshuttle.emergency_dock_time)] to board the emergency shuttle.",
 					title = "Emergency Shuttle Arrival",
 					sound = ANNOUNCER_SHUTTLEDOCK,
-					sender_override = "Emergency Shuttle Uplink Alert",
+					sender_override = "Transfer Train Uplink Alert",
 					players = list(hallucinator),
 					color_override = "orange",
 				)

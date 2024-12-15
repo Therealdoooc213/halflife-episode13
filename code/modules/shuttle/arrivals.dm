@@ -8,6 +8,8 @@
 	callTime = INFINITY
 	ignitionTime = 50
 
+	train = TRUE
+
 	movement_force = list("KNOCKDOWN" = 3, "THROW" = 0)
 
 	var/sound_played

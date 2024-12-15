@@ -444,6 +444,8 @@ Used by the AI doomsday and the self-destruct nuke.
 
 #ifndef LOWMEMORYMODE
 
+	LoadGroup(FailedZs, "Outlands", "map_files/generic", "outlands.dmm", default_traits = ZTRAITS_CENTCOM)
+
 	if(current_map.minetype == "lavaland")
 		LoadGroup(FailedZs, "Lavaland", "map_files/Mining", "Lavaland.dmm", default_traits = ZTRAITS_LAVALAND)
 	else if (!isnull(current_map.minetype) && current_map.minetype != "none")
@@ -474,7 +476,7 @@ GLOBAL_LIST_EMPTY(the_station_areas)
 
 /// Generates the global station area list, filling it with typepaths of unique areas found on the station Z.
 /datum/controller/subsystem/mapping/proc/generate_station_area_list()
-	for(var/area/station/station_area in GLOB.areas)
+	for(var/area/halflife/station_area in GLOB.areas)
 		if (!(station_area.area_flags & UNIQUE_AREA))
 			continue
 		if (is_station_level(station_area.z))

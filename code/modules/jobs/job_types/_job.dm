@@ -346,7 +346,7 @@
 
 	uniform = /obj/item/clothing/under/color/grey
 	id = /obj/item/card/id/advanced
-	shoes = /obj/item/clothing/shoes/sneakers/black
+	shoes = /obj/item/clothing/shoes/boots
 
 	preload = TRUE // These are used by the prefs ui, and also just kinda could use the extra help at roundstart
 

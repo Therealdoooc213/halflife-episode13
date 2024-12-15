@@ -22,6 +22,8 @@
 	ambient_buzz = 'hl13/sound/ambience/plaza_amb.ogg'
 	ambient_buzz_vol = 20
 
+	base_lighting_alpha = 10
+
 /area/halflife/outdoors/sewage_dump
 	name = "\improper Sewage Dump"
 	ambient_buzz = 'hl13/sound/ambience/toxic_ambience.ogg'
@@ -44,6 +46,8 @@
 	max_ambience_cooldown = 30 SECONDS
 	min_ambience_cooldown = 10 SECONDS
 	//daylight_multiplier = 0.35
+
+	base_lighting_alpha = 50
 
 /area/halflife/indoors
 	name = "\improper Indoors"

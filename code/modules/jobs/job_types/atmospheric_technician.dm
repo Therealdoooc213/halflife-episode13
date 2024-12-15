@@ -36,6 +36,10 @@
 
 	rpg_title = "Aeromancer"
 
+	ration_bonus = 1
+
+	cmode_music = 'hl13/sound/music/combat/crawlyard.ogg'
+
 /datum/outfit/job/atmos
 	name = "Infestation Control"
 	jobtype = /datum/job/atmospheric_technician

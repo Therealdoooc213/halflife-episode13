@@ -114,6 +114,9 @@
 	/// The actionspeed modifier we will use in case we are on the arms and have a interaction penalty. Qdelled on destroy.
 	var/datum/actionspeed_modifier/wound_interaction_inefficiency/actionspeed_mod
 
+	/// How much pain this wound causes while on a mob
+	var/woundpain = 0
+
 /datum/wound/New()
 	. = ..()
 

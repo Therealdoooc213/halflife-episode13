@@ -43,6 +43,8 @@
 	ration_bonus = 3
 	var/static/list/used_numbers = list()
 
+	cmode_music = 'hl13/sound/music/combat/apprehensionandevasion.ogg'
+
 /datum/job/head_of_security/get_captaincy_announcement(mob/living/captain)
 	return "Due to staffing shortages, newly promoted Acting District Administrator [captain.real_name] assuming command."
 

@@ -52,6 +52,8 @@
 
 	ration_bonus = 3
 
+	cmode_music = 'hl13/sound/music/combat/branescan.ogg'
+
 /datum/job/captain/get_captaincy_announcement(mob/living/captain)
 	return "District Administrator [captain.real_name] will be managing this district."
 

@@ -15,7 +15,7 @@ GLOBAL_LIST_EMPTY(chosen_station_templates)
 // START LANDMARKS FOLLOW. Don't change the names unless
 // you are refactoring shitty landmark code.
 /obj/effect/landmark/start/citizen
-	name = "Citizen"
+	name = JOB_ASSISTANT
 	icon_state = "Assistant"
 
 /obj/effect/landmark/start/citizen/override
@@ -23,63 +23,63 @@ GLOBAL_LIST_EMPTY(chosen_station_templates)
 	delete_after_roundstart = FALSE
 
 /obj/effect/landmark/start/civil_protection_officer
-	name = "Civil Protection Officer"
+	name = JOB_SECURITY_OFFICER
 	icon_state = "Security Officer"
 
 /obj/effect/landmark/start/divisional_lead
-	name = "Divisional Lead"
+	name = JOB_HEAD_OF_SECURITY
 	icon_state = "Head of Security"
 
 /obj/effect/landmark/start/overseer
-	name = "Overseer"
+	name = JOB_WARDEN
 	icon_state = "Warden"
 
 /obj/effect/landmark/start/city_administrator
-	name = "District Administrator"
+	name = JOB_CAPTAIN
 	icon_state = "Captain"
 
 /obj/effect/landmark/start/labor_lead
-	name = "Labor Lead"
+	name = JOB_HEAD_OF_PERSONNEL
 	icon_state = "Head of Personnel"
 
 /obj/effect/landmark/start/foreman
-	name = "Union Foreman"
+	name = JOB_QUARTERMASTER
 	icon_state = "Quartermaster"
 
 /obj/effect/landmark/start/engineer
-	name = "Union Engineer"
+	name = JOB_STATION_ENGINEER
 	icon_state = "Station Engineer"
 
 /obj/effect/landmark/start/cleanup_technician
-	name = "Cleanup Technician"
+	name = JOB_ATMOSPHERIC_TECHNICIAN
 	icon_state = "Station Engineer"
 
 /obj/effect/landmark/start/shaft_miner
-	name = "Shaft Miner"
+	name = JOB_SHAFT_MINER
 	icon_state = "Shaft Miner"
 
 /obj/effect/landmark/start/vortigaunt_slave
-	name = "Vortigaunt Slave"
+	name = JOB_JANITOR
 	icon_state = "Head of Personnel"
 
 /obj/effect/landmark/start/medical_doctor
-	name = "Union Doctor"
+	name = JOB_MEDICAL_DOCTOR
 	icon_state = "Medical Doctor"
 
 /obj/effect/landmark/start/scientist
-	name = "Union Scientist"
+	name = JOB_SCIENTIST
 	icon_state = "Scientist"
 
 /obj/effect/landmark/start/bartender
-	name = "Bartender"
+	name = JOB_BARTENDER
 	icon_state = "Bartender"
 
 /obj/effect/landmark/start/cook
-	name = "Cook"
+	name = JOB_COOK
 	icon_state = "Cook"
 
 /obj/effect/landmark/start/botanist
-	name = "Botanist"
+	name = JOB_BOTANIST
 	icon_state = "Botanist"
 
 /obj/effect/landmark/start/clerk

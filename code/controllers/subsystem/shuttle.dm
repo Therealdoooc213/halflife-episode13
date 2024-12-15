@@ -268,7 +268,7 @@ SUBSYSTEM_DEF(shuttle)
 			text = "Catastrophic casualties detected: crisis shuttle protocols activated - jamming recall signals across all frequencies.",
 			title = "Emergency Shuttle Dispatched",
 			sound = ANNOUNCER_SHUTTLECALLED,
-			sender_override = "Emergency Shuttle Uplink Alert",
+			sender_override = "Transfer Train Uplink Alert",
 			color_override = "orange",
 		)
 		if(emergency.timeLeft(1) > emergency_call_time * ALERT_COEFF_AUTOEVAC_CRITICAL)
@@ -282,7 +282,7 @@ SUBSYSTEM_DEF(shuttle)
 			text = "Emergency shuttle uplink interference detected, shuttle call disabled while the system reinitializes. Estimated restore in [DisplayTimeText(lockout_timer, round_seconds_to = 60)].",
 			title = "Uplink Interference",
 			sound = 'sound/announcer/announcement/announce_dig.ogg',
-			sender_override = "Emergency Shuttle Uplink Alert",
+			sender_override = "Transfer Train Uplink Alert",
 			color_override = "grey",
 		)
 		addtimer(CALLBACK(src, PROC_REF(unblock_recall)), lockout_timer)
@@ -296,7 +296,7 @@ SUBSYSTEM_DEF(shuttle)
 			text= "Emergency shuttle uplink services are now back online.",
 			title = "Uplink Restored",
 			sound = 'sound/announcer/announcement/announce_dig.ogg',
-			sender_override = "Emergency Shuttle Uplink Alert",
+			sender_override = "Transfer Train Uplink Alert",
 			color_override = "green",
 		)
 		return
@@ -319,21 +319,21 @@ SUBSYSTEM_DEF(shuttle)
 /datum/controller/subsystem/shuttle/proc/canEvac()
 	var/shuttle_refuel_delay = CONFIG_GET(number/shuttle_refuel_delay)
 	if(world.time - SSticker.round_start_time < shuttle_refuel_delay)
-		return "The emergency shuttle is refueling. Please wait [DisplayTimeText(shuttle_refuel_delay - (world.time - SSticker.round_start_time))] before attempting to call."
+		return "The transfer train is refueling. Please wait [DisplayTimeText(shuttle_refuel_delay - (world.time - SSticker.round_start_time))] before attempting to call."
 
 	switch(emergency.mode)
 		if(SHUTTLE_RECALL)
-			return "The emergency shuttle may not be called while returning to CentCom."
+			return "The transfer train may not be called while returning to Overwatch."
 		if(SHUTTLE_CALL)
-			return "The emergency shuttle is already on its way."
+			return "The transfer train is already on its way."
 		if(SHUTTLE_DOCKED)
-			return "The emergency shuttle is already here."
+			return "The transfer train is already here."
 		if(SHUTTLE_IGNITING)
-			return "The emergency shuttle is firing its engines to leave."
+			return "The transfer train is firing its engines to leave."
 		if(SHUTTLE_ESCAPE)
-			return "The emergency shuttle is moving away to a safe distance."
+			return "The transfer train is moving away to a safe distance."
 		if(SHUTTLE_STRANDED)
-			return "The emergency shuttle has been disabled by CentCom."
+			return "The transfer train has been disabled by Overwatch."
 
 	return TRUE
 
@@ -537,7 +537,7 @@ SUBSYSTEM_DEF(shuttle)
 			text = "Departure has been postponed indefinitely pending conflict resolution.",
 			title = "Hostile Environment Detected",
 			sound = 'sound/announcer/notice/notice1.ogg',
-			sender_override = "Emergency Shuttle Uplink Alert",
+			sender_override = "Transfer Train Uplink Alert",
 			color_override = "grey",
 		)
 	if(!emergency_no_escape && (emergency.mode == SHUTTLE_STRANDED || emergency.mode == SHUTTLE_DOCKED))
@@ -547,7 +547,7 @@ SUBSYSTEM_DEF(shuttle)
 			text = "You have [DisplayTimeText(emergency_dock_time)] to board the emergency shuttle.",
 			title = "Hostile Environment Resolved",
 			sound = 'sound/announcer/announcement/announce_dig.ogg',
-			sender_override = "Emergency Shuttle Uplink Alert",
+			sender_override = "Transfer Train Uplink Alert",
 			color_override = "green",
 		)
 

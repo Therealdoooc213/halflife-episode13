@@ -149,7 +149,7 @@
 						return
 					sheets.use(amount)
 					var/turf/T = get_turf(src)
-					T.place_on_top(/turf/closed/wall)
+					T.place_on_top(/turf/closed/wall/halflife/metal/weak)
 					transfer_fingerprints_to(T)
 					qdel(src)
 				return

@@ -28,3 +28,13 @@
 /datum/mood_event/sleepy/small
 	description = "I'm a bit tired."
 	mood_change = -4
+
+
+//pain
+/datum/mood_event/seriouspain
+	description = "Fuck, i'm hurting pretty bad right now."
+	mood_change = -6
+
+/datum/mood_event/maxpain
+	description = "AGH, FUCK! THE PAIN HURTS SO MUCH!!."
+	mood_change = -12

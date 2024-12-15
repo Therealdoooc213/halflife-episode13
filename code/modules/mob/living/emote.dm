@@ -110,7 +110,7 @@
 	var/mob/living/carbon/carbon_user = user
 	// For masks that give unique death sounds
 	if(istype(carbon_user) && isclothing(carbon_user.wear_mask) && carbon_user.wear_mask.unique_death)
-		playsound(carbon_user, carbon_user.wear_mask.unique_death, 200, TRUE, TRUE)
+		playsound(carbon_user, carbon_user.wear_mask.unique_death, 200, FALSE, TRUE)
 		return
 	if(user.death_sound)
 		playsound(user, user.death_sound, 200, FALSE, TRUE)
@@ -240,6 +240,13 @@
 	key_third_person = "groans"
 	message = "groans!"
 	message_mime = "appears to groan!"
+	emote_type = EMOTE_VISIBLE | EMOTE_AUDIBLE
+
+/datum/emote/living/paingroan
+	key = "paingroan"
+	key_third_person = "groans"
+	message = "groans in pain!"
+	message_mime = "appears to groan in pain!"
 	emote_type = EMOTE_VISIBLE | EMOTE_AUDIBLE
 
 /datum/emote/living/grimace

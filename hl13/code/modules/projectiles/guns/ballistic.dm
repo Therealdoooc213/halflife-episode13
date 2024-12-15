@@ -29,7 +29,6 @@
 	desc = "A old M4A1 pattern rifle. Not as good as the combine's rifles, but still powerful."
 	icon = 'hl13/icons/obj/guns/projectile.dmi'
 	icon_state = "m4a1"
-	inhand_icon_state = "lwt650"
 	fire_sound = "sound/items/weapons/gun/rifle/shot.ogg"
 	vary_fire_sound = FALSE
 	load_sound = "sound/items/weapons/gun/rifle/rifleload.ogg"
@@ -146,6 +145,7 @@
 	inhand_icon_state = "colt_python"
 	spread = 5 //less spread
 	recoil = 2 //lots of recoil though
+	fire_delay = 6
 	vary_fire_sound = FALSE
 
 /obj/item/gun/ballistic/shotgun/spas12

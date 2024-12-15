@@ -222,6 +222,10 @@
 	var/draw_time = 3 SECONDS
 	SET_BASE_PIXEL(0, 0)
 
+/obj/item/gun/ballistic/rifle/rebarxbow/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/scope, range_modifier = 2) //enough range to at least be useful for stealth
+
 /obj/item/gun/ballistic/rifle/rebarxbow/rack(mob/user = null)
 	if (bolt_locked)
 		drop_bolt(user)
@@ -286,10 +290,6 @@
 	initial_caliber = CALIBER_REBAR
 	draw_time = 1
 	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/boltaction/rebarxbow/syndie
-
-/obj/item/gun/ballistic/rifle/rebarxbow/syndie/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/scope, range_modifier = 2) //enough range to at least be useful for stealth
 
 /// PIPE GUNS ///
 

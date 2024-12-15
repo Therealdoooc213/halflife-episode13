@@ -1,6 +1,6 @@
 /datum/quirk/indebted
 	name = "Indebted"
-	desc = "Bad life decisions, medical bills, student loans, whatever it may be, you've incurred quite the debt. A portion of all you receive will go towards extinguishing it."
+	desc = "Bad life decisions, combine loans, illicit deals, whatever it may be, you've incurred quite the debt. A portion of all you receive will go towards extinguishing it."
 	icon = FA_ICON_DOLLAR
 	quirk_flags = QUIRK_HUMAN_ONLY|QUIRK_HIDE_FROM_SCAN
 	value = -2

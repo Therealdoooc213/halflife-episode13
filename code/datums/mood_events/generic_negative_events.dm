@@ -476,8 +476,8 @@
 	special_screen_obj = "mood_despair"
 
 /datum/mood_event/all_nighter
-	description = "I didn't sleep at all last night. I'm exhausted."
-	mood_change = -5
+	description = "I haven't had a real good sleep in a long time."
+	mood_change = -3
 
 //Used by the Veteran Advisor trait job
 /datum/mood_event/desentized

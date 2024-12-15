@@ -5,8 +5,8 @@
 	ambience_index = AMBIENCE_HLOUTSIDE
 	flags_1 = CAN_BE_DIRTY_1
 	requires_power = FALSE
-	max_ambience_cooldown = 200 SECONDS
-	min_ambience_cooldown = 150 SECONDS
+	max_ambience_cooldown = 240 SECONDS
+	min_ambience_cooldown = 180 SECONDS
 
 /area/halflife/outdoors
 	name = "\improper Outdoors"
@@ -26,6 +26,10 @@
 	name = "\improper Sewage Dump"
 	ambient_buzz = 'hl13/sound/ambience/toxic_ambience.ogg'
 	//daylight_multiplier = 0.35
+
+/area/halflife/outdoors/plaza
+	name = "\improper Plaza"
+	ambient_buzz_vol = 25
 
 /area/halflife/outdoors/alley
 	name = "\improper Alley Ways"
@@ -94,7 +98,6 @@
 /area/halflife/indoors/sewer
 	name = "\improper Sewers"
 	base_lighting_alpha = 5
-	max_ambience_cooldown = 90 SECONDS
 	icon_state = "away"
 	ambience_index = AMBIENCE_HLSEWERS
 	sound_environment = SOUND_ENVIRONMENT_STONE_CORRIDOR

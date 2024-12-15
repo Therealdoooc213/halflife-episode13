@@ -17,6 +17,8 @@
 	/// whether we are currently being loaded by a lobby
 	var/template_in_use = FALSE
 
+/*
+
 /datum/lazy_template/deathmatch/ragecage
 	name = "Ragecage"
 	desc = "Fun for the whole family, the classic ragecage."
@@ -244,5 +246,35 @@
 	map_name = "ragnarok"
 	key = "ragnarok"
 
+*/
+
 /datum/turf_reservation/indestructible_plating
 	turf_type = /turf/open/indestructible/plating //a little hacky but i guess it has to be done
+
+/datum/lazy_template/deathmatch/citydistrict
+	name = "City District Street"
+	desc = "A street on the edge of the city, mixing close quarters environments with open street space."
+	max_players = 6
+	allowed_loadouts = list(
+		/datum/outfit/deathmatch_loadout/rebel/marine,
+		/datum/outfit/deathmatch_loadout/rebel/ranger,
+		/datum/outfit/deathmatch_loadout/combine/overwatch,
+		/datum/outfit/deathmatch_loadout/combine/overwatch/shotgunner,
+		/datum/outfit/deathmatch_loadout/crowbar,
+	)
+	map_name = "citydistrict"
+	key = "citydistrict"
+
+/datum/lazy_template/deathmatch/hl13train
+	name = "Outland Trains"
+	desc = "A trio of trains connected haphazardly. They're moving quite fast, don't lose your footing."
+	max_players = 6
+	allowed_loadouts = list(
+		/datum/outfit/deathmatch_loadout/rebel/marine,
+		/datum/outfit/deathmatch_loadout/rebel/ranger,
+		/datum/outfit/deathmatch_loadout/combine/overwatch,
+		/datum/outfit/deathmatch_loadout/combine/overwatch/shotgunner,
+		/datum/outfit/deathmatch_loadout/crowbar,
+	)
+	map_name = "hl13train"
+	key = "hl13train"

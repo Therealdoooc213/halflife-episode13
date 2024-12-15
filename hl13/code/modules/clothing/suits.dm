@@ -41,8 +41,14 @@
 	armor = list(MELEE = 40, BULLET = 40, LASER = 40, ENERGY = 30, BOMB = 40, BIO = 50, RAD = 30, FIRE = 50, ACID = 50, WOUND = 20)
 	icon = 'hl13/icons/obj/clothing/suits.dmi'
 
+/obj/item/clothing/suit/armor/overwatch/deathmatch
+	slowdown = 0.33
+
 /obj/item/clothing/suit/armor/overwatch/red
 	icon_state = "overwatch_red"
+
+/obj/item/clothing/suit/armor/overwatch/red/deathmatch
+	slowdown = 0.33
 
 /obj/item/clothing/suit/armor/overwatch/elite
 	name = "overwatch elite chestpiece"

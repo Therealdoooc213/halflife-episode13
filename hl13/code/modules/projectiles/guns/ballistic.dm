@@ -153,6 +153,7 @@
 	desc = "A pump action shotgun."
 	icon = 'hl13/icons/obj/guns/projectile.dmi'
 	icon_state = "spas12"
+	slot_flags = ITEM_SLOT_SUITSTORE
 	inhand_icon_state = "shotgun_combat"
 	fire_sound = "hl13/sound/weapons/shotgunfire.ogg"
 	rack_sound = "hl13/sound/weapons/shotgunpump.ogg"

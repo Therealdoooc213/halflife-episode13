@@ -1145,3 +1145,118 @@
 	shoes = /obj/item/clothing/shoes/bronze
 	l_pocket = /obj/item/reagent_containers/cup/beaker/synthflesh/named // they used to turn their dmg into tox with a spell. close enough
 	r_pocket = /obj/item/reagent_containers/cup/beaker/synthflesh/named
+
+/datum/outfit/deathmatch_loadout/rebel/marine
+	name = "Deathmatch: Rebel Marine"
+	display_name = "Rebel Marine"
+	desc = "Equipped with an M4A1 rifle and a grenade, you have the best damage output available to the resistance, but lack much of anything else."
+
+	head = /obj/item/clothing/head/helmet/marine/pmc
+	uniform = /obj/item/clothing/under/citizen/rebel
+	gloves = /obj/item/clothing/gloves/fingerless
+	suit = /obj/item/clothing/suit/armor/civilprotection
+	suit_store = /obj/item/gun/ballistic/automatic/m4a1
+	l_pocket = /obj/item/grenade/syndieminibomb/bouncer
+	r_pocket = /obj/item/ammo_box/magazine/m4a1
+
+/datum/outfit/deathmatch_loadout/rebel/medic
+	name = "Deathmatch: Rebel Medic"
+	display_name = "Rebel Medic"
+	desc = "You haven't much firepower at your disposal with limited ammo and an MP7, but you carry a lot of medical supplies for yourself and your team mates."
+
+	head = /obj/item/clothing/head/beanie/black
+	uniform = /obj/item/clothing/under/citizen/rebel
+	gloves = /obj/item/clothing/gloves/fingerless
+	suit = /obj/item/clothing/suit/armor/civilprotection
+	suit_store = /obj/item/gun/ballistic/automatic/mp7
+	l_pocket = /obj/item/ammo_box/magazine/mp7
+
+	back = /obj/item/storage/backpack/satchel/med
+	backpack_contents = list(
+		/obj/item/reagent_containers/pill/patch/medkit/vial,
+		/obj/item/reagent_containers/pill/patch/medkit/vial,
+		/obj/item/reagent_containers/pill/patch/medkit/vial,
+		/obj/item/reagent_containers/pill/patch/medkit,
+		/obj/item/reagent_containers/pill/patch/medkit,
+	)
+
+/datum/outfit/deathmatch_loadout/rebel/ranger
+	name = "Deathmatch: Rebel Ranger"
+	display_name = "Rebel Ranger"
+	desc = "Utilize your scoped rebar crossbow for sniping, and your revolver as a deadly secondary for more up close situations."
+
+	head = /obj/item/clothing/head/beanie/black
+	uniform = /obj/item/clothing/under/citizen/rebel
+	gloves = /obj/item/clothing/gloves/fingerless
+	suit = /obj/item/clothing/suit/armor/civilprotection
+	suit_store = /obj/item/gun/ballistic/rifle/rebarxbow
+	belt = /obj/item/gun/ballistic/revolver/coltpython
+	r_pocket = /obj/item/grenade/smokebomb
+
+	back = /obj/item/storage/bag/rebar_quiver
+	backpack_contents = list(
+		/obj/item/ammo_casing/rebar,
+		/obj/item/ammo_casing/rebar,
+		/obj/item/ammo_casing/rebar,
+		/obj/item/ammo_casing/rebar,
+		/obj/item/ammo_casing/rebar,
+	)
+
+/datum/outfit/deathmatch_loadout/combine/pre_equip(mob/living/carbon/human/H)
+	H.faction += "combine"
+	H.cmode_music = 'hl13/sound/music/combat/guarddown.ogg'
+	H.skin_tone = "#e3cfbf"
+	H.set_facial_hairstyle("Shaved", update = FALSE)
+	H.set_hairstyle("Bald") //this will call update_body_parts()
+	H.eye_color_left = "#b9b9b9"
+	H.eye_color_right = "#b9b9b9"
+	H.update_body()
+
+/datum/outfit/deathmatch_loadout/combine/overwatch
+	name = "Deathmatch: Overwatch Soldier"
+	display_name = "Overwatch Soldier"
+	desc = "Slow but heavily armored, overwatch soldiers serve as the vanguard for attacks."
+
+	glasses = /obj/item/clothing/glasses/hud/security/night/combine
+	mask = /obj/item/clothing/mask/gas/civilprotection/overwatch
+	uniform = /obj/item/clothing/under/combine/overwatch
+	suit = /obj/item/clothing/suit/armor/overwatch/deathmatch
+	shoes = /obj/item/clothing/shoes/jackboots/civilprotection/overwatch
+	gloves = /obj/item/clothing/gloves/combat/overwatch
+	belt = /obj/item/storage/belt/civilprotection/overwatch/mp7
+	suit_store = /obj/item/gun/ballistic/automatic/mp7
+
+/datum/outfit/deathmatch_loadout/combine/overwatch/shotgunner
+	name = "Deathmatch: Overwatch Shotgunner"
+	display_name = "Overwatch Shotgunner"
+	desc = "Slow but heavily armored, overwatch shotgunners are premier assault vanguards."
+	suit_store = /obj/item/gun/ballistic/shotgun/spas12
+	belt = /obj/item/storage/belt/civilprotection/overwatch/spas12
+	mask = /obj/item/clothing/mask/gas/civilprotection/overwatch/red
+	uniform = /obj/item/clothing/under/combine/overwatch/red
+	suit = /obj/item/clothing/suit/armor/overwatch/red/deathmatch
+
+/datum/outfit/deathmatch_loadout/combine/civilprotection
+	name = "Deathmatch: Civil Protection Officer"
+	display_name = "Civil Protection Officer"
+	desc = "Speedy in comparison to their overwatch counter parts, these non modified humans bring support to their side with manhacks."
+
+	uniform = /obj/item/clothing/under/combine/civilprotection
+	gloves = /obj/item/clothing/gloves/color/civilprotection
+	suit = /obj/item/clothing/suit/armor/civilprotection
+	suit_store = /obj/item/gun/ballistic/automatic/pistol/usp
+	shoes = /obj/item/clothing/shoes/jackboots/civilprotection
+	glasses = /obj/item/clothing/glasses/hud/security
+
+	mask = /obj/item/clothing/mask/gas/civilprotection
+	belt = /obj/item/storage/belt/civilprotection/full
+
+	l_pocket = /obj/item/grenade/spawnergrenade/manhacks
+	r_pocket = /obj/item/grenade/spawnergrenade/manhacks
+
+/datum/outfit/deathmatch_loadout/crowbar
+	name = "Deathmatch: A Free Man"
+	display_name = "A Free Man"
+	desc = "Crowbar in hand, seek freedom."
+	l_hand = /obj/item/crowbar/large/freeman/extreme
+	uniform = /obj/item/clothing/under/citizen/rebel

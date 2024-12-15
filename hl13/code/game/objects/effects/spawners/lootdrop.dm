@@ -157,7 +157,7 @@
 				/obj/item/melee/baton/security/loaded,
 				/obj/item/stack/telecrystal/five,
 				/obj/item/clothing/suit/armor/kevlar = 2,
-				/obj/item/clothing/head/helmet/military
+				/obj/item/clothing/head/helmet/marine/pmc
 				)
 
 

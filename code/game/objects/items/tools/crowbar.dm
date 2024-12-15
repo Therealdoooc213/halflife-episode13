@@ -61,9 +61,17 @@
 	throw_speed = 3
 	throw_range = 3
 	custom_materials = list(/datum/material/iron=SMALL_MATERIAL_AMOUNT*0.7)
-	icon_state = "crowbar_large"
-	worn_icon_state = "crowbar"
+	icon_state = "crowbar_powergame"
+	inhand_icon_state = "crowbar_red"
 	toolspeed = 0.7
+
+/obj/item/crowbar/large/freeman
+	desc = "You might've dropped this in black mesa. Or, er... what the hell is black mesa?"
+	force = 30
+
+/obj/item/crowbar/large/freeman/extreme
+	desc = "You might've dropped this in black mesa. Or, er... what the hell is black mesa?"
+	force = 80
 
 /obj/item/crowbar/large/emergency
 	name = "emergency crowbar"

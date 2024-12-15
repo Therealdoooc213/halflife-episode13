@@ -37,6 +37,22 @@
 /obj/structure/flora/bush/ferny/style_random,
 /turf/open/floor/plating/ground/dirt/alt,
 /area/halflife/outdoors/forest)
+"cF" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/turf/open/halflife/water/shallow,
+/area/halflife/outdoors/forest)
+"cP" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/obj/effect/turf_decal/weather/dirt,
+/turf/open/halflife/water/shallow,
+/area/halflife/outdoors/forest)
 "cT" = (
 /obj/structure/fluff/traveltile{
 	aportalgoesto = "city_surface_left";
@@ -162,6 +178,12 @@
 /obj/structure/bed/halflife/mattress/stale,
 /turf/open/floor/plating/indoor/woodc/mosaic,
 /area/halflife/indoors/bunker)
+"jM" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 4
+	},
+/turf/open/halflife/water/shallow,
+/area/halflife/outdoors/forest)
 "jT" = (
 /obj/structure/table/halflife/no_smooth/cable_reel,
 /obj/effect/spawner/random/halflife/loot,
@@ -195,6 +217,12 @@
 /obj/machinery/telecomms/allinone,
 /turf/open/floor/plating/indoor/woodc,
 /area/halflife/outdoors)
+"lk" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/turf/open/halflife/water/shallow,
+/area/halflife/outdoors/forest)
 "lH" = (
 /turf/open/floor/plating/indoor/metal/pipe,
 /area/halflife/indoors/bunker)
@@ -320,6 +348,24 @@
 /area/halflife/indoors/bunker)
 "tN" = (
 /turf/open/floor/plating/ground/dirt,
+/area/halflife/outdoors/forest)
+"tO" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/turf/open/halflife/water/shallow,
+/area/halflife/outdoors/forest)
+"uN" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/turf/open/halflife/water/shallow,
 /area/halflife/outdoors/forest)
 "vl" = (
 /turf/open/halflife/water/deep,
@@ -455,6 +501,15 @@
 /obj/structure/flora/bush/sparsegrass/style_random,
 /turf/open/floor/plating/ground/dirt,
 /area/halflife/outdoors/forest)
+"ES" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/turf/open/halflife/water/shallow,
+/area/halflife/outdoors/forest)
 "EU" = (
 /obj/effect/spawner/random/halflife/loot,
 /turf/open/floor/plating/ground/dirt,
@@ -533,12 +588,30 @@
 /obj/structure/flora/bush/pointy/style_random,
 /turf/open/floor/plating/ground/dirt/alt,
 /area/halflife/outdoors/forest)
+"Jq" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1
+	},
+/turf/open/halflife/water/shallow,
+/area/halflife/outdoors/forest)
 "JK" = (
 /obj/structure/table/halflife/metal/grate,
 /obj/item/clothing/under/citizen/rebel,
 /obj/item/clothing/under/citizen/rebel,
 /turf/open/floor/plating/indoor/metal/plate,
 /area/halflife/indoors/bunker)
+"Km" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/turf/open/halflife/water/shallow,
+/area/halflife/outdoors/forest)
+"Ku" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/turf/open/halflife/water/shallow,
+/area/halflife/outdoors/forest)
 "KM" = (
 /obj/structure/table/halflife/metal/grate,
 /obj/effect/spawner/random/halflife/loot,
@@ -685,6 +758,12 @@
 /obj/structure/flora/tree/jungle,
 /turf/open/floor/plating/ground/dirt/alt,
 /area/halflife/outdoors/forest)
+"RZ" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/turf/open/halflife/water/shallow,
+/area/halflife/outdoors/forest)
 "Sg" = (
 /obj/structure/flora/tree/jungle,
 /turf/open/floor/plating/ground/dirt,
@@ -786,6 +865,12 @@
 "WR" = (
 /turf/open/halflife/water/medium,
 /area/halflife/outdoors/forest)
+"WY" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1
+	},
+/turf/open/floor/plating/ground/dirt,
+/area/halflife/outdoors/forest)
 "Xp" = (
 /turf/open/floor/plating/indoor/lino,
 /area/halflife/indoors/bunker)
@@ -856,6 +941,10 @@
 	},
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors/sewer/tunnel)
+"Zu" = (
+/obj/effect/turf_decal/weather/dirt,
+/turf/open/halflife/water/shallow,
+/area/halflife/outdoors/forest)
 "ZQ" = (
 /obj/structure/table/halflife/metal/grate,
 /obj/item/hl2key/rebel,
@@ -4466,14 +4555,14 @@ It
 tN
 tN
 tN
+lk
 Ym
-Ym
 WR
 WR
 WR
 WR
 WR
-Ym
+Zu
 tN
 tN
 tN
@@ -4594,15 +4683,15 @@ tN
 LN
 tN
 WC
-Ym
+Jq
 Ym
 Ym
 WR
 WR
 WR
 Ym
-Ym
-Ym
+RZ
+Ku
 tN
 tN
 tN
@@ -4721,7 +4810,7 @@ tN
 tN
 tN
 tN
-Ym
+lk
 Ym
 Ym
 Ym
@@ -4730,7 +4819,7 @@ WR
 WR
 Ym
 Ym
-Ym
+Ku
 tN
 tN
 tN
@@ -4849,7 +4938,7 @@ It
 tN
 tN
 tN
-Ym
+lk
 Ym
 Ym
 WR
@@ -4858,7 +4947,7 @@ WR
 WR
 Ym
 Ym
-Ym
+Ku
 tN
 tN
 tN
@@ -4977,15 +5066,15 @@ aZ
 tN
 tN
 tN
+lk
 Ym
-Ym
 WR
 WR
 WR
 WR
 WR
 Ym
-Ym
+Zu
 tN
 tN
 tN
@@ -5104,8 +5193,8 @@ It
 tN
 tN
 tN
-tN
-Ym
+WY
+Jq
 Ym
 WR
 WR
@@ -5113,7 +5202,7 @@ WR
 WR
 Ym
 Ym
-Ym
+Ku
 tN
 tN
 tN
@@ -5232,7 +5321,7 @@ It
 It
 tN
 tN
-Ym
+lk
 Ym
 Ym
 WR
@@ -5241,7 +5330,7 @@ WR
 WR
 Ym
 Ym
-Ym
+Ku
 tN
 tN
 tN
@@ -5360,7 +5449,7 @@ It
 LN
 tN
 tN
-Ym
+Jq
 Ym
 Ym
 WR
@@ -5368,7 +5457,7 @@ WR
 WR
 Ym
 Ym
-Ym
+Zu
 tN
 tN
 It
@@ -5487,7 +5576,7 @@ It
 tN
 tN
 tN
-Ym
+lk
 Ym
 Ym
 WR
@@ -5495,7 +5584,7 @@ WR
 WR
 Ym
 Ym
-Ym
+Zu
 tN
 tN
 It
@@ -5615,14 +5704,14 @@ GX
 tN
 tN
 tN
-Ym
+Jq
 Ym
 Ym
 WR
 WR
 WR
 Ym
-Ym
+Zu
 tN
 tN
 tN
@@ -5742,7 +5831,7 @@ GX
 Wx
 tN
 tN
-Ym
+lk
 Ym
 Ym
 Ym
@@ -5750,7 +5839,7 @@ WR
 WR
 WR
 Ym
-Ym
+Ku
 tN
 tN
 tN
@@ -5870,7 +5959,7 @@ tN
 tN
 tN
 tN
-Ym
+lk
 Ym
 Ym
 WR
@@ -5878,7 +5967,7 @@ WR
 WR
 Ym
 Ym
-Ym
+Ku
 tN
 tN
 It
@@ -5998,14 +6087,14 @@ tN
 tN
 tN
 tN
-Ym
+Jq
 Ym
 Ym
 WR
 WR
 Ym
 Ym
-Ym
+Zu
 tN
 tN
 Wx
@@ -6124,15 +6213,15 @@ tN
 LN
 tN
 tN
-Ym
-Ym
+ES
+jM
 Ym
 Ym
 WR
 WR
 Ym
 Ym
-Ym
+Zu
 tN
 tN
 tN
@@ -6253,13 +6342,13 @@ tN
 tN
 tN
 tN
-Ym
+Jq
 Ym
 WR
 WR
 WR
 Ym
-Ym
+Zu
 ho
 tN
 tN
@@ -6380,14 +6469,14 @@ It
 tN
 It
 tN
-Ym
+Jq
 Ym
 WR
 WR
 WR
 Ym
 Ym
-Ym
+Ku
 tN
 Wx
 It
@@ -6507,14 +6596,14 @@ It
 It
 tN
 tN
-Ym
+Jq
 Ym
 Ym
 WR
 WR
 WR
 Ym
-Ym
+Zu
 tN
 tN
 tN
@@ -6633,7 +6722,7 @@ tN
 tN
 tN
 tN
-Ym
+cF
 Ym
 Ym
 WR
@@ -6641,7 +6730,7 @@ WR
 WR
 WR
 Ym
-Ym
+Km
 It
 tN
 tN
@@ -6760,14 +6849,14 @@ tN
 tN
 tN
 tN
-Ym
+Jq
 Ym
 Ym
 WR
 WR
 WR
 Ym
-Ym
+Zu
 tN
 It
 tN
@@ -6887,14 +6976,14 @@ It
 tN
 tN
 tN
-Ym
+Jq
 Ym
 Ym
 WR
 WR
 Ym
 Ym
-Ym
+Km
 tN
 It
 tN
@@ -7013,14 +7102,14 @@ GX
 sD
 tN
 tN
-Ym
+cF
 Ym
 Ym
 Ym
 WR
 WR
 Ym
-Ym
+Zu
 tN
 tN
 It
@@ -7140,14 +7229,14 @@ pH
 It
 tN
 tN
-Ym
+Jq
 Ym
 Ym
 WR
 WR
 Ym
 Ym
-Ym
+Km
 tN
 tN
 dg
@@ -7267,13 +7356,13 @@ dg
 tN
 tN
 tN
-Ym
+Jq
 Ym
 Ym
 WR
 WR
 Ym
-Ym
+Zu
 tN
 tN
 tN
@@ -7393,14 +7482,14 @@ GX
 It
 tN
 tN
-Ym
+cF
 Ym
 Ym
 Ym
 WR
 WR
 Ym
-Ym
+Zu
 tN
 tN
 It
@@ -7520,14 +7609,14 @@ GX
 It
 tN
 tN
-Ym
+Jq
 Ym
 Ym
 Ym
 WR
 WR
 Ym
-Ym
+Zu
 tN
 tN
 sD
@@ -7647,14 +7736,14 @@ GX
 aZ
 tN
 tN
-Ym
+Jq
 Ym
 Ym
 WR
 WR
 WR
 Ym
-Ym
+Zu
 tN
 tN
 It
@@ -7774,14 +7863,14 @@ It
 tN
 tN
 tN
-Ym
+Jq
 Ym
 Ym
 Ym
 WR
 WR
 Ym
-Ym
+Zu
 tN
 tN
 tN
@@ -7901,14 +7990,14 @@ tN
 It
 tN
 tN
-Ym
+Jq
 Ym
 Ym
 Ym
 WR
 WR
 Ym
-Ym
+Zu
 tN
 tN
 tN
@@ -8028,7 +8117,7 @@ tN
 It
 tN
 tN
-Ym
+Jq
 Ym
 Ym
 Ym
@@ -8036,7 +8125,7 @@ WR
 WR
 Ym
 Ym
-Ym
+Ku
 tN
 It
 tN
@@ -8155,7 +8244,7 @@ tN
 dg
 It
 tN
-Ym
+Jq
 Ym
 Ym
 Ym
@@ -8163,7 +8252,7 @@ WR
 WR
 Ym
 Ym
-Ym
+Zu
 tN
 It
 It
@@ -8282,7 +8371,7 @@ tN
 tN
 tN
 tN
-Ym
+lk
 Ym
 Ym
 Ym
@@ -8290,7 +8379,7 @@ WR
 WR
 WR
 Ym
-Ym
+Zu
 tN
 It
 It
@@ -8410,14 +8499,14 @@ tN
 tN
 tN
 tN
-Ym
+Jq
 Ym
 Ym
 WR
 WR
 WR
 Ym
-Ym
+Zu
 tN
 tN
 It
@@ -8537,14 +8626,14 @@ GX
 It
 tN
 tN
-Ym
+lk
 Ym
 Ym
 WR
 WR
 WR
 Ym
-Ym
+Zu
 tN
 tN
 It
@@ -8665,14 +8754,14 @@ It
 tN
 tN
 tN
-Ym
+Jq
 Ym
 WR
 WR
 WR
 Ym
 Ym
-Ym
+Ku
 tN
 It
 It
@@ -8792,14 +8881,14 @@ GX
 tN
 It
 tN
-Ym
+Jq
 Ym
 Ym
 WR
 WR
 Ym
 Ym
-Ym
+Zu
 tN
 tN
 It
@@ -8919,14 +9008,14 @@ GX
 tN
 It
 It
-Ym
+Jq
 Ym
 Ym
 WR
 WR
 Ym
 Ym
-Ym
+Zu
 tN
 tN
 It
@@ -9046,14 +9135,14 @@ dg
 It
 tN
 It
-Ym
+Jq
 Ym
 Ym
 Ym
 WR
 Ym
 Ym
-Ym
+Zu
 tN
 tN
 tN
@@ -9173,7 +9262,7 @@ tN
 It
 It
 It
-Ym
+Jq
 Ym
 Ym
 Ym
@@ -9181,7 +9270,7 @@ WR
 WR
 Ym
 Ym
-Ym
+Ku
 tN
 tN
 It
@@ -9300,7 +9389,7 @@ tN
 Wx
 tN
 tN
-Ym
+Jq
 Ym
 Ym
 WR
@@ -9308,7 +9397,7 @@ WR
 WR
 Ym
 Ym
-Ym
+Zu
 tN
 tN
 tN
@@ -9427,7 +9516,7 @@ tN
 tN
 tN
 tN
-Ym
+Jq
 Ym
 Ym
 WR
@@ -9435,7 +9524,7 @@ WR
 WR
 Ym
 Ym
-Ym
+Zu
 yS
 dg
 It
@@ -9554,7 +9643,7 @@ tN
 tN
 tN
 tN
-Ym
+lk
 Ym
 Ym
 WR
@@ -9562,7 +9651,7 @@ WR
 WR
 Ym
 Ym
-Ym
+Zu
 yS
 tN
 It
@@ -9689,7 +9778,7 @@ pa
 pa
 WR
 Ym
-Ym
+Zu
 yS
 tN
 tN
@@ -9807,7 +9896,7 @@ XD
 XD
 XD
 tN
-Ym
+cP
 XD
 XD
 XD
@@ -10070,7 +10159,7 @@ WR
 WR
 Ym
 Ym
-Ym
+Zu
 tN
 tN
 tN
@@ -10197,7 +10286,7 @@ Ym
 WR
 WR
 Ym
-Ym
+Zu
 tN
 tN
 tN
@@ -10315,17 +10404,17 @@ It
 It
 AR
 tN
+tO
 Ym
 Ym
-Ym
-Ym
+jM
 Ym
 Ym
 WR
 WR
 Ym
 Ym
-Ym
+Ku
 tN
 It
 tN
@@ -10443,16 +10532,16 @@ It
 fu
 tN
 tN
-Ym
-Ym
+Jq
+Zu
 tN
-Ym
+Jq
 Ym
 WR
 WR
 Ym
 Ym
-Ym
+Zu
 tN
 It
 It
@@ -10570,16 +10659,16 @@ It
 It
 tN
 tN
-Ym
-Ym
+lk
+Km
 tN
-Ym
+Jq
 Ym
 WR
 WR
 Ym
 Ym
-Ym
+Zu
 tN
 It
 tN
@@ -10700,13 +10789,13 @@ tN
 tN
 tN
 It
-Ym
+Jq
 Ym
 WR
 WR
 Ym
 Ym
-Ym
+Zu
 tN
 It
 tN
@@ -10827,13 +10916,13 @@ It
 tN
 tN
 tN
-Ym
+Jq
 Ym
 WR
 WR
 Ym
 Ym
-Ym
+Zu
 tN
 It
 tN
@@ -10953,7 +11042,7 @@ tN
 dg
 It
 tN
-Ym
+cF
 Ym
 Ym
 WR
@@ -10961,7 +11050,7 @@ WR
 Ym
 Ym
 Ym
-Ym
+uN
 It
 It
 GX
@@ -11080,14 +11169,14 @@ aZ
 tN
 tN
 tN
-Ym
+Jq
 Ym
 Ym
 WR
 WR
 Ym
 Ym
-Ym
+Km
 tN
 tN
 tN
@@ -11207,13 +11296,13 @@ It
 It
 tN
 tN
-Ym
+Jq
 Ym
 Ym
 WR
 WR
 WR
-Ym
+Zu
 tN
 tN
 tN
@@ -11334,13 +11423,13 @@ tN
 It
 tN
 tN
-Ym
+Jq
 Ym
 Ym
 WR
 WR
 WR
-Ym
+Zu
 tN
 dg
 It
@@ -11461,13 +11550,13 @@ tN
 It
 It
 tN
-Ym
+lk
 Ym
 Ym
 Ym
 WR
 WR
-Ym
+Zu
 tN
 It
 It
@@ -11589,12 +11678,12 @@ It
 aZ
 tN
 tN
-Ym
+Jq
 Ym
 Ym
 WR
 WR
-Ym
+Zu
 tN
 It
 It
@@ -11716,13 +11805,13 @@ tN
 It
 It
 tN
-Ym
+Jq
 Ym
 Ym
 WR
 WR
 Ym
-Ym
+Ku
 tN
 It
 It
@@ -11843,13 +11932,13 @@ tN
 It
 tN
 tN
-Ym
+Jq
 Ym
 Ym
 WR
 WR
 Ym
-Ym
+Zu
 tN
 tN
 It
@@ -11970,14 +12059,14 @@ tN
 It
 tN
 tN
-Ym
+Jq
 Ym
 Ym
 Ym
 WR
 Ym
 Ym
-Ym
+Ku
 tN
 It
 It
@@ -12097,14 +12186,14 @@ tN
 It
 tN
 tN
-Ym
+lk
 Ym
 Ym
 Ym
 WR
 Ym
 Ym
-Ym
+Zu
 tN
 It
 It
@@ -12225,13 +12314,13 @@ tN
 tN
 tN
 tN
-Ym
+lk
 Ym
 Ym
 WR
 WR
 Ym
-Ym
+Zu
 tN
 tN
 It
@@ -12353,12 +12442,12 @@ tN
 tN
 tN
 tN
-Ym
+Jq
 Ym
 WR
 WR
 Ym
-Ym
+Zu
 tN
 tN
 It
@@ -12480,12 +12569,12 @@ LN
 tN
 tN
 tN
-Ym
+lk
 Ym
 WR
 WR
 Ym
-Ym
+Zu
 tN
 tN
 It
@@ -12608,12 +12697,12 @@ It
 It
 tN
 tN
-Ym
+Jq
 WR
 WR
 Ym
 Ym
-Ym
+Ku
 tN
 LN
 tN
@@ -12735,12 +12824,12 @@ It
 It
 tN
 tN
-Ym
+Jq
 WR
 WR
 Ym
 Ym
-Ym
+Zu
 tN
 tN
 It
@@ -12861,13 +12950,13 @@ It
 It
 It
 tN
-Ym
+tO
 Ym
 WR
 WR
 Ym
 Ym
-Ym
+Zu
 tN
 tN
 It
@@ -12989,12 +13078,12 @@ It
 tN
 tN
 WC
-Ym
+Jq
 WR
 WR
 Ym
 Ym
-Ym
+Km
 tN
 It
 It
@@ -13116,11 +13205,11 @@ tN
 tN
 tN
 tN
-Ym
+Jq
 WR
 WR
 Ym
-Ym
+Zu
 tN
 tN
 It
@@ -13242,12 +13331,12 @@ LN
 tN
 tN
 tN
-Ym
+cF
 Ym
 WR
 WR
 Ym
-Ym
+Zu
 tN
 It
 It
@@ -13369,12 +13458,12 @@ tN
 tN
 tN
 WC
-Ym
+Jq
 Ym
 WR
 WR
 Ym
-Ym
+Zu
 tN
 It
 aZ
@@ -13494,14 +13583,14 @@ tN
 tN
 tN
 tN
-Ym
-Ym
+tO
+RZ
 Ym
 Ym
 WR
 WR
 Ym
-Ym
+Zu
 tN
 tN
 tN

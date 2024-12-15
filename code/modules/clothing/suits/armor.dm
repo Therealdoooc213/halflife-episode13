@@ -94,14 +94,14 @@
 	wound = 20
 
 /datum/armor/pmc
-	melee = 40
-	bullet = 50
-	laser = 60
-	energy = 50
-	bomb = 50
-	bio = 100
-	acid = 50
-	wound = 20
+	melee = 20
+	bullet = 20
+	laser = 20
+	energy = 20
+	bomb = 20
+	bio = 50
+	acid = 30
+	wound = 10
 
 /obj/item/clothing/suit/armor/vest/marine/security
 	name = "large tactical armor vest"

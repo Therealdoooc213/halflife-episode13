@@ -63,10 +63,7 @@
 			if(CIV_JOB_VIRO)
 				chosen_type = pick(subtypesof(/datum/bounty/virus))
 			if(CIV_JOB_SCI)
-				if(prob(50))
-					chosen_type = pick(subtypesof(/datum/bounty/item/science))
-				else
-					chosen_type = pick(subtypesof(/datum/bounty/item/slime))
+				chosen_type = pick(subtypesof(/datum/bounty/item/science))
 			if(CIV_JOB_ENG)
 				chosen_type = pick(subtypesof(/datum/bounty/item/engineering))
 			if(CIV_JOB_MINE)
@@ -76,9 +73,9 @@
 			if(CIV_JOB_GROW)
 				chosen_type = pick(subtypesof(/datum/bounty/item/botany))
 			if(CIV_JOB_ATMOS)
-				chosen_type = pick(subtypesof(/datum/bounty/item/atmospherics))
+				chosen_type = pick(subtypesof(/datum/bounty/item/assistant))
 			if(CIV_JOB_BITRUN)
-				chosen_type = pick(subtypesof(/datum/bounty/item/bitrunning))
+				chosen_type = pick(subtypesof(/datum/bounty/item/assistant))
 		bounty_ref = new chosen_type
 		if(bounty_ref.can_get())
 			bounty_succeeded = TRUE

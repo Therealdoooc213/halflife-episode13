@@ -572,7 +572,7 @@
 /datum/deathmatch_modifier/martial_artistry
 	name = "Random martial arts"
 	description = "Everyone learns a random martial art!"
-	blacklisted_maps = list(/datum/lazy_template/deathmatch/meatower)
+	//blacklisted_maps = list(/datum/lazy_template/deathmatch/meatower)
 	// krav maga excluded because its too common and too simple, mushpunch excluded because its horrible and not even funny
 	var/static/list/weighted_martial_arts = list(
 		// common

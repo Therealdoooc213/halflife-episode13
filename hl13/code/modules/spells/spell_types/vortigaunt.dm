@@ -16,7 +16,7 @@
 	pin = /obj/item/firing_pin/magic
 	guns_left = 0
 	icon = 'icons/obj/weapons/hand.dmi'
-	fire_sound = "sound/weapons/halflife/attack_charge.ogg"
+	fire_sound = "hl13/sound/weapons/attack_charge.ogg"
 	icon_state = "mansus"
 	inhand_icon_state = "vort"
 	lefthand_file = 'icons/mob/inhands/items/touchspell_lefthand.dmi'

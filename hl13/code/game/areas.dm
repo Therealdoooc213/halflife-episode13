@@ -131,3 +131,9 @@
 	max_ambience_cooldown = 25 SECONDS
 	min_ambience_cooldown = 10 SECONDS
 	ambient_buzz = 'hl13/sound/ambience/antcaves/cave_howl_loop1.ogg'
+
+/area/centcom/halflife
+	name = "Overwatch Rail Interchange"
+
+/area/centcom/halflife/ota
+	name = "Overwatch Rail Interchange Dispatch"

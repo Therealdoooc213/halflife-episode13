@@ -350,3 +350,28 @@
 //don't use this in subtypes, just add 1000 brute yourself. that being said, this is a type that has 1000 brute. it doesn't really have a home anywhere else, it just needs to exist
 /obj/effect/mob_spawn/corpse/human/damaged
 	brute_damage = 1000
+
+/obj/effect/mob_spawn/ghost_role/cityscanner
+	name = "dormant city scanner"
+	desc = "A dormant city scanner bot. You'll have to wait for an available Overwatch AI subsystem to take control of it."
+	//icon = 'icons/obj/halflife/machines.dmi'
+	icon_state = "cityscanner"
+	density = FALSE
+	anchored = FALSE
+
+	mob_type = /mob/living/simple_animal/hostile/hl2bot/cityscanner
+	mob_name = "city scanner"
+	//death = FALSE
+	//roundstart = FALSE
+	//short_desc = "You are a City Scanner, constructed by the combine"
+	flavour_text = "Scan the city for possible anti-citizens and report anything you see over the radio. You can prefix your message with '.b' to talk with Dispatch."
+
+/*
+
+/obj/effect/mob_spawn/cityscanner/ghost_role/Initialize(mapload)
+	. = ..()
+	var/area/A = get_area(src)
+	if(A)
+		notify_ghosts("A city scanner has been created in [A.name].", 'sound/effects/shovel_dig.ogg', source = src, action = NOTIFY_ATTACKORBIT, flashwindow = FALSE)
+
+*/

@@ -124,7 +124,6 @@
 	accepted_magazine_type = /obj/item/ammo_box/magazine/usp9mm
 	can_suppress = TRUE
 	fire_sound = "hl13/sound/weapons/uspfire.ogg"
-	bolt_drop_sound = "sound/weapons/pistolslidedrop.ogg"
 	recoil = 0.4
 	vary_fire_sound = FALSE
 

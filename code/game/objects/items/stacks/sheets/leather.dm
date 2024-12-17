@@ -132,15 +132,6 @@ GLOBAL_LIST_INIT(monkey_recipes, list ( \
 	inhand_icon_state = null
 	merge_type = /obj/item/stack/sheet/animalhide/xeno
 
-GLOBAL_LIST_INIT(xeno_recipes, list ( \
-	new/datum/stack_recipe("alien helmet", /obj/item/clothing/head/costume/xenos, 1, crafting_flags = NONE, category = CAT_CLOTHING), \
-	new/datum/stack_recipe("alien suit", /obj/item/clothing/suit/costume/xenos, 2, crafting_flags = NONE, category = CAT_CLOTHING), \
-	))
-
-/obj/item/stack/sheet/animalhide/xeno/get_main_recipes()
-	. = ..()
-	. += GLOB.xeno_recipes
-
 /obj/item/stack/sheet/animalhide/xeno/five
 	amount = 5
 

@@ -304,8 +304,8 @@
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer = 1)
 
 /obj/item/reagent_containers/cup/glass/bottle/beer/light
-	name = "Carp Lite"
-	desc = "Brewed with \"Pure Ice Asteroid Spring Water\"."
+	name = "Combine Approved Ethanol Beverage"
+	desc = "A very low proof and very gross beer, allowed to be served to all citizens."
 	icon_state = "litebeer"
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer/light = 30)
 

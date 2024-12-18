@@ -22,7 +22,6 @@
 /obj/item/coupon/bee
 	desc = "BEEEES???? AT AN AFFORDAbLE PORICE?!!!" //wordcoders seething
 
-	discounted_pack = /datum/supply_pack/organic/hydroponics/beekeeping_fullkit
 	discount_pct_off = 0.7
 
 /datum/outfit/job/assistant/gimmick/chicken

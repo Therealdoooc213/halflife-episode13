@@ -79,7 +79,7 @@ ALERT_RED_DOWNTO Socio-status level has been lowered to: Red. Attention all grou
 ALERT_DELTA Socio-status level has been raised to: Delta. Attention all ground protection teams, Autonomous Judgement is now in effect. Sentencing is now discretionary, clamp and amputate all malignants immediately.
 
 ## The total weight of station goals possible for a round (allows multiple goals)
-STATION_GOAL_BUDGET 1
+STATION_GOAL_BUDGET 0
 
 ## GAME MODES ###
 

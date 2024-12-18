@@ -372,8 +372,10 @@
 	*/
 	else if(!user.combat_mode && istype(weapon, /obj/item/stack/sheet/mineral/wood))
 		return ..() // we need this so our can_barricade element can be called using COMSIG_ATOM_ATTACKBY
+	/*
 	else if(try_to_activate_door(user))
 		return TRUE
+	*/
 	return ..()
 
 /obj/machinery/door/item_interaction_secondary(mob/living/user, obj/item/tool, list/modifiers)

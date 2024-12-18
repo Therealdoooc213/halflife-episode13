@@ -18,7 +18,7 @@
 
 /datum/supply_pack/emergency/bomb
 	name = "Explosive Emergency Crate"
-	desc = "Science gone bonkers? Beeping behind the airlock? Buy now and be the hero the station des... \
+	desc = "Science gone bonkers? Beeping behind the door? Buy now and be the hero the district des... \
 		I mean needs! (time not included). Contains one bomb suit and hood, gas mask, and bomb defusal tools."
 	cost = CARGO_CRATE_VALUE * 2
 	contains = list(/obj/item/clothing/head/utility/bomb_hood,

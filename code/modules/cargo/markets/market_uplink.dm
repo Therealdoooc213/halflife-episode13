@@ -151,7 +151,7 @@
 
 /obj/item/market_uplink/blackmarket
 	name = "\improper Black Market Uplink"
-	desc = "An illegal black market uplink. If command wanted you to have these, they wouldn't have made it so hard to get one."
+	desc = "An illicit black market uplink."
 	icon = 'icons/obj/devices/blackmarket.dmi'
 	icon_state = "uplink"
 	//The original black market uplink
@@ -161,6 +161,8 @@
 /obj/item/market_uplink/blackmarket/Initialize(mapload)
 	. = ..()
 	ADD_TRAIT(src, TRAIT_CONTRABAND, INNATE_TRAIT)
+
+/*
 
 /datum/crafting_recipe/blackmarket_uplink
 	name = "Black Market Uplink"
@@ -180,3 +182,5 @@
 	..()
 	blacklist |= typesof(/obj/item/radio/headset) // because we got shit like /obj/item/radio/off ... WHY!?!
 	blacklist |= typesof(/obj/item/radio/intercom)
+
+*/

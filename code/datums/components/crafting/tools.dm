@@ -1,13 +1,3 @@
-/datum/crafting_recipe/gold_horn
-	name = "Golden Bike Horn"
-	result = /obj/item/bikehorn/golden
-	time = 2 SECONDS
-	reqs = list(
-		/obj/item/stack/sheet/mineral/bananium = 5,
-		/obj/item/bikehorn = 1,
-	)
-	category = CAT_TOOLS
-
 /datum/crafting_recipe/bonfire
 	name = "Bonfire"
 	time = 6 SECONDS
@@ -27,15 +17,6 @@
 	result = /obj/item/shovel/serrated
 	category = CAT_TOOLS
 	crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_MUST_BE_LEARNED
-
-/datum/crafting_recipe/lasso
-	name = "Bone Lasso"
-	reqs = list(
-		/obj/item/stack/sheet/bone = 1,
-		/obj/item/stack/sheet/sinew = 5,
-	)
-	result = /obj/item/key/lasso
-	category = CAT_TOOLS
 
 /datum/crafting_recipe/ipickaxe
 	name = "Improvised Pickaxe"

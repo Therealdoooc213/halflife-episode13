@@ -164,24 +164,6 @@
 	)
 	category = CAT_EQUIPMENT
 
-/datum/crafting_recipe/extendohand_r
-	name = "Extendo-Hand (Right Arm)"
-	reqs = list(
-		/obj/item/bodypart/arm/right/robot = 1,
-		/obj/item/clothing/gloves/boxing = 1,
-	)
-	result = /obj/item/extendohand
-	category = CAT_EQUIPMENT
-
-/datum/crafting_recipe/extendohand_l
-	name = "Extendo-Hand (Left Arm)"
-	reqs = list(
-		/obj/item/bodypart/arm/left/robot = 1,
-		/obj/item/clothing/gloves/boxing = 1,
-	)
-	result = /obj/item/extendohand
-	category = CAT_EQUIPMENT
-
 /datum/crafting_recipe/ore_sensor
 	name = "Ore Sensor"
 	time = 3 SECONDS

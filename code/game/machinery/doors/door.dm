@@ -366,8 +366,10 @@
 	else if(!user.combat_mode && istype(weapon, /obj/item/fireaxe))
 		try_to_crowbar(weapon, user, FALSE)
 		return TRUE
+	/*
 	else if(weapon.item_flags & NOBLUDGEON || user.combat_mode)
 		return ..()
+	*/
 	else if(!user.combat_mode && istype(weapon, /obj/item/stack/sheet/mineral/wood))
 		return ..() // we need this so our can_barricade element can be called using COMSIG_ATOM_ATTACKBY
 	else if(try_to_activate_door(user))

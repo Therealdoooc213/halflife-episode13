@@ -18,16 +18,6 @@
 	category = CAT_WEAPON_AMMO
 	crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_MUST_BE_LEARNED
 
-/datum/crafting_recipe/healium_bolt
-	name = "healium crystal crossbow bolt"
-	result = /obj/item/ammo_casing/rebar/healium
-	reqs = list(
-		/obj/item/grenade/gas_crystal/healium_crystal = 1
-	)
-	time = 0.1 SECONDS
-	category = CAT_WEAPON_AMMO
-	crafting_flags = CRAFT_CHECK_DENSITY
-
 /datum/crafting_recipe/improvisedslug
 	name = "Junk Shell"
 	result = /obj/effect/spawner/random/junk_shell

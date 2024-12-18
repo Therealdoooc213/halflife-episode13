@@ -23,6 +23,7 @@
 	var/forced_mode = FALSE
 	/// crafting flags we ignore when considering a recipe
 	var/ignored_flags = NONE
+	var/crafting_interface = CRAFTING_BENCH_HANDS
 
 /* This is what procs do:
 	get_environment - gets a list of things accessable for crafting by user
@@ -455,6 +456,9 @@
 	for(var/datum/crafting_recipe/recipe as anything in (mode ? GLOB.cooking_recipes : GLOB.crafting_recipes))
 		if(!is_recipe_available(recipe, user))
 			continue
+		// Check we are the correct workbench for this
+		if(!(recipe.crafting_interface & src.crafting_interface) && !(recipe.crafting_interface & CRAFTING_BENCH_HANDS))
+			continue
 		if(check_contents(user, recipe, surroundings) && check_tools(user, recipe, surroundings))
 			craftability["[REF(recipe)]"] = TRUE
 
@@ -476,6 +480,9 @@
 
 	for(var/datum/crafting_recipe/recipe as anything in (mode ? GLOB.cooking_recipes : GLOB.crafting_recipes))
 		if(!is_recipe_available(recipe, user))
+			continue
+		// Check we are the correct workbench for this
+		if(!(recipe.crafting_interface & src.crafting_interface) && !(recipe.crafting_interface & CRAFTING_BENCH_HANDS))
 			continue
 
 		if(recipe.category)

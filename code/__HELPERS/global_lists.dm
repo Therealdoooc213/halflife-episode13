@@ -54,8 +54,6 @@
 		/obj/item/stack/sheet/mineral/titanium = GLOB.titanium_recipes,
 		/obj/item/stack/sheet/mineral/plastitanium = GLOB.plastitanium_recipes,
 		/obj/item/stack/sheet/mineral/snow = GLOB.snow_recipes,
-		/obj/item/stack/sheet/mineral/adamantine = GLOB.adamantine_recipes,
-		/obj/item/stack/sheet/mineral/abductor = GLOB.abductor_recipes,
 		/obj/item/stack/sheet/iron = GLOB.metal_recipes,
 		/obj/item/stack/sheet/plasteel = GLOB.plasteel_recipes,
 		/obj/item/stack/sheet/mineral/wood = GLOB.wood_recipes,

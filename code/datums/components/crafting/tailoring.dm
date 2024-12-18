@@ -352,27 +352,6 @@
 	)
 	category = CAT_CLOTHING
 
-/datum/crafting_recipe/shark_costume
-	name = "shark costume"
-	result = /obj/item/clothing/suit/hooded/shark_costume
-	time = 2 SECONDS
-	reqs = list(
-		/obj/item/stack/sheet/leather = 5,
-		/obj/item/stack/sheet/animalhide/carp = 5,
-	)
-	category = CAT_CLOTHING
-
-/datum/crafting_recipe/shork_costume
-	name = "shork costume"
-	result = /obj/item/clothing/suit/hooded/shork_costume
-	time = 2 SECONDS
-	tool_behaviors = list(TOOL_WIRECUTTER)
-	reqs = list(
-		/obj/item/clothing/suit/hooded/shark_costume = 1,
-	)
-	category = CAT_CLOTHING
-
-
 /datum/crafting_recipe/sturdy_shako
 	name = "Sturdy Shako"
 	result = /obj/item/clothing/head/hats/hos/shako
@@ -382,18 +361,6 @@
 		/obj/item/clothing/head/hats/hos/cap = 1,
 		/obj/item/stack/sheet/plasteel = 2, //Stout shako for two refined
 		/obj/item/stack/sheet/mineral/gold = 2,
-	)
-
-	category = CAT_CLOTHING
-
-/datum/crafting_recipe/atmospherics_gas_mask
-	name = "atmospherics gas mask"
-	result = /obj/item/clothing/mask/gas/atmos
-	tool_behaviors = list(TOOL_WELDER)
-	time = 8 SECONDS
-	reqs = list(
-		/obj/item/stack/sheet/mineral/metal_hydrogen = 1,
-		/obj/item/stack/sheet/mineral/zaukerite = 1,
 	)
 
 	category = CAT_CLOTHING
@@ -503,15 +470,5 @@
 	tool_paths = list(/obj/item/clothing/accessory/press_badge)
 	reqs = list(
 		/obj/item/clothing/head/fedora/beige = 1,
-	)
-	category = CAT_CLOTHING
-
-/datum/crafting_recipe/jonkler
-	name = "gamer's wig and mask"
-	result = /obj/item/clothing/mask/gas/jonkler
-	time = 10 SECONDS
-	tool_paths = list(/obj/item/toy/crayon/green)
-	reqs = list(
-		/obj/item/clothing/mask/gas/clown_hat = 1,
 	)
 	category = CAT_CLOTHING

@@ -8,7 +8,7 @@
 		/obj/item/stack/cable_coil = 5
 	)
 	category = CAT_ROBOT
-	structures = list(/obj/structure/table/halflife/no_smooth/large/crafting/tinkerbench = CRAFTING_STRUCTURE_USE)
+	crafting_interface = CRAFTING_BENCH_ELECTRIC
 
 /datum/crafting_recipe/cityscanner
 	name = "City Scanner"
@@ -20,4 +20,4 @@
 		/obj/item/stack/cable_coil = 5
 	)
 	category = CAT_ROBOT
-	structures = list(/obj/structure/table/halflife/no_smooth/large/crafting/tinkerbench = CRAFTING_STRUCTURE_USE)
+	crafting_interface = CRAFTING_BENCH_ELECTRIC

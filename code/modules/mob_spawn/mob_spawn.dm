@@ -354,17 +354,19 @@
 /obj/effect/mob_spawn/ghost_role/cityscanner
 	name = "dormant city scanner"
 	desc = "A dormant city scanner bot. You'll have to wait for an available Overwatch AI subsystem to take control of it."
-	//icon = 'icons/obj/halflife/machines.dmi'
+	icon = 'hl13/icons/obj/machines.dmi'
 	icon_state = "cityscanner"
 	density = FALSE
 	anchored = FALSE
 
+	prompt_name = "city scanner"
 	mob_type = /mob/living/simple_animal/hostile/hl2bot/cityscanner
 	mob_name = "city scanner"
-	//death = FALSE
-	//roundstart = FALSE
-	//short_desc = "You are a City Scanner, constructed by the combine"
 	flavour_text = "Scan the city for possible anti-citizens and report anything you see over the radio. You can prefix your message with '.b' to talk with Dispatch."
+
+	you_are_text = "You are a City Scanner, constructed by the combine."
+	flavour_text = "Scan the city for possible anti-citizens and report anything you see over the radio. You can prefix your message with '.b' to talk with Dispatch."
+	important_text = "You are a machine, loyal and unquestioning, act the part."
 
 /*
 

@@ -20,6 +20,7 @@
 	tool_behaviors = list(TOOL_WELDER)
 	time = 5 SECONDS
 	category = CAT_WEAPON_MELEE
+	crafting_interface = CRAFTING_BENCH_WEAPONS
 
 /datum/crafting_recipe/spear
 	name = "Spear"
@@ -31,16 +32,6 @@
 	)
 	parts = list(/obj/item/shard = 1)
 	time = 4 SECONDS
-	category = CAT_WEAPON_MELEE
-
-/datum/crafting_recipe/toysword
-	name = "Toy Sword"
-	reqs = list(
-		/obj/item/light/bulb = 1,
-		/obj/item/stack/cable_coil = 1,
-		/obj/item/stack/sheet/plastic = 4,
-	)
-	result = /obj/item/toy/sword
 	category = CAT_WEAPON_MELEE
 
 /datum/crafting_recipe/bonedagger
@@ -87,12 +78,3 @@
 	category = CAT_WEAPON_MELEE
 	crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_MUST_BE_LEARNED
 
-/datum/crafting_recipe/bambostaff
-	name = "Bamboo Bo Staff"
-	result = /obj/item/bambostaff
-	reqs = list(
-		/obj/item/stack/sheet/mineral/bamboo = 4,
-		/obj/item/grown/log/steel = 2,
-	)
-	time = 8 SECONDS
-	category = CAT_WEAPON_MELEE

@@ -52,25 +52,6 @@
 	discount_experiments = list(/datum/experiment/scanning/points/bluespace_crystal)
 	announce_channels = list(RADIO_CHANNEL_SCIENCE, RADIO_CHANNEL_MEDICAL, RADIO_CHANNEL_SERVICE, RADIO_CHANNEL_SUPPLY)
 
-/datum/techweb_node/bluespace_travel
-	id = TECHWEB_NODE_BLUESPACE_TRAVEL
-	display_name = "Bluespace Travel"
-	description = "Facilitate teleportation methods based on bluespace principles to revolutionize logistical efficiency."
-	prereq_ids = list(TECHWEB_NODE_APPLIED_BLUESPACE)
-	design_ids = list(
-		"teleconsole",
-		"tele_station",
-		"tele_hub",
-		"launchpad_console",
-		"quantumpad",
-		"launchpad",
-		"bluespace_pod",
-		"quantum_keycard",
-		"swapper",
-	)
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = TECHWEB_TIER_3_POINTS)
-	announce_channels = list(RADIO_CHANNEL_SCIENCE)
-
 /datum/techweb_node/anomaly_research
 	id = TECHWEB_NODE_ANOMALY_RESEARCH
 	display_name = "Anomaly Research"

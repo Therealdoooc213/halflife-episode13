@@ -2,7 +2,7 @@
 	id = TECHWEB_NODE_ATMOS
 	starting_node = TRUE
 	display_name = "Atmospherics"
-	description = "Maintaining station air and related life support systems."
+	description = "Maintaining district air and related life support systems. Usually unnessecary"
 	design_ids = list(
 		"atmos_control",
 		"atmosalerts",

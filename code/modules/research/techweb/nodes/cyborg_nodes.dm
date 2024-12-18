@@ -5,8 +5,8 @@
 	description = "For those who prefer shiny metal over squishy flesh."
 	prereq_ids = list(TECHWEB_NODE_ROBOTICS)
 	design_ids = list(
-		"borg_chest",
-		"borg_head",
+		//"borg_chest",
+		//"borg_head",
 		"borg_l_arm",
 		"borg_l_leg",
 		"borg_r_arm",
@@ -189,7 +189,7 @@
 /datum/techweb_node/cyber/integrated_toolsets
 	id = TECHWEB_NODE_INTERGRATED_TOOLSETS
 	display_name = "Integrated Toolsets"
-	description = "Decades of contraband smuggling by assistants have led to the development of a full toolbox that fits seamlessly into your arm."
+	description = "Decades of contraband smuggling by citizens have led to the development of a full toolbox that fits seamlessly into your arm."
 	prereq_ids = list(TECHWEB_NODE_COMBAT_IMPLANTS, TECHWEB_NODE_EXP_TOOLS)
 	design_ids = list(
 		"ci-nutrimentplus",
@@ -239,7 +239,7 @@
 /datum/techweb_node/cyber/cyber_organs_adv
 	id = TECHWEB_NODE_CYBER_ORGANS_ADV
 	display_name = "Advanced Cybernetic Organs"
-	description = "Cutting-edge cybernetic organs offering enhanced sensory capabilities, making it easier than ever to detect ERP."
+	description = "Cutting-edge cybernetic organs offering enhanced sensory capabilities, making it easier than ever to detect external rebel plans."
 	prereq_ids = list(TECHWEB_NODE_CYBER_ORGANS_UPGRADED, TECHWEB_NODE_NIGHT_VISION)
 	design_ids = list(
 		"cybernetic_ears_xray",

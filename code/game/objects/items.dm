@@ -1172,6 +1172,8 @@
 		switch(theme) //yeah it kinda has to be this way
 			if("midnight")
 				outline_color = COLOR_THEME_MIDNIGHT
+			if("dark")
+				outline_color = COLOR_THEME_DARK
 			if("plasmafire")
 				outline_color = COLOR_THEME_PLASMAFIRE
 			if("retro")

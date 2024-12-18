@@ -407,18 +407,6 @@
 	)
 	departmental_flags = DEPARTMENT_BITFLAG_SERVICE
 
-/datum/design/toy_armblade
-	name = "Plastic Armblade"
-	id = "toy_armblade"
-	build_type = AUTOLATHE | PROTOLATHE | AWAY_LATHE
-	materials = list(/datum/material/plastic =SHEET_MATERIAL_AMOUNT)
-	build_path = /obj/item/toy/foamblade
-	category = list(
-		RND_CATEGORY_HACKED,
-		RND_CATEGORY_EQUIPMENT + RND_SUBCATEGORY_EQUIPMENT_SERVICE,
-	)
-	departmental_flags = DEPARTMENT_BITFLAG_SERVICE
-
 /datum/design/plastic_tree
 	name = "Plastic Potted Plant"
 	id = "plastic_trees"

@@ -114,13 +114,14 @@
 	var/mob/living/carbon/C = occupant
 	C.set_species(/datum/species/stalker)
 	SSsociostability.modifystability(-10) //having scary stalkers walking around isn't amazing for stability, but isn't as bad as someone dying.
-	C.fully_heal(TRUE)
 	C.emote("scream")
 
 	harvesting = FALSE
 	open_machine()
 	say("Process complete.")
 	playsound(src, 'sound/machines/microwave/microwave-end.ogg', 100, 0)
+
+	C.fully_heal(TRUE)
 
 /obj/machinery/stalker_chamber/screwdriver_act(mob/living/user, obj/item/I)
 	. = TRUE

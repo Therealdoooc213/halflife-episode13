@@ -196,7 +196,7 @@ GLOBAL_LIST_EMPTY(announcement_systems)
 	arrival = pick("#!@%ERR-34%2 CANNOT LOCAT@# JO# F*LE!", "CRITICAL ERROR 99.", "ERR)#: DA#AB@#E NOT F(*ND!")
 	newhead = pick("OV#RL()D: \[UNKNOWN??\] DET*#CT)D!", "ER)#R - B*@ TEXT F*O(ND!", "AAS.exe is not responding. NanoOS is searching for a solution to the problem.")
 	node_message = pick(list(
-		replacetext(/obj/machinery/announcement_system::node_message, "%NODE", /datum/techweb_node/mech_clown::display_name),
+		replacetext(/obj/machinery/announcement_system::node_message, "%NODE", "HONK HONK"),
 		"R/NT1M3 A= ANNOUN-*#nt_SY!?EM.dm, LI%£ 86: N=0DE NULL!",
 		"BEPIS BEPIS BEPIS",
 	))

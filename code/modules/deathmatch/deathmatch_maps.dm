@@ -278,3 +278,17 @@
 	)
 	map_name = "hl13train"
 	key = "hl13train"
+
+/datum/lazy_template/deathmatch/cityalleys
+	name = "City Alleys"
+	desc = "Long alleys with little cover and confusing, tight indoor spaces."
+	max_players = 12
+	allowed_loadouts = list(
+		/datum/outfit/deathmatch_loadout/rebel/marine,
+		/datum/outfit/deathmatch_loadout/rebel/ranger,
+		/datum/outfit/deathmatch_loadout/combine/overwatch,
+		/datum/outfit/deathmatch_loadout/combine/overwatch/shotgunner,
+		/datum/outfit/deathmatch_loadout/crowbar,
+	)
+	map_name = "cityalleys"
+	key = "cityalleys"

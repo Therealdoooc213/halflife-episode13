@@ -71,7 +71,7 @@
 	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/bow/rebar
 */
 
-/*
+
 /obj/item/gun/ballistic/combine_sniper
 	name = "combine sniper rifle"
 	desc = "A pulse based marksmen rifle which fires high velocity, devestating rounds."
@@ -91,14 +91,15 @@
 	fire_delay = 25
 	w_class = WEIGHT_CLASS_BULKY
 
-	zoomable = TRUE
-	zoom_amt = 10 //Long range, enough to see in front of you, but no tiles behind you.
-	zoom_out_amt = 5
-
 	accepted_magazine_type = /obj/item/ammo_box/magazine/combine_sniper
 	pin = /obj/item/firing_pin/implant/mindshield
-	var/obj/item/attachment/laser_sight/combine/laser
+	//var/obj/item/attachment/laser_sight/combine/laser
 
+/obj/item/gun/ballistic/combine_sniper/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/scope, range_modifier = 3)
+
+/*
 /obj/item/gun/ballistic/combine_sniper/Initialize(mapload)
 	. = ..()
 	laser = new(src)
@@ -109,13 +110,14 @@
 		to_chat(user, span_userdanger("The laser pointer needs to be on to fire \the [src]!"))
 		return
 	. = ..()
+*/
 
 /obj/item/gun/ballistic/combine_sniper/shoot_live_shot(mob/living/user, pointblank = 0, atom/pbtarget = null, message = 1)
 	. = ..()
 	sleep(1.25 SECONDS)
 	playsound(user, charge_sound, fire_sound_volume, vary_fire_sound)
 
-*/
+
 
 /obj/item/gun/ballistic/automatic/pistol/usp
 	name = "USP Match"
@@ -127,6 +129,10 @@
 	fire_sound = "hl13/sound/weapons/uspfire.ogg"
 	recoil = 0.4
 	vary_fire_sound = FALSE
+
+/obj/item/gun/ballistic/automatic/pistol/usp/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/automatic_fire, 0.45 SECONDS)
 
 /obj/item/gun/ballistic/automatic/pistol/usp/no_mag
 	spawnwithmagazine = FALSE

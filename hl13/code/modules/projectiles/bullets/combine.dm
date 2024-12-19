@@ -8,10 +8,10 @@
 /obj/projectile/bullet/pulse/heavy
 	name = "heavy pulse round"
 	icon_state = "pulse"
-	damage = 75
+	damage = 60
 	wound_bonus = -10
 	armour_penetration = 25
-	speed = 3
+	speed = 2.5
 
 /obj/projectile/bullet/flechette
 	name = "flechette"

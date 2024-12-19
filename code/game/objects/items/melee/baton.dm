@@ -439,10 +439,10 @@
 	armor_type = /datum/armor/baton_security
 	throwforce = 7
 	force_say_chance = 50
-	stamina_damage = 40
+	stamina_damage = 30
 	knockdown_time = 5 SECONDS
 	clumsy_knockdown_time = 15 SECONDS
-	cooldown = 1.5 SECONDS
+	cooldown = 1 SECONDS
 	on_stun_sound = 'hl13/sound/weapons/stunbatonhit.ogg'
 	on_stun_volume = 50
 	active = FALSE
@@ -864,7 +864,7 @@
 	throwforce = 10
 	w_class = WEIGHT_CLASS_BULKY
 	stamina_damage = 55
-	cooldown = 2 SECONDS
+	cooldown = 1.8 SECONDS
 
 /obj/item/melee/baton/security/heavy/loaded //this one starts with a cell pre-installed.
 	preload_cell_type = /obj/item/stock_parts/power_store/cell/high

@@ -42,11 +42,14 @@
 	name = "ferry shuttle";
 	preferred_direction = 4
 	},
-/obj/machinery/door/airlock/highsecurity/combine,
-/turf/open/floor/plating/indoor/metal/combine,
+/turf/closed/wall/halflife/metal,
 /area/shuttle/transport)
 "r" = (
 /turf/closed/wall/halflife/metal,
+/area/shuttle/transport)
+"H" = (
+/obj/machinery/door/airlock/highsecurity/combine,
+/turf/open/floor/plating/indoor/metal/combine,
 /area/shuttle/transport)
 
 (1,1,1) = {"
@@ -99,25 +102,25 @@ b
 r
 "}
 (8,1,1) = {"
-r
+H
 l
 l
 l
-r
+H
 "}
 (9,1,1) = {"
 r
 l
-m
+l
 i
 r
 "}
 (10,1,1) = {"
-r
+H
 l
 l
 l
-r
+H
 "}
 (11,1,1) = {"
 r
@@ -128,15 +131,15 @@ r
 "}
 (12,1,1) = {"
 r
-g
-l
-b
+r
+m
+r
 r
 "}
 (13,1,1) = {"
-r
+a
 r
 n
 r
-r
+a
 "}

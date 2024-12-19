@@ -13,7 +13,7 @@ REVIVAL_BRAIN_LIFE -1
 
 ## OOC DURING ROUND ###
 ## Comment this out if you want OOC to be automatically disabled during the round, it will be enabled during the lobby and after the round end results.
-OOC_DURING_ROUND
+#OOC_DURING_ROUND
 
 ## EMOJI ###
 ## Comment this out if you want to disable emojis
@@ -79,7 +79,7 @@ ALERT_RED_DOWNTO Socio-status level has been lowered to: Red. Attention all grou
 ALERT_DELTA Socio-status level has been raised to: Delta. Attention all ground protection teams, Autonomous Judgement is now in effect. Sentencing is now discretionary, clamp and amputate all malignants immediately.
 
 ## The total weight of station goals possible for a round (allows multiple goals)
-STATION_GOAL_BUDGET 1
+STATION_GOAL_BUDGET 0
 
 ## GAME MODES ###
 
@@ -199,7 +199,7 @@ CONFIG_GATEWAY_CHANCE 0
 ## If the number of players ready at round starts exceeds this threshold, JOBS_HAVE_MINIMAL_ACCESS will automatically be enabled. Otherwise, it will be disabled.
 ## This is useful for accommodating both low and high population rounds on the same server.
 ## Comment this out or set to 0 to disable this automatic toggle.
-MINIMAL_ACCESS_THRESHOLD 20
+MINIMAL_ACCESS_THRESHOLD 15
 
 ## Comment this out this if you wish to use the setup where jobs have more access.
 ## This is intended for servers with low populations - where there are not enough

@@ -2,7 +2,7 @@
 	id = TECHWEB_NODE_MEDBAY_EQUIP
 	starting_node = TRUE
 	display_name = "Medbay Equipment"
-	description = "Essential medical tools to patch you up while medbay is still intact."
+	description = "Essential medical tools to patch you up while the hospital is still intact."
 	design_ids = list(
 		"operating",
 		"medicalbed",
@@ -85,7 +85,7 @@
 /datum/techweb_node/cryostasis
 	id = TECHWEB_NODE_CRYOSTASIS
 	display_name = "Cryostasis"
-	description = "The result of clown accidentally drinking a chemical, now repurposed for safely preserving crew members in suspended animation."
+	description = "The result of clown accidentally drinking a chemical, now repurposed for safely preserving citizens in suspended animation."
 	prereq_ids = list(TECHWEB_NODE_MEDBAY_EQUIP_ADV, TECHWEB_NODE_FUSION)
 	design_ids = list(
 		"cryotube",

@@ -367,11 +367,6 @@ GLOBAL_LIST_INIT(snow_recipes, list ( \
  * Adamantine
 */
 
-
-GLOBAL_LIST_INIT(adamantine_recipes, list(
-	new /datum/stack_recipe("incomplete servant golem shell", /obj/item/golem_shell/servant, req_amount=3, res_amount=1, category = CAT_ROBOT),
-	))
-
 /obj/item/stack/sheet/mineral/adamantine
 	name = "adamantine"
 	icon_state = "sheet-adamantine"
@@ -379,10 +374,6 @@ GLOBAL_LIST_INIT(adamantine_recipes, list(
 	singular_name = "adamantine sheet"
 	mats_per_unit = list(/datum/material/adamantine=SHEET_MATERIAL_AMOUNT)
 	merge_type = /obj/item/stack/sheet/mineral/adamantine
-
-/obj/item/stack/sheet/mineral/adamantine/get_main_recipes()
-	. = ..()
-	. += GLOB.adamantine_recipes
 
 /*
  * Runite
@@ -426,19 +417,6 @@ GLOBAL_LIST_INIT(adamantine_recipes, list(
 	material_type = /datum/material/alloy/alien
 	walltype = /turf/closed/wall/mineral/abductor
 
-GLOBAL_LIST_INIT(abductor_recipes, list ( \
-	new/datum/stack_recipe("alien bed", /obj/structure/bed/abductor, 2, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ONE_PER_TURF | CRAFT_ON_SOLID_GROUND, category = CAT_FURNITURE), \
-	new/datum/stack_recipe("alien locker", /obj/structure/closet/abductor, 2, time = 2 SECONDS, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ONE_PER_TURF | CRAFT_ON_SOLID_GROUND, category = CAT_FURNITURE), \
-	new/datum/stack_recipe("alien table frame", /obj/structure/table_frame/abductor, 1, time = 2 SECONDS, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ONE_PER_TURF | CRAFT_ON_SOLID_GROUND, category = CAT_FURNITURE), \
-	new/datum/stack_recipe("alien airlock assembly", /obj/structure/door_assembly/door_assembly_abductor, 4, time = 5 SECONDS, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ONE_PER_TURF | CRAFT_ON_SOLID_GROUND, category = CAT_DOORS), \
-	null, \
-	new/datum/stack_recipe("alien floor tile", /obj/item/stack/tile/mineral/abductor, 1, 4, 20, crafting_flags = NONE, category = CAT_TILES), \
-	))
-
-/obj/item/stack/sheet/mineral/abductor/get_main_recipes()
-	. = ..()
-	. += GLOB.abductor_recipes
-
 /*
  * Coal
  */
@@ -475,7 +453,6 @@ GLOBAL_LIST_INIT(abductor_recipes, list ( \
 
 //Metal Hydrogen
 GLOBAL_LIST_INIT(metalhydrogen_recipes, list(
-	new /datum/stack_recipe("incomplete servant golem shell", /obj/item/golem_shell/servant, req_amount=20, res_amount=1, crafting_flags = NONE, category = CAT_ROBOT),
 	new /datum/stack_recipe("ancient armor", /obj/item/clothing/suit/armor/elder_atmosian, req_amount = 5, res_amount = 1, crafting_flags = NONE, category = CAT_CLOTHING),
 	new /datum/stack_recipe("ancient helmet", /obj/item/clothing/head/helmet/elder_atmosian, req_amount = 3, res_amount = 1, crafting_flags = NONE, category = CAT_CLOTHING),
 	new /datum/stack_recipe("metallic hydrogen axe", /obj/item/fireaxe/metal_h2_axe, req_amount = 15, res_amount = 1, crafting_flags = NONE, category = CAT_WEAPON_MELEE),

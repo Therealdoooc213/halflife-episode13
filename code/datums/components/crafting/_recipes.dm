@@ -42,6 +42,12 @@
 	/// Allows you to craft so that you don't have to click the craft button many times.
 	var/mass_craftable = FALSE
 
+	// Used to filter crafting recipes based on what you are crafting with
+	// i.e CRAFTING_BENCH_HANDS is the default crafting menu
+	// the general crafting bench only shows recipes with CRAFTING_BENCH_GENERAL, etc.
+	// treat this is a flag, so recipes can be shared between (i.e bandages on GENERAL and ARMTAILOR)
+	var/crafting_interface = CRAFTING_BENCH_HANDS
+
 	///crafting_flags var to hold bool values
 	var/crafting_flags = CRAFT_CHECK_DENSITY
 

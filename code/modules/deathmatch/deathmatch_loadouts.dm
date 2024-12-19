@@ -1,6 +1,6 @@
 /datum/outfit/deathmatch_loadout //remember that fun > balance
 	name = ""
-	shoes = /obj/item/clothing/shoes/sneakers/black // im not doing this on all of them
+	shoes = /obj/item/clothing/shoes/boots // im not doing this on all of them
 	/// Name shown in the UI
 	var/display_name = ""
 	/// Description shown in the UI
@@ -1146,10 +1146,16 @@
 	l_pocket = /obj/item/reagent_containers/cup/beaker/synthflesh/named // they used to turn their dmg into tox with a spell. close enough
 	r_pocket = /obj/item/reagent_containers/cup/beaker/synthflesh/named
 
+
+
+
+/datum/outfit/deathmatch_loadout/rebel/pre_equip(mob/living/carbon/human/H)
+	H.cmode_music = 'hl13/sound/music/combat/vortalcombat.ogg'
+
 /datum/outfit/deathmatch_loadout/rebel/marine
 	name = "Deathmatch: Rebel Marine"
 	display_name = "Rebel Marine"
-	desc = "Equipped with an M4A1 rifle and a grenade, you have the best damage output available to the resistance, but lack much of anything else."
+	desc = "Armed with an M4A1 and a grenade, alongside a USP match as a sidearm, you have a lot of damage output available to you, but have middling armor."
 
 	head = /obj/item/clothing/head/helmet/marine/pmc
 	uniform = /obj/item/clothing/under/citizen/rebel
@@ -1158,6 +1164,7 @@
 	suit_store = /obj/item/gun/ballistic/automatic/m4a1
 	l_pocket = /obj/item/grenade/syndieminibomb/bouncer
 	r_pocket = /obj/item/ammo_box/magazine/m4a1
+	belt = /obj/item/gun/ballistic/automatic/pistol/usp
 
 /datum/outfit/deathmatch_loadout/rebel/medic
 	name = "Deathmatch: Rebel Medic"
@@ -1183,13 +1190,13 @@
 /datum/outfit/deathmatch_loadout/rebel/ranger
 	name = "Deathmatch: Rebel Ranger"
 	display_name = "Rebel Ranger"
-	desc = "Utilize your scoped rebar crossbow for sniping, and your revolver as a deadly secondary for more up close situations."
+	desc = "Keep your enemies at bay with your scoped rebar crossbow and smoke grenade, as your armor is rather poor. If worst comes to worst, pull out your revolver."
 
 	head = /obj/item/clothing/head/beanie/black
 	uniform = /obj/item/clothing/under/citizen/rebel
 	gloves = /obj/item/clothing/gloves/fingerless
 	suit = /obj/item/clothing/suit/armor/civilprotection
-	suit_store = /obj/item/gun/ballistic/rifle/rebarxbow
+	suit_store = /obj/item/gun/ballistic/rifle/rebarxbow/upgraded
 	belt = /obj/item/gun/ballistic/revolver/coltpython
 	r_pocket = /obj/item/grenade/smokebomb
 
@@ -1254,9 +1261,26 @@
 	l_pocket = /obj/item/grenade/spawnergrenade/manhacks
 	r_pocket = /obj/item/grenade/spawnergrenade/manhacks
 
+/datum/outfit/deathmatch_loadout/crowbar/pre_equip(mob/living/carbon/human/H)
+	H.cmode_music = 'hl13/sound/music/combat/notsupposedtobehere.ogg'
+
 /datum/outfit/deathmatch_loadout/crowbar
 	name = "Deathmatch: A Free Man"
 	display_name = "A Free Man"
 	desc = "Crowbar in hand, seek freedom."
 	l_hand = /obj/item/crowbar/large/freeman/extreme
 	uniform = /obj/item/clothing/under/citizen/rebel
+	suit = /obj/item/clothing/suit/armor/hev
+	glasses = /obj/item/clothing/glasses/regular/thin
+
+/datum/outfit/deathmatch_loadout/rebel/vortigaunt
+	name = "Deathmatch: Elder Vortigaunt"
+	display_name = "Elder Vortigaunt"
+	desc = "Utilize strong vortal spells to decimate your opponents."
+	shoes = null
+	species_override = /datum/species/vortigaunt
+
+	//gets repulse in addition to other vort spells
+	spells_to_add = list(
+		/datum/action/cooldown/spell/aoe/repulse/wizard/vort
+	)

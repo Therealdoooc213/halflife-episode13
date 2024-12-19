@@ -93,21 +93,6 @@
 	experimental = TRUE
 	announce_channels = list(RADIO_CHANNEL_SECURITY)
 
-/datum/techweb_node/mod_experimental
-	id = TECHWEB_NODE_MOD_EXPERIMENTAL
-	display_name = "Experimental Modular Suits"
-	description = "Applications of experimentality when creating MODsuits have created these..."
-	design_ids = list(
-		"mod_disposal",
-		"mod_joint_torsion",
-		"mod_recycler",
-		"mod_shooting",
-	)
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = TECHWEB_TIER_1_POINTS)
-	hidden = TRUE
-	experimental = TRUE
-	announce_channels = list(RADIO_CHANNEL_COMMON)
-
 /datum/techweb_node/posisphere
 	id = TECHWEB_NODE_POSITRONIC_SPHERE
 	display_name = "Experimental Spherical Positronic Brain"

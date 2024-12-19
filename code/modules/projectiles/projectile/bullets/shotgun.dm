@@ -90,11 +90,11 @@
 
 /obj/projectile/bullet/pellet/shotgun_rubbershot
 	name = "rubber shot pellet"
-	damage = 3
+	damage = 4
 	stamina = 11
 	sharpness = NONE
 	embed_type = null
-	speed = 0.8
+	speed = 1.6
 	stamina_falloff_tile = -0.25
 	ricochets_max = 4
 	ricochet_chance = 120

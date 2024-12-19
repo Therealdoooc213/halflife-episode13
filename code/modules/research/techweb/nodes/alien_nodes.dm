@@ -10,7 +10,6 @@
 	id = TECHWEB_NODE_ALIENTECH
 	display_name = "Alien Technology"
 	description = "Things used by the greys."
-	prereq_ids = list(TECHWEB_NODE_BLUESPACE_TRAVEL)
 	required_items_to_unlock = list(
 		/obj/item/stack/sheet/mineral/abductor,
 		/obj/item/cautery/alien,

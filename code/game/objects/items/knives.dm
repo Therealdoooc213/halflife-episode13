@@ -125,7 +125,7 @@
 	worn_icon_state = "buckknife"
 	desc = "A military combat utility survival knife."
 	embed_type = /datum/embed_data/combat_knife
-	force = 20
+	force = 22
 	throwforce = 20
 	attack_verb_continuous = list("slashes", "stabs", "slices", "tears", "lacerates", "rips", "cuts")
 	attack_verb_simple = list("slash", "stab", "slice", "tear", "lacerate", "rip", "cut")
@@ -163,8 +163,9 @@
 	worn_icon_state = "survivalknife"
 	embed_type = /datum/embed_data/combat_knife/weak
 	desc = "A hunting grade survival knife."
-	force = 15
+	force = 20
 	throwforce = 15
+	wound_bonus = -5 //not for use against players
 
 /obj/item/knife/combat/root
 	name = "cahn'root dagger"

@@ -205,6 +205,7 @@
 
 ///Main colors for UI themes
 #define COLOR_THEME_MIDNIGHT "#6086A0"
+#define COLOR_THEME_DARK "#272c30"
 #define COLOR_THEME_PLASMAFIRE "#FFB200"
 #define COLOR_THEME_RETRO "#24CA00"
 #define COLOR_THEME_SLIMECORE "#4FB259"
@@ -285,7 +286,7 @@
 /// Weird color, between yellow and green, very slimy. rgb(175, 200, 75)
 #define LIGHT_COLOR_SLIME_LAMP "#AFC84B"
 /// Extremely diluted yellow, close to skin color (for some reason). rgb(255, 214, 170)
-#define LIGHT_COLOR_TUNGSTEN "#FFD6AA"
+#define LIGHT_COLOR_TUNGSTEN "#e3bc93"
 /// Barely visible cyan-ish hue, as the doctor prescribed. rgb(240, 250, 250)
 #define LIGHT_COLOR_HALOGEN "#F0FAFA"
 /// Nearly red. rgb(226, 78, 118)

@@ -29,6 +29,7 @@
 	desc = "A old M4A1 pattern rifle. Not as good as the combine's rifles, but still powerful."
 	icon = 'hl13/icons/obj/guns/projectile.dmi'
 	icon_state = "m4a1"
+	inhand_icon_state = "arg"
 	fire_sound = "sound/items/weapons/gun/rifle/shot.ogg"
 	vary_fire_sound = FALSE
 	load_sound = "sound/items/weapons/gun/rifle/rifleload.ogg"
@@ -124,7 +125,6 @@
 	accepted_magazine_type = /obj/item/ammo_box/magazine/usp9mm
 	can_suppress = TRUE
 	fire_sound = "hl13/sound/weapons/uspfire.ogg"
-	bolt_drop_sound = "sound/weapons/pistolslidedrop.ogg"
 	recoil = 0.4
 	vary_fire_sound = FALSE
 

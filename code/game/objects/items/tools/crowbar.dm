@@ -70,8 +70,7 @@
 	force = 30
 
 /obj/item/crowbar/large/freeman/extreme
-	desc = "An extraordinarily deadly crowbar that will down just about anyone in only two hits."
-	force = 80
+	force = 40
 
 /obj/item/crowbar/large/emergency
 	name = "emergency crowbar"

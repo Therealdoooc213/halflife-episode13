@@ -282,6 +282,7 @@
 	canSmoothWith = null
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
 	var/datum/component/personal_crafting/crafting
+	var/crafting_type = CRAFTING_BENCH_GENERAL
 
 /obj/structure/table/halflife/no_smooth/large/crafting/examine(mob/user)
 	. = ..()
@@ -299,6 +300,7 @@
 /obj/structure/table/halflife/no_smooth/large/crafting/Initialize(mapload)
 	. = ..()
 	crafting = AddComponent(/datum/component/personal_crafting)
+	crafting.crafting_interface = crafting_type
 
 /obj/structure/table/halflife/no_smooth/large/crafting/attack_hand(mob/user = usr)
 	. = ..()
@@ -308,24 +310,29 @@
 	name = "workbench"
 	desc = "A basic workbench. Solid metal surface and a few tools to help you make basic tools and items you require."
 	icon_state = "workbench"
+	crafting_type = CRAFTING_BENCH_GENERAL
 
 // TODO FIX
 /obj/structure/table/halflife/no_smooth/large/crafting/ammobench
 	name = "loading bench"
 	desc = "An ammo loading bench, with some tools that assist you in assembling cartridges to send towards your foe."
 	icon_state = "ammobench"
+	crafting_type = CRAFTING_BENCH_RELOADING
 
 /obj/structure/table/halflife/no_smooth/large/crafting/armorbench
 	name = "armor and tailoring bench"
 	desc = "A sturdy bench. It's got an anvil and sewing machine, it'd be a good surface to try and fabricate clothing or armor with."
 	icon_state = "armorbench"
+	crafting_type = CRAFTING_BENCH_ARMTAILOR
 
 /obj/structure/table/halflife/no_smooth/large/crafting/weaponbench
 	name = "weapon bench"
 	desc = "A large bench with a functional drill press and a vice. Would be useful in creating and assembling weapons, to the best of your ability anyways."
 	icon_state = "weaponbench"
+	crafting_type = CRAFTING_BENCH_WEAPONS
 
 /obj/structure/table/halflife/no_smooth/large/crafting/tinkerbench
 	name = "electronics bench"
 	desc = "A large bench with a power supply hooked up to it. There's a soldering iron and a few other tools scattered about to assist you in making electronics."
 	icon_state = "tinkerbench"
+	crafting_type = CRAFTING_BENCH_ELECTRIC

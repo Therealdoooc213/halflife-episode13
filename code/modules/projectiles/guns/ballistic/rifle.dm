@@ -202,7 +202,7 @@
 	icon_state = "rebarxbow"
 	inhand_icon_state = "rebarxbow"
 	worn_icon_state = "rebarxbow"
-	rack_sound = 'sound/items/weapons/gun/sniper/rack.ogg'
+	rack_sound = 'hl13/sound/weapons/crossbowbolt_load.ogg'
 	mag_display = FALSE
 	empty_indicator = TRUE
 	bolt_type = BOLT_TYPE_OPEN
@@ -216,10 +216,10 @@
 	weapon_weight = WEAPON_HEAVY
 	initial_caliber = CALIBER_REBAR
 	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/boltaction/rebarxbow/normal
-	fire_sound = 'sound/items/xbow_lock.ogg'
+	fire_sound = 'hl13/sound/weapons/crossbowfire.ogg'
 	can_be_sawn_off = FALSE
 	tac_reloads = FALSE
-	var/draw_time = 3 SECONDS
+	var/draw_time = 2.5 SECONDS
 	SET_BASE_PIXEL(0, 0)
 
 /obj/item/gun/ballistic/rifle/rebarxbow/Initialize(mapload)
@@ -275,9 +275,12 @@
 	desc = "Some idiot decided that they would risk shooting themselves in the face if it meant they could have a draw this crossbow a bit faster. Hopefully, it was worth it."
 	// Feel free to add a recipe to allow you to change it back if you would like, I just wasn't sure if you could have two recipes for the same thing.
 	can_misfire = TRUE
-	draw_time = 1.5
+	draw_time = 1 SECONDS
 	misfire_probability = 25
 	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/boltaction/rebarxbow/force
+
+/obj/item/gun/ballistic/rifle/rebarxbow/upgraded
+	draw_time = 1.5 SECONDS
 
 /obj/item/gun/ballistic/rifle/rebarxbow/syndie
 	name = "syndicate rebar crossbow"

@@ -2,7 +2,7 @@
 	id = TECHWEB_NODE_OFFICE_EQUIP
 	starting_node = TRUE
 	display_name = "Office Equipment"
-	description = "Nanotrasen's finest in ergonomic office tech, ensuring station admin stays productive and compliant with corporate policies — because even in space, paperwork never stops."
+	description = "The Combine's finest in ergonomic office tech, ensuring district admin stays productive and compliant with corporate policies — because even postwar, paperwork never stops."
 	design_ids = list(
 		"fax",
 		"sec_pen",
@@ -38,7 +38,7 @@
 /datum/techweb_node/sanitation
 	id = TECHWEB_NODE_SANITATION
 	display_name = "Advanced Sanitation Technology"
-	description = "Nanotrasen's latest in janitorial tech, making sure the station stays spotless and bear-free."
+	description = "The Combine's latest in janitorial tech, making sure the district stays spotless and bear-free."
 	prereq_ids = list(TECHWEB_NODE_OFFICE_EQUIP)
 	design_ids = list(
 		"advmop",
@@ -56,7 +56,7 @@
 /datum/techweb_node/consoles
 	id = TECHWEB_NODE_CONSOLES
 	display_name = "Civilian Consoles"
-	description = "User-friendly consoles for non-technical crew members, enhancing communication and access to essential station information."
+	description = "User-friendly consoles for non-technical citizens, enhancing communication and access to essential district information."
 	prereq_ids = list(TECHWEB_NODE_OFFICE_EQUIP)
 	design_ids = list(
 		"comconsole",
@@ -84,7 +84,7 @@
 /datum/techweb_node/gaming
 	id = TECHWEB_NODE_GAMING
 	display_name = "Gaming"
-	description = "For the slackers on the station."
+	description = "For district loyalists."
 	prereq_ids = list(TECHWEB_NODE_CONSOLES)
 	design_ids = list(
 		"arcade_battle",
@@ -99,7 +99,7 @@
 	id = TECHWEB_NODE_CAFETERIA_EQUIP
 	starting_node = TRUE
 	display_name = "Cafeteria Equipment"
-	description = "When standard-issue tubed food no longer satisfies the station crew's appetite..."
+	description = "When standard-issue tubed food no longer satisfies the ctizen's appetite..."
 	design_ids = list(
 		"griddle",
 		"microwave",
@@ -126,7 +126,7 @@
 /datum/techweb_node/food_proc
 	id = TECHWEB_NODE_FOOD_PROC
 	display_name = "Food Processing"
-	description = "Top-tier kitchen appliances from Nanotrasen, designed to keep the crew well-fed and happy."
+	description = "Top-tier kitchen appliances from the Combine, designed to keep the district well-fed and happy."
 	prereq_ids = list(TECHWEB_NODE_CAFETERIA_EQUIP)
 	design_ids = list(
 		"deepfryer",
@@ -154,7 +154,7 @@
 	id = TECHWEB_NODE_FISHING_EQUIP
 	starting_node = TRUE
 	display_name = "Fishing Equipment"
-	description = "Basic fishing gear tailored for space station environments, perfect for extraterrestrial aquatic pursuits."
+	description = "Basic fishing gear tailored for post-war city environments, perfect for aquatic pursuits."
 	design_ids = list(
 		"fishing_portal_generator",
 		"fishing_rod",
@@ -165,7 +165,7 @@
 /datum/techweb_node/fishing_equip_adv
 	id = TECHWEB_NODE_FISHING_EQUIP_ADV
 	display_name = "Advanced Fishing Tools"
-	description = "Continuing advancements in fishing technology, incorporating cutting-edge features in space fishing operations. Just don't try this on space carps..."
+	description = "Continuing advancements in fishing technology, incorporating cutting-edge features in fishing operations."
 	prereq_ids = list(TECHWEB_NODE_FISHING_EQUIP)
 	design_ids = list(
 		"fishing_rod_tech",

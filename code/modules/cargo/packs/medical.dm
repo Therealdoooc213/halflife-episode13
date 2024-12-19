@@ -14,8 +14,6 @@
 					/obj/item/reagent_containers/blood/b_minus,
 					/obj/item/reagent_containers/blood/o_plus,
 					/obj/item/reagent_containers/blood/o_minus,
-					/obj/item/reagent_containers/blood/lizard,
-					/obj/item/reagent_containers/blood/ethereal,
 				)
 	crate_name = "blood freezer"
 	crate_type = /obj/structure/closet/crate/freezer
@@ -24,7 +22,7 @@
 	name = "Medipen Variety-Pak"
 	desc = "Contains eight different medipens in three different varieties, \
 		to assist in quickly treating seriously injured patients."
-	cost = CARGO_CRATE_VALUE * 3.5
+	cost = CARGO_CRATE_VALUE * 4
 	contains = list(/obj/item/reagent_containers/hypospray/medipen = 2,
 					/obj/item/reagent_containers/hypospray/medipen/ekit = 3,
 					/obj/item/reagent_containers/hypospray/medipen/blood_loss = 3)
@@ -84,7 +82,7 @@
 /datum/supply_pack/medical/supplies
 	name = "Medical Supplies Crate"
 	desc = "Contains a random assortment of medical supplies. German doctor not included."
-	cost = CARGO_CRATE_VALUE * 4
+	cost = CARGO_CRATE_VALUE * 4.5
 	contains = list(/obj/item/reagent_containers/cup/bottle/multiver,
 					/obj/item/reagent_containers/cup/bottle/epinephrine,
 					/obj/item/reagent_containers/cup/bottle/morphine,
@@ -175,15 +173,6 @@
 	crate_type = /obj/structure/closet/crate/secure/plasma
 	dangerous = TRUE
 
-/datum/supply_pack/medical/cmoturtlenecks
-	name = "Chief Medical Officer Turtlenecks"
-	desc = "Contains the CMO's turtleneck and turtleneck skirt."
-	cost = CARGO_CRATE_VALUE * 2
-	access = ACCESS_CMO
-	contains = list(/obj/item/clothing/under/rank/medical/chief_medical_officer/turtleneck,
-					/obj/item/clothing/under/rank/medical/chief_medical_officer/turtleneck/skirt,
-				)
-
 /datum/supply_pack/medical/arm_implants
 	name = "Strong-Arm Implant Set"
 	desc = "A crate containing two implants, which can be surgically implanted to empower the strength of human arms. Warranty void if exposed to electromagnetic pulses."
@@ -200,11 +189,26 @@
 	crate_name = "Paperwork implant crate"
 	discountable = SUPPLY_PACK_RARE_DISCOUNTABLE
 
-/datum/supply_pack/medical/lost_crew
-	name = "Recovered NT Employee corpse"
-	desc = "We don't have the accomodations to bring them back, could we send them to you? Please revive and employ them. \
-	The price is a downpayment, we will reimburse the medical budget once our employee has been alive again for a bit."
-	cost = CARGO_CRATE_VALUE * 5
-	contains = list(/obj/structure/closet/body_bag/lost_crew/with_body)
-	crate_name = "body freezer"
-	crate_type = /obj/structure/closet/crate/secure/freezer
+/datum/supply_pack/medical/medvial
+	name = "Medvials"
+	desc = "Contains 5 biogel medvials for rapid healing. Heals less than a medkit, but is applied quicker, and is easier to carry."
+	cost = CARGO_CRATE_VALUE * 2.1
+	contains = list(/obj/item/reagent_containers/pill/patch/medkit/vial,
+					/obj/item/reagent_containers/pill/patch/medkit/vial,
+					/obj/item/reagent_containers/pill/patch/medkit/vial,
+					/obj/item/reagent_containers/pill/patch/medkit/vial,
+					/obj/item/reagent_containers/pill/patch/medkit/vial,
+	)
+	crate_name = "medvial crate"
+
+/datum/supply_pack/medical/medkit
+	name = "Medkits"
+	desc = "Contains 5 biogel medkits for rapid healing."
+	cost = CARGO_CRATE_VALUE * 3
+	contains = list(/obj/item/reagent_containers/pill/patch/medkit,
+					/obj/item/reagent_containers/pill/patch/medkit,
+					/obj/item/reagent_containers/pill/patch/medkit,
+					/obj/item/reagent_containers/pill/patch/medkit,
+					/obj/item/reagent_containers/pill/patch/medkit,
+	)
+	crate_name = "medkit crate"

@@ -60,14 +60,8 @@
 
 /datum/shuttle_loan_situation/department_resupply/spawn_items(list/spawn_list, list/empty_shuttle_turfs, list/blocked_shutte_turfs)
 	var/list/crate_types = list(
-		/datum/supply_pack/emergency/equipment,
-		/datum/supply_pack/security/supplies,
 		/datum/supply_pack/organic/food,
-		/datum/supply_pack/emergency/weedcontrol,
 		/datum/supply_pack/engineering/tools,
-		/datum/supply_pack/engineering/engiequipment,
-		/datum/supply_pack/science/robotics,
-		/datum/supply_pack/science/plasma,
 		/datum/supply_pack/medical/supplies
 		)
 	for(var/crate in crate_types)
@@ -103,8 +97,6 @@
 	logging_desc = "Shuttle full of bees"
 
 /datum/shuttle_loan_situation/lots_of_bees/spawn_items(list/spawn_list, list/empty_shuttle_turfs, list/blocked_shutte_turfs)
-	var/datum/supply_pack/pack = SSshuttle.supply_packs[/datum/supply_pack/organic/hydroponics/beekeeping_fullkit]
-	pack.generate(pick_n_take(empty_shuttle_turfs))
 
 	spawn_list.Add(/obj/effect/mob_spawn/corpse/human/bee_terrorist)
 	spawn_list.Add(/obj/effect/mob_spawn/corpse/human/cargo_tech)
@@ -177,8 +169,6 @@
 	logging_desc = "Russian party squad"
 
 /datum/shuttle_loan_situation/russian_party/spawn_items(list/spawn_list, list/empty_shuttle_turfs, list/blocked_shutte_turfs)
-	var/datum/supply_pack/pack = SSshuttle.supply_packs[/datum/supply_pack/service/party]
-	pack.generate(pick_n_take(empty_shuttle_turfs))
 
 	spawn_list.Add(/mob/living/basic/trooper/russian)
 	spawn_list.Add(/mob/living/basic/trooper/russian/ranged) //drops a mateba

@@ -4,22 +4,6 @@
 	reward = CARGO_CRATE_VALUE * 2.4
 	wanted_types = list(/obj/item/relic = TRUE)
 
-/datum/bounty/item/assistant/scooter
-	name = "Scooter"
-	description = "Nanotrasen has determined walking to be wasteful. Ship a scooter to CentCom to speed operations up."
-	reward = CARGO_CRATE_VALUE * 2.16 // the mat hoffman
-	wanted_types = list(/obj/vehicle/ridden/scooter = TRUE)
-	include_subtypes = FALSE
-
-/datum/bounty/item/assistant/skateboard
-	name = "Skateboard"
-	description = "Nanotrasen has determined walking to be wasteful. Ship a skateboard to CentCom to speed operations up."
-	reward = CARGO_CRATE_VALUE * 1.8 // the tony hawk
-	wanted_types = list(
-		/obj/vehicle/ridden/scooter/skateboard = TRUE,
-		/obj/item/melee/skateboard = TRUE,
-	)
-
 /datum/bounty/item/assistant/stunprod
 	name = "Stunprod"
 	description = "CentCom demands a stunprod to use against dissidents. Craft one, then ship it."
@@ -72,12 +56,6 @@
 	reward = CARGO_CRATE_VALUE * 4
 	required_count = 5
 	wanted_types = list(/obj/item/melee/baseball_bat = TRUE)
-
-/datum/bounty/item/assistant/extendohand
-	name = "Extendo-Hand"
-	description = "Commander Betsy is getting old, and can't bend over to get the telescreen remote anymore. Management has requested an extendo-hand to help her out."
-	reward = CARGO_CRATE_VALUE * 5
-	wanted_types = list(/obj/item/extendohand = TRUE)
 
 /datum/bounty/item/assistant/donut
 	name = "Donuts"

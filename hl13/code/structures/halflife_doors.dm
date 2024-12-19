@@ -243,12 +243,12 @@
 		to_chat(M, "<span class='warning'> The [name] is locked.</span>")
 		playsound(src, 'hl13/sound/machines/door_locked.ogg', 50, TRUE)
 		return
-		/*
+
 	if(!(I.item_flags & NOBLUDGEON || LOCKING_ITEM) && !(M.combat_mode) && do_after(M, 1.5 SECONDS, interaction_key = DOAFTER_SOURCE_DOORS))
 		open = TRUE
 		try_to_activate_door(M)
 		return TRUE
-		*/
+
 	if(!open)
 		update_appearance()
 		return ((obj_flags & CAN_BE_HIT) && I.attack_atom(src, M, params))

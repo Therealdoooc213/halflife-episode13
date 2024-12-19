@@ -19,3 +19,12 @@
 	item = /obj/item/ammo_box/magazine/mp7
 	cost = 4
 	uplink_item_flags = SYNDIE_TRIPS_CONTRABAND
+	progression_minimum = 2 MINUTES
+
+/datum/uplink_item/ammo/revolver
+	name = "357 Speed Loader"
+	desc = "A revolver speed loader with 357 magnum rounds."
+	item = /obj/item/ammo_box/a357
+	cost = 4
+	uplink_item_flags = SYNDIE_TRIPS_CONTRABAND
+	progression_minimum = 2 MINUTES

@@ -648,7 +648,7 @@
 /datum/outfit/ert/overwatch
 	name = "OTA Unit"
 
-	id = /obj/item/card/id/advanced/centcom
+	id = /obj/item/card/id/advanced/centcom/ert
 	glasses = /obj/item/clothing/glasses/hud/security/night/combine
 	mask = /obj/item/clothing/mask/gas/civilprotection/overwatch
 	uniform = /obj/item/clothing/under/combine/overwatch
@@ -715,7 +715,7 @@
 /datum/outfit/ert/riotpolice
 	name = "Metropolice Riot Unit"
 
-	id = /obj/item/card/id/advanced/centcom
+	id = /obj/item/card/id/advanced/centcom/ert
 	ears = /obj/item/radio/headset/civilprotection
 	uniform = /obj/item/clothing/under/combine/civilprotection
 	gloves = /obj/item/clothing/gloves/color/civilprotection

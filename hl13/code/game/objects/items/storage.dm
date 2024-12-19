@@ -15,6 +15,7 @@
 	desc = "Heavy duty belt for containing metrocop standard gear."
 	icon_state = "civilprotection"
 	inhand_icon_state = "civilprotection"
+	worn_icon_state = "civilprotection"
 	w_class = WEIGHT_CLASS_BULKY
 	content_overlays = TRUE
 

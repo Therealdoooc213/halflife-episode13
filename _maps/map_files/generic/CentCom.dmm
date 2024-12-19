@@ -599,6 +599,7 @@
 /area/centcom/halflife)
 "en" = (
 /obj/structure/table/halflife/metal,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/plating/indoor/trainfloor,
 /area/centcom/halflife/ota)
 "ep" = (
@@ -1058,9 +1059,6 @@
 /obj/structure/halflife/fence/wire/barb,
 /turf/open/floor/plating/ground/dirt,
 /area/centcom/halflife)
-"jq" = (
-/turf/closed/indestructible/syndicate,
-/area/space)
 "js" = (
 /turf/open/floor/plating/ground/brickroad,
 /area/centcom/halflife)
@@ -3191,6 +3189,10 @@
 /obj/machinery/light/directional/west,
 /turf/open/floor/iron/white,
 /area/centcom/central_command_areas/evacuation/ship)
+"HV" = (
+/obj/machinery/light/small/directional/west,
+/turf/open/floor/plating/indoor/trainfloor,
+/area/centcom/halflife/ota)
 "HZ" = (
 /obj/structure/railing{
 	dir = 6
@@ -56685,7 +56687,7 @@ Io
 Os
 Os
 Os
-Os
+HV
 Os
 iK
 iK
@@ -61327,39 +61329,39 @@ qz
 qz
 kj
 gA
-jq
-jq
-jq
-jq
-jq
-jq
-jq
-jq
-jq
-jq
-jq
-jq
-jq
-jq
-jq
-jq
-jq
-jq
-jq
-jq
-jq
-jq
-jq
-jq
-jq
-jq
-jq
-jq
-jq
-jq
-jq
-jq
-jq
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa

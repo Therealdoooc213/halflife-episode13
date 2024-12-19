@@ -21,9 +21,6 @@
 /area/halflife/indoors/restaurant)
 "ai" = (
 /obj/structure/stairs/west,
-/turf/open/floor/iron/stairs{
-	dir = 8
-	},
 /turf/open/floor/plating/indoor/sterilesquares,
 /area/halflife/indoors/hospital)
 "aj" = (

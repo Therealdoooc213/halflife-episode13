@@ -6523,6 +6523,7 @@
 #include "hl13\code\modules\locks.dm"
 #include "hl13\code\modules\vending.dm"
 #include "hl13\code\modules\clothing\gloves.dm"
+#include "hl13\code\modules\clothing\hev.dm"
 #include "hl13\code\modules\clothing\masks.dm"
 #include "hl13\code\modules\clothing\neck.dm"
 #include "hl13\code\modules\clothing\shoes.dm"

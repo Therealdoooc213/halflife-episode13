@@ -74,3 +74,11 @@
 	button_icon = 'hl13/icons/mob/actions/actions_vortal.dmi'
 	button_icon_state = "telepathy"
 	background_icon_state = "bg_nature"
+
+/datum/action/cooldown/spell/aoe/repulse/wizard/vort
+	name = "Vortal Repulse"
+	desc = "Clear your surroundings with the power of the vortessence."
+	invocation = "TO THE VOID"
+	cooldown_time = 25 SECONDS
+	aoe_radius = 4
+	cooldown_reduction_per_rank = 4 SECONDS

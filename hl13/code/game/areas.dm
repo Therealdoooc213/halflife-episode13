@@ -134,9 +134,12 @@
 
 /area/centcom/halflife
 	name = "Overwatch Rail Interchange"
+	ambient_buzz = 'hl13/sound/ambience/town_ambience.ogg'
 
 /area/centcom/halflife/ota
 	name = "Overwatch Rail Interchange Dispatch"
+	ambient_buzz = 'hl13/sound/ambience/citadel_ambience.ogg'
 
 /area/centcom/halflife/rebel
 	name = "Resistance Outpost"
+	ambient_buzz = 'hl13/sound/ambience/town_ambience.ogg'

@@ -40,7 +40,8 @@
 	dir = 8;
 	shuttle_id = "ferry";
 	name = "ferry shuttle";
-	preferred_direction = 4
+	preferred_direction = 4;
+	train = TRUE
 	},
 /turf/closed/wall/halflife/metal,
 /area/shuttle/transport)
@@ -49,6 +50,7 @@
 /area/shuttle/transport)
 "H" = (
 /obj/machinery/door/airlock/highsecurity/combine,
+/obj/structure/fans/tiny/invisible,
 /turf/open/floor/plating/indoor/metal/combine,
 /area/shuttle/transport)
 

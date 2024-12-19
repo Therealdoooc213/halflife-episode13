@@ -304,25 +304,25 @@
 
 
 /datum/antagonist/ert/overwatch
-	outfit = /datum/outfit/ert/overwatch
+	outfit = /datum/outfit/centcom/ert/overwatch
 	role = "UNIT-"
 
 /datum/antagonist/ert/overwatch/mp7
-	outfit = /datum/outfit/ert/overwatch/mp7
+	outfit = /datum/outfit/centcom/ert/overwatch/mp7
 
 /datum/antagonist/ert/overwatch/spas12
-	outfit = /datum/outfit/ert/overwatch/spas12
+	outfit = /datum/outfit/centcom/ert/overwatch/spas12
 
 /datum/antagonist/ert/overwatch/ar2
-	outfit = /datum/outfit/ert/overwatch/ar2
+	outfit = /datum/outfit/centcom/ert/overwatch/ar2
 
 /*
 /datum/antagonist/ert/overwatch/sniper
-	outfit = /datum/outfit/ert/overwatch/sniper
+	outfit = /datum/outfit/centcom/ert/overwatch/sniper
 */
 
 /datum/antagonist/ert/overwatch/ar2/elite
-	outfit = /datum/outfit/ert/overwatch/ar2/elite
+	outfit = /datum/outfit/centcom/ert/overwatch/ar2/elite
 
 /datum/antagonist/ert/overwatch/New()
 	. = ..()

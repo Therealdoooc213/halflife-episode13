@@ -645,7 +645,7 @@
 	default_skin = "corpsman"
 
 
-/datum/outfit/ert/overwatch
+/datum/outfit/centcom/ert/overwatch
 	name = "OTA Unit"
 
 	id = /obj/item/card/id/advanced/centcom/ert
@@ -663,10 +663,10 @@
 
 	back = null
 
-/datum/outfit/ert/overwatch/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/centcom/ert/overwatch/pre_equip(mob/living/carbon/human/H)
 	H.faction += "combine"
 	H.cmode_music = 'hl13/sound/music/combat/guarddown.ogg'
-	H.skin_tone = "#e3cfbf"
+	H.skin_tone = "#e9dfd7"
 	H.set_facial_hairstyle("Shaved", update = FALSE)
 	H.set_hairstyle("Bald") //this will call update_body_parts()
 	H.eye_color_left = "#b9b9b9"
@@ -674,7 +674,7 @@
 	H.update_body()
 	ADD_TRAIT(H, TRAIT_NOHUNGER, OUTFIT_TRAIT) //OTA dont need to eat or drink
 
-/datum/outfit/ert/overwatch/spas12
+/datum/outfit/centcom/ert/overwatch/spas12
 	name = "OTA Shotgun Unit"
 	suit_store = /obj/item/gun/ballistic/shotgun/spas12
 	belt = /obj/item/storage/belt/civilprotection/overwatch/spas12
@@ -682,30 +682,30 @@
 	uniform = /obj/item/clothing/under/combine/overwatch/red
 	suit = /obj/item/clothing/suit/armor/overwatch/red
 
-/datum/outfit/ert/overwatch/mp7
+/datum/outfit/centcom/ert/overwatch/mp7
 	name = "OTA SMG Unit"
 	suit_store = /obj/item/gun/ballistic/automatic/mp7
 	belt = /obj/item/storage/belt/civilprotection/overwatch/mp7
 
-/datum/outfit/ert/overwatch/ar2
+/datum/outfit/centcom/ert/overwatch/ar2
 	name = "OTA Rifle Unit"
 	suit_store = /obj/item/gun/ballistic/automatic/ar2
 	belt = /obj/item/storage/belt/civilprotection/overwatch/ar2
 
 /*
-/datum/outfit/ert/overwatch/sniper
+/datum/outfit/centcom/ert/overwatch/sniper
 	name = "OTA Sniper Unit"
 	suit_store = /obj/item/gun/ballistic/combine_sniper
 	belt = /obj/item/storage/belt/civilprotection/overwatch/sniper
 */
 
-/datum/outfit/ert/overwatch/ar2/elite
+/datum/outfit/centcom/ert/overwatch/ar2/elite
 	name = "OTA Elite Unit"
 	mask = /obj/item/clothing/mask/gas/civilprotection/overwatch/elite
 	uniform = /obj/item/clothing/under/combine/overwatch/elite
 	suit = /obj/item/clothing/suit/armor/overwatch/elite
 
-/datum/outfit/ert/overwatch/ar2/elite/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/centcom/ert/overwatch/ar2/elite/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return

@@ -2113,9 +2113,6 @@
 /obj/structure/stairs/wood{
 	dir = 4
 	},
-/turf/open/floor/iron/stairs{
-	dir = 4
-	},
 /turf/open/floor/plating/indoor/woodc,
 /area/halflife/indoors)
 "kr" = (
@@ -3952,9 +3949,6 @@
 /area/halflife/indoors/townhall)
 "sI" = (
 /obj/structure/stairs/wood{
-	dir = 4
-	},
-/turf/open/floor/iron/stairs{
 	dir = 1
 	},
 /turf/open/floor/plating/indoor/woodc,
@@ -5263,6 +5257,7 @@
 /turf/open/floor/plating/indoor/tile/navy,
 /area/halflife/indoors/hydroponics)
 "zl" = (
+/obj/structure/stairs/wood,
 /turf/open/floor/iron/stairs{
 	dir = 4
 	},
@@ -7806,12 +7801,6 @@
 	},
 /turf/open/floor/plating/indoor/trainfloor,
 /area/halflife/indoors/trainstation)
-"LA" = (
-/obj/structure/stairs/wood{
-	dir = 4
-	},
-/turf/open/floor/plating/indoor/woodc/wide,
-/area/halflife/indoors/slums)
 "LC" = (
 /obj/machinery/door/window/brigdoor{
 	dir = 8;
@@ -8305,7 +8294,7 @@
 /turf/open/floor/plating/indoor/tiled10,
 /area/halflife/indoors/distributioncenter)
 "NR" = (
-/turf/open/floor/iron/stairs{
+/obj/structure/stairs/stone{
 	dir = 4
 	},
 /turf/open/floor/plating/indoor/concrete/bricks,
@@ -37831,7 +37820,7 @@ tn
 tn
 tn
 tn
-LA
+tn
 tn
 OZ
 tL
@@ -37953,7 +37942,7 @@ tn
 tn
 tn
 zl
-zl
+OZ
 OZ
 tL
 "}
@@ -56104,7 +56093,7 @@ Iw
 fu
 fu
 ed
-ed
+fu
 Iw
 tL
 "}
@@ -58713,7 +58702,7 @@ xr
 xr
 xr
 xr
-DL
+xr
 xr
 xr
 xr
@@ -58834,7 +58823,7 @@ xr
 xr
 xr
 xr
-DL
+xr
 xr
 xr
 xr
@@ -58955,7 +58944,7 @@ xr
 xr
 xr
 xr
-DL
+xr
 xr
 xr
 xr
@@ -59076,7 +59065,7 @@ xr
 xr
 xr
 xr
-DL
+xr
 xr
 xr
 xr
@@ -59197,7 +59186,7 @@ xr
 xr
 xr
 xr
-DL
+xr
 xr
 xr
 xr
@@ -59318,7 +59307,7 @@ xr
 xr
 xr
 xr
-DL
+xr
 xr
 xr
 xr

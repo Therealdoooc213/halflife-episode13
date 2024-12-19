@@ -101,6 +101,16 @@
 	desc = "This key will open doors in the train station."
 	lockid = "trainstation"
 
+/obj/item/hl2key/overwatch_exchange
+	name = "overwatch exchange key"
+	desc = "This key will open doors in the Overwatch exchange station."
+	lockid = "overwatch_exchange"
+
+/obj/item/hl2key/rebel_outpost
+	name = "rebel outpost key"
+	desc = "This key will open doors in the Rebel train station."
+	lockid = "rebel_trainstation"
+
 //custom key
 /obj/item/hl2key/custom
 	name = "custom key"

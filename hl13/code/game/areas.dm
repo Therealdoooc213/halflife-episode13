@@ -137,3 +137,6 @@
 
 /area/centcom/halflife/ota
 	name = "Overwatch Rail Interchange Dispatch"
+
+/area/centcom/halflife/rebel
+	name = "Resistance Outpost"

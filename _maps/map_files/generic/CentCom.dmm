@@ -2022,11 +2022,7 @@
 /turf/open/floor/plating/indoor/trainfloor,
 /area/centcom/halflife)
 "vf" = (
-/obj/item/hl2key{
-	lockid = "overwatch_exchange";
-	name = "overwatch exchange key";
-	desc = "A key bearing the insignia of the Combine Overwatch, capable of locking and unlocking doors at the Overwatch Rail Exchange."
-	},
+/obj/item/hl2key/overwatch_exchange,
 /obj/structure/table/halflife/metal,
 /turf/open/floor/plating/indoor/trainfloor,
 /area/centcom/halflife)
@@ -2577,11 +2573,7 @@
 /turf/open/floor/iron,
 /area/centcom/tdome/observation)
 "Bt" = (
-/obj/item/hl2key{
-	lockid = "overwatch_exchange";
-	name = "overwatch exchange key";
-	desc = "A key bearing the insignia of the Combine Overwatch, capable of locking and unlocking doors at the Overwatch Rail Exchange."
-	},
+/obj/item/hl2key/overwatch_exchange,
 /obj/structure/table/halflife/metal,
 /turf/open/floor/plating/indoor/trainfloor,
 /area/centcom/halflife/ota)

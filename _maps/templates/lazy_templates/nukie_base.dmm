@@ -1,198 +1,34 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "ad" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 5
+/obj/structure/railing/halflife/solo{
+	dir = 1
 	},
-/obj/effect/light_emitter/fake_outdoors,
-/turf/open/halflife/water/shallow,
-/area/centcom/halflife/rebel)
-"ah" = (
-/obj/item/storage/box/halflife/betterration,
-/obj/item/storage/box/halflife/loyaltyration,
-/obj/item/storage/box/halflife/betterration,
-/obj/item/storage/box/halflife/betterration,
-/obj/structure/closet/crate/freezer/food,
-/turf/open/floor/plating/indoor/metal/industrial,
+/turf/open/floor/plating/indoor/concrete,
 /area/centcom/halflife/rebel)
 "as" = (
-/turf/open/halflife/water/deep,
-/area/centcom/halflife/rebel)
-"au" = (
-/obj/machinery/door/poddoor/shutters/indestructible{
-	dir = 8
-	},
-/turf/open/floor/plating/indoor/metal/walkway{
-	dir = 1
-	},
-/area/centcom/halflife/rebel)
-"bp" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 5
-	},
-/turf/open/halflife/water/shallow,
-/area/centcom/halflife/rebel)
-"bB" = (
-/turf/open/floor/plating/indoor/metal/industrial,
-/area/centcom/halflife/rebel)
-"bF" = (
-/obj/structure/halflife/road_barrier/concrete/alt{
-	dir = 8
-	},
-/turf/open/floor/plating/indoor/metal/walkway{
-	dir = 1
-	},
-/area/centcom/halflife/rebel)
-"bT" = (
-/obj/structure/table/halflife/metal,
-/obj/machinery/computer/security{
-	icon_state = "oldcomp";
-	icon_screen = "library";
-	pixel_x = 0;
-	pixel_y = 10;
-	name = "camera computer";
-	desc = "An old, pre-war computer hooked up to the Combine camera network."
-	},
-/turf/open/floor/plating/indoor/metal/industrial,
-/area/centcom/halflife/rebel)
-"bU" = (
-/obj/effect/light_emitter/fake_outdoors,
-/obj/effect/turf_decal/siding/thinplating,
-/turf/open/floor/plating/ground/brickroad{
-	dir = 1
-	},
-/area/centcom/halflife/rebel)
-"bW" = (
-/obj/item/storage/box/halflife/badration,
-/obj/item/storage/box/halflife/badration,
-/obj/item/storage/box/halflife/worstration,
-/obj/item/storage/box/halflife/ration,
-/obj/item/storage/box/halflife/ration,
-/obj/structure/closet/crate/freezer/food,
-/turf/open/floor/plating/indoor/metal/industrial,
-/area/centcom/halflife/rebel)
-"cT" = (
-/obj/effect/light_emitter/fake_outdoors,
-/obj/effect/turf_decal/siding/thinplating{
-	dir = 1
-	},
-/turf/open/floor/plating/ground/brickroad{
-	dir = 1
-	},
-/area/centcom/halflife/rebel)
-"du" = (
-/obj/machinery/light/small/directional/west,
-/turf/open/floor/plating/indoor/grooved2,
-/area/centcom/halflife/rebel)
-"dw" = (
-/obj/structure/halflife/cargotruck{
-	dir = 4
-	},
-/turf/open/floor/plating/ground/dirt,
-/area/centcom/halflife/rebel)
-"dH" = (
-/obj/effect/light_emitter/fake_outdoors,
-/turf/open/floor/plating/indoor/woodc/wide,
-/area/centcom/halflife/rebel)
-"ek" = (
-/obj/machinery/door/unpowered/halflife/metal/red{
-	dir = 4;
-	keylock = 1;
-	lockid = "rebel_trainstation";
-	locked = 1
-	},
-/turf/open/floor/plating/indoor/tile/navy,
-/area/centcom/halflife/rebel)
-"fu" = (
-/obj/effect/light_emitter/fake_outdoors,
-/turf/open/floor/plating/ground/dirt,
-/area/centcom/halflife/rebel)
-"fw" = (
 /obj/structure/fluff/sat_dish{
 	pixel_x = 0;
 	pixel_y = -10
 	},
 /turf/open/floor/plating/ground/dirt,
 /area/centcom/halflife/rebel)
-"fK" = (
-/obj/effect/landmark/start/nukeop_overwatch,
-/turf/open/floor/plating/indoor/metal/industrial,
-/area/centcom/halflife/rebel)
-"gh" = (
-/obj/machinery/light/directional/north,
+"aK" = (
+/obj/structure/shipping_container/great_northern,
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/centcom/halflife/rebel)
-"gs" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 6
-	},
-/obj/effect/light_emitter/fake_outdoors,
-/turf/open/halflife/water/shallow,
-/area/centcom/halflife/rebel)
-"gJ" = (
-/obj/structure/bed/halflife/bedframe/wood,
-/obj/structure/bed/halflife/mattress/stale,
-/turf/open/floor/plating/indoor/carpet/shaggy/blue,
-/area/centcom/halflife/rebel)
-"hN" = (
-/turf/open/floor/plating/indoor/concrete,
-/area/centcom/halflife/rebel)
-"is" = (
-/obj/structure/closet,
-/obj/item/clothing/under/citizen/refugee,
-/obj/item/clothing/suit/armor/civilprotection,
-/obj/item/clothing/head/beret/durathread/unitednations,
-/turf/open/floor/plating/indoor/concrete/small,
-/area/centcom/halflife/rebel)
-"iA" = (
-/obj/structure/table/halflife/metal/grate,
-/turf/open/floor/plating/indoor/metal/industrial,
-/area/centcom/halflife/rebel)
-"iL" = (
-/obj/machinery/power/halflife/streetlamp{
-	dir = 1
-	},
-/turf/open/floor/plating/indoor/concrete,
-/area/centcom/halflife/rebel)
-"iX" = (
-/turf/open/halflife/water/medium,
-/area/centcom/halflife/rebel)
-"je" = (
-/obj/machinery/door/unpowered/halflife/seethrough/fence/wire/barb{
+"bo" = (
+/obj/machinery/door/unpowered/halflife/metal/red{
+	dir = 1;
+	keylock = 1;
 	lockid = "rebel_trainstation"
 	},
-/turf/open/floor/plating/ground/dirt,
+/turf/open/floor/plating/indoor/concrete,
 /area/centcom/halflife/rebel)
-"js" = (
-/obj/structure/bed/halflife/bedframe/wood,
-/obj/structure/bed/halflife/mattress/yellowed,
-/turf/open/floor/plating/indoor/carpet/shaggy/blue,
+"bs" = (
+/obj/structure/shipping_container/reefer,
+/turf/open/floor/plating/indoor/concrete/bricks,
 /area/centcom/halflife/rebel)
-"jO" = (
-/obj/docking_port/stationary{
-	dwidth = 25;
-	height = 50;
-	name = "Condemned Train Station";
-	shuttle_id = "emergency_syndicate";
-	width = 50;
-	dir = 4
-	},
-/turf/open/floor/plating/ground/dirt,
-/area/centcom/halflife/rebel)
-"jT" = (
-/obj/structure/table/halflife/metal/small,
-/obj/item/kitchen/rollingpin,
-/obj/item/knife/kitchen,
-/turf/open/floor/plating/indoor/tile/navy,
-/area/centcom/halflife/rebel)
-"jW" = (
-/obj/structure/table/halflife/no_smooth/large/metal,
-/obj/machinery/microwave{
-	pixel_y = 4
-	},
-/obj/machinery/light/small/directional/west,
-/turf/open/floor/plating/indoor/tile/navy,
-/area/centcom/halflife/rebel)
-"ks" = (
+"bC" = (
 /obj/effect/decal/remains/human,
 /obj/item/clothing/head/beret/durathread/unitednations{
 	pixel_x = 0;
@@ -200,11 +36,62 @@
 	},
 /turf/open/floor/plating/ground/dirt,
 /area/centcom/halflife/rebel)
-"kz" = (
+"bD" = (
+/obj/machinery/door/unpowered/halflife/seethrough/fence/wire/barb{
+	lockid = "rebel_trainstation"
+	},
+/turf/open/floor/plating/ground/dirt,
+/area/centcom/halflife/rebel)
+"bT" = (
+/obj/structure/halflife/fence/wire/barb,
+/turf/open/floor/plating/ground/dirt,
+/area/centcom/halflife/rebel)
+"cw" = (
+/obj/structure/chair/office/halflife/blue{
+	dir = 1
+	},
+/turf/open/floor/plating/indoor/grooved2,
+/area/centcom/halflife/rebel)
+"cO" = (
+/obj/effect/turf_decal/siding/thinplating{
+	dir = 4
+	},
+/turf/open/floor/plating/ground/brickroad{
+	dir = 1
+	},
+/area/centcom/halflife/rebel)
+"cQ" = (
 /obj/effect/light_emitter/fake_outdoors,
 /turf/open/halflife/water/medium,
 /area/centcom/halflife/rebel)
-"la" = (
+"cT" = (
+/obj/structure/halflife/storage/large/shelf{
+	dir = 4
+	},
+/turf/open/floor/plating/indoor/metal/industrial,
+/area/centcom/halflife/rebel)
+"cV" = (
+/obj/machinery/smartfridge/drying/rack,
+/turf/open/floor/plating/indoor/metal/industrial,
+/area/centcom/halflife/rebel)
+"du" = (
+/turf/closed/wall/halflife/metal/weak,
+/area/centcom/halflife/rebel)
+"dw" = (
+/obj/structure/closet,
+/obj/item/clothing/under/citizen/refugee,
+/obj/item/clothing/suit/armor/civilprotection,
+/obj/item/clothing/head/beanie/black,
+/turf/open/floor/plating/indoor/metal/industrial,
+/area/centcom/halflife/rebel)
+"dF" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/obj/effect/light_emitter/fake_outdoors,
+/turf/open/halflife/water/shallow,
+/area/centcom/halflife/rebel)
+"dH" = (
 /obj/structure/table/halflife/metal,
 /obj/item/card/emag/halflife{
 	pixel_x = -6;
@@ -216,19 +103,229 @@
 	},
 /turf/open/floor/plating/indoor/metal/industrial,
 /area/centcom/halflife/rebel)
-"lj" = (
+"dO" = (
+/obj/effect/light_emitter/fake_outdoors,
 /obj/effect/turf_decal/siding/thinplating{
-	dir = 6
+	dir = 1
 	},
 /turf/open/floor/plating/ground/brickroad{
 	dir = 1
 	},
 /area/centcom/halflife/rebel)
-"lo" = (
-/obj/structure/table/halflife/metal/alt,
+"dV" = (
+/obj/effect/light_emitter/fake_outdoors,
+/turf/open/misc/grass/jungle/station,
+/area/centcom/halflife/rebel)
+"eK" = (
+/obj/effect/light_emitter/fake_outdoors,
+/turf/open/floor/plating/ground/dirt,
+/area/centcom/halflife/rebel)
+"fx" = (
+/obj/machinery/light/small/directional/west,
+/turf/open/floor/plating/indoor/grooved2,
+/area/centcom/halflife/rebel)
+"fy" = (
+/obj/item/storage/box/halflife/betterration,
+/obj/item/storage/box/halflife/loyaltyration,
+/obj/item/storage/box/halflife/betterration,
+/obj/item/storage/box/halflife/betterration,
+/obj/structure/closet/crate/freezer/food,
+/turf/open/floor/plating/indoor/metal/industrial,
+/area/centcom/halflife/rebel)
+"fA" = (
+/turf/open/misc/grass/jungle/station,
+/area/centcom/halflife/rebel)
+"gf" = (
+/obj/structure/halflife/barrel/single/flammable/one,
+/turf/open/floor/plating/indoor/metal/industrial,
+/area/centcom/halflife/rebel)
+"gs" = (
+/obj/structure/chair/office/halflife/red{
+	dir = 1
+	},
+/turf/open/floor/plating/indoor/metal/industrial,
+/area/centcom/halflife/rebel)
+"gJ" = (
+/turf/open/floor/plating/indoor/concrete,
+/area/centcom/halflife/rebel)
+"gK" = (
+/turf/open/floor/plating/indoor/grooved2,
+/area/centcom/halflife/rebel)
+"hp" = (
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/plating/indoor/concrete/small,
 /area/centcom/halflife/rebel)
-"lx" = (
+"hE" = (
+/obj/structure/bed/halflife/bedframe/wood,
+/obj/structure/bed/halflife/mattress/stale,
+/turf/open/floor/plating/indoor/carpet/shaggy/blue,
+/area/centcom/halflife/rebel)
+"ij" = (
+/obj/machinery/light/directional/north,
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/centcom/halflife/rebel)
+"il" = (
+/obj/structure/table/halflife/metal/alt,
+/obj/item/food/sosjerky/healthy{
+	name = "headcrab jerky";
+	desc = "Crudely-packaged crabmeat jerky. You're pretty sure this is just in a washed-out pre-war jerky bag.";
+	pixel_x = -5;
+	pixel_y = 8
+	},
+/turf/open/floor/plating/indoor/concrete/small,
+/area/centcom/halflife/rebel)
+"jo" = (
+/obj/effect/turf_decal/siding/thinplating{
+	dir = 8
+	},
+/turf/open/floor/plating/ground/brickroad{
+	dir = 1
+	},
+/area/centcom/halflife/rebel)
+"jT" = (
+/obj/machinery/light/small/directional/south,
+/turf/open/floor/plating/indoor/metal/industrial,
+/area/centcom/halflife/rebel)
+"kh" = (
+/obj/structure/table/halflife/metal/small,
+/obj/item/kitchen/rollingpin,
+/obj/item/knife/kitchen,
+/turf/open/floor/plating/indoor/tile/navy,
+/area/centcom/halflife/rebel)
+"kl" = (
+/obj/machinery/oven/range,
+/turf/open/floor/plating/indoor/tile/navy,
+/area/centcom/halflife/rebel)
+"kz" = (
+/obj/machinery/door/unpowered/halflife/metal/red{
+	dir = 1;
+	keylock = 1;
+	lockid = "rebel_trainstation";
+	locked = 1
+	},
+/turf/open/floor/plating/indoor/metal/industrial,
+/area/centcom/halflife/rebel)
+"kG" = (
+/obj/structure/closet,
+/obj/item/clothing/under/citizen/refugee,
+/obj/item/clothing/suit/armor/civilprotection,
+/obj/item/clothing/head/beret/durathread/unitednations,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/centcom/halflife/rebel)
+"kQ" = (
+/turf/open/floor/plating/indoor/metal/industrial,
+/area/centcom/halflife/rebel)
+"kU" = (
+/obj/effect/turf_decal/siding/thinplating{
+	dir = 5
+	},
+/turf/open/floor/plating/ground/brickroad{
+	dir = 1
+	},
+/area/centcom/halflife/rebel)
+"kW" = (
+/obj/machinery/light/directional/east,
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/centcom/halflife/rebel)
+"la" = (
+/obj/item/reagent_containers/condiment/soymilk,
+/obj/item/reagent_containers/condiment/flour,
+/obj/item/reagent_containers/condiment/flour,
+/obj/item/reagent_containers/condiment/mayonnaise,
+/obj/item/food/butter,
+/obj/item/storage/fancy/egg_box,
+/obj/structure/closet/secure_closet/freezer,
+/obj/item/reagent_containers/condiment/milk,
+/obj/item/reagent_containers/condiment/sugar,
+/obj/item/food/meat/slab/rawcrab,
+/obj/item/food/meat/slab/rawcrab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/turf/open/floor/plating/indoor/tile/navy,
+/area/centcom/halflife/rebel)
+"ld" = (
+/turf/open/floor/plating/indoor/metal/walkway/corner,
+/area/centcom/halflife/rebel)
+"lg" = (
+/turf/open/floor/plating/indoor/metal/walkway{
+	dir = 1
+	},
+/area/centcom/halflife/rebel)
+"lB" = (
+/turf/open/floor/plating/indoor/metal/walkway/corner{
+	dir = 8
+	},
+/area/centcom/halflife/rebel)
+"mb" = (
+/obj/structure/flora/tree/jungle/small/style_random,
+/turf/open/misc/grass/jungle/station,
+/area/centcom/halflife/rebel)
+"mz" = (
+/obj/machinery/door/poddoor/shutters{
+	id = "rebel_trainstation_depot";
+	dir = 1
+	},
+/turf/open/floor/plating/indoor/concrete,
+/area/centcom/halflife/rebel)
+"mA" = (
+/obj/structure/table/halflife/metal/small,
+/obj/item/reagent_containers/cup/soup_pot,
+/obj/machinery/light/small/directional/east,
+/turf/open/floor/plating/indoor/tile/navy,
+/area/centcom/halflife/rebel)
+"mB" = (
+/obj/docking_port/stationary{
+	dwidth = 25;
+	height = 50;
+	name = "Condemned Train Station";
+	shuttle_id = "emergency_syndicate";
+	width = 50;
+	dir = 4
+	},
+/turf/open/floor/plating/ground/dirt,
+/area/centcom/halflife/rebel)
+"mJ" = (
+/obj/machinery/griddle,
+/turf/open/floor/plating/indoor/tile/navy,
+/area/centcom/halflife/rebel)
+"nk" = (
+/obj/structure/table/halflife/metal,
+/obj/machinery/computer/security{
+	icon_state = "oldcomp";
+	icon_screen = "library";
+	pixel_x = 0;
+	pixel_y = 10;
+	name = "camera computer";
+	desc = "An old, pre-war computer hooked up to the Combine camera network."
+	},
+/turf/open/floor/plating/indoor/metal/industrial,
+/area/centcom/halflife/rebel)
+"nz" = (
+/turf/open/floor/plating/indoor/concrete/small,
+/area/centcom/halflife/rebel)
+"nL" = (
+/obj/machinery/door/unpowered/halflife/metal/red{
+	dir = 4;
+	keylock = 1;
+	lockid = "rebel_trainstation";
+	locked = 1
+	},
+/turf/open/floor/plating/indoor/concrete/small,
+/area/centcom/halflife/rebel)
+"nU" = (
+/obj/structure/shipping_container/orange,
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/centcom/halflife/rebel)
+"oe" = (
+/obj/structure/halflife/road_barrier/concrete{
+	dir = 4
+	},
+/turf/open/floor/plating/ground/brickroad{
+	dir = 1
+	},
+/area/centcom/halflife/rebel)
+"oD" = (
 /obj/machinery/door/poddoor/shutters/indestructible{
 	dir = 8
 	},
@@ -236,69 +333,253 @@
 	dir = 1
 	},
 /area/centcom/halflife/rebel)
-"lE" = (
-/obj/structure/table/halflife/metal/grate,
-/turf/open/floor/plating/indoor/grooved2,
+"pS" = (
+/obj/effect/turf_decal/siding/thinplating{
+	dir = 6
+	},
+/turf/open/floor/plating/ground/brickroad{
+	dir = 1
+	},
 /area/centcom/halflife/rebel)
-"lO" = (
-/obj/machinery/light/directional/south,
+"pY" = (
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/centcom/halflife/rebel)
-"my" = (
+"qp" = (
+/turf/closed/wall/halflife/brick,
+/area/centcom/halflife/rebel)
+"qw" = (
+/obj/structure/table/halflife/wood,
+/obj/item/lockpick{
+	pixel_x = -6;
+	pixel_y = 10
+	},
+/turf/open/floor/plating/indoor/concrete/small,
+/area/centcom/halflife/rebel)
+"qO" = (
+/obj/effect/landmark/start/nukeop_overwatch,
+/turf/open/floor/plating/indoor/metal/industrial,
+/area/centcom/halflife/rebel)
+"rS" = (
+/obj/structure/table/halflife/metal/grate,
+/turf/open/floor/plating/indoor/metal/industrial,
+/area/centcom/halflife/rebel)
+"so" = (
+/obj/structure/chair/office/halflife/blue,
 /turf/open/floor/plating/indoor/grooved2,
 /area/centcom/halflife/rebel)
-"mJ" = (
-/obj/structure/closet,
-/obj/item/clothing/under/citizen/refugee,
-/obj/item/clothing/suit/armor/civilprotection,
-/obj/item/clothing/head/beanie/black,
-/turf/open/floor/plating/indoor/metal/industrial,
+"sH" = (
+/obj/effect/baseturf_helper/asteroid/snow,
+/turf/open/space/basic,
+/area/space)
+"sU" = (
+/turf/open/space/basic,
+/area/space)
+"tn" = (
+/obj/structure/halflife/trash/glass/cans,
+/obj/structure/table/halflife/wood,
+/obj/machinery/light/small/directional/south,
+/turf/open/floor/plating/indoor/concrete/small,
 /area/centcom/halflife/rebel)
-"mK" = (
-/obj/structure/table/halflife/metal,
-/obj/item/clothing/head/beret/durathread/unitednations{
-	pixel_x = 3;
-	pixel_y = 11
+"um" = (
+/obj/effect/turf_decal/siding/thinplating,
+/obj/structure/halflife/road_barrier/concrete{
+	dir = 4
 	},
-/turf/open/floor/plating/indoor/metal/industrial,
+/turf/open/floor/plating/ground/brickroad{
+	dir = 1
+	},
 /area/centcom/halflife/rebel)
-"nH" = (
-/turf/open/floor/plating/indoor/tile/navy,
-/area/centcom/halflife/rebel)
-"nS" = (
+"uN" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
 	},
 /turf/open/halflife/water/shallow,
 /area/centcom/halflife/rebel)
-"nU" = (
-/turf/open/floor/plating/indoor/metal/walkway/corner{
-	dir = 8
+"uT" = (
+/obj/effect/light_emitter/fake_outdoors,
+/turf/open/floor/plating/indoor/woodc/wide,
+/area/centcom/halflife/rebel)
+"vx" = (
+/obj/effect/light_emitter/fake_outdoors,
+/obj/effect/turf_decal/siding/thinplating,
+/turf/open/floor/plating/ground/brickroad{
+	dir = 1
 	},
 /area/centcom/halflife/rebel)
-"oi" = (
+"wW" = (
+/obj/machinery/light/small/directional/west,
+/turf/open/floor/plating/indoor/metal/industrial,
+/area/centcom/halflife/rebel)
+"xe" = (
+/obj/structure/table/halflife/metal/small,
+/obj/item/reagent_containers/cup/bowl,
+/obj/item/reagent_containers/cup/bowl,
+/turf/open/floor/plating/indoor/tile/navy,
+/area/centcom/halflife/rebel)
+"ye" = (
+/obj/effect/turf_decal/siding/thinplating{
+	dir = 1
+	},
+/turf/open/floor/plating/ground/brickroad{
+	dir = 1
+	},
+/area/centcom/halflife/rebel)
+"yp" = (
+/obj/structure/halflife/road_barrier/concrete/alt{
+	dir = 8
+	},
+/turf/open/floor/plating/indoor/metal/walkway{
+	dir = 1
+	},
+/area/centcom/halflife/rebel)
+"yB" = (
+/obj/item/water_canister{
+	pixel_x = 3;
+	pixel_y = 1
+	},
+/obj/item/water_canister{
+	pixel_x = -3;
+	pixel_y = 3
+	},
+/obj/structure/table/halflife/metal/grate,
+/turf/open/floor/plating/indoor/metal/industrial,
+/area/centcom/halflife/rebel)
+"zy" = (
+/mob/living/simple_animal/hostile/halflife/zombie,
+/turf/open/floor/plating/ground/dirt,
+/area/centcom/halflife/rebel)
+"zS" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 4
+	},
+/turf/open/halflife/water/shallow,
+/area/centcom/halflife/rebel)
+"AL" = (
+/obj/item/storage/box/halflife/badration,
+/obj/item/storage/box/halflife/badration,
+/obj/item/storage/box/halflife/worstration,
+/obj/item/storage/box/halflife/ration,
+/obj/item/storage/box/halflife/ration,
+/obj/structure/closet/crate/freezer/food,
+/turf/open/floor/plating/indoor/metal/industrial,
+/area/centcom/halflife/rebel)
+"Br" = (
+/obj/effect/turf_decal/siding/thinplating/corner{
+	dir = 8
+	},
+/turf/open/floor/plating/ground/brickroad{
+	dir = 1
+	},
+/area/centcom/halflife/rebel)
+"BD" = (
+/obj/machinery/door/unpowered/halflife/metal/red{
+	dir = 4;
+	keylock = 1;
+	lockid = "rebel_trainstation";
+	locked = 1
+	},
+/turf/open/floor/plating/indoor/tile/navy,
+/area/centcom/halflife/rebel)
+"CM" = (
+/obj/structure/closet,
+/obj/item/clothing/under/citizen/refugee,
+/obj/item/clothing/head/beanie/black,
+/obj/item/clothing/suit/armor/civilprotection/medical,
+/obj/item/clothing/accessory/armband/medblue,
+/obj/item/reagent_containers/pill/patch/medkit,
 /turf/open/floor/plating/indoor/concrete/small,
 /area/centcom/halflife/rebel)
-"oK" = (
+"DO" = (
+/obj/structure/railing/halflife/solo,
+/turf/open/floor/plating/indoor/concrete,
+/area/centcom/halflife/rebel)
+"FN" = (
+/obj/structure/table/halflife/metal/grate,
+/turf/open/floor/plating/indoor/grooved2,
+/area/centcom/halflife/rebel)
+"FP" = (
+/obj/effect/light_emitter/fake_outdoors,
+/turf/open/halflife/water/deep,
+/area/centcom/halflife/rebel)
+"Gl" = (
+/turf/closed/indestructible/syndicate,
+/area/centcom/halflife/rebel)
+"Gr" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/obj/effect/light_emitter/fake_outdoors,
+/turf/open/halflife/water/shallow,
+/area/centcom/halflife/rebel)
+"Gs" = (
+/obj/item/storage/box/halflife/bestration,
+/obj/item/storage/box/halflife/badration,
+/obj/item/storage/box/halflife/badration,
+/obj/item/storage/box/halflife/worstration,
+/obj/structure/closet/crate/freezer/food,
+/turf/open/floor/plating/indoor/metal/industrial,
+/area/centcom/halflife/rebel)
+"GE" = (
+/turf/open/floor/plating/indoor/tile/navy,
+/area/centcom/halflife/rebel)
+"HD" = (
+/turf/open/halflife/water/shallow,
+/area/centcom/halflife/rebel)
+"In" = (
 /obj/machinery/door/unpowered/halflife/metal/red{
-	dir = 1;
 	keylock = 1;
-	lockid = "rebel_trainstation"
+	lockid = "rebel_trainstation";
+	locked = 1
+	},
+/turf/open/floor/plating/indoor/grooved2,
+/area/centcom/halflife/rebel)
+"IQ" = (
+/obj/machinery/light/directional/west,
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/centcom/halflife/rebel)
+"Jc" = (
+/obj/structure/table/halflife/no_smooth/large/metal,
+/obj/machinery/microwave{
+	pixel_y = 4
+	},
+/obj/machinery/light/small/directional/west,
+/turf/open/floor/plating/indoor/tile/navy,
+/area/centcom/halflife/rebel)
+"Jx" = (
+/obj/machinery/door/unpowered/halflife/metal/red{
+	keylock = 1;
+	lockid = "rebel_trainstation";
+	locked = 1
+	},
+/turf/open/floor/plating/indoor/concrete/small,
+/area/centcom/halflife/rebel)
+"KA" = (
+/obj/machinery/power/halflife/streetlamp{
+	dir = 1
 	},
 /turf/open/floor/plating/indoor/concrete,
 /area/centcom/halflife/rebel)
-"pr" = (
-/obj/machinery/deepfryer,
-/turf/open/floor/plating/indoor/tile/navy,
+"KD" = (
+/obj/structure/halflife/combine/powergen,
+/turf/open/floor/plating/indoor/concrete/bricks,
 /area/centcom/halflife/rebel)
-"ps" = (
-/obj/structure/window/fulltile,
+"KH" = (
+/obj/structure/halflife/barrel/single/flammable/two,
 /turf/open/floor/plating/indoor/metal/industrial,
 /area/centcom/halflife/rebel)
-"pK" = (
-/turf/open/halflife/water/shallow,
+"KU" = (
+/obj/structure/halflife/combine/powergen/on,
+/turf/open/floor/plating/indoor/metal/industrial,
 /area/centcom/halflife/rebel)
-"pS" = (
+"Mb" = (
+/mob/living/simple_animal/hostile/halflife/zombie,
+/turf/open/misc/grass/jungle/station,
+/area/centcom/halflife/rebel)
+"Mo" = (
+/obj/machinery/reagentgrinder,
+/turf/open/floor/plating/indoor/tile/navy,
+/area/centcom/halflife/rebel)
+"Ms" = (
 /obj/structure/table/halflife/metal{
 	pixel_x = 0;
 	pixel_y = 0
@@ -317,27 +598,29 @@
 	},
 /turf/open/floor/plating/indoor/metal/industrial,
 /area/centcom/halflife/rebel)
-"pU" = (
-/obj/structure/shipping_container/reefer,
+"Ni" = (
+/obj/structure/table/halflife/wood,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/centcom/halflife/rebel)
+"NP" = (
+/turf/open/halflife/water/deep,
+/area/centcom/halflife/rebel)
+"Pc" = (
+/obj/effect/turf_decal/siding/thinplating,
+/turf/open/floor/plating/ground/brickroad{
+	dir = 1
+	},
+/area/centcom/halflife/rebel)
+"PD" = (
+/obj/structure/shipping_container/green,
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/centcom/halflife/rebel)
-"pY" = (
-/obj/structure/railing/halflife/solo,
-/turf/open/floor/plating/indoor/concrete,
+"QM" = (
+/obj/structure/bed/halflife/bedframe/wood,
+/obj/structure/bed/halflife/mattress/yellowed,
+/turf/open/floor/plating/indoor/carpet/shaggy/blue,
 /area/centcom/halflife/rebel)
-"qh" = (
-/turf/open/floor/plating/indoor/metal/walkway{
-	dir = 1
-	},
-/area/centcom/halflife/rebel)
-"qJ" = (
-/obj/machinery/door/poddoor/shutters{
-	id = "rebel_trainstation_depot";
-	dir = 1
-	},
-/turf/open/floor/plating/indoor/concrete,
-/area/centcom/halflife/rebel)
-"sc" = (
+"Rs" = (
 /obj/structure/railing/halflife/solo{
 	dir = 1
 	},
@@ -347,79 +630,33 @@
 	},
 /turf/open/floor/plating/indoor/concrete,
 /area/centcom/halflife/rebel)
-"sl" = (
-/obj/machinery/door/unpowered/halflife/metal/red{
-	keylock = 1;
-	lockid = "rebel_trainstation";
-	locked = 1
+"Sc" = (
+/turf/open/floor/plating/indoor/woodc/wide,
+/area/centcom/halflife/rebel)
+"Sj" = (
+/obj/structure/halflife/cargotruck{
+	dir = 4
 	},
+/turf/open/floor/plating/ground/dirt,
+/area/centcom/halflife/rebel)
+"St" = (
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/plating/indoor/concrete/small,
 /area/centcom/halflife/rebel)
-"sq" = (
-/obj/machinery/light/directional/west,
-/turf/open/floor/plating/indoor/concrete/bricks,
+"Sv" = (
+/turf/open/halflife/water/medium,
 /area/centcom/halflife/rebel)
-"sH" = (
-/obj/effect/baseturf_helper/asteroid/snow,
-/turf/open/space/basic,
-/area/space)
-"sO" = (
-/obj/structure/table/halflife/metal/alt,
-/obj/item/food/sosjerky/healthy{
-	name = "headcrab jerky";
-	desc = "Crudely-packaged crabmeat jerky. You're pretty sure this is just in a washed-out pre-war jerky bag.";
-	pixel_x = -5;
-	pixel_y = 8
+"SJ" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
 	},
-/turf/open/floor/plating/indoor/concrete/small,
+/turf/open/halflife/water/shallow,
 /area/centcom/halflife/rebel)
-"sU" = (
-/turf/open/space/basic,
-/area/space)
-"tu" = (
-/obj/machinery/button/door/directional/south{
-	id = "rebel_trainstation_depot";
-	name = "Cargo Door"
-	},
-/obj/structure/filingcabinet,
+"SL" = (
+/obj/structure/window/fulltile,
 /turf/open/floor/plating/indoor/metal/industrial,
 /area/centcom/halflife/rebel)
-"tz" = (
-/obj/structure/table/halflife/wood,
-/obj/item/lockpick{
-	pixel_x = -6;
-	pixel_y = 10
-	},
-/turf/open/floor/plating/indoor/concrete/small,
-/area/centcom/halflife/rebel)
-"tJ" = (
-/obj/machinery/door/unpowered/halflife/metal/red{
-	dir = 1;
-	keylock = 1;
-	lockid = "rebel_trainstation";
-	locked = 1
-	},
-/turf/open/floor/plating/indoor/metal/industrial,
-/area/centcom/halflife/rebel)
-"uN" = (
-/obj/effect/light_emitter/fake_outdoors,
-/turf/open/halflife/water/deep,
-/area/centcom/halflife/rebel)
-"uT" = (
-/turf/open/floor/plating/indoor/concrete/bricks,
-/area/centcom/halflife/rebel)
-"wb" = (
-/obj/structure/halflife/combine/powergen,
-/turf/open/floor/plating/indoor/concrete/bricks,
-/area/centcom/halflife/rebel)
-"wv" = (
-/turf/closed/wall/halflife/metal/weak,
-/area/centcom/halflife/rebel)
-"xe" = (
-/obj/machinery/smartfridge/drying/rack,
-/turf/open/floor/plating/indoor/metal/industrial,
-/area/centcom/halflife/rebel)
-"xf" = (
+"Tf" = (
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 1
 	},
@@ -430,94 +667,10 @@
 	dir = 1
 	},
 /area/centcom/halflife/rebel)
-"yB" = (
-/obj/machinery/door/unpowered/halflife/metal/red{
-	dir = 4;
-	keylock = 1;
-	lockid = "rebel_trainstation";
-	locked = 1
-	},
-/turf/open/floor/plating/indoor/concrete/small,
-/area/centcom/halflife/rebel)
-"zi" = (
-/turf/open/floor/plating/indoor/woodc/wide,
-/area/centcom/halflife/rebel)
-"zS" = (
+"TD" = (
 /turf/open/floor/plating/indoor/carpet/shaggy/blue,
 /area/centcom/halflife/rebel)
-"AM" = (
-/obj/structure/chair/office/halflife/blue{
-	dir = 1
-	},
-/turf/open/floor/plating/indoor/grooved2,
-/area/centcom/halflife/rebel)
-"Bg" = (
-/turf/open/floor/plating/ground/brickroad{
-	dir = 1
-	},
-/area/centcom/halflife/rebel)
-"BH" = (
-/obj/machinery/light/small/directional/south,
-/turf/open/floor/plating/indoor/metal/industrial,
-/area/centcom/halflife/rebel)
-"CF" = (
-/obj/structure/railing/halflife/solo{
-	dir = 1
-	},
-/turf/open/floor/plating/indoor/concrete,
-/area/centcom/halflife/rebel)
-"Dq" = (
-/obj/structure/chair/office/halflife/red{
-	dir = 1
-	},
-/turf/open/floor/plating/indoor/metal/industrial,
-/area/centcom/halflife/rebel)
-"DM" = (
-/obj/structure/halflife/barrel/single/flammable/one,
-/turf/open/floor/plating/indoor/metal/industrial,
-/area/centcom/halflife/rebel)
-"Eo" = (
-/obj/machinery/light/small/directional/west,
-/turf/open/floor/plating/indoor/metal/industrial,
-/area/centcom/halflife/rebel)
-"EO" = (
-/obj/structure/halflife/combine/powergen/on,
-/turf/open/floor/plating/indoor/metal/industrial,
-/area/centcom/halflife/rebel)
-"FN" = (
-/obj/structure/halflife/trash/glass/cans,
-/obj/structure/table/halflife/wood,
-/obj/machinery/light/small/directional/south,
-/turf/open/floor/plating/indoor/concrete/small,
-/area/centcom/halflife/rebel)
-"Ga" = (
-/obj/item/storage/box/halflife/bestration,
-/obj/item/storage/box/halflife/badration,
-/obj/item/storage/box/halflife/badration,
-/obj/item/storage/box/halflife/worstration,
-/obj/structure/closet/crate/freezer/food,
-/turf/open/floor/plating/indoor/metal/industrial,
-/area/centcom/halflife/rebel)
-"GA" = (
-/obj/machinery/reagentgrinder,
-/turf/open/floor/plating/indoor/tile/navy,
-/area/centcom/halflife/rebel)
-"Hp" = (
-/obj/effect/turf_decal/siding/thinplating{
-	dir = 8
-	},
-/turf/open/floor/plating/ground/brickroad{
-	dir = 1
-	},
-/area/centcom/halflife/rebel)
-"Hs" = (
-/obj/machinery/light/small/directional/south,
-/turf/open/floor/plating/indoor/concrete/small,
-/area/centcom/halflife/rebel)
-"HW" = (
-/turf/closed/indestructible/syndicate,
-/area/centcom/halflife/rebel)
-"Ia" = (
+"Uq" = (
 /obj/structure/table/halflife/metal,
 /obj/item/ammo_box/magazine/usp9mm,
 /obj/item/ammo_box/magazine/usp9mm{
@@ -530,190 +683,52 @@
 	},
 /turf/open/floor/plating/indoor/metal/industrial,
 /area/centcom/halflife/rebel)
-"In" = (
-/obj/machinery/light/directional/east,
-/turf/open/floor/plating/indoor/concrete/bricks,
-/area/centcom/halflife/rebel)
-"Ip" = (
-/obj/structure/chair/office/halflife/blue,
-/turf/open/floor/plating/indoor/grooved2,
-/area/centcom/halflife/rebel)
-"Ka" = (
-/obj/effect/turf_decal/siding/thinplating{
-	dir = 4
-	},
-/turf/open/floor/plating/ground/brickroad{
-	dir = 1
-	},
-/area/centcom/halflife/rebel)
-"KA" = (
-/obj/machinery/oven/range,
-/turf/open/floor/plating/indoor/tile/navy,
-/area/centcom/halflife/rebel)
-"KR" = (
-/obj/machinery/door/unpowered/halflife/metal/red{
-	keylock = 1;
-	lockid = "rebel_trainstation";
-	locked = 1
-	},
-/turf/open/floor/plating/indoor/grooved2,
-/area/centcom/halflife/rebel)
-"KU" = (
-/turf/closed/wall/halflife/brick,
-/area/centcom/halflife/rebel)
-"Mb" = (
-/turf/open/floor/plating/indoor/metal/walkway/corner,
-/area/centcom/halflife/rebel)
-"Mn" = (
-/obj/effect/turf_decal/siding/thinplating{
-	dir = 5
-	},
-/turf/open/floor/plating/ground/brickroad{
-	dir = 1
-	},
-/area/centcom/halflife/rebel)
-"Nb" = (
-/obj/structure/shipping_container/green,
-/turf/open/floor/plating/indoor/concrete/bricks,
-/area/centcom/halflife/rebel)
-"NH" = (
-/obj/structure/shipping_container/orange,
-/turf/open/floor/plating/indoor/concrete/bricks,
-/area/centcom/halflife/rebel)
-"OS" = (
-/obj/structure/halflife/barrel/single/flammable/two,
-/turf/open/floor/plating/indoor/metal/industrial,
-/area/centcom/halflife/rebel)
-"Py" = (
-/obj/item/water_canister{
+"UE" = (
+/obj/structure/table/halflife/metal,
+/obj/item/clothing/head/beret/durathread/unitednations{
 	pixel_x = 3;
-	pixel_y = 1
+	pixel_y = 11
 	},
-/obj/item/water_canister{
-	pixel_x = -3;
-	pixel_y = 3
-	},
-/obj/structure/table/halflife/metal/grate,
 /turf/open/floor/plating/indoor/metal/industrial,
 /area/centcom/halflife/rebel)
-"PK" = (
+"VC" = (
 /turf/open/floor/plating/ground/sidewalk,
 /area/centcom/halflife/rebel)
-"Ql" = (
-/obj/structure/halflife/fence/wire/barb,
-/turf/open/floor/plating/ground/dirt,
-/area/centcom/halflife/rebel)
-"Qr" = (
-/mob/living/simple_animal/hostile/halflife/zombie,
-/turf/open/floor/plating/ground/dirt,
-/area/centcom/halflife/rebel)
-"Qy" = (
-/obj/structure/table/halflife/wood,
+"VN" = (
+/obj/structure/table/halflife/metal/alt,
 /turf/open/floor/plating/indoor/concrete/small,
 /area/centcom/halflife/rebel)
-"RO" = (
-/obj/machinery/light/small/directional/north,
-/turf/open/floor/plating/indoor/concrete/small,
-/area/centcom/halflife/rebel)
-"SD" = (
-/obj/structure/closet,
-/obj/item/clothing/under/citizen/refugee,
-/obj/item/clothing/head/beanie/black,
-/obj/item/clothing/suit/armor/civilprotection/medical,
-/obj/item/clothing/accessory/armband/medblue,
-/obj/item/reagent_containers/pill/patch/medkit,
-/turf/open/floor/plating/indoor/concrete/small,
-/area/centcom/halflife/rebel)
-"Tz" = (
-/obj/effect/turf_decal/siding/thinplating{
-	dir = 1
+"Wc" = (
+/obj/machinery/door/poddoor/shutters/indestructible{
+	dir = 8
 	},
-/turf/open/floor/plating/ground/brickroad{
+/turf/open/floor/plating/indoor/metal/walkway{
 	dir = 1
 	},
 /area/centcom/halflife/rebel)
-"TC" = (
-/obj/effect/turf_decal/siding/thinplating,
-/obj/structure/halflife/road_barrier/concrete{
-	dir = 4
-	},
-/turf/open/floor/plating/ground/brickroad{
-	dir = 1
-	},
-/area/centcom/halflife/rebel)
-"TR" = (
-/obj/item/reagent_containers/condiment/soymilk,
-/obj/item/reagent_containers/condiment/flour,
-/obj/item/reagent_containers/condiment/flour,
-/obj/item/reagent_containers/condiment/mayonnaise,
-/obj/item/food/butter,
-/obj/item/storage/fancy/egg_box,
-/obj/structure/closet/secure_closet/freezer,
-/obj/item/reagent_containers/condiment/milk,
-/obj/item/reagent_containers/condiment/sugar,
-/obj/item/food/meat/slab/rawcrab,
-/obj/item/food/meat/slab/rawcrab,
-/obj/item/food/meat/slab,
-/obj/item/food/meat/slab,
-/obj/item/food/meat/slab,
-/turf/open/floor/plating/indoor/tile/navy,
-/area/centcom/halflife/rebel)
-"Uq" = (
-/obj/effect/turf_decal/siding/thinplating,
-/turf/open/floor/plating/ground/brickroad{
-	dir = 1
-	},
-/area/centcom/halflife/rebel)
-"Ut" = (
-/obj/structure/table/halflife/metal/small,
-/obj/item/reagent_containers/cup/soup_pot,
-/obj/machinery/light/small/directional/east,
-/turf/open/floor/plating/indoor/tile/navy,
-/area/centcom/halflife/rebel)
-"Ws" = (
-/obj/structure/table/halflife/metal/small,
-/obj/item/reagent_containers/cup/bowl,
-/obj/item/reagent_containers/cup/bowl,
-/turf/open/floor/plating/indoor/tile/navy,
-/area/centcom/halflife/rebel)
-"Wu" = (
-/obj/machinery/griddle,
-/turf/open/floor/plating/indoor/tile/navy,
-/area/centcom/halflife/rebel)
-"XS" = (
-/obj/structure/shipping_container/great_northern,
+"XC" = (
+/obj/machinery/light/directional/south,
 /turf/open/floor/plating/indoor/concrete/bricks,
-/area/centcom/halflife/rebel)
-"XX" = (
-/obj/structure/halflife/storage/large/shelf{
-	dir = 4
-	},
-/turf/open/floor/plating/indoor/metal/industrial,
 /area/centcom/halflife/rebel)
 "Ye" = (
 /turf/open/floor/plating/ground/dirt,
 /area/centcom/halflife/rebel)
-"YO" = (
-/obj/structure/halflife/road_barrier/concrete{
-	dir = 4
-	},
+"YF" = (
 /turf/open/floor/plating/ground/brickroad{
 	dir = 1
 	},
 /area/centcom/halflife/rebel)
-"ZG" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 4
-	},
-/turf/open/halflife/water/shallow,
+"ZF" = (
+/obj/machinery/deepfryer,
+/turf/open/floor/plating/indoor/tile/navy,
 /area/centcom/halflife/rebel)
-"ZX" = (
-/obj/effect/turf_decal/siding/thinplating/corner{
-	dir = 8
+"ZO" = (
+/obj/machinery/button/door/directional/south{
+	id = "rebel_trainstation_depot";
+	name = "Cargo Door"
 	},
-/turf/open/floor/plating/ground/brickroad{
-	dir = 1
-	},
+/obj/structure/filingcabinet,
+/turf/open/floor/plating/indoor/metal/industrial,
 /area/centcom/halflife/rebel)
 
 (1,1,1) = {"
@@ -928,29 +943,29 @@ sU
 sU
 sU
 sU
-HW
-HW
-HW
-HW
-HW
-HW
-HW
-HW
-HW
-HW
-HW
-HW
-HW
-HW
-HW
-HW
-HW
-HW
-HW
-HW
-HW
-HW
-HW
+Gl
+Gl
+Gl
+Gl
+Gl
+Gl
+Gl
+Gl
+Gl
+Gl
+Gl
+Gl
+Gl
+Gl
+Gl
+Gl
+Gl
+Gl
+Gl
+Gl
+Gl
+Gl
+Gl
 sU
 sU
 sU
@@ -1030,29 +1045,29 @@ sU
 sU
 sU
 sU
-HW
-KU
-KU
-KU
-KU
-KU
-KU
-KU
-KU
-KU
-KU
-KU
-KU
-KU
-KU
-KU
-KU
-KU
-KU
-KU
-KU
-KU
-HW
+Gl
+qp
+qp
+qp
+qp
+qp
+qp
+qp
+qp
+qp
+qp
+qp
+qp
+qp
+qp
+qp
+qp
+qp
+qp
+qp
+qp
+qp
+Gl
 sU
 sU
 sU
@@ -1132,29 +1147,29 @@ sU
 sU
 sU
 sU
-HW
-KU
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-KU
-HW
+Gl
+qp
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+qp
+Gl
 sU
 sU
 sU
@@ -1234,29 +1249,29 @@ sU
 sU
 sU
 sU
-HW
-KU
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-KU
-HW
+Gl
+qp
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+qp
+Gl
 sU
 sU
 sU
@@ -1336,29 +1351,29 @@ sU
 sU
 sU
 sU
-HW
-KU
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-KU
-HW
+Gl
+qp
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+qp
+Gl
 sU
 sU
 sU
@@ -1438,29 +1453,29 @@ sU
 sU
 sU
 sU
-HW
-KU
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-KU
-HW
+Gl
+qp
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+qp
+Gl
 sU
 sU
 sU
@@ -1540,29 +1555,29 @@ sU
 sU
 sU
 sU
-HW
-KU
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-KU
-HW
+Gl
+qp
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+qp
+Gl
 sU
 sU
 sU
@@ -1642,29 +1657,29 @@ sU
 sU
 sU
 sU
-HW
-KU
-as
-as
-as
-as
-as
-as
-iX
-iX
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-KU
-HW
+Gl
+qp
+NP
+NP
+NP
+NP
+NP
+NP
+Sv
+Sv
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+qp
+Gl
 sU
 sU
 sU
@@ -1744,29 +1759,29 @@ sU
 sU
 sU
 sU
-HW
-KU
-as
-iX
-kz
-iX
-iX
-iX
-kz
-iX
-iX
-as
-uN
-as
-as
-as
-uN
-as
-as
-as
-as
-KU
-HW
+Gl
+qp
+NP
+Sv
+cQ
+Sv
+Sv
+Sv
+cQ
+Sv
+Sv
+NP
+FP
+NP
+NP
+NP
+FP
+NP
+NP
+NP
+NP
+qp
+Gl
 sU
 sU
 sU
@@ -1846,29 +1861,29 @@ sU
 sU
 sU
 sU
-HW
-KU
-iX
-iX
-iX
-iX
-iX
-iX
-iX
-iX
-iX
-iX
-iX
-as
-as
-as
-as
-as
-as
-as
-iX
-KU
-HW
+Gl
+qp
+Sv
+Sv
+Sv
+Sv
+Sv
+Sv
+Sv
+Sv
+Sv
+Sv
+Sv
+NP
+NP
+NP
+NP
+NP
+NP
+NP
+Sv
+qp
+Gl
 sU
 sU
 sU
@@ -1948,29 +1963,29 @@ sU
 sU
 sU
 sU
-HW
-KU
-iX
-iX
-iX
-iX
-iX
-iX
-iX
-iX
-iX
-sc
-iX
-iX
-iX
-iX
-iX
-as
-as
-iX
-iX
-KU
-HW
+Gl
+qp
+Sv
+Sv
+Sv
+Sv
+Sv
+Sv
+Sv
+Sv
+Sv
+Rs
+Sv
+Sv
+Sv
+Sv
+Sv
+NP
+NP
+Sv
+Sv
+qp
+Gl
 sU
 sU
 sU
@@ -2050,29 +2065,29 @@ sU
 sU
 sU
 sU
-HW
-KU
-iX
-iX
-iX
-iX
-iX
-iX
-iX
-iX
-iX
-CF
-Tz
-qh
-iX
-qh
-iX
-iX
-iX
-iX
-iX
-KU
-HW
+Gl
+qp
+Sv
+Sv
+Sv
+Sv
+Sv
+Sv
+Sv
+Sv
+Sv
+ad
+ye
+lg
+Sv
+lg
+Sv
+Sv
+Sv
+Sv
+Sv
+qp
+Gl
 sU
 sU
 sU
@@ -2152,29 +2167,29 @@ sU
 sU
 sU
 sU
-HW
-KU
-iX
-iX
-kz
-iX
-iX
-iX
-kz
-iX
-iX
-CF
-cT
-qh
-iX
-qh
-bU
-pY
-iX
-iX
-iX
-KU
-HW
+Gl
+qp
+Sv
+Sv
+cQ
+Sv
+Sv
+Sv
+cQ
+Sv
+Sv
+ad
+dO
+lg
+Sv
+lg
+vx
+DO
+Sv
+Sv
+Sv
+qp
+Gl
 sU
 sU
 sU
@@ -2254,29 +2269,29 @@ sU
 sU
 sU
 sU
-HW
-KU
-iX
-iX
-pK
-pK
-pK
-pK
-pK
-iX
-iX
-CF
-Tz
-qh
-Bg
-qh
-Uq
-pY
-iX
-iX
-pK
-KU
-HW
+Gl
+qp
+Sv
+Sv
+HD
+HD
+HD
+HD
+HD
+Sv
+Sv
+ad
+ye
+lg
+YF
+lg
+Pc
+DO
+Sv
+Sv
+HD
+qp
+Gl
 sU
 sU
 sU
@@ -2356,41 +2371,41 @@ sU
 sU
 sU
 sU
-HW
-KU
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-CF
-Tz
-qh
-Bg
-qh
-Uq
-pY
-pK
-pK
-pK
-KU
-HW
-HW
-HW
-HW
-HW
-HW
-HW
-HW
-HW
-HW
-HW
-HW
-HW
+Gl
+qp
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+ad
+ye
+lg
+YF
+lg
+Pc
+DO
+HD
+HD
+HD
+qp
+Gl
+Gl
+Gl
+Gl
+Gl
+Gl
+Gl
+Gl
+Gl
+Gl
+Gl
+Gl
+Gl
 sU
 sU
 sU
@@ -2458,41 +2473,41 @@ sU
 sU
 sU
 sU
-HW
-KU
-pK
-pK
-pK
-ZG
-ZG
-ZG
-pK
-pK
-pK
-CF
-xf
-bF
-YO
-bF
-TC
-pY
-pK
-pK
-pK
-KU
-KU
-KU
-KU
-KU
-KU
-KU
-KU
-KU
-KU
-KU
-KU
-KU
-HW
+Gl
+qp
+HD
+HD
+HD
+zS
+zS
+zS
+HD
+HD
+HD
+ad
+Tf
+yp
+oe
+yp
+um
+DO
+HD
+HD
+HD
+qp
+qp
+qp
+qp
+qp
+qp
+qp
+qp
+qp
+qp
+qp
+qp
+qp
+Gl
 sU
 sU
 sU
@@ -2560,41 +2575,41 @@ sU
 sU
 sU
 sU
-HW
-KU
-ZG
-ZG
-gs
+Gl
+qp
+zS
+zS
+dF
 Ye
 Ye
 Ye
+Gr
+zS
+HD
 ad
-ZG
-pK
-CF
-cT
-qh
-Bg
-qh
-bU
-pY
-pK
-pK
-nS
-KU
-js
-KU
-sO
-is
-KU
-oi
-oi
-KU
-Py
-iA
-iA
-KU
-HW
+dO
+lg
+YF
+lg
+vx
+DO
+HD
+HD
+uN
+qp
+QM
+qp
+il
+kG
+qp
+nz
+nz
+qp
+yB
+rS
+rS
+qp
+Gl
 sU
 sU
 sU
@@ -2662,8 +2677,8 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
 Ye
 Ye
 Ye
@@ -2671,32 +2686,32 @@ Ye
 Ye
 Ye
 Ye
-KU
-bp
-CF
-Tz
-qh
-Bg
-qh
-Uq
-pY
-ZG
-nS
-Ye
-KU
+qp
+SJ
+ad
+ye
+lg
+YF
+lg
+Pc
+DO
 zS
-zS
-oi
-Hs
-KU
-RO
-oi
-tJ
-bB
-bB
-BH
-KU
-HW
+uN
+Ye
+qp
+TD
+TD
+nz
+hp
+qp
+St
+nz
+kz
+kQ
+kQ
+jT
+qp
+Gl
 sU
 sU
 sU
@@ -2764,41 +2779,41 @@ sU
 sU
 sU
 sU
-HW
+Gl
+qp
+Ye
+Ye
+Ye
+Ye
+Ye
+Ye
+Ye
+bT
+Ye
+gJ
+kU
+lg
+cO
+lg
+pS
+gJ
+Ye
+Ye
+Ye
+qp
+St
+nz
+nz
+nz
+Jx
+nz
+Ni
+qp
+KH
+gf
 KU
-Ye
-Ye
-Ye
-Ye
-Ye
-Ye
-Ye
-Ql
-Ye
-hN
-Mn
-qh
-Ka
-qh
-lj
-hN
-Ye
-Ye
-Ye
-KU
-RO
-oi
-oi
-oi
-sl
-oi
-Qy
-KU
-OS
-DM
-EO
-KU
-HW
+qp
+Gl
 sU
 sU
 sU
@@ -2866,8 +2881,8 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
 Ye
 Ye
 Ye
@@ -2875,32 +2890,32 @@ Ye
 Ye
 Ye
 Ye
-Ql
+bT
 Ye
 Ye
 Ye
-qh
+lg
 Ye
-qh
-Ye
-Ye
+lg
 Ye
 Ye
 Ye
-KU
-zS
-zS
-oi
-Hs
-KU
-oi
-FN
-KU
-KU
-KU
-KU
-KU
-HW
+Ye
+Ye
+qp
+TD
+TD
+nz
+hp
+qp
+nz
+tn
+qp
+qp
+qp
+qp
+qp
+Gl
 sU
 sU
 sU
@@ -2968,41 +2983,41 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
 Ye
 Ye
-fu
-Ye
-Ye
-Ye
-fu
-Ql
-Ye
-Ye
-dH
-qh
-zi
-qh
-dH
+eK
 Ye
 Ye
 Ye
+eK
+bT
 Ye
-KU
-gJ
-KU
-lo
-SD
-KU
-oi
-tz
-KU
-Ga
-ah
-bW
-KU
-HW
+Ye
+uT
+lg
+Sc
+lg
+uT
+Ye
+Ye
+Ye
+Ye
+qp
+hE
+qp
+VN
+CM
+qp
+nz
+qw
+qp
+Gs
+fy
+AL
+qp
+Gl
 sU
 sU
 sU
@@ -3070,41 +3085,41 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
+fA
 Ye
 Ye
 Ye
 Ye
 Ye
 Ye
-Ye
-Ql
-Ye
+bT
 Ye
 Ye
-qh
 Ye
-qh
+lg
 Ye
+lg
 Ye
 Ye
 Ye
 Ye
-KU
-KU
-KU
-KU
-KU
-KU
-oi
-oi
-tJ
-bB
-bB
-BH
-KU
-HW
+Ye
+qp
+qp
+qp
+qp
+qp
+qp
+nz
+nz
+kz
+kQ
+kQ
+jT
+qp
+Gl
 sU
 sU
 sU
@@ -3172,42 +3187,42 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
+fA
 Ye
 Ye
 Ye
 Ye
 Ye
 Ye
-Ye
-Ql
-Ye
+bT
 Ye
 Ye
-qh
 Ye
-qh
+lg
 Ye
+lg
 Ye
 Ye
 Ye
 Ye
-KU
-my
-du
-my
-KU
-oi
-oi
-oi
-KU
-XX
-xe
-bB
-KU
-HW
-HW
+Ye
+qp
+gK
+fx
+gK
+qp
+nz
+nz
+nz
+qp
+cT
+cV
+kQ
+qp
+Gl
+Gl
 sU
 sU
 sU
@@ -3274,42 +3289,42 @@ sU
 sU
 sU
 sU
-HW
-KU
-Qr
+Gl
+qp
+Mb
+fA
 Ye
 Ye
 Ye
 Ye
 Ye
-Ye
-Ql
-Ye
+bT
 Ye
 Ye
-qh
 Ye
-qh
+lg
 Ye
+lg
 Ye
 Ye
 Ye
 Ye
-KU
-Ip
-lE
-AM
-KR
-oi
-oi
-oi
-KU
-KU
-KU
-ek
-KU
-KU
-HW
+Ye
+qp
+so
+FN
+cw
+In
+nz
+nz
+nz
+qp
+qp
+qp
+BD
+qp
+qp
+Gl
 sU
 sU
 sU
@@ -3376,42 +3391,42 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
+fA
+fA
+eK
 Ye
 Ye
-fu
+Ye
+eK
+bT
 Ye
 Ye
-Ye
-fu
-Ql
-Ye
-Ye
-dH
-qh
-zi
-qh
-dH
+uT
+lg
+Sc
+lg
+uT
 Ye
 Ye
-fw
-KU
-KU
-KU
-KU
-KU
-KU
-KU
-yB
-KU
-KU
-KU
-jW
-nH
-TR
-KU
-HW
+as
+qp
+qp
+qp
+qp
+qp
+qp
+qp
+nL
+qp
+qp
+qp
+Jc
+GE
+la
+qp
+Gl
 sU
 sU
 sU
@@ -3478,42 +3493,42 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
+fA
+fA
+fA
 Ye
 Ye
 Ye
+Sj
+bT
 Ye
 Ye
 Ye
+lg
+Ye
+lg
+Ye
+Ye
+KA
+gJ
+gJ
+qp
+pY
+pY
+IQ
+pY
+kz
+kQ
+wW
 dw
-Ql
-Ye
-Ye
-Ye
-qh
-Ye
-qh
-Ye
-Ye
-iL
-hN
-hN
-KU
-uT
-uT
-sq
-uT
-tJ
-bB
-Eo
+qp
+Mo
+GE
 mJ
-KU
-GA
-nH
-Wu
-KU
-HW
+qp
+Gl
 sU
 sU
 sU
@@ -3580,42 +3595,42 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
+fA
+mb
+fA
 Ye
 Ye
 Ye
 Ye
+bT
 Ye
 Ye
 Ye
-Ql
+lg
+mB
+lg
 Ye
 Ye
-Ye
-qh
-jO
-qh
-Ye
-Ye
-hN
-hN
-hN
-oK
-uT
-uT
-uT
-uT
-wv
-Ia
-fK
-tu
-KU
-KA
-nH
-pr
-KU
-HW
+gJ
+gJ
+gJ
+bo
+pY
+pY
+pY
+pY
+du
+Uq
+qO
+ZO
+qp
+kl
+GE
+ZF
+qp
+Gl
 sU
 sU
 sU
@@ -3682,42 +3697,42 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
+fA
+fA
+fA
 Ye
 Ye
 Ye
 Ye
-Ye
-Ye
-Ye
-Ql
-Ye
-Ye
-Ye
-qh
-Ye
-qh
-Ye
-Ye
-hN
-hN
-hN
-KU
-uT
-uT
-uT
-uT
-wv
 bT
-Dq
-bB
-KU
-jT
-Ws
-Ut
-KU
-HW
+Ye
+Ye
+Ye
+lg
+Ye
+lg
+Ye
+Ye
+gJ
+gJ
+gJ
+qp
+pY
+pY
+pY
+pY
+du
+nk
+gs
+kQ
+qp
+kh
+xe
+mA
+qp
+Gl
 sU
 sU
 sU
@@ -3784,42 +3799,42 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
+fA
+fA
+dV
 Ye
 Ye
-fu
+Ye
+eK
+bT
 Ye
 Ye
+uT
+lg
+Sc
+lg
+uT
 Ye
-fu
-Ql
-Ye
-Ye
+gJ
+gJ
+gJ
+qp
+pY
+pY
+pY
+pY
+SL
 dH
-qh
-zi
-qh
-dH
-Ye
-hN
-hN
-hN
-KU
-uT
-uT
-uT
-uT
-ps
-la
-pS
-mK
-KU
-KU
-KU
-KU
-KU
-HW
+Ms
+UE
+qp
+qp
+qp
+qp
+qp
+Gl
 sU
 sU
 sU
@@ -3886,42 +3901,42 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
+fA
+fA
 Ye
 Ye
 Ye
 Ye
 Ye
-Ye
-Ye
-Ql
+bT
 Ye
 Ye
 Ye
-qh
+lg
 Ye
-qh
+lg
 Ye
 Ye
-hN
-hN
-hN
-KU
-uT
-uT
-uT
-uT
-ps
-ps
-wv
-wv
-KU
-HW
-HW
-HW
-HW
-HW
+gJ
+gJ
+gJ
+qp
+pY
+pY
+pY
+pY
+SL
+SL
+du
+du
+qp
+Gl
+Gl
+Gl
+Gl
+Gl
 sU
 sU
 sU
@@ -3988,38 +4003,38 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
+fA
+mb
 Ye
 Ye
 Ye
 Ye
 Ye
-Ye
-Ye
-Ql
+bT
 Ye
 Ye
 Ye
-qh
+lg
 Ye
-qh
+lg
 Ye
 Ye
-hN
-hN
-hN
-oK
-uT
-uT
-uT
-uT
-uT
-uT
-uT
-uT
-KU
-HW
+gJ
+gJ
+gJ
+bo
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+qp
+Gl
 sU
 sU
 sU
@@ -4090,38 +4105,38 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
+fA
+fA
 Ye
 Ye
 Ye
 Ye
 Ye
-Ye
-Ye
-Ql
+bT
 Ye
 Ye
 Ye
-qh
+lg
 Ye
-qh
+lg
 Ye
 Ye
-hN
-hN
-hN
-KU
-uT
-uT
-uT
-NH
-uT
-uT
-XS
-uT
-KU
-HW
+gJ
+gJ
+gJ
+qp
+pY
+pY
+pY
+nU
+pY
+pY
+aK
+pY
+qp
+Gl
 sU
 sU
 sU
@@ -4192,38 +4207,38 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
+fA
+fA
+eK
 Ye
 Ye
-fu
+Ye
+eK
+bT
 Ye
 Ye
-Ye
-fu
-Ql
-Ye
-Ye
-dH
-qh
-zi
-qh
-dH
-Ye
-hN
-hN
-hN
-KU
-gh
 uT
+lg
+Sc
+lg
 uT
-uT
-uT
-uT
-uT
-lO
-KU
-HW
+Ye
+gJ
+gJ
+gJ
+qp
+ij
+pY
+pY
+pY
+pY
+pY
+pY
+XC
+qp
+Gl
 sU
 sU
 sU
@@ -4294,38 +4309,38 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
+fA
+fA
+Ye
+bC
 Ye
 Ye
 Ye
-ks
+bT
 Ye
 Ye
 Ye
-Ql
+lg
+Ye
+lg
 Ye
 Ye
-Ye
-qh
-Ye
-qh
-Ye
-Ye
-hN
-hN
-hN
-qJ
-uT
-uT
-uT
-uT
-uT
-uT
-uT
-uT
-KU
-HW
+gJ
+gJ
+gJ
+mz
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+qp
+Gl
 sU
 sU
 sU
@@ -4396,38 +4411,38 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
+fA
+fA
 Ye
 Ye
 Ye
 Ye
 Ye
-Ye
-Ye
-je
+bD
 Ye
 Ye
 Ye
-qh
+lg
 Ye
-qh
+lg
 Ye
 Ye
-hN
-hN
-hN
-qJ
-uT
-uT
-uT
-uT
-uT
-uT
-uT
-uT
-KU
-HW
+gJ
+gJ
+gJ
+mz
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+qp
+Gl
 sU
 sU
 sU
@@ -4498,38 +4513,38 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
+mb
+fA
 Ye
 Ye
 Ye
 Ye
 Ye
-Ye
-Ye
-Ql
+bT
 Ye
 Ye
 Ye
-qh
+lg
 Ye
-qh
+lg
 Ye
 Ye
-hN
-hN
-hN
-qJ
-uT
-uT
-uT
-uT
-uT
-uT
-uT
-uT
-KU
-HW
+gJ
+gJ
+gJ
+mz
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+qp
+Gl
 sU
 sU
 sU
@@ -4600,38 +4615,38 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
+fA
+fA
+eK
 Ye
 Ye
-fu
+Ye
+eK
+bT
 Ye
 Ye
-Ye
-fu
-Ql
-Ye
-Ye
-dH
-qh
-zi
-qh
-dH
-Ye
-hN
-hN
-hN
-qJ
 uT
+lg
+Sc
+lg
 uT
-uT
-NH
-uT
-uT
-NH
-uT
-KU
-HW
+Ye
+gJ
+gJ
+gJ
+mz
+pY
+pY
+pY
+nU
+pY
+pY
+nU
+pY
+qp
+Gl
 sU
 sU
 sU
@@ -4702,38 +4717,38 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
+fA
+fA
 Ye
 Ye
 Ye
+Sj
 Ye
-Ye
-dw
-Ye
-Ql
+bT
 Ye
 Ye
 Ye
-qh
+lg
 Ye
-qh
+lg
 Ye
 Ye
-hN
-hN
-hN
-qJ
-uT
-uT
-uT
-uT
-uT
-uT
-uT
-uT
-KU
-HW
+gJ
+gJ
+gJ
+mz
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+qp
+Gl
 sU
 sU
 sU
@@ -4804,38 +4819,38 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
+fA
+fA
 Ye
 Ye
 Ye
 Ye
 Ye
-Ye
-Ye
-Ql
+bT
 Ye
 Ye
 Ye
-qh
+lg
 Ye
-qh
+lg
 Ye
 Ye
-hN
-hN
-hN
-KU
-gh
-uT
-uT
-uT
-uT
-uT
-uT
-lO
-KU
-HW
+gJ
+gJ
+gJ
+qp
+ij
+pY
+pY
+pY
+pY
+pY
+pY
+XC
+qp
+Gl
 sU
 sU
 sU
@@ -4906,38 +4921,38 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
+fA
 Ye
 Ye
 Ye
 Ye
 Ye
 Ye
-Ye
-Ql
-Ye
+bT
 Ye
 Ye
-qh
 Ye
-qh
+lg
+Ye
+lg
 Ye
 Ye
-hN
-hN
-hN
-KU
-uT
-uT
-uT
-uT
-uT
-uT
-uT
-uT
-KU
-HW
+gJ
+gJ
+gJ
+qp
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+qp
+Gl
 sU
 sU
 sU
@@ -5008,38 +5023,38 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
+fA
+Ye
+eK
 Ye
 Ye
-fu
+Ye
+eK
+bT
 Ye
 Ye
+uT
+lg
+Sc
+lg
+uT
 Ye
-fu
-Ql
-Ye
-Ye
-dH
-qh
-zi
-qh
-dH
-Ye
-hN
-hN
-hN
-oK
-uT
-uT
-uT
-uT
-uT
-uT
-uT
-uT
-KU
-HW
+gJ
+gJ
+gJ
+bo
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+qp
+Gl
 sU
 sU
 sU
@@ -5110,38 +5125,38 @@ sU
 sU
 sU
 sU
-HW
-KU
-Ye
-Qr
-Ye
-Ye
+Gl
+qp
+fA
+zy
 Ye
 Ye
 Ye
-Ql
+Ye
+Ye
+bT
 Ye
 Ye
 Ye
-qh
+lg
 Ye
-qh
+lg
 Ye
 Ye
-hN
-hN
-hN
-KU
-uT
-uT
-uT
-Nb
-uT
-uT
-pU
-uT
-KU
-HW
+gJ
+gJ
+gJ
+qp
+pY
+pY
+pY
+PD
+pY
+pY
+bs
+pY
+qp
+Gl
 sU
 sU
 sU
@@ -5212,38 +5227,38 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
+fA
 Ye
 Ye
 Ye
 Ye
 Ye
 Ye
-Ye
-Ql
-Ye
+bT
 Ye
 Ye
-qh
 Ye
-qh
+lg
+Ye
+lg
 Ye
 Ye
-hN
-hN
-hN
-KU
-uT
-uT
-uT
-uT
-uT
-uT
-uT
-uT
-KU
-HW
+gJ
+gJ
+gJ
+qp
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+qp
+Gl
 sU
 sU
 sU
@@ -5314,8 +5329,8 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
 Ye
 Ye
 Ye
@@ -5323,29 +5338,29 @@ Ye
 Ye
 Ye
 Ye
-Ql
+bT
 Ye
 Ye
 Ye
-qh
+lg
 Ye
-qh
+lg
 Ye
 Ye
-hN
-hN
-hN
-KU
-uT
-uT
-uT
-uT
-uT
-uT
-uT
-uT
-KU
-HW
+gJ
+gJ
+gJ
+qp
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+qp
+Gl
 sU
 sU
 sU
@@ -5416,38 +5431,38 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
 Ye
 Ye
-fu
+eK
 Ye
 Ye
 Ye
-fu
-Ql
+eK
+bT
 Ye
 Ye
-dH
-qh
-zi
-qh
-dH
+uT
+lg
+Sc
+lg
+uT
 Ye
-hN
-hN
-hN
-oK
-uT
-uT
-uT
-uT
-uT
-uT
-uT
-uT
-KU
-HW
+gJ
+gJ
+gJ
+bo
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+qp
+Gl
 sU
 sU
 sU
@@ -5518,8 +5533,8 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
 Ye
 Ye
 Ye
@@ -5527,29 +5542,29 @@ Ye
 Ye
 Ye
 Ye
-Ql
+bT
 Ye
 Ye
 Ye
-qh
+lg
 Ye
-qh
+lg
 Ye
 Ye
-iL
-hN
-hN
-KU
-uT
-uT
-uT
-uT
-uT
-In
-uT
-wb
-KU
-HW
+KA
+gJ
+gJ
+qp
+pY
+pY
+pY
+pY
+pY
+kW
+pY
+KD
+qp
+Gl
 sU
 sU
 sU
@@ -5620,8 +5635,8 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
 Ye
 Ye
 Ye
@@ -5629,29 +5644,29 @@ Ye
 Ye
 Ye
 Ye
-Ql
+bT
 Ye
 Ye
 Ye
-qh
+lg
 Ye
-qh
-Ye
-Ye
+lg
 Ye
 Ye
-KU
-KU
-KU
-KU
-KU
-KU
-KU
-KU
-KU
-KU
-KU
-HW
+Ye
+Ye
+qp
+qp
+qp
+qp
+qp
+qp
+qp
+qp
+qp
+qp
+qp
+Gl
 sU
 sU
 sU
@@ -5722,8 +5737,8 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
 Ye
 Ye
 Ye
@@ -5731,29 +5746,29 @@ Ye
 Ye
 Ye
 Ye
-Ql
+bT
 Ye
 Ye
 Ye
-qh
+lg
 Ye
-qh
-Ye
-Ye
+lg
 Ye
 Ye
 Ye
-KU
-HW
-HW
-HW
-HW
-HW
-HW
-HW
-HW
-HW
-HW
+Ye
+Ye
+qp
+Gl
+Gl
+Gl
+Gl
+Gl
+Gl
+Gl
+Gl
+Gl
+Gl
 sU
 sU
 sU
@@ -5824,29 +5839,29 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
 Ye
 Ye
-fu
-Ye
-Ye
-Ye
-fu
-Ql
-Ye
-Ye
-dH
-qh
-zi
-qh
-dH
+eK
 Ye
 Ye
 Ye
+eK
+bT
 Ye
-KU
-HW
+Ye
+uT
+lg
+Sc
+lg
+uT
+Ye
+Ye
+Ye
+Ye
+qp
+Gl
 sU
 sU
 sU
@@ -5926,8 +5941,8 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
 Ye
 Ye
 Ye
@@ -5935,20 +5950,20 @@ Ye
 Ye
 Ye
 Ye
-Ql
+bT
 Ye
 Ye
 Ye
-qh
+lg
 Ye
-qh
-Ye
-Ye
+lg
 Ye
 Ye
 Ye
-KU
-HW
+Ye
+Ye
+qp
+Gl
 sU
 sU
 sU
@@ -6028,8 +6043,8 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
 Ye
 Ye
 Ye
@@ -6037,20 +6052,20 @@ Ye
 Ye
 Ye
 Ye
-Ql
+bT
 Ye
 Ye
 Ye
-qh
+lg
 Ye
-qh
-Ye
-Ye
+lg
 Ye
 Ye
 Ye
-KU
-HW
+Ye
+Ye
+qp
+Gl
 sU
 sU
 sU
@@ -6130,29 +6145,29 @@ sU
 sU
 sU
 sU
-HW
-KU
-Qr
+Gl
+qp
+zy
 Ye
 Ye
 Ye
 Ye
 Ye
 Ye
-Ql
+bT
 Ye
 Ye
 Ye
-qh
+lg
 Ye
-qh
-Ye
-Ye
+lg
 Ye
 Ye
 Ye
-KU
-HW
+Ye
+fA
+qp
+Gl
 sU
 sU
 sU
@@ -6232,29 +6247,29 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
 Ye
 Ye
-fu
-Ye
-Ye
-Ye
-fu
-Ql
-Ye
-Ye
-dH
-qh
-zi
-qh
-dH
+eK
 Ye
 Ye
 Ye
+eK
+bT
 Ye
-KU
-HW
+Ye
+uT
+lg
+Sc
+lg
+uT
+Ye
+Ye
+fA
+fA
+qp
+Gl
 sU
 sU
 sU
@@ -6334,29 +6349,29 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
+fA
 Ye
 Ye
 Ye
 Ye
 Ye
 Ye
-Ye
-Ql
-Ye
-Ye
-Ye
-qh
-Ye
-qh
+bT
 Ye
 Ye
 Ye
+lg
+Ye
+lg
 Ye
 Ye
-KU
-HW
+Ye
+fA
+fA
+qp
+Gl
 sU
 sU
 sU
@@ -6436,29 +6451,29 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
+fA
 Ye
 Ye
 Ye
 Ye
 Ye
 Ye
-Ye
-Ql
-Ye
-Ye
-Ye
-qh
-Ye
-qh
+bT
 Ye
 Ye
 Ye
+lg
+Ye
+lg
 Ye
 Ye
-KU
-HW
+Ye
+fA
+mb
+qp
+Gl
 sU
 sU
 sU
@@ -6538,29 +6553,29 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
+fA
 Ye
 Ye
 Ye
 Ye
 Ye
 Ye
-Ye
-Ql
-Ye
-Ye
-Ye
-qh
-Ye
-qh
+bT
 Ye
 Ye
 Ye
+lg
+Ye
+lg
 Ye
 Ye
-KU
-HW
+Ye
+fA
+fA
+qp
+Gl
 sU
 sU
 sU
@@ -6640,29 +6655,29 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
+fA
 Ye
-Ye
-fu
-Ye
-Ye
-Ye
-fu
-Ql
-Ye
-Ye
-dH
-qh
-zi
-qh
-dH
+eK
 Ye
 Ye
 Ye
+eK
+bT
 Ye
-KU
-HW
+Ye
+uT
+lg
+Sc
+lg
+uT
+Ye
+Ye
+fA
+fA
+qp
+Gl
 sU
 sU
 sU
@@ -6742,29 +6757,29 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
+mb
+fA
 Ye
 Ye
 Ye
 Ye
 Ye
-Ye
-Ye
-Ql
-Ye
-Ye
-Ye
-qh
-Ye
-qh
+bT
 Ye
 Ye
 Ye
+lg
+Ye
+lg
 Ye
 Ye
-KU
-HW
+Ye
+fA
+fA
+qp
+Gl
 sU
 sU
 sU
@@ -6844,29 +6859,29 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
+fA
+fA
 Ye
 Ye
 Ye
 Ye
 Ye
-Ye
-Ye
-Ql
-Ye
-Ye
-Ye
-qh
-Ye
-qh
+bT
 Ye
 Ye
 Ye
+lg
+Ye
+lg
 Ye
 Ye
-KU
-HW
+Ye
+fA
+fA
+qp
+Gl
 sU
 sU
 sU
@@ -6946,29 +6961,29 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
+fA
+fA
 Ye
 Ye
 Ye
 Ye
 Ye
-Ye
-Ye
-Ql
-Ye
-Ye
-Ye
-qh
-Ye
-qh
+bT
 Ye
 Ye
 Ye
+lg
+Ye
+lg
 Ye
 Ye
-KU
-HW
+fA
+fA
+fA
+qp
+Gl
 sU
 sU
 sU
@@ -7048,29 +7063,29 @@ sU
 sU
 sU
 sU
-HW
-KU
-Ye
-Ye
-fu
-Ye
-Ye
-Ye
-fu
-Ql
-Ye
-Ye
-dH
-qh
-zi
-qh
-dH
+Gl
+qp
+fA
+fA
+eK
 Ye
 Ye
 Ye
+eK
+bT
 Ye
-KU
-HW
+Ye
+uT
+lg
+Sc
+lg
+uT
+Ye
+fA
+fA
+fA
+qp
+Gl
 sU
 sU
 sU
@@ -7150,29 +7165,29 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
+fA
+fA
 Ye
 Ye
 Ye
 Ye
 Ye
-Ye
-Ye
-Ql
-Ye
-Ye
-Ye
-qh
-Ye
-qh
+bT
 Ye
 Ye
 Ye
+lg
+Ye
+lg
 Ye
 Ye
-KU
-HW
+fA
+fA
+fA
+qp
+Gl
 sU
 sU
 sU
@@ -7252,29 +7267,29 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
+fA
+fA
 Ye
 Ye
 Ye
 Ye
 Ye
-Ye
-Ye
-Ql
-Ye
-Ye
-Ye
-qh
-Ye
-qh
+qp
 Ye
 Ye
 Ye
+lg
+Ye
+lg
 Ye
 Ye
-KU
-HW
+fA
+fA
+fA
+qp
+Gl
 sU
 sU
 sU
@@ -7354,8 +7369,10 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
+fA
+fA
 Ye
 Ye
 Ye
@@ -7363,20 +7380,18 @@ Ye
 Ye
 Ye
 Ye
-Ql
 Ye
 Ye
+lg
 Ye
-qh
-Ye
-qh
-Ye
+lg
 Ye
 Ye
-Ye
-Ye
-KU
-HW
+mb
+fA
+fA
+qp
+Gl
 sU
 sU
 sU
@@ -7456,29 +7471,29 @@ sU
 sU
 sU
 sU
-HW
-KU
-Ye
-Ye
-fu
-Ye
-Ye
-Ye
-fu
-Ql
-Ye
-Ye
-dH
-qh
-zi
-qh
-dH
+Gl
+qp
+fA
+mb
+dV
 Ye
 Ye
 Ye
+eK
 Ye
-KU
-HW
+Ye
+Ye
+uT
+lg
+Sc
+lg
+uT
+Ye
+fA
+fA
+mb
+qp
+Gl
 sU
 sU
 sU
@@ -7558,8 +7573,11 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
+fA
+fA
+fA
 Ye
 Ye
 Ye
@@ -7567,20 +7585,17 @@ Ye
 Ye
 Ye
 Ye
-Ql
+ld
+lB
+Ye
+lg
 Ye
 Ye
-Mb
-nU
-Ye
-qh
-Ye
-Ye
-Ye
-Ye
-KU
-KU
-HW
+fA
+fA
+qp
+qp
+Gl
 sU
 sU
 sU
@@ -7660,8 +7675,11 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
+fA
+fA
+fA
 Ye
 Ye
 Ye
@@ -7669,20 +7687,17 @@ Ye
 Ye
 Ye
 Ye
-Ql
+lg
 Ye
 Ye
-qh
+lg
 Ye
 Ye
-qh
-Ye
-Ye
-Ye
-KU
-KU
-HW
-HW
+fA
+qp
+qp
+Gl
+Gl
 sU
 sU
 sU
@@ -7762,8 +7777,11 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
+fA
+fA
+fA
 Ye
 Ye
 Ye
@@ -7771,19 +7789,16 @@ Ye
 Ye
 Ye
 Ye
-Ql
+lg
+Ye
+ld
+lB
 Ye
 Ye
-qh
-Ye
-Mb
-nU
-Ye
-Ye
-Ye
-KU
-HW
-HW
+fA
+qp
+Gl
+Gl
 sU
 sU
 sU
@@ -7864,27 +7879,27 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
+fA
+fA
+fA
+Ye
+eK
 Ye
 Ye
 Ye
-Ye
-fu
-Ye
-Ye
-Ql
-dH
-Mb
-nU
-zi
-qh
-dH
+uT
+ld
+lB
+Sc
+lg
+uT
 Ye
 Ye
-KU
-KU
-HW
+qp
+qp
+Gl
 sU
 sU
 sU
@@ -7966,27 +7981,27 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
+fA
+fA
+fA
 Ye
 Ye
 Ye
 Ye
 Ye
 Ye
-Ye
-Ql
-Ye
-qh
+lg
 Ye
 Ye
-qh
+lg
 Ye
 Ye
 Ye
-KU
-HW
-HW
+qp
+Gl
+Gl
 sU
 sU
 sU
@@ -8068,26 +8083,26 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
+fA
+fA
+fA
 Ye
 Ye
 Ye
 Ye
 Ye
 Ye
+lg
 Ye
-Ql
-Ye
-qh
-Ye
-Mb
-nU
+ld
+lB
 Ye
 Ye
-KU
-KU
-HW
+qp
+qp
+Gl
 sU
 sU
 sU
@@ -8170,26 +8185,26 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
+fA
+fA
+fA
+fA
 Ye
 Ye
 Ye
 Ye
+ld
+lB
+Ye
+lg
 Ye
 Ye
 Ye
-Ql
-Mb
-nU
-Ye
-qh
-Ye
-Ye
-Ye
-KU
-HW
-HW
+qp
+Gl
+Gl
 sU
 sU
 sU
@@ -8272,25 +8287,25 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
+fA
+fA
+fA
+mb
+eK
 Ye
 Ye
+Sc
+lg
+Sc
+Sc
+lg
+Sc
 Ye
 Ye
-fu
-Ye
-Ye
-Ql
-qh
-zi
-zi
-qh
-zi
-Ye
-Ye
-KU
-HW
+qp
+Gl
 sU
 sU
 sU
@@ -8374,25 +8389,25 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
+fA
+fA
+fA
+fA
 Ye
 Ye
 Ye
 Ye
+lg
+Ye
+ld
+lB
 Ye
 Ye
-Ye
-Ql
-qh
-Ye
-Mb
-nU
-Ye
-Ye
-KU
-KU
-HW
+qp
+qp
+Gl
 sU
 sU
 sU
@@ -8476,25 +8491,25 @@ sU
 sU
 sU
 sU
-HW
-KU
+Gl
+qp
+fA
+fA
+fA
+fA
 Ye
 Ye
 Ye
+ld
+lB
+Ye
+lg
 Ye
 Ye
 Ye
-Ye
-Ql
-nU
-Ye
-qh
-Ye
-Ye
-Ye
-KU
-HW
-HW
+qp
+Gl
+Gl
 sU
 sU
 sU
@@ -8578,24 +8593,24 @@ sU
 sU
 sU
 sU
-HW
-KU
-KU
-KU
-KU
-KU
-KU
-KU
-Hp
-qh
-Hp
-Hp
-qh
-PK
-KU
-KU
-KU
-HW
+Gl
+qp
+qp
+qp
+qp
+qp
+qp
+qp
+jo
+lg
+jo
+jo
+lg
+VC
+qp
+qp
+qp
+Gl
 sU
 sU
 sU
@@ -8680,24 +8695,24 @@ sU
 sU
 sU
 sU
-HW
-HW
-HW
-HW
-HW
-HW
-HW
-KU
-Bg
-qh
-Bg
-Mb
-nU
-PK
-PK
-KU
-HW
-HW
+Gl
+Gl
+Gl
+Gl
+Gl
+Gl
+Gl
+qp
+YF
+lg
+YF
+ld
+lB
+VC
+VC
+qp
+Gl
+Gl
 sU
 sU
 sU
@@ -8788,17 +8803,17 @@ sU
 sU
 sU
 sU
-HW
-KU
-Bg
-qh
-Bg
-qh
-Uq
-PK
-KU
-KU
-HW
+Gl
+qp
+YF
+lg
+YF
+lg
+Pc
+VC
+qp
+qp
+Gl
 sU
 sU
 sU
@@ -8890,17 +8905,17 @@ sU
 sU
 sU
 sU
-HW
-KU
-Bg
-qh
-Bg
-qh
-Uq
-PK
-KU
-HW
-HW
+Gl
+qp
+YF
+lg
+YF
+lg
+Pc
+VC
+qp
+Gl
+Gl
 sU
 sU
 sU
@@ -8992,16 +9007,16 @@ sU
 sU
 sU
 sU
-HW
-KU
-Bg
-qh
-Bg
-qh
-ZX
-KU
-KU
-HW
+Gl
+qp
+YF
+lg
+YF
+lg
+Br
+qp
+qp
+Gl
 sU
 sU
 sU
@@ -9094,16 +9109,16 @@ sU
 sU
 sU
 sU
-HW
-KU
-Bg
-qh
-Bg
-qh
-Bg
-KU
-HW
-HW
+Gl
+qp
+YF
+lg
+YF
+lg
+YF
+qp
+Gl
+Gl
 sU
 sU
 sU
@@ -9196,15 +9211,15 @@ sU
 sU
 sU
 sU
-HW
-KU
-lx
-au
-lx
-au
-lx
-KU
-HW
+Gl
+qp
+oD
+Wc
+oD
+Wc
+oD
+qp
+Gl
 sU
 sU
 sU
@@ -9298,15 +9313,15 @@ sU
 sU
 sU
 sU
-HW
-KU
-KU
-KU
-KU
-KU
-KU
-HW
-HW
+Gl
+qp
+qp
+qp
+qp
+qp
+qp
+Gl
+Gl
 sU
 sU
 sU
@@ -9400,14 +9415,14 @@ sU
 sU
 sU
 sU
-HW
-HW
-HW
-HW
-HW
-HW
-HW
-HW
+Gl
+Gl
+Gl
+Gl
+Gl
+Gl
+Gl
+Gl
 sU
 sU
 sU

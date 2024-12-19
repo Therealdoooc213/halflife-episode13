@@ -3191,12 +3191,6 @@
 /obj/machinery/light/directional/west,
 /turf/open/floor/iron/white,
 /area/centcom/central_command_areas/evacuation/ship)
-"HV" = (
-/obj/structure/halflife/cargotruck{
-	dir = 4
-	},
-/turf/open/floor/plating/ground/dirt,
-/area/centcom/halflife)
 "HZ" = (
 /obj/structure/railing{
 	dir = 6
@@ -64646,7 +64640,7 @@ Vi
 iU
 Vi
 Vi
-HV
+Vi
 Vi
 Vi
 Vi

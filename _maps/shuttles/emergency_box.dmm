@@ -16,7 +16,9 @@
 "cU" = (
 /obj/docking_port/mobile/emergency{
 	dir = 2;
-	name = "Transfer Train"
+	name = "Transfer Train";
+	port_direction = 2;
+	preferred_direction = 2
 	},
 /turf/closed/wall/halflife/metal,
 /area/shuttle/escape)

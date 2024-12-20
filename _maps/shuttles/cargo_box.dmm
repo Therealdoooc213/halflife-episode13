@@ -9,6 +9,7 @@
 /obj/machinery/door/unpowered/halflife/metal{
 	dir = 8
 	},
+/obj/structure/fans/tiny/invisible,
 /turf/open/floor/plating/indoor/metal/combine,
 /area/shuttle/supply)
 "i" = (
@@ -16,6 +17,7 @@
 /obj/machinery/door/unpowered/halflife/metal{
 	dir = 8
 	},
+/obj/structure/fans/tiny/invisible,
 /turf/open/floor/plating/indoor/metal/combine,
 /area/shuttle/supply)
 "j" = (

@@ -36,6 +36,10 @@
 /obj/structure/table/halflife/no_smooth/metal,
 /turf/open/floor/plating/indoor/grooved,
 /area/shuttle/arrival)
+"w" = (
+/obj/structure/window/fulltile,
+/turf/open/floor/plating/indoor/metal/plate,
+/area/shuttle/arrival)
 "x" = (
 /obj/docking_port/mobile/arrivals{
 	dir = 2;
@@ -91,13 +95,13 @@
 H
 m
 m
-m
+w
 m
 m
 s
 m
 m
-m
+w
 m
 m
 B
@@ -155,13 +159,13 @@ J
 H
 m
 m
-m
+w
 m
 m
 s
 m
 m
-m
+w
 m
 m
 B

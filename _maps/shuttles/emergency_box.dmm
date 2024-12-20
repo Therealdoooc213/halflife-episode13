@@ -16,7 +16,7 @@
 "cU" = (
 /obj/docking_port/mobile/emergency{
 	dir = 2;
-	name = "Box emergency shuttle"
+	name = "Transfer Train"
 	},
 /turf/closed/wall/halflife/metal,
 /area/shuttle/escape)
@@ -95,9 +95,7 @@
 /turf/open/floor/plating/indoor/grooved,
 /area/shuttle/escape)
 "GQ" = (
-/obj/structure/table/halflife/no_smooth/large/metal/desk{
-	dir = 8
-	},
+/obj/structure/table/halflife/metal,
 /turf/open/floor/plating/indoor/metal/plate,
 /area/shuttle/escape)
 "Hg" = (
@@ -281,7 +279,7 @@ Vv
 gn
 fK
 lJ
-HH
+GQ
 GQ
 lJ
 bi

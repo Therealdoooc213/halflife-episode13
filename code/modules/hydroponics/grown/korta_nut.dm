@@ -44,7 +44,7 @@
 /obj/item/food/grown/korta_nut/sweet
 	seed = /obj/item/seeds/korta_nut/sweet
 	name = "sweet korta nut"
-	desc = "A sweet treat lizards love to eat."
+	desc = "A sweet treat you may love to eat."
 	icon_state = "korta_nut"
 	grind_results = list(/datum/reagent/consumable/korta_flour = 0)
 	juice_typepath = /datum/reagent/consumable/korta_nectar

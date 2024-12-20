@@ -38,8 +38,19 @@
 	icon_state = "overwatch"
 	inhand_icon_state = "armoralt"
 	slowdown = 0.25
-	armor = list(MELEE = 40, BULLET = 40, LASER = 40, ENERGY = 30, BOMB = 40, BIO = 50, RAD = 30, FIRE = 50, ACID = 50, WOUND = 20)
 	icon = 'hl13/icons/obj/clothing/suits.dmi'
+
+	armor_type = /datum/armor/overwatcharmor
+
+/datum/armor/overwatcharmor
+	melee = 40
+	bullet = 40
+	laser = 40
+	energy = 30
+	bomb = 50
+	fire = 50
+	acid = 50
+	wound = 20
 
 /obj/item/clothing/suit/armor/overwatch/deathmatch
 	slowdown = 0.33
@@ -54,7 +65,17 @@
 	name = "overwatch elite chestpiece"
 	desc = "Reinforced white kevlar weave surrounding a ceramic plated core. Provides incredible chest protection."
 	icon_state = "overwatch_white"
-	armor = list(MELEE = 50, BULLET = 50, LASER = 50, ENERGY = 40, BOMB = 40, BIO = 50, RAD = 50, FIRE = 50, ACID = 50, WOUND = 20)
+	armor_type = /datum/armor/eliteoverwatcharmor
+
+/datum/armor/eliteoverwatcharmor
+	melee = 50
+	bullet = 50
+	laser = 50
+	energy = 40
+	bomb = 50
+	fire = 50
+	acid = 50
+	wound = 20
 
 //old armor found only as loot
 /obj/item/clothing/suit/armor/kevlar
@@ -63,7 +84,17 @@
 	icon_state = "bulletproof"
 	inhand_icon_state = "armor"
 	blood_overlay_type = "armor"
-	armor = list(MELEE = 15, BULLET = 25, LASER = 10, ENERGY = 10, BOMB = 20, BIO = 0, RAD = 0, FIRE = 50, ACID = 50, WOUND = 10)
+	armor_type = /datum/armor/kevlararmor
+
+/datum/armor/kevlararmor
+	melee = 15
+	bullet = 25
+	laser = 10
+	energy = 100
+	bomb = 20
+	fire = 50
+	acid = 50
+	wound = 10
 
 //crafted armor vest
 /obj/item/clothing/suit/armor/armored
@@ -95,7 +126,18 @@
 	inhand_icon_state = "bombsuit"
 	allowed = list(/obj/item/flashlight, /obj/item/tank/internals/emergency_oxygen, /obj/item/geiger_counter)
 	slowdown = 0
-	armor = list(MELEE = 5, BULLET = 5, LASER = 0,ENERGY = 0, BOMB = 5, BIO = 60, RAD = 60, FIRE = 30, ACID = 30)
+	armor_type = /datum/armor/engineersuit
+
+/datum/armor/engineersuit
+	melee = 5
+	bullet = 5
+	laser = 0
+	energy = 0
+	bomb = 5
+	bio = 60
+	fire = 50
+	acid = 50
+	wound = 0
 
 //Siggraph boiler bio suit
 /obj/item/clothing/suit/bio_suit/boiler

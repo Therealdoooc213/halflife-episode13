@@ -131,8 +131,7 @@
 				/obj/item/ammo_box/magazine/usp9mm = 2,
 				/obj/item/ammo_box/a357,
 				/obj/item/ammo_casing/rebar = 2,
-				/obj/item/ammo_box/magazine/m4a1,
-				/obj/item/ammo_box/magazine/m45
+				/obj/item/ammo_box/magazine/m4a1
 				)
 
 //guns, armor, and some lesser items occasionally

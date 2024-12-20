@@ -95,7 +95,7 @@
 #define JOB_JANITOR "Vortigaunt Slave"
 #define JOB_CLOWN "Clown"
 #define JOB_MIME "Mime"
-#define JOB_CURATOR "Curator"
+#define JOB_CURATOR "Clerk"
 #define JOB_LAWYER "Lawyer"
 #define JOB_CHAPLAIN "Chaplain"
 #define JOB_PSYCHOLOGIST "Psychologist"

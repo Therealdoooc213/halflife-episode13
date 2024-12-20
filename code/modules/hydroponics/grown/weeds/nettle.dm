@@ -28,7 +28,6 @@
 	yield = 2
 	genes = list(/datum/plant_gene/trait/repeated_harvest, /datum/plant_gene/trait/plant_type/weed_hardy, /datum/plant_gene/trait/stinging, /datum/plant_gene/trait/attack/nettle_attack/death, /datum/plant_gene/trait/backfire/nettle_burn/death)
 	mutatelist = null
-	reagents_add = list(/datum/reagent/toxin/acid/fluacid = 0.5, /datum/reagent/toxin/acid = 0.5)
 	rarity = PLANT_MODERATELY_RARE
 	graft_gene = /datum/plant_gene/trait/stinging
 
@@ -62,6 +61,6 @@
 	icon_state = "deathnettle"
 	inhand_icon_state = "deathnettle"
 	bite_consumption_mod = 4 // I guess if you really wanted to
-	force = 30
+	force = 20
 	wound_bonus = CANT_WOUND
 	throwforce = 15

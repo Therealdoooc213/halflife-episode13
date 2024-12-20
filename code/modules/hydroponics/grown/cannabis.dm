@@ -15,11 +15,7 @@
 	icon_grow = "cannabis-grow" // Uses one growth icons set for all the subtypes
 	icon_dead = "cannabis-dead" // Same for the dead icon
 	genes = list(/datum/plant_gene/trait/repeated_harvest)
-	mutatelist = list(/obj/item/seeds/cannabis/rainbow,
-		/obj/item/seeds/cannabis/death,
-		/obj/item/seeds/cannabis/white,
-		/obj/item/seeds/cannabis/ultimate,
-	)
+	mutatelist = null
 	reagents_add = list(/datum/reagent/drug/cannabis = 0.15)
 
 

@@ -8,12 +8,12 @@
 	roundend_category = "rebel insurgents"
 	antagpanel_category = "Rebel Insurgent"
 	job_rank = ROLE_TRAITOR
-	antag_moodlet = /datum/mood_event/focused
+	antag_moodlet = /datum/mood_event/rebel
 	antag_hud_name = "traitor"
 	hijack_speed = 0.5 //10 seconds per hijack stage by default
 	ui_name = "AntagInfoTraitor"
 	suicide_cry = "FOR THE RESISTANCE!!"
-	preview_outfit = /datum/outfit/traitor
+	preview_outfit = /datum/outfit/rebel_preview
 	can_assign_self_objectives = TRUE
 	default_custom_objective = "Perform an overcomplicated heist on valuable Combine assets."
 	hardcore_random_bonus = TRUE

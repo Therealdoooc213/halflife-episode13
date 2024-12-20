@@ -328,6 +328,11 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	name = "xenospawn"
 	icon_state = "xeno_spawn"
 
+/obj/effect/landmark/xeno_spawn/Initialize(mapload)
+	..()
+	GLOB.xeno_spawn += loc
+	return INITIALIZE_HINT_QDEL
+
 //observer start
 /obj/effect/landmark/observer_start
 	name = "Observer-Start"

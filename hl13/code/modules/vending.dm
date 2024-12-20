@@ -29,12 +29,12 @@
 					/obj/item/hourglass = 2,
 					/obj/item/instrument/harmonica = 1,
 					/obj/item/instrument/piano_synth = 1,
+					/obj/item/taperecorder = 3,
 					/obj/item/flashlight = 3,
-					/obj/item/clothing/suit/jacket = 3,
 					/obj/item/clothing/head/beanie/black = 3,
 					/obj/item/clothing/head/flatcap = 3,
-					/obj/item/customlock = 2,
-					/obj/item/customblank = 2,
+					/obj/item/customlock = 4,
+					/obj/item/customblank = 8,
 					/obj/item/storage/wallet = 10,
 					/obj/item/radio/off/halflife = 3,
 					/obj/item/reagent_containers/cup/bottle/welding_fuel = 3,
@@ -48,10 +48,9 @@
 				   /obj/item/binoculars = 3,
 				   /obj/item/storage/box/halflife/ration = 3)
 
-	payment_department = NO_FREEBIES
 	light_mask = "gifts-light-mask"
 	default_price = 20
-	extra_price = 40
+	extra_price = 35
 
 /obj/machinery/vending/miningvendor
 	name = "\improper Miner Vendor"
@@ -64,8 +63,8 @@
 	resistance_flags = FIRE_PROOF
 	refill_canister = /obj/item/vending_refill/miner
 	max_integrity = 500 //reinforced
-	default_price = 40
-	extra_price = 80
+	default_price = 20
+	extra_price = 40
 	payment_department = NO_FREEBIES
 
 /obj/item/vending_refill/miner

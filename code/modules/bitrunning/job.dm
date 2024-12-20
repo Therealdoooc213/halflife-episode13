@@ -2,9 +2,9 @@
 	title = JOB_BITRUNNER
 	description = "Surf the virtual domain for gear and loot. Decrypt your rewards on station."
 	department_head = list(JOB_QUARTERMASTER)
-	faction = FACTION_STATION
-	total_positions = 3
-	spawn_positions = 3
+	//faction = FACTION_STATION
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = SUPERVISOR_QM
 	exp_granted_type = EXP_TYPE_CREW
 	config_tag = "BITRUNNER"
@@ -29,7 +29,7 @@
 		/obj/item/food/cornchips/blue = 1,
 	)
 	rpg_title = "Recluse"
-	job_flags = STATION_JOB_FLAGS
+	//job_flags = STATION_JOB_FLAGS
 
 /datum/outfit/job/bitrunner
 	name = "Bitrunner"

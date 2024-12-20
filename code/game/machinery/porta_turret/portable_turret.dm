@@ -1146,7 +1146,7 @@ DEFINE_BITFIELD(turret_flags, list(
 	var/obj/item/ammo_box/mag = spawn_magazine_type
 	var/obj/item/ammo_casing/primary_ammo = initial(mag.ammo_type)
 
-	.["base_icon_state"] = "syndie"
+	.["base_icon_state"] = "combine"
 	.["stun_projectile"] = initial(primary_ammo.projectile_type)
 	.["stun_projectile_sound"] = initial(primary_ammo.fire_sound)
 	.["lethal_projectile"] = .["stun_projectile"]

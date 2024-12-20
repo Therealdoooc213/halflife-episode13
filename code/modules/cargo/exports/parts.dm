@@ -39,3 +39,32 @@
 	unit_name = "vending refill canister"
 	message = "Thank you for restocking the station!"
 	export_types = list(/obj/item/vending_refill)
+
+//Hunting headcrabs might be profitable...
+/datum/export/xenmeat
+	cost = CARGO_CRATE_VALUE * 0.5
+	unit_name = "xen flesh"
+	export_types = list(/obj/item/food/meat/slab/xen)
+
+/datum/export/watercanister
+	cost = CARGO_CRATE_VALUE
+	unit_name = "water canister"
+	export_types = list(/obj/item/water_canister)
+
+//clearing out xen infestations might be profitable... or even farming them?
+/datum/export/xenshrooms
+	cost = CARGO_CRATE_VALUE * 0.25
+	unit_name = "xenian mushrooms"
+	export_types = list(/obj/item/food/grown/mushroom_stem)
+
+//package and sell medkits for a profit
+/datum/export/medkits
+	cost = CARGO_CRATE_VALUE
+	unit_name = "medkits"
+	export_types = list(/obj/item/reagent_containers/pill/patch/medkit/manufactured)
+
+//sell manufactured rations for money
+/datum/export/rations
+	cost = CARGO_CRATE_VALUE * 0.5
+	unit_name = "rations"
+	export_types = list(/obj/item/food/rationpack/manufactured)

@@ -4,13 +4,13 @@
 	name = "Dispenser"
 	desc = "..."
 	icon = 'icons/obj/medical/chemical_tanks.dmi'
-	icon_state = "water"
+	icon_state = "water_fools"
 	density = TRUE
 	anchored = FALSE
 	pressure_resistance = 2*ONE_ATMOSPHERE
 	max_integrity = 300
 	/// In units, how much the dispenser can hold
-	var/tank_volume = 1000
+	var/tank_volume = 500
 	/// The ID of the reagent that the dispenser uses
 	var/reagent_id = /datum/reagent/water
 	/// Can you turn this into a plumbing tank?
@@ -53,8 +53,6 @@
 /obj/structure/reagent_dispensers/Initialize(mapload)
 	. = ..()
 
-	if(icon_state == "water" && check_holidays(APRIL_FOOLS))
-		icon_state = "water_fools"
 	if(climbable)
 		AddElement(/datum/element/climbable, climb_time = 4 SECONDS, climb_stun = 4 SECONDS)
 		AddElement(/datum/element/elevation, pixel_shift = 14)
@@ -234,7 +232,7 @@
 /obj/structure/reagent_dispensers/watertank
 	name = "water tank"
 	desc = "A water tank."
-	icon_state = "water"
+	icon_state = "water_fools"
 	openable = TRUE
 	climbable = TRUE
 
@@ -256,17 +254,11 @@
 /obj/structure/reagent_dispensers/fueltank
 	name = "fuel tank"
 	desc = "A tank full of industrial welding fuel. Do not consume."
-	icon_state = "fuel"
+	icon_state = "fuel_fools"
 	reagent_id = /datum/reagent/fuel
 	openable = TRUE
 	accepts_rig = TRUE
 	climbable = TRUE
-
-/obj/structure/reagent_dispensers/fueltank/Initialize(mapload)
-	. = ..()
-
-	if(check_holidays(APRIL_FOOLS))
-		icon_state = "fuel_fools"
 
 /obj/structure/reagent_dispensers/fueltank/blob_act(obj/structure/blob/B)
 	boom()

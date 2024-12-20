@@ -229,6 +229,7 @@
 "bc" = (
 /obj/structure/table/halflife/metal/heavy,
 /obj/item/watertank/cleanup,
+/obj/item/watertank/cleanup,
 /turf/open/floor/plating/indoor/concrete/small,
 /area/halflife/indoors/productioncenter)
 "bd" = (

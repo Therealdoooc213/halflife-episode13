@@ -12,10 +12,12 @@
 #define HIJACKED 5
 
 /obj/machinery/computer/emergency_shuttle
-	name = "emergency shuttle console"
-	desc = "For shuttle control."
-	icon_screen = "shuttle"
-	icon_keyboard = "tech_key"
+	name = "transfer train console"
+	desc = "A console capable of controlling the transfer train and any track switches on its route."
+	icon_state = "sr_console"
+	icon_screen = null
+	icon_keyboard = null
+	light_color = LIGHT_COLOR_CYAN
 	resistance_flags = INDESTRUCTIBLE
 	var/auth_need = 3
 	var/list/authorized = list()
@@ -33,8 +35,8 @@
 	if(hijack_announce)
 		. += span_danger("Security systems present on console. Any unauthorized tampering will result in an emergency announcement.")
 	if(user?.mind?.get_hijack_speed())
-		. += span_danger("Alt click on this to attempt to hijack the shuttle. This will take multiple tries (current: stage [SSshuttle.emergency.hijack_status]/[HIJACKED]).")
-		. += span_notice("It will take you [(hijack_stage_time * user.mind.get_hijack_speed()) / 10] seconds to reprogram a stage of the shuttle's navigational firmware, and the console will undergo automated timed lockout for [hijack_stage_cooldown/10] seconds after each stage.")
+		. += span_danger("Alt click on this to attempt to change the train's route. This will take multiple tries (current: stage [SSshuttle.emergency.hijack_status]/[HIJACKED]).")
+		. += span_notice("It will take you [(hijack_stage_time * user.mind.get_hijack_speed()) / 10] seconds to reset a different track shift and the console will undergo automated timed lockout for [hijack_stage_cooldown/10] seconds after each stage.")
 		if(hijack_announce)
 			. += span_warning("It is probably best to fortify your position as to be uninterrupted during the attempt, given the automatic announcements..")
 
@@ -131,9 +133,9 @@
 		var/repeal = (authorized.len < old_len)
 		var/remaining = max(0, auth_need - authorized.len)
 		if(authorized.len && remaining)
-			minor_announce("[remaining] authorizations needed until shuttle is launched early", null, alert)
+			minor_announce("[remaining] authorizations needed until the train departs early", null, alert)
 		if(repeal)
-			minor_announce("Early launch authorization revoked, [remaining] authorizations needed")
+			minor_announce("Early departure authorization revoked, [remaining] authorizations needed")
 
 	acted_recently += user
 	SStgui.update_user_uis(user, src)
@@ -180,7 +182,7 @@
 		// shuttle timers use 1/10th seconds internally
 		SSshuttle.emergency.setTimer(ENGINES_START_TIME)
 		var/system_error = obj_flags & EMAGGED ? "SYSTEM ERROR:" : null
-		minor_announce("The emergency shuttle will launch in \
+		minor_announce("The train will depart in \
 			[TIME_LEFT] seconds", system_error, alert=TRUE)
 		. = TRUE
 
@@ -193,7 +195,7 @@
 	if(hijack_announce)
 		announce_hijack_stage()
 	hijack_last_stage_increase = world.time
-	say("Navigational protocol error! Rebooting systems.")
+	say("Security error! Rebooting systems.")
 	if(shuttle.mode == SHUTTLE_ESCAPE)
 		if(shuttle.hijack_status == HIJACKED)
 			shuttle.setTimer(hijack_completion_flight_time_set)
@@ -221,12 +223,12 @@
 		to_chat(user, span_warning("You manage to open a user-mode shell on [src], and hundreds of lines of debugging output fly through your vision. It is probably best to leave this alone."))
 		return
 	if(!EMERGENCY_AT_LEAST_DOCKED) // prevent advancing hijack stages on BYOS shuttles until the shuttle has "docked"
-		to_chat(user, span_warning("The flight plans for the shuttle haven't been loaded yet, you can't hack this right now."))
+		to_chat(user, span_warning("The route plans for the train aren't loaded yet, and it has a direct connection to Overwatch. You can't hijack this yet."))
 		return
 	if(hijack_hacking == TRUE)
 		return
 	if(SSshuttle.emergency.hijack_status >= HIJACKED)
-		to_chat(user, span_warning("The emergency shuttle is already loaded with a corrupt navigational payload. What more do you want from it?"))
+		to_chat(user, span_warning("All the track switches are already set to a Resistance base. What more do you want from it?"))
 		return
 	if(hijack_last_stage_increase >= world.time - hijack_stage_cooldown)
 		say("Error - Catastrophic software error detected. Input is currently on timeout.")
@@ -259,20 +261,20 @@
 		if(NOT_BEGUN)
 			return
 		if(STAGE_1)
-			msg = "AUTHENTICATING - FAIL. AUTHENTICATING - FAIL. AUTHENTICATING - FAI###### Welcome, technician JOHN DOE."
+			msg = "AUTHENTICATING - FAIL. AUTHENTICATING - FAIL. AUTHENTICATING - FAI###### Welcome, technician."
 		if(STAGE_2)
-			msg = "Warning: Navigational route fails \"IS_AUTHORIZED\". Please try againNN[scramble_message_replace_chars("againagainagainagainagain", 70)]."
+			msg = "Warning: Proposed route fails \"IS_AUTHORIZED\". Please try againNN[scramble_message_replace_chars("againagainagainagainagain", 70)]."
 		if(STAGE_3)
-			msg = "CRC mismatch at ~h~ in calculated route buffer. Full reset initiated of FTL_NAVIGATION_SERVICES. Memory decrypted for automatic repair."
+			msg = "Memory error detected. Decrypting memory for manual correction."
 		if(STAGE_4)
-			msg = "~ACS_directive module_load(cyberdyne.exploit.nanotrasen.shuttlenav)... NT key mismatch. Confirm load? Y...###Reboot complete. $SET transponder_state = 0; System link initiated with connected engines..."
+			msg = "Connection established with remote track switch control outpost. Uploading new route..."
 		if(HIJACKED)
-			msg = "SYSTEM OVERRIDE - Resetting course to \[[scramble_message_replace_chars("###########", 100)]\] \
+			msg = "ALERT: Track switches altered. New destination: \[[scramble_message_replace_chars("###########", 100)]\] \
 			([scramble_message_replace_chars("#######", 100)]/[scramble_message_replace_chars("#######", 100)]/[scramble_message_replace_chars("#######", 100)]) \
 			{AUTH - ROOT (uid: 0)}.</font>\
-			[SSshuttle.emergency.mode == SHUTTLE_ESCAPE ? "Diverting from existing route - Bluespace exit in \
+			[SSshuttle.emergency.mode == SHUTTLE_ESCAPE ? "Diverting from existing route - Arriving at station in \
 			[hijack_completion_flight_time_set >= INFINITY ? "[scramble_message_replace_chars("\[ERROR\]")]" : hijack_completion_flight_time_set/10] seconds." : ""]"
-	minor_announce(scramble_message_replace_chars(msg, replaceprob = 10), "Emergency Shuttle", TRUE)
+	minor_announce(scramble_message_replace_chars(msg, replaceprob = 10), "Transfer Train", TRUE)
 
 /obj/machinery/computer/emergency_shuttle/emag_act(mob/user, obj/item/card/emag/emag_card)
 	// How did you even get on the shuttle before it go to the station?
@@ -280,7 +282,7 @@
 		return FALSE
 
 	if((obj_flags & EMAGGED) || ENGINES_STARTED) //SYSTEM ERROR: THE SHUTTLE WILL LA-SYSTEM ERROR: THE SHUTTLE WILL LA-SYSTEM ERROR: THE SHUTTLE WILL LAUNCH IN 10 SECONDS
-		balloon_alert(user, "shuttle already about to launch!")
+		balloon_alert(user, "train already about to depart!")
 		return FALSE
 
 	var/time = TIME_LEFT
@@ -371,7 +373,7 @@
 
 	priority_announce(
 		text = "The transfer train has been called. [red_alert ? "Red Alert state confirmed: Dispatching priority train. " : "" ]It will arrive in [(timeLeft(60 SECONDS))] minutes.[reason][SSshuttle.emergency_last_call_loc ? "\n\nCall signal traced. Results can be viewed on any communications console." : "" ][SSshuttle.admin_emergency_no_recall ? "\n\nWarning: Train recall subroutines disabled; Recall not possible." : ""]",
-		title = "Emergency Shuttle Dispatched",
+		title = "Transfer Train Dispatched",
 		sound = ANNOUNCER_SHUTTLECALLED,
 		sender_override = "Transfer Train Uplink Alert",
 		color_override = "orange",
@@ -486,8 +488,8 @@
 				setTimer(SSshuttle.emergency_dock_time)
 				send2adminchat("Server", "The Emergency Shuttle has docked with the station.")
 				priority_announce(
-					text = "[SSshuttle.emergency] has docked with the station. You have [DisplayTimeText(SSshuttle.emergency_dock_time)] to board the emergency shuttle.",
-					title = "Emergency Shuttle Arrival",
+					text = "[SSshuttle.emergency] has arrived at the station. You have [DisplayTimeText(SSshuttle.emergency_dock_time)] to board the transfer train.",
+					title = "Transfer Train Arrival",
 					sound = ANNOUNCER_SHUTTLEDOCK,
 					sender_override = "Transfer Train Uplink Alert",
 					color_override = "orange",
@@ -549,7 +551,7 @@
 				launch_status = ENDGAME_LAUNCHED
 				setTimer(SSshuttle.emergency_escape_time * engine_coeff)
 				priority_announce(
-					text = "The transfer train has left the station. Estimate [timeLeft(60 SECONDS)] minutes until the shuttle docks at [command_name()].",
+					text = "The transfer train has departed. Estimate [timeLeft(60 SECONDS)] minutes until the shuttle docks at [command_name()].",
 					title = "Transfer Train Departure",
 					sender_override = "Transfer Train Uplink Alert",
 					color_override = "orange",
@@ -599,9 +601,9 @@
 					// just double check
 					SSmapping.lazy_load_template(LAZY_TEMPLATE_KEY_NUKIEBASE)
 					destination_dock = "emergency_syndicate"
-					minor_announce("Corruption detected in \
-						shuttle navigation protocols. Please contact your \
-						supervisor.", "SYSTEM ERROR:", sound_override = 'sound/announcer/announcement/announce_syndi.ogg')
+					minor_announce("Interference detected in \
+						track switch management system. Please contact \
+						Overwatch.", "SYSTEM ERROR:", sound_override = 'sound/announcer/announcement/announce_syndi.ogg')
 
 				dock_id(destination_dock)
 				mode = SHUTTLE_ENDGAME
@@ -615,8 +617,8 @@
 	launch_status = ENDGAME_LAUNCHED
 	setTimer(SSshuttle.emergency_escape_time)
 	priority_announce(
-		text = "The emergency shuttle is preparing for direct jump. Estimate [timeLeft(60 SECONDS)] minutes until the shuttle docks at [command_name()].",
-		title = "Emergency Shuttle Transit Failure",
+		text = "The transfer train is preparing for accelerated transit. Estimate [timeLeft(60 SECONDS)] minutes until the shuttle docks at [command_name()].",
+		title = "Transfer Train Malfunction",
 		sender_override = "Transfer Train Uplink Alert",
 		color_override = "orange",
 	)

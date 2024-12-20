@@ -9,7 +9,7 @@
 /turf/open/floor/plating/indoor/metal/combine,
 /area/shuttle/transport)
 "e" = (
-/obj/machinery/power/shuttle_engine/propulsion/left{
+/obj/machinery/power/shuttle_engine/propulsion{
 	dir = 8
 	},
 /turf/open/floor/plating/airless,
@@ -19,11 +19,11 @@
 /turf/open/floor/plating/indoor/metal/combine,
 /area/shuttle/transport)
 "i" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/computer/crew,
 /turf/open/floor/plating/indoor/metal/combine,
 /area/shuttle/transport)
 "k" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/cold/directional/west,
 /turf/open/floor/plating/indoor/metal/combine,
 /area/shuttle/transport)
 "l" = (
@@ -33,6 +33,7 @@
 /obj/machinery/computer/shuttle/ferry/request{
 	dir = 8
 	},
+/obj/machinery/light/cold/directional/east,
 /turf/open/floor/plating/indoor/metal/combine,
 /area/shuttle/transport)
 "n" = (
@@ -45,12 +46,22 @@
 	},
 /turf/closed/wall/halflife/metal,
 /area/shuttle/transport)
+"o" = (
+/obj/machinery/turnstile/brig/halflife/forcefield{
+	dir = 4
+	},
+/turf/open/floor/plating/indoor/metal/combine,
+/area/shuttle/transport)
 "r" = (
 /turf/closed/wall/halflife/metal,
 /area/shuttle/transport)
 "H" = (
 /obj/machinery/door/airlock/highsecurity/combine,
 /obj/structure/fans/tiny/invisible,
+/turf/open/floor/plating/indoor/metal/combine,
+/area/shuttle/transport)
+"L" = (
+/obj/machinery/computer/security,
 /turf/open/floor/plating/indoor/metal/combine,
 /area/shuttle/transport)
 
@@ -112,17 +123,17 @@ H
 "}
 (9,1,1) = {"
 r
-l
-l
-i
+r
+o
+r
 r
 "}
 (10,1,1) = {"
-H
+r
+L
 l
-l
-l
-H
+i
+r
 "}
 (11,1,1) = {"
 r

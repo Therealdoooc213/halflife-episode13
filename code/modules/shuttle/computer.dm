@@ -193,10 +193,10 @@
 					to_chat(usr, span_warning("You've already escaped. Never going back to that place again!"))
 					return
 				if (SHUTTLE_CONSOLE_RECHARGING)
-					to_chat(usr, span_warning("Shuttle engines are not ready for use."))
+					to_chat(usr, span_warning("Engines are not ready for use."))
 					return
 				if (SHUTTLE_CONSOLE_INTRANSIT)
-					to_chat(usr, span_warning("Shuttle already in transit."))
+					to_chat(usr, span_warning("Train already in transit."))
 					return
 				if (SHUTTLE_CONSOLE_DESTINVALID)
 					to_chat(usr, span_warning("Invalid destination."))
@@ -213,10 +213,10 @@
 				return TRUE
 		if("request")
 			if(!COOLDOWN_FINISHED(src, request_cooldown))
-				to_chat(usr, span_warning("CentCom is still processing last authorization request!"))
+				to_chat(usr, span_warning("Overwatch is still processing last authorization request!"))
 				return
 			COOLDOWN_START(src, request_cooldown, 1 MINUTES)
-			to_chat(usr, span_notice("Your request has been received by CentCom."))
+			to_chat(usr, span_notice("Your request has been received by Overwatch."))
 			to_chat(GLOB.admins, "<b>SHUTTLE: <font color='#3d5bc3'>[ADMIN_LOOKUPFLW(usr)] (<A HREF='?_src_=holder;[HrefToken()];move_shuttle=[shuttleId]'>Move Shuttle</a>)(<A HREF='?_src_=holder;[HrefToken()];unlock_shuttle=[REF(src)]'>Lock/Unlock Shuttle</a>)</b> is requesting to move or unlock the shuttle.</font>")
 			return TRUE
 

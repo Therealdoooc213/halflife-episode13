@@ -95,6 +95,7 @@
 
 
 //******Anomaly Cores******
+/*
 /datum/bounty/item/science/ref_anomaly
 	name = "Refined Bluespace Core"
 	description = "We need a bluespace core to assemble a bag of holding. Ship us one, please."
@@ -141,3 +142,4 @@
 	name = "Refined Dimensional Core"
 	description = "We're trying to save money on our annual renovations at CentCom. Send us a dimensional core."
 	wanted_types = list(/obj/item/assembly/signaler/anomaly/dimensional = TRUE)
+*/

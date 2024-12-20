@@ -10,35 +10,12 @@
 	reward += multiplier * (CARGO_CRATE_VALUE * 2)
 	required_count = rand(5, 10)
 
-/datum/bounty/item/botany/ambrosia_vulgaris
-	name = "Ambrosia Vulgaris Leaves"
-	wanted_types = list(/obj/item/food/grown/ambrosia/vulgaris = TRUE)
-	foodtype = "stew"
-
-/datum/bounty/item/botany/ambrosia_gaia
-	name = "Ambrosia Gaia Leaves"
-	wanted_types = list(/obj/item/food/grown/ambrosia/gaia = TRUE)
-	multiplier = 4
-	foodtype = "stew"
-
-/datum/bounty/item/botany/apple_golden
-	name = "Golden Apples"
-	wanted_types = list(/obj/item/food/grown/apple/gold = TRUE)
-	multiplier = 4
-	foodtype = "dessert"
-
 /datum/bounty/item/botany/banana
 	name = "Bananas"
 	wanted_types = list(
 		/obj/item/food/grown/banana = TRUE,
 		/obj/item/food/grown/banana/bluespace = FALSE,
 	)
-	foodtype = "banana split"
-
-/datum/bounty/item/botany/banana_bluespace
-	name = "Bluespace Bananas"
-	wanted_types = list(/obj/item/food/grown/banana/bluespace = TRUE)
-	multiplier = 2
 	foodtype = "banana split"
 
 /datum/bounty/item/botany/beans_koi
@@ -77,20 +54,6 @@
 	multiplier = 6
 	bonus_desc = "Do not mention this shipment to security."
 	foodtype = "\"meal\""
-
-/datum/bounty/item/botany/cannabis_death
-	name = "Deathweed Leaves"
-	wanted_types = list(/obj/item/food/grown/cannabis/death = TRUE)
-	multiplier = 6
-	bonus_desc = "Do not mention this shipment to security."
-	foodtype = "\"meal\""
-
-/datum/bounty/item/botany/cannabis_ultimate
-	name = "Omega Weed Leaves"
-	wanted_types = list(/obj/item/food/grown/cannabis/ultimate = TRUE)
-	multiplier = 6
-	bonus_desc = "Under no circumstances mention this shipment to security."
-	foodtype = "batch of \"brownies\""
 
 /datum/bounty/item/botany/wheat
 	name = "Wheat Grains"
@@ -179,13 +142,6 @@
 	multiplier = 2
 	foodtype = "omelet"
 
-/datum/bounty/item/botany/nettles_death
-	name = "Death Nettles"
-	wanted_types = list(/obj/item/food/grown/nettle/death = TRUE)
-	multiplier = 2
-	bonus_desc = "Wear protection when handling them."
-	foodtype = "cheese"
-
 /datum/bounty/item/botany/pineapples
 	name = "Pineapples"
 	wanted_types = list(/obj/item/food/grown/pineapple = TRUE)
@@ -199,11 +155,6 @@
 		/obj/item/food/grown/tomato/blue = FALSE,
 	)
 
-/datum/bounty/item/botany/tomato_bluespace
-	name = "Bluespace Tomatoes"
-	wanted_types = list(/obj/item/food/grown/tomato/blue/bluespace = TRUE)
-	multiplier = 4
-
 /datum/bounty/item/botany/oatz
 	name = "Oats"
 	wanted_types = list(/obj/item/food/grown/oat = TRUE)
@@ -213,7 +164,7 @@
 
 /datum/bounty/item/botany/bonfire
 	name = "Lit Bonfire"
-	description = "Our space heaters are malfunctioning and the cargo crew of Central Command is starting to feel cold. Grow some logs and ship a lit bonfire to warm them up."
+	description = "Northern cities have been requesting additional bonfires to warm them up during the winter."
 	wanted_types = list(/obj/structure/bonfire = TRUE)
 
 /datum/bounty/item/botany/bonfire/applies_to(obj/O)

@@ -41,6 +41,19 @@
 	cost = CARGO_CRATE_VALUE * 5
 	crate_name = "toolbox crate"
 
+
+/datum/supply_pack/engineering/water_miner
+	name = "Water Harvester"
+	desc = "A heavy duty water harvester. Can be placed over water and wrenched into place, then activated to automatically package water for reselling."
+	cost = CARGO_CRATE_VALUE * 4
+	contains = list(/obj/machinery/water_miner)
+	crate_name = "water harvester crate"
+	crate_type = /obj/structure/closet/crate/large
+
+
+
+
+
 /datum/supply_pack/engineering/bsa
 	name = "Bluespace Artillery Parts"
 	desc = "The pride of Nanotrasen Naval Command. The legendary Bluespace Artillery Cannon is a \

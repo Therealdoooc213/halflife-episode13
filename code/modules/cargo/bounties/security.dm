@@ -19,13 +19,6 @@
 	required_count = 4
 	wanted_types = list(/obj/item/clothing/under/rank/prisoner = TRUE)
 
-/datum/bounty/item/security/plates
-	name = "License Plates"
-	description = "As a result of a bad clown car crash, we could use an advance on some of your prisoners' license plates."
-	reward = CARGO_CRATE_VALUE * 2
-	required_count = 10
-	wanted_types = list(/obj/item/stack/license_plates/filled = TRUE)
-
 /datum/bounty/item/security/earmuffs
 	name = "Earmuffs"
 	description = "Central Command is getting tired of your station's messages. They've ordered that you ship some earmuffs to lessen the annoyance."
@@ -84,7 +77,7 @@
 
 /datum/bounty/item/security/contraband
 	name = "Confiscated Contraband"
-	description = "The syndicate are constantly acting to subvert crewmates of Nanotrasen afilliated stations. Ship us your latest batch of confiscated contraband."
+	description = "The rebels are constantly acting to subvert citizens of combine controlled cities. Ship us your latest batch of confiscated contraband."
 	reward = CARGO_CRATE_VALUE * 4
 	required_count = 5
 	wanted_types = list(/obj/item = TRUE)

@@ -425,6 +425,7 @@
 
 		equipped.sec_hud_set_ID()
 
+/*
 	var/obj/item/modular_computer/pda/pda = equipped.get_item_by_slot(pda_slot)
 
 	if(istype(pda))
@@ -436,7 +437,7 @@
 
 		if(equipped_client)
 			pda.update_pda_prefs(equipped_client)
-
+*/
 
 /datum/outfit/job/get_chameleon_disguise_info()
 	var/list/types = ..()

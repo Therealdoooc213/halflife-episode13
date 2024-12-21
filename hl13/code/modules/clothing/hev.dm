@@ -7,7 +7,6 @@
 	icon_state = "hev"
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS
 	resistance_flags = FIRE_PROOF | ACID_PROOF
-	armor = list(MELEE = 50, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 80, BIO = 100, RAD = 100, FIRE = 100, ACID = 100, WOUND = 20)
 	cold_protection = CHEST|GROIN|LEGS|ARMS
 	heat_protection = CHEST|GROIN|LEGS|ARMS
 	flags_inv = HIDESHOES|HIDEJUMPSUIT|HIDEGLOVES
@@ -41,6 +40,20 @@
 
 	COOLDOWN_DECLARE(next_damage_notify)
 	COOLDOWN_DECLARE(next_morphine)
+
+	armor_type = /datum/armor/hev
+
+/datum/armor/hev
+	melee = 50
+	bullet = 50
+	laser = 50
+	energy = 50
+	bomb = 50
+	bio = 100
+	fire = 100
+	acid = 100
+	wound = 20
+
 
 /obj/item/clothing/suit/armor/hev/Initialize(mapload)
 	. = ..()
@@ -205,6 +218,11 @@
 			add_queue('hl13/sound/voice/hev/vital_signs_death.ogg',1 SECONDS)
 			COOLDOWN_START(src, next_damage_notify, 5 SECONDS)
 			administer_morphine()
+
+
+/obj/item/clothing/suit/armor/hev/deathmatch
+	desc = "An old suit, fully plated and insulated and topped with a tasteful orange coating of paint. This one somehow protects your head too."
+	body_parts_covered = HEAD|CHEST|GROIN|ARMS|LEGS
 
 #undef MORPHINE_INJECTION_DELAY
 #undef SOUND_BEEP

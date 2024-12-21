@@ -316,7 +316,7 @@
 	w_class = WEIGHT_CLASS_SMALL
 	item_flags = NONE
 	force = 0
-	cooldown = 2 SECONDS
+	cooldown = 2.5 SECONDS
 	bare_wound_bonus = 5
 	clumsy_knockdown_time = 15 SECONDS
 	active = FALSE

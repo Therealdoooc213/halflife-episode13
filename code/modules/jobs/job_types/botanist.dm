@@ -45,4 +45,5 @@
 
 	id_trim = /datum/id_trim/job/botanist
 	uniform = /obj/item/clothing/under/citizen
-	gloves  =/obj/item/clothing/gloves/botanic_leather
+	gloves  = /obj/item/clothing/gloves/botanic_leather
+	suit = /obj/item/clothing/suit/apron/overalls

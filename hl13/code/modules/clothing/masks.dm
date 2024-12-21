@@ -5,7 +5,6 @@
 	worn_icon = 'hl13/icons/mob/clothing/masks.dmi'
 	icon_state = "civilprotection"
 	inhand_icon_state = "swat"
-	armor = list(MELEE = 20, BULLET = 25, LASER = 10, ENERGY = 10, BOMB = 10, BIO = 80, RAD = 80, FIRE = 80, ACID = 80, WOUND = 5)
 	clothing_flags = BLOCK_GAS_SMOKE_EFFECT | MASKINTERNALS
 	flags_inv = HIDEFACIALHAIR|HIDEFACE
 	w_class = WEIGHT_CLASS_SMALL
@@ -86,6 +85,17 @@
 		"Take cover" = 'hl13/sound/voice/cpvoicelines/takecover.ogg',
 	)
 
+	armor_type = /datum/armor/cpmask
+
+/datum/armor/cpmask
+	melee = 20
+	bullet = 25
+	laser = 10
+	energy = 10
+	bomb = 10
+	fire = 80
+	acid = 80
+	wound = 5
 
 /obj/item/clothing/mask/gas/civilprotection/handle_speech(mob/living/carbon/source, mob/speech_args)
 	if(source.wear_mask == src)
@@ -109,7 +119,17 @@
 	desc = "Heavy duty white mask for civil protection units. Provides some protection to the face. This one is reinforced."
 	icon_state = "dv_mask"
 	inhand_icon_state = "swat"
-	armor = list(MELEE = 20, BULLET = 35, LASER = 10, ENERGY = 10, BOMB = 10, BIO = 80, RAD = 80, FIRE = 80, ACID = 80, WOUND = 5)
+	armor_type = /datum/armor/cpmask_upgraded
+
+/datum/armor/cpmask_upgraded
+	melee = 20
+	bullet = 35
+	laser = 10
+	energy = 10
+	bomb = 20
+	fire = 80
+	acid = 80
+	wound = 10
 
 /obj/item/clothing/mask/gas/civilprotection/medical
 	name = "medical officer mask"
@@ -124,8 +144,8 @@
 	desc = "Heavy duty armored mask for the overwatch transhuman team."
 	icon_state = "overwatch"
 	inhand_icon_state = "swat"
-	armor = list(MELEE = 20, BULLET = 35, LASER = 20, ENERGY = 20, BOMB = 20, BIO = 80, RAD = 80, FIRE = 80, ACID = 80, WOUND = 10)
 	overwatch = TRUE
+	armor_type = /datum/armor/cpmask_upgraded
 
 /obj/item/clothing/mask/gas/civilprotection/overwatch/red
 	icon_state = "overwatch_red"
@@ -133,7 +153,17 @@
 /obj/item/clothing/mask/gas/civilprotection/overwatch/elite
 	name = "overwatch elite soldier mask"
 	icon_state = "overwatch_white"
-	armor = list(MELEE = 20, BULLET = 45, LASER = 20, ENERGY = 20, BOMB = 25, BIO = 80, RAD = 80, FIRE = 80, ACID = 80, WOUND = 10)
+	armor_type = /datum/armor/eliteoverwatchmask
+
+/datum/armor/eliteoverwatchmask
+	melee = 20
+	bullet = 45
+	laser = 10
+	energy = 10
+	bomb = 25
+	fire = 80
+	acid = 80
+	wound = 10
 
 /obj/item/clothing/mask/gas/cwuengi
 	name = "gas mask"

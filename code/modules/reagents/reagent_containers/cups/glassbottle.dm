@@ -292,8 +292,8 @@
 	to_mimic.transfer_fingerprints_to(src)
 
 /obj/item/reagent_containers/cup/glass/bottle/beer
-	name = "space beer"
-	desc = "Beer. In space."
+	name = "beer"
+	desc = "Beer. Simple as."
 	icon_state = "beer"
 	volume = 30
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer = 30)

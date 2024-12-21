@@ -51,6 +51,7 @@
 	glasses = /obj/item/clothing/glasses/sunglasses/reagent
 	uniform = /obj/item/clothing/under/citizen
 	r_pocket = /obj/item/hl2key/bar
+	glasses = /obj/item/clothing/glasses/sunglasses/reagent
 
 
 	skillchips = list(/obj/item/skillchip/drunken_brawler)

@@ -349,7 +349,7 @@ or shoot a gun to move around via Newton's 3rd Law of Motion."
 
 /atom/movable/screen/alert/sleepy
 	name = "Sleepy"
-	desc = "You're very tired. Find somewhere comfortable to lay, and fall asleep. (You can use the Sleep Verb in the IC tab at the top right of your screen)"
+	desc = "You're very tired. Find a bed to lay in, and fall asleep. (You can use the Sleep Verb in the IC tab at the top right of your screen)"
 	icon_state = "sleepy"
 
 /**

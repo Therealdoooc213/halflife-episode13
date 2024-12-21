@@ -94,5 +94,9 @@
 /// Mainly used by pirate simplemobs. However I placed them here instead, as its also used by players
 #define FACTION_PIRATE "pirate"
 
+#define FACTION_HEADCRAB "headcrab"
+#define FACTION_ANTLION "antlion"
+#define FACTION_COMBINE "combine"
+
 /// Generates a mob faction for the passed owner, used by stabilized pink extracts
 #define FACTION_PINK_EXTRACT(owner) "pink_[owner]"

@@ -1,7 +1,6 @@
 #define STIMULANT_INJECTION_DELAY (60 SECONDS)
 
 /obj/item/clothing/under/combine
-	armor = list(MELEE = 15, BULLET = 15, LASER = 20,ENERGY = 20, BOMB = 20, BIO = 20, RAD = 20, FIRE = 30, ACID = 30, WOUND = 5)
 	max_integrity = 250
 	strip_delay = 50
 	can_adjust = FALSE
@@ -24,6 +23,18 @@
 		COMSIG_CARBON_GAIN_WOUND = PROC_REF(handle_wound_add),
 		COMSIG_MOB_APPLY_DAMAGE = PROC_REF(handle_damage)
 	)
+
+	armor_type = /datum/armor/combinesuit
+
+/datum/armor/combinesuit
+	melee = 15
+	bullet = 15
+	laser = 20
+	energy = 20
+	bomb = 20
+	fire = 30
+	acid = 30
+	wound = 5
 
 /obj/item/clothing/under/combine/equipped(mob/M, slot)
 	. = ..()
@@ -101,8 +112,18 @@
 /obj/item/clothing/under/combine/civilprotection/divisionallead
 	name = "divisional lead jumpsuit"
 	desc = "A version of the standard civil protection suit with slightly more protection, and red highlights."
-	armor = list(MELEE = 20, BULLET = 20, LASER = 25,ENERGY = 25, BOMB = 25, BIO = 30, RAD = 30, FIRE = 30, ACID = 30, WOUND = 5)
 	icon_state = "divisionallead"
+	armor_type = /datum/armor/combinesuit_upgraded
+
+/datum/armor/combinesuit_upgraded
+	melee = 20
+	bullet = 20
+	laser = 25
+	energy = 25
+	bomb = 25
+	fire = 30
+	acid = 30
+	wound = 10
 
 /obj/item/clothing/under/combine/overwatch
 	name = "overwatch jumpsuit"
@@ -112,7 +133,8 @@
 	has_sensor = LOCKED_SENSORS
 	max_integrity = 400
 	suit_power = 100
-	armor = list(MELEE = 20, BULLET = 20, LASER = 25,ENERGY = 25, BOMB = 25, BIO = 30, RAD = 30, FIRE = 30, ACID = 30, WOUND = 10)
+	armor_type = /datum/armor/combinesuit_upgraded
+
 
 /obj/item/clothing/under/combine/overwatch/red
 	desc = "Red full-body suit which includes kevlar weaving to provide extra protection."
@@ -122,7 +144,17 @@
 	name = "overwatch jumpsuit"
 	desc = "Full-body reinforced suit which includes kevlar weaving to provide extra protection."
 	icon_state = "overwatch_white"
-	armor = list(MELEE = 25, BULLET = 25, LASER = 30,ENERGY = 30, BOMB = 30, BIO = 40, RAD = 40, FIRE = 40, ACID = 30, WOUND = 10)
+	armor_type = /datum/armor/combinesuit_elite
+
+/datum/armor/combinesuit_elite
+	melee = 25
+	bullet = 25
+	laser = 30
+	energy = 30
+	bomb = 30
+	fire = 40
+	acid = 30
+	wound = 10
 
 /obj/item/clothing/under/citizen
 	name = "citizen jumpsuit"
@@ -145,10 +177,20 @@
 
 /obj/item/clothing/under/citizen/rebel
 	name = "citizen jumpsuit"
-	armor = list(MELEE = 10, BULLET = 10, LASER = 10,ENERGY = 10, BOMB = 10, BIO = 20, RAD = 20, FIRE = 30, ACID = 30, WOUND = 5)
 	desc = "Full-body blue suit for the common citizen. The scanners have been removed forcefully, and it has been moderately reinforced."
 	icon_state = "rebelblue"
 	has_sensor = NO_SENSORS
+	armor_type = /datum/armor/rebelsuit
+
+/datum/armor/rebelsuit
+	melee = 10
+	bullet = 10
+	laser = 10
+	energy = 10
+	bomb = 10
+	fire = 30
+	acid = 30
+	wound = 5
 
 /obj/item/clothing/under/administrator
 	name = "administrator suit"

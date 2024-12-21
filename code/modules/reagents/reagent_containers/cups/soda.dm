@@ -308,8 +308,8 @@
 	list_reagents = list(/datum/reagent/nitrogen = 24, /datum/reagent/oxygen = 6)
 
 /obj/item/reagent_containers/cup/soda_cans/beer
-	name = "space beer"
-	desc = "Canned beer. In space."
+	name = "beer"
+	desc = "Canned beer. It's great."
 	icon_state = "space_beer"
 	volume = 40
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer = 40)

@@ -78,10 +78,10 @@
 	desc = "A 'water' flavored ration nutriment bar. Tastes gross, but at least you won't be hungry"
 	icon = 'hl13/icons/obj/food.dmi'
 	icon_state = "rationpack"
-	bite_consumption = 1
+	bite_consumption = 2
 	tastes = list("gross water" = 3, "sadness" = 3)
 	foodtypes = null //Don't ask what went into them. You're better off not knowing.
-	food_reagents = list(/datum/reagent/consumable/nutriment = 5)
+	food_reagents = list(/datum/reagent/consumable/nutriment = 8)
 	custom_price = 15
 	var/mood_penalty = /datum/mood_event/gross_food
 
@@ -97,27 +97,27 @@
 	name = "loyalty-grade nutriment bar"
 	desc = "A 'water' flavored ration nutriment bar. It has 'artificial flavor enhancers' and additionals nutriments packed inside."
 	icon_state = "loyaltyrationpack"
-	food_reagents = list(/datum/reagent/consumable/nutriment = 4, /datum/reagent/consumable/nutriment/vitamin = 2)
+	food_reagents = list(/datum/reagent/consumable/nutriment = 5, /datum/reagent/consumable/nutriment/vitamin = 3)
 	mood_penalty = /datum/mood_event/displeasing_food
 
 /obj/item/food/rationpack/box
 	name = "nutriment box"
 	desc = "A 'egg' flavored ration nutriment box. It's more filling than the standard bars, but just as gross."
 	icon_state = "rationbox"
-	food_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/nutriment/vitamin = 3)
+	food_reagents = list(/datum/reagent/consumable/nutriment = 5, /datum/reagent/consumable/nutriment/vitamin = 3)
 
 /obj/item/food/rationpack/lowgrade
 	name = "low-grade nutriment bar"
 	desc = "A 'water' flavored ration nutriment bar. Tastes gross, but at least you won't be hungry. This one is less filling than most, and even worse tasting."
 	icon_state = "lowrationpack"
-	food_reagents = list(/datum/reagent/consumable/nutriment = 4)
+	food_reagents = list(/datum/reagent/consumable/nutriment = 6)
 	mood_penalty = /datum/mood_event/disgusting_food
 
 /obj/item/food/rationpack/worstgrade
 	name = "bottom-grade nutriment bar"
 	desc = "A 'water' flavored ration nutriment bar. Tastes gross, but at least you won't be hungry. This one is very unfilling and terrible tasting."
 	icon_state = "lowrationpack"
-	food_reagents = list(/datum/reagent/consumable/nutriment = 3)
+	food_reagents = list(/datum/reagent/consumable/nutriment = 4)
 	mood_penalty = /datum/mood_event/disgusting_food
 
 /obj/item/food/rationpack/manufactured

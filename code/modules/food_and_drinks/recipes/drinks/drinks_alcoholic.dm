@@ -409,11 +409,6 @@
 	mix_message = "The mix swirls and turns a bright red that reminds you of an apple's skin."
 	reaction_tags = REACTION_TAG_DRINK | REACTION_TAG_EASY | REACTION_TAG_OTHER
 
-/datum/chemical_reaction/drink/fringe_weaver
-	results = list(/datum/reagent/consumable/ethanol/fringe_weaver = 10)
-	required_reagents = list(/datum/reagent/consumable/ethanol = 9, /datum/reagent/consumable/sugar = 1) //9 karmotrine, 1 adelhyde
-	mix_message = "The mix turns a pleasant cream color and foams up."
-
 /datum/chemical_reaction/drink/sugar_rush
 	results = list(/datum/reagent/consumable/ethanol/sugar_rush = 4)
 	required_reagents = list(/datum/reagent/consumable/sugar = 2, /datum/reagent/consumable/lemonjuice = 1, /datum/reagent/consumable/ethanol/wine = 1) //2 adelhyde (sweet), 1 powdered delta (sour), 1 karmotrine (alcohol)

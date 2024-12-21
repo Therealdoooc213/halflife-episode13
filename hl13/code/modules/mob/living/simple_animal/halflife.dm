@@ -5,9 +5,8 @@
 	icon_state = "zombie"
 	icon_living = "zombie"
 	icon_dead = "zombie_dead"
-	faction = list("headcrab")
+	faction = list(FACTION_HOSTILE,FACTION_HEADCRAB)
 	mob_biotypes = MOB_ORGANIC|MOB_HUMANOID
-	stat_attack = UNCONSCIOUS //braains
 	maxHealth = 120
 	health = 120
 	speak_chance = 1
@@ -85,7 +84,6 @@
 	icon_state = "fastzombie"
 	icon_living = "fastzombie"
 	icon_dead = "fastzombie_dead"
-	faction = list("headcrab")
 	maxHealth = 80
 	health = 80
 	speak_chance = 0
@@ -237,7 +235,7 @@
 	icon_state = "headcrab"
 	icon_living = "headcrab"
 	icon_dead = "headcrab_dead"
-	faction = list("headcrab")
+	faction = list(FACTION_HOSTILE,FACTION_HEADCRAB)
 	mob_biotypes = MOB_ORGANIC
 	stat_attack = UNCONSCIOUS //braains
 	maxHealth = 30
@@ -368,7 +366,7 @@
 	icon_state = "hunter"
 	icon_living = "hunter"
 	icon_dead = "hunter_dead"
-	faction = list("combine")
+	faction = list(FACTION_HOSTILE,FACTION_COMBINE)
 	mob_biotypes = MOB_ORGANIC
 	stat_attack = UNCONSCIOUS
 	maxHealth = 400
@@ -479,7 +477,7 @@
 	icon_living = "antlion"
 	icon_dead = "antlion_dead"
 	icon_gib = "antlion_gib"
-	faction = list("antlion")
+	faction = list(FACTION_HOSTILE,FACTION_ANTLION)
 	mob_biotypes = MOB_ORGANIC
 	maxHealth = 50
 	health = 50
@@ -586,7 +584,7 @@
 	icon_state = "antlionworker"
 	icon_living = "antlionworker"
 	icon_dead = "antlionworker_dead"
-	faction = list("antlion")
+	faction = list(FACTION_HOSTILE,FACTION_ANTLION)
 	mob_biotypes = MOB_ORGANIC
 	maxHealth = 50
 	health = 50
@@ -670,7 +668,7 @@
 	attack_verb_continuous = "cuts"
 	attack_verb_simple = "cut"
 	attack_sound = 'sound/items/weapons/bladeslice.ogg'
-	faction = list("combine")
+	faction = list(FACTION_HOSTILE,FACTION_COMBINE)
 	minbodytemp = 0
 	mob_size = MOB_SIZE_TINY
 	movement_type = FLYING
@@ -699,6 +697,12 @@
 		melee_damage_upper = low_power_melee_damage_upper
 	else
 		operating_power--
+
+/mob/living/simple_animal/hostile/halflife/viscerator/deathmatch
+	health = 100
+	maxHealth = 100
+	melee_damage_lower = 25
+	melee_damage_upper = 40
 
 /mob/living/simple_animal/hostile/hl2bot
 	var/radio_key = null //which channels can the bot listen to
@@ -803,7 +807,7 @@
 	playsound(src, 'hl13/sound/creatures/cityscanner/scanner_photo1.ogg', 40, FALSE)
 	ranged_cooldown = world.time + ranged_cooldown_time
 
-/mob/living/simple_animal/hostile/hl2bot/cityscanner/say(message, bubble_type, list/spans = list(), sanitize = TRUE, datum/language/language = null, ignore_spam = FALSE, forced = null)
+/mob/living/simple_animal/hostile/hl2bot/cityscanner/say(message, bubble_type, list/spans = list(), sanitize = TRUE, datum/language/language = null, ignore_spam = FALSE, forced = null, message_range = 7, datum/saymode/saymode, list/message_mods = list())
 	..()
 	if(stat)
 		return
@@ -818,7 +822,7 @@
 	icon_state = "grub"
 	icon_living = "grub"
 	icon_dead = "grub_dead"
-	faction = list("antlion")
+	faction = list(FACTION_ANTLION)
 	mob_biotypes = MOB_ORGANIC
 	maxHealth = 12
 	health = 12

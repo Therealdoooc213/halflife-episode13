@@ -33,8 +33,8 @@
 	if(HAS_TRAIT(src, TRAIT_UNKNOWN))
 		return ("Unknown")
 
-	if(wear_mask.voice_change == TRUE)
-		if(wear_id)
+	if(wear_mask)
+		if(wear_mask.voice_change && wear_id)
 			var/obj/item/card/id/idcard = wear_id.GetID()
 			if(istype(idcard))
 				return idcard.registered_name
@@ -42,6 +42,8 @@
 				return real_name
 		else
 			return real_name
+	else
+		return real_name //temporary hl13 edit to fix something
 
 	if(mind)
 		var/datum/antagonist/changeling/changeling = mind.has_antag_datum(/datum/antagonist/changeling)

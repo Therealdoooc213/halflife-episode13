@@ -1,8 +1,8 @@
-GLOBAL_VAR_INIT(nt_fax_department, pick("NT HR Department", "NT Legal Department", "NT Complaint Department", "NT Customer Relations", "Nanotrasen Tech Support", "NT Internal Affairs Dept"))
+GLOBAL_VAR_INIT(nt_fax_department, pick("Overwatch", "City Central Command", "Eastwatch", "Westwatch", "Plaza District", "Raven District"))
 
 /obj/machinery/fax
 	name = "Fax Machine"
-	desc = "Bluespace technologies on the application of bureaucracy."
+	desc = "An outdated fax machine for sending messages."
 	icon = 'icons/obj/machines/fax.dmi'
 	icon_state = "fax"
 	density = TRUE

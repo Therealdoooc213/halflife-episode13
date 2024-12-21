@@ -103,7 +103,18 @@
 	icon_state = "bulletproof"
 	inhand_icon_state = "armor"
 	blood_overlay_type = "armor"
-	armor = list(MELEE = 15, BULLET = 10, LASER = 10, ENERGY = 10, BOMB = 10, BIO = 0, RAD = 0, FIRE = 50, ACID = 50, WOUND = 5)
+	armor_type = /datum/armor/armoredvest
+
+/datum/armor/armoredvest
+	melee = 15
+	bullet = 10
+	laser = 10
+	energy = 10
+	bomb = 10
+	bio = 20
+	fire = 40
+	acid = 40
+	wound = 5
 
 /obj/item/clothing/suit/armor/browncoat
 	name = "brown overcoat"
@@ -111,12 +122,23 @@
 	icon_state = "brownover"
 	inhand_icon_state = "greatcoat"
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS
-	armor = list(MELEE = 10, BULLET = 10, LASER = 10, ENERGY = 10, BOMB = 10, BIO = 0, RAD = 0, FIRE = 20, ACID = 20, WOUND = 0)
 	cold_protection = CHEST|GROIN|LEGS|ARMS
 	heat_protection = CHEST|GROIN|LEGS|ARMS
 	strip_delay = 80
 	clothing_flags = THICKMATERIAL
 	icon = 'hl13/icons/obj/clothing/suits.dmi'
+	armor_type = /datum/armor/browncoat
+
+/datum/armor/browncoat
+	melee = 10
+	bullet = 10
+	laser = 10
+	energy = 10
+	bomb = 10
+	bio = 20
+	fire = 20
+	acid = 20
+	wound = 0
 
 /obj/item/clothing/suit/utility/radiation/engineer
 	name = "engineer suit"

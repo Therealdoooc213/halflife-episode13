@@ -260,6 +260,7 @@
 		/datum/outfit/deathmatch_loadout/rebel/ranger,
 		/datum/outfit/deathmatch_loadout/combine/overwatch,
 		/datum/outfit/deathmatch_loadout/combine/overwatch/shotgunner,
+		/datum/outfit/deathmatch_loadout/civilprotection,
 		/datum/outfit/deathmatch_loadout/crowbar,
 	)
 	map_name = "citydistrict"
@@ -274,6 +275,7 @@
 		/datum/outfit/deathmatch_loadout/rebel/ranger,
 		/datum/outfit/deathmatch_loadout/combine/overwatch,
 		/datum/outfit/deathmatch_loadout/combine/overwatch/shotgunner,
+		/datum/outfit/deathmatch_loadout/civilprotection,
 		/datum/outfit/deathmatch_loadout/crowbar,
 	)
 	map_name = "hl13train"
@@ -288,6 +290,7 @@
 		/datum/outfit/deathmatch_loadout/rebel/ranger,
 		/datum/outfit/deathmatch_loadout/combine/overwatch,
 		/datum/outfit/deathmatch_loadout/combine/overwatch/shotgunner,
+		/datum/outfit/deathmatch_loadout/civilprotection,
 		/datum/outfit/deathmatch_loadout/crowbar,
 	)
 	map_name = "cityalleys"

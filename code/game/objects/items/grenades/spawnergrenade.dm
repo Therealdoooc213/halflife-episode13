@@ -42,6 +42,9 @@
 	spawner_type = /mob/living/simple_animal/hostile/halflife/viscerator
 	deliveryamt = 1
 
+/obj/item/grenade/spawnergrenade/manhacks/deathmatch
+	spawner_type = /mob/living/simple_animal/hostile/halflife/viscerator/deathmatch
+
 /obj/item/grenade/spawnergrenade/spesscarp
 	name = "carp delivery grenade"
 	spawner_type = /mob/living/basic/carp

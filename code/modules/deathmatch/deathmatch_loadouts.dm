@@ -1197,7 +1197,7 @@
 	gloves = /obj/item/clothing/gloves/fingerless
 	suit = /obj/item/clothing/suit/armor/civilprotection
 	suit_store = /obj/item/gun/ballistic/rifle/rebarxbow/upgraded
-	belt = /obj/item/gun/ballistic/revolver/coltpython
+	belt = /obj/item/gun/ballistic/revolver/coltpython/deathmatch_ranger
 	r_pocket = /obj/item/grenade/smokebomb
 
 	back = /obj/item/storage/bag/rebar_quiver
@@ -1207,22 +1207,16 @@
 		/obj/item/ammo_casing/rebar,
 		/obj/item/ammo_casing/rebar,
 		/obj/item/ammo_casing/rebar,
+		/obj/item/ammo_casing/rebar,
 	)
 
 /datum/outfit/deathmatch_loadout/combine/pre_equip(mob/living/carbon/human/H)
-	H.faction += "combine"
 	H.cmode_music = 'hl13/sound/music/combat/guarddown.ogg'
-	H.skin_tone = "#e3cfbf"
-	H.set_facial_hairstyle("Shaved", update = FALSE)
-	H.set_hairstyle("Bald") //this will call update_body_parts()
-	H.eye_color_left = "#b9b9b9"
-	H.eye_color_right = "#b9b9b9"
-	H.update_body()
 
 /datum/outfit/deathmatch_loadout/combine/overwatch
 	name = "Deathmatch: Overwatch Soldier"
 	display_name = "Overwatch Soldier"
-	desc = "Slow but heavily armored, overwatch soldiers serve as the vanguard for attacks."
+	desc = "Slow but heavily armored, overwatch soldiers serve as the vanguard for attacks. In addition, they carry a medkit to make them extra durable."
 
 	glasses = /obj/item/clothing/glasses/hud/security/night/combine
 	mask = /obj/item/clothing/mask/gas/civilprotection/overwatch
@@ -1232,6 +1226,7 @@
 	gloves = /obj/item/clothing/gloves/combat/overwatch
 	belt = /obj/item/storage/belt/civilprotection/overwatch/mp7
 	suit_store = /obj/item/gun/ballistic/automatic/mp7
+	r_pocket = /obj/item/reagent_containers/pill/patch/medkit
 
 /datum/outfit/deathmatch_loadout/combine/overwatch/shotgunner
 	name = "Deathmatch: Overwatch Shotgunner"
@@ -1243,10 +1238,14 @@
 	uniform = /obj/item/clothing/under/combine/overwatch/red
 	suit = /obj/item/clothing/suit/armor/overwatch/red/deathmatch
 
-/datum/outfit/deathmatch_loadout/combine/civilprotection
+/datum/outfit/deathmatch_loadout/civilprotection/pre_equip(mob/living/carbon/human/H)
+	H.faction += "combine"
+	H.cmode_music = 'hl13/sound/music/combat/branescan.ogg'
+
+/datum/outfit/deathmatch_loadout/civilprotection
 	name = "Deathmatch: Civil Protection Officer"
 	display_name = "Civil Protection Officer"
-	desc = "Speedy in comparison to their overwatch counter parts, these non modified humans bring support to their side with manhacks."
+	desc = "Moderately armored and armed only with a pistol, civil protection rely on the two manhacks they bring with, which are extra powerful and loyal only to civilprotection."
 
 	uniform = /obj/item/clothing/under/combine/civilprotection
 	gloves = /obj/item/clothing/gloves/color/civilprotection
@@ -1258,8 +1257,8 @@
 	mask = /obj/item/clothing/mask/gas/civilprotection
 	belt = /obj/item/storage/belt/civilprotection/full
 
-	l_pocket = /obj/item/grenade/spawnergrenade/manhacks
-	r_pocket = /obj/item/grenade/spawnergrenade/manhacks
+	l_pocket = /obj/item/grenade/spawnergrenade/manhacks/deathmatch
+	r_pocket = /obj/item/grenade/spawnergrenade/manhacks/deathmatch
 
 /datum/outfit/deathmatch_loadout/crowbar/pre_equip(mob/living/carbon/human/H)
 	H.cmode_music = 'hl13/sound/music/combat/notsupposedtobehere.ogg'
@@ -1270,7 +1269,7 @@
 	desc = "Crowbar in hand, seek freedom."
 	l_hand = /obj/item/crowbar/large/freeman/extreme
 	uniform = /obj/item/clothing/under/citizen/rebel
-	suit = /obj/item/clothing/suit/armor/hev
+	suit = /obj/item/clothing/suit/armor/hev/deathmatch
 	glasses = /obj/item/clothing/glasses/regular/thin
 
 /datum/outfit/deathmatch_loadout/rebel/vortigaunt

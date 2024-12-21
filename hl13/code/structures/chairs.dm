@@ -125,7 +125,7 @@
 
 /obj/structure/chair/comfy/halflife/ergo
 	name = "ergonomic chair"
-	desc = "Even in a nuclear wasteland, one should never neglect their back."
+	desc = "Even when faced with an incomprehensible, oppressive empire, one should never neglect their back."
 	icon_state = "ergo_chair"
 	anchored = FALSE
 
@@ -173,16 +173,20 @@
 
 /obj/structure/chair/office/halflife/blue
 	name = "office chair"
+	desc = "Still spins."
 	icon_state = "office_chair_blue"
 
 /obj/structure/chair/office/halflife/blue/broken
 	icon_state = "office_chair_blue_broken"
+	desc = "Hardly spins."
 
 /obj/structure/chair/office/halflife/green
 	name = "office chair"
+	desc = "Still spins."
 	icon_state = "office_chair_green"
 
 /obj/structure/chair/office/halflife/green/broken
+	desc = "Hardly spins."
 	icon_state = "office_chair_green_broken"
 
 //// ITEM VARIANTS ////

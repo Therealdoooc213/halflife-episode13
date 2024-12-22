@@ -66,7 +66,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	delete_after_roundstart = FALSE
 
 /obj/effect/landmark/start/prisoner
-	name = "Prisoner"
+	name = JOB_PRISONER
 	icon_state = "Prisoner"
 
 /obj/effect/landmark/start/janitor

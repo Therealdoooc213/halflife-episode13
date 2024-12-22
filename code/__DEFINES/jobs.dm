@@ -46,7 +46,7 @@
 
 //No department
 #define JOB_ASSISTANT "Citizen"
-#define JOB_PRISONER "Prisoner"
+#define JOB_PRISONER "Refugee"
 //Command
 #define JOB_CAPTAIN "District Administrator"
 #define JOB_HEAD_OF_PERSONNEL "Labor Lead"

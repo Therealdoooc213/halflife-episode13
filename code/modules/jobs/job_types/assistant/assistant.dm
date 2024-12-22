@@ -5,10 +5,10 @@ Assistant
 */
 /datum/job/assistant
 	title = JOB_ASSISTANT
-	description = "Get your space legs, assist people, ask the HoP to give you a job."
+	description = "Try to survive in the city, and maybe even find a better life."
 	faction = FACTION_STATION
-	total_positions = 5
-	spawn_positions = 5
+	total_positions = 25
+	spawn_positions = 25
 	supervisors = "absolutely everyone"
 	exp_granted_type = EXP_TYPE_CREW
 	outfit = /datum/outfit/job/assistant/consistent

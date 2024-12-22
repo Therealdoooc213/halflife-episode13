@@ -4,7 +4,7 @@
 	list_reagents = list(/datum/reagent/medicine/biogel = 20)
 	icon = 'hl13/icons/obj/medkits.dmi'
 	icon_state = "medkit"
-	apply_sound = 'hl13/sound/effects/smallmedkit1.ogg'
+	apply_sound = 'hl13/sound/effects/largemedkit1.ogg'
 
 /obj/item/reagent_containers/pill/patch/medkit/manufactured
 	name = "new medkit"
@@ -16,6 +16,7 @@
 	list_reagents = list(/datum/reagent/medicine/biogel = 10)
 	self_delay = 15
 	icon_state = "medvial"
+	apply_sound = 'hl13/sound/effects/smallmedkit1.ogg'
 
 /obj/item/reagent_containers/pill/patch/grubnugget
 	name = "grub nugget"

@@ -23,7 +23,7 @@
 
 ///Nanotrasen documents
 /obj/item/documents/nanotrasen
-	desc = "\"Top Secret\" Nanotrasen documents, filled with complex diagrams and lists of names, dates and coordinates."
+	desc = "\"Top Secret\" Combine documents, filled with complex diagrams and lists of names, dates and coordinates."
 	icon_state = "docs_verified"
 
 ///Syndicate documents

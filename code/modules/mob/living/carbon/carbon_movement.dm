@@ -20,7 +20,7 @@
 			var/mob/living/carbon/human/H = src
 			var/athletics_skill = H.mind?.get_skill_level(/datum/skill/athletics)
 
-			staminatolose - (athletics_skill * 0.05) //each level of athletics skill reduces stamina drain by 0.05, with up to 0.35 less at legendary athletics
+			staminatolose -= (athletics_skill * 0.05) //each level of athletics skill reduces stamina drain by 0.05, with up to 0.35 less at legendary athletics
 
 			if(H.w_uniform)
 				if(H.w_uniform.powered_suit && H.w_uniform.suit_power > 0) //a powered suit lessens the fatigue of running

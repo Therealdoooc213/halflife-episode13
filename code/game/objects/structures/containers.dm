@@ -35,8 +35,8 @@
 	icon_state = "defaced"
 
 /obj/structure/shipping_container/deforest
-	name = "\improper Nanotrasen-DeForest shipping container"
-	desc = "A standard-measure shipping container for bulk transport of goods. This one is from Nanotrasen-DeForest, and so is probably carrying medical supplies."
+	name = "\improper DeForest shipping container"
+	desc = "A standard-measure shipping container for bulk transport of goods. This one is from DeForest Medical, and so is probably carrying medical supplies."
 	icon_state = "deforest"
 
 /obj/structure/shipping_container/great_northern

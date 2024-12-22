@@ -76,7 +76,7 @@ GLOBAL_LIST_INIT(bibleitemstates, list(
 	force_string = "holy"
 	unique = TRUE
 	/// Deity this bible is related to
-	var/deity_name = "Space Jesus"
+	var/deity_name = "Jesus"
 
 /obj/item/book/bible/Initialize(mapload)
 	. = ..()

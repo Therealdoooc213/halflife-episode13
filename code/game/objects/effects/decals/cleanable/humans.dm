@@ -203,12 +203,12 @@
 
 /obj/effect/decal/cleanable/blood/gibs/old
 	name = "old rotting gibs"
-	desc = "Space Jesus, why didn't anyone clean this up? They smell terrible."
+	desc = "A disgusting old pile of viscera. Should've been cleaned sooner."
 	icon_state = "gib1-old"
 	bloodiness = 0
 	should_dry = FALSE
 	dryname = "old rotting gibs"
-	drydesc = "Space Jesus, why didn't anyone clean this up? They smell terrible."
+	drydesc = "A disgusting old pile of viscera. Should've been cleaned sooner."
 
 /obj/effect/decal/cleanable/blood/gibs/old/Initialize(mapload, list/datum/disease/diseases)
 	. = ..()

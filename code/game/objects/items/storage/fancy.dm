@@ -192,8 +192,8 @@
 //CIG PACK//
 ////////////
 /obj/item/storage/fancy/cigarettes
-	name = "\improper Space Cigarettes packet"
-	desc = "The most popular brand of cigarettes, sponsors of the Space Olympics. On the back it advertises to be the only brand that can be smoked in the vaccum of space."
+	name = "\improper Cigarettes packet"
+	desc = "A popular generic brand of cigarettes. The carton is in surprisingly good condition."
 	icon = 'icons/obj/cigarettes.dmi'
 	icon_state = "cig"
 	inhand_icon_state = "cigpacket"
@@ -202,7 +202,7 @@
 	w_class = WEIGHT_CLASS_TINY
 	throwforce = 0
 	slot_flags = ITEM_SLOT_BELT
-	spawn_type = /obj/item/cigarette/space_cigarette
+	spawn_type = /obj/item/cigarette
 	spawn_count = 6
 	custom_price = PAYCHECK_CREW
 	age_restricted = TRUE
@@ -405,7 +405,7 @@
 
 /obj/item/storage/fancy/rollingpapers
 	name = "rolling paper pack"
-	desc = "A pack of Nanotrasen brand rolling papers."
+	desc = "A pack of generic brand rolling papers."
 	w_class = WEIGHT_CLASS_TINY
 	icon = 'icons/obj/cigarettes.dmi'
 	icon_state = "cig_paper_pack"

@@ -52,6 +52,10 @@
 	},
 /turf/open/floor/plating/indoor/grooved2,
 /area/centcom/halflife/rebel)
+"cH" = (
+/mob/living/simple_animal/hostile/halflife/headcrab,
+/turf/open/floor/plating/ground/dirt,
+/area/centcom/halflife/rebel)
 "cO" = (
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 4
@@ -242,6 +246,11 @@
 /obj/item/food/meat/slab,
 /obj/item/food/meat/slab,
 /obj/item/food/meat/slab,
+/obj/item/food/meat/slab/xen,
+/obj/item/food/meat/slab/xen,
+/obj/item/food/meat/slab/xen,
+/obj/item/food/meat/slab/xen,
+/obj/item/food/meat/slab/xen,
 /turf/open/floor/plating/indoor/tile/navy,
 /area/centcom/halflife/rebel)
 "ld" = (
@@ -332,6 +341,10 @@
 /turf/open/floor/plating/ground/brickroad{
 	dir = 1
 	},
+/area/centcom/halflife/rebel)
+"pB" = (
+/mob/living/simple_animal/hostile/halflife/headcrab/armored,
+/turf/open/floor/plating/ground/dirt,
 /area/centcom/halflife/rebel)
 "pS" = (
 /obj/effect/turf_decal/siding/thinplating{
@@ -3091,7 +3104,7 @@ fA
 Ye
 Ye
 Ye
-Ye
+cH
 Ye
 Ye
 bT
@@ -3194,7 +3207,7 @@ Ye
 Ye
 Ye
 Ye
-Ye
+cH
 Ye
 bT
 Ye
@@ -3294,7 +3307,7 @@ qp
 Mb
 fA
 Ye
-Ye
+cH
 Ye
 Ye
 Ye
@@ -3397,7 +3410,7 @@ fA
 fA
 eK
 Ye
-Ye
+pB
 Ye
 eK
 bT

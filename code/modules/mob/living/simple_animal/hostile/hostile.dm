@@ -92,6 +92,9 @@
 	///30 seconds by default, so there's no major changes to AI behaviour, beyond actually bailing if stuck forever
 	var/lose_patience_timeout = 300
 
+	//Does this mob's AI idle if no targets are near?
+	var/ai_idles = TRUE
+
 /mob/living/simple_animal/hostile/Initialize(mapload)
 	. = ..()
 	wanted_objects = typecacheof(wanted_objects)
@@ -120,7 +123,8 @@
 			DestroyPathToTarget()
 		if(!MoveToTarget(possible_targets))     //if we lose our target
 			if(AIShouldSleep(possible_targets)) // we try to acquire a new one
-				toggle_ai(AI_IDLE) // otherwise we go idle
+				if(ai_idles)
+					toggle_ai(AI_IDLE) // otherwise we go idle
 	return 1
 
 /mob/living/simple_animal/hostile/handle_automated_movement()

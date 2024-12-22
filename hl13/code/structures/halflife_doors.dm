@@ -25,8 +25,7 @@
 	density = TRUE
 	can_crush = FALSE
 	spark_system = null
-	max_integrity = 500
-	armor = list(MELEE = 40, BULLET = 70, LASER = 90, ENERGY = 40, BOMB = 30, BIO = 100, FIRE = 50, ACID = 100)
+	max_integrity = 700
 	damage_deflection = 15
 	halflife_flags_1 = LOCKABLE_1
 	var/door_type = null
@@ -330,8 +329,7 @@
 	name = "metal door"
 	icon_state = "metal_closed"
 	door_type = "metal"
-	max_integrity = 750 //its metal
-	armor = list(MELEE = 65, BULLET = 80, LASER = 75, ENERGY = 50, BOMB = 30, BIO = 100, FIRE = 60, ACID = 100)
+	max_integrity = 850 //its metal
 	damage_deflection = 25
 	hitted_sound = 'hl13/sound//halflifeeffects/metal_door_hit.ogg'
 	opensound = 'hl13/sound/machines/metaldoor_open.ogg'
@@ -448,8 +446,7 @@
 	icon_state = "metal_window_closed"
 	door_type = "metal_window"
 	passthrough_chance = 40 //Small window!
-	max_integrity = 750 //its metal
-	armor = list(MELEE = 65, BULLET = 80, LASER = 75, ENERGY = 50, BOMB = 30, BIO = 100, FIRE = 60, ACID = 100)
+	max_integrity = 850 //its metal
 	damage_deflection = 25
 	hitted_sound = 'hl13/sound//halflifeeffects/metal_door_hit.ogg'
 

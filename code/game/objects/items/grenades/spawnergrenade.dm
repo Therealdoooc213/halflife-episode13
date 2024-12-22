@@ -37,6 +37,7 @@
 
 /obj/item/grenade/spawnergrenade/manhacks
 	name = "inactive viscerator"
+	desc = "An inactive viscerator drone, ready to be deployed."
 	icon = 'hl13/icons/obj/grenade.dmi'
 	icon_state = "manhack"
 	spawner_type = /mob/living/simple_animal/hostile/halflife/viscerator

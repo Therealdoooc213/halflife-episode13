@@ -1,3 +1,6 @@
+/mob/living/simple_animal/hostile/halflife
+	ai_idles = FALSE
+
 /mob/living/simple_animal/hostile/halflife/zombie
 	name = "Zombie"
 	desc = "A shambling human, taken over by a parasitic head crab."

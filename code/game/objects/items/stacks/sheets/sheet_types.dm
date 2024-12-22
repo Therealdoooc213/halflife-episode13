@@ -432,7 +432,6 @@ GLOBAL_LIST_INIT(wood_recipes, list ( \
 	singular_name = "scrap wood"
 	icon_state = "sheet-scrapwood"
 	inhand_icon_state = "sheet-wood"
-	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 50, ACID = 0)
 	resistance_flags = FLAMMABLE
 	merge_type = /obj/item/stack/sheet/mineral/scrap_wood
 	grind_results = list(/datum/reagent/cellulose = 10) //no lignocellulose or lignin reagents yet

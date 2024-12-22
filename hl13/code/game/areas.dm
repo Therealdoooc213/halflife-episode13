@@ -24,6 +24,10 @@
 
 	base_lighting_alpha = 10
 
+/area/halflife/outdoors/roofs
+	name = "\improper Rooftops"
+	base_lighting_alpha = 40
+
 /area/halflife/outdoors/sewage_dump
 	name = "\improper Sewage Dump"
 	ambient_buzz = 'hl13/sound/ambience/toxic_ambience.ogg'
@@ -62,6 +66,7 @@
 /area/halflife/indoors/townhall
 	name = "\improper Town Hall"
 	ambient_buzz = 'hl13/sound/ambience/citadel_ambience.ogg'
+	ambient_buzz_vol = 25
 
 /area/halflife/indoors/bar
 	name = "\improper Bar"

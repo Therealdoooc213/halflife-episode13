@@ -587,8 +587,7 @@
 	plane = ABOVE_GAME_PLANE
 	layer = ABOVE_MOB_LAYER
 	damage_deflection = 15
-	max_integrity = 600
-	armor = list(MELEE = 50, BULLET = 60, LASER = 40, ENERGY = 50, BOMB = 30, BIO = 100, FIRE = 40, ACID = 100)
+	max_integrity = 700
 	opensound = 'hl13/sound/machines/chainlink_door.ogg'
 	closesound = 'hl13/sound/machines/chainlink_door.ogg'
 
@@ -694,9 +693,8 @@
 	desc = "A menacing wire fence door, no jumping this one, keep out!"
 	icon_state = "barbfence_closed"
 	door_type = "barbfence"
-	max_integrity = 900
+	max_integrity = 1000
 	damage_deflection = 20
-	armor = list(MELEE = 70, BULLET = 80, LASER = 50, ENERGY = 60, BOMB = 40, BIO = 100, FIRE = 40, ACID = 100)
 
 /obj/structure/halflife/breencast
 	name = "breencast"

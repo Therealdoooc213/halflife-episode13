@@ -2,10 +2,9 @@
 	name = "generic halflife storage"
 	desc = "You place stuff on/in/or around it or it pretends to at least, pretty generic right."
 	icon = 'hl13/icons/obj/32x64_tall_furniture.dmi'
-	armor = list(MELEE = 30, BULLET = 40, LASER = 10, ENERGY = 10, BOMB = 25, BIO = 100,  FIRE = 80, ACID = 100)
 	density = TRUE
 	anchored = TRUE
-	max_integrity = 225
+	max_integrity = 250
 	var/materialtype = /obj/item/stack/sheet/scrap_metal //What it drops when being destroyed
 
 /obj/structure/halflife/storage/deconstruct(disassembled = TRUE)

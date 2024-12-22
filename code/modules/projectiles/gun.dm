@@ -167,7 +167,7 @@
 	handle_chamber(empty_chamber, from_firing, chamber_next_round, shooter = shooter)
 	SEND_SIGNAL(src, COMSIG_GUN_CHAMBER_PROCESSED)
 
-/obj/item/gun/proc/handle_chamber(empty_chamber = TRUE, from_firing = TRUE, chamber_next_round = TRUE)
+/obj/item/gun/proc/handle_chamber(empty_chamber = TRUE, from_firing = TRUE, chamber_next_round = TRUE, atom/shooter = null)
 	return
 
 //check if there's enough ammo/energy/whatever to shoot one time

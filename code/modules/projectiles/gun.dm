@@ -2,6 +2,22 @@
 #define DUALWIELD_PENALTY_EXTRA_MULTIPLIER 1.4
 #define FIRING_PIN_REMOVAL_DELAY 50
 
+/particles/firing_smoke
+	icon = 'hl13/icons/effects/96x96.dmi'
+	icon_state = "smoke5"
+	width = 500
+	height = 500
+	count = 5
+	spawning = 15
+	lifespan = 0.5 SECONDS
+	fade = 2.4 SECONDS
+	grow = 0.12
+	drift = generator(GEN_CIRCLE, 8, 8)
+	scale = 0.1
+	spin = generator(GEN_NUM, -20, 20)
+	velocity = list(50, 0)
+	friction = generator(GEN_NUM, 0.3, 0.6)
+
 /obj/item/gun
 	name = "gun"
 	desc = "It's a gun. It's pretty terrible, though."
@@ -68,6 +84,9 @@
 	var/ammo_y_offset = 0
 
 	var/pb_knockback = 0
+
+	/// Does the gun spew smoke when shooting?
+	var/barrel_smoke_on_shoot = FALSE
 
 	/// Cooldown for the visible message sent from gun flipping.
 	COOLDOWN_DECLARE(flip_cooldown)
@@ -221,6 +240,21 @@
 
 	if(chambered?.integrity_damage)
 		take_damage(chambered.integrity_damage, sound_effect = FALSE)
+
+	if(barrel_smoke_on_shoot)
+
+		//var/obj/effect/abstract/particle_holder/big_smoke = new(src.loc, /particles/smoke/cig/big)
+		//update_particle_position(big_smoke, smoker.dir)
+		//QDEL_IN(big_smoke, big_smoke.particles.lifespan)
+
+
+		var/x_component = sin(get_angle(user, pbtarget)) * 40
+		var/y_component = cos(get_angle(user, pbtarget)) * 40
+		var/obj/effect/abstract/particle_holder/gun_smoke = new(src.loc, /particles/firing_smoke)
+		gun_smoke.particles.velocity = list(x_component, y_component)
+		addtimer(VARSET_CALLBACK(gun_smoke.particles, count, 0), 5)
+		addtimer(VARSET_CALLBACK(gun_smoke.particles, drift, 0), 3)
+		QDEL_IN(gun_smoke, gun_smoke.particles.lifespan)
 
 /obj/item/gun/atom_destruction(damage_flag)
 	if(!isliving(loc))

@@ -5,6 +5,9 @@
 
 	loot = list(
 				/obj/item/crowbar/large = 2,
+				/obj/item/circuitmaterial = 3,
+				/obj/item/light/bulb = 2,
+				/obj/item/circuitmaterial/advanced,
 				/obj/item/toy/crayon/spraycan,
 				/obj/item/screwdriver,
 				/obj/item/weldingtool,
@@ -17,7 +20,7 @@
 				/obj/item/storage/briefcase,
 				/obj/item/lockpick,
 				/obj/item/clothing/under/citizen/refugee,
-				/obj/item/radio/off/halflife = 2,
+				/obj/item/radio/off/halflife,
 				/obj/item/ammo_casing/rebar,
 				/obj/item/flashlight/seclite,
 				/obj/item/flashlight = 2,
@@ -152,6 +155,7 @@
 				/obj/item/machinepiece/multifunctiontool = 2,
 				/obj/item/grenade/syndieminibomb/bouncer,
 				/obj/item/knife/combat = 2,
+				/obj/item/switchblade,
 				/obj/item/melee/baton/security/loaded,
 				/obj/item/stack/telecrystal/five,
 				/obj/item/clothing/suit/armor/kevlar = 2,

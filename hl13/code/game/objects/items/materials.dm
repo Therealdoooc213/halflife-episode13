@@ -1,19 +1,19 @@
 /obj/item/circuitmaterial
-	name = "Circuit Chip"
-	desc = "A circuit chip for building electronics with."
+	name = "Circuit Pieces"
+	desc = "A few circuits and chips for building electronics with."
 	custom_price = 5
 	inhand_icon_state = "electronic"
-	icon = 'icons/obj/devices/circuitry_n_data.dmi'
-	icon_state = "component"
+	icon = 'hl13/icons/obj/materials.dmi'
+	icon_state = "scrap_electronic"
 	obj_flags = CONDUCTS_ELECTRICITY
 	w_class = WEIGHT_CLASS_SMALL
 	grind_results = list(/datum/reagent/iron = 10, /datum/reagent/silicon = 10)
 
-/obj/item/circuitmaterial/motherboard
-	name = "Motherboard"
-	desc = "An important electronic piece for machines."
+/obj/item/circuitmaterial/advanced
+	name = "Advanced Circuit Chips"
+	desc = "Complete circuitry boards for building advanced electronics."
 	custom_price = 10
-	icon_state = "boris"
+	icon_state = "chips"
 
 /obj/item/machinepiece
 	icon = 'hl13/icons/obj/machines.dmi'

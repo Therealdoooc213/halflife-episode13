@@ -1663,6 +1663,7 @@
 "hP" = (
 /obj/structure/table/halflife/metal/grate,
 /obj/item/circuitboard/machine/chem_master,
+/obj/item/reagent_containers/syringe,
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors/sewer)
 "hQ" = (
@@ -4267,6 +4268,13 @@
 /obj/machinery/light/small/directional/north,
 /turf/open/floor/plating/indoor/woodc,
 /area/halflife/indoors)
+"tP" = (
+/obj/machinery/door/unpowered/halflife/metal{
+	keylock = 1;
+	locked = 1
+	},
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors)
 "tS" = (
 /obj/effect/landmark/observer_start,
 /turf/open/floor/plating/ground/sidewalk/inner,
@@ -5434,6 +5442,7 @@
 "zq" = (
 /obj/structure/table/halflife/metal/grate,
 /obj/item/reagent_containers/cup/beaker/large,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors/sewer)
 "zr" = (
@@ -6460,8 +6469,7 @@
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors/productioncenter)
 "Eg" = (
-/obj/structure/table/halflife/metal/grate,
-/obj/structure/halflife/trash/food/misc,
+/obj/structure/table/halflife/no_smooth/large/crafting/tinkerbench,
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors/sewer)
 "Ej" = (
@@ -6565,11 +6573,9 @@
 /turf/open/floor/plating/indoor/tile,
 /area/halflife/indoors/scienceunion)
 "EF" = (
-/obj/structure/table/halflife/metal/grate,
-/obj/machinery/light/small/directional/north,
-/obj/item/reagent_containers/syringe,
+/obj/structure/table/halflife/no_smooth/large/crafting/workbench,
 /turf/open/floor/plating/indoor/concrete/bricks,
-/area/halflife/indoors/sewer)
+/area/halflife/indoors)
 "EG" = (
 /obj/structure/table/halflife/no_smooth/large/metal/desk,
 /turf/open/floor/plating/indoor/concrete/bricks,
@@ -6675,6 +6681,13 @@
 	},
 /turf/open/floor/plating/indoor/woodc,
 /area/halflife/indoors/townhall)
+"Fc" = (
+/obj/structure/table/halflife/no_smooth/large/metal/desk{
+	dir = 1
+	},
+/obj/effect/spawner/random/halflife/loot,
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors)
 "Fd" = (
 /obj/item/surgicaldrill,
 /obj/item/cautery,
@@ -25453,7 +25466,7 @@ Rd
 Rd
 Rd
 fp
-EF
+cD
 cD
 cD
 jt
@@ -32235,9 +32248,9 @@ rj
 ix
 rj
 Iw
-Iw
-Iw
-Iw
+rj
+rj
+Fc
 Iw
 Iw
 Iw
@@ -32355,10 +32368,10 @@ KR
 rj
 tT
 rj
-Iw
-Iw
-Iw
-Iw
+tP
+rj
+rj
+rj
 Iw
 Iw
 Iw
@@ -32477,9 +32490,9 @@ EG
 rj
 rj
 Iw
-Iw
-Iw
-Iw
+rj
+rj
+ea
 Iw
 Iw
 Iw
@@ -32598,9 +32611,9 @@ rj
 rj
 rj
 Iw
-Iw
-Iw
-Iw
+EF
+rj
+Fc
 Iw
 Iw
 Iw
@@ -32719,9 +32732,9 @@ rj
 rj
 rj
 Iw
-Iw
-Iw
-Iw
+rj
+rj
+rk
 Iw
 Iw
 Iw

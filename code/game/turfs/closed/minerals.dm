@@ -285,7 +285,6 @@
 /turf/closed/mineral/random/proc/mineral_chances()
 	return list(
 		/obj/item/stack/ore/bananium = check_holidays(APRIL_FOOLS) ? 3 : 0,
-		/obj/item/stack/ore/bluespace_crystal = 1,
 		/obj/item/stack/ore/diamond = 1,
 		/obj/item/stack/ore/gold = 10,
 		/obj/item/stack/ore/iron = 40,
@@ -340,7 +339,6 @@
 
 /turf/closed/mineral/random/high_chance/mineral_chances()
 	return list(
-		/obj/item/stack/ore/bluespace_crystal = 20,
 		/obj/item/stack/ore/diamond = 30,
 		/obj/item/stack/ore/gold = 45,
 		/obj/item/stack/ore/plasma = 50,
@@ -358,7 +356,6 @@
 
 /turf/closed/mineral/random/high_chance/volcanic/mineral_chances()
 	return list(
-		/obj/item/stack/ore/bluespace_crystal = 1,
 		/obj/item/stack/ore/diamond = 30,
 		/obj/item/stack/ore/gold = 45,
 		/obj/item/stack/ore/plasma = 50,
@@ -373,7 +370,6 @@
 
 /turf/closed/mineral/random/low_chance/mineral_chances()
 	return list(
-		/obj/item/stack/ore/bluespace_crystal = 1,
 		/obj/item/stack/ore/diamond = 1,
 		/obj/item/stack/ore/gold = 4,
 		/obj/item/stack/ore/iron = 40,
@@ -410,7 +406,6 @@
 
 /turf/closed/mineral/random/volcanic/mineral_chances()
 	return list(
-		/obj/item/stack/ore/bluespace_crystal = 1,
 		/obj/item/stack/ore/diamond = 1,
 		/obj/item/stack/ore/gold = 10,
 		/obj/item/stack/ore/iron = 40,
@@ -445,7 +440,6 @@
 
 /turf/closed/mineral/random/snow/mineral_chances()
 	return list(
-		/obj/item/stack/ore/bluespace_crystal = 1,
 		/obj/item/stack/ore/diamond = 1,
 		/obj/item/stack/ore/gold = 10,
 		/obj/item/stack/ore/iron = 40,
@@ -470,7 +464,6 @@
 /turf/closed/mineral/random/snow/underground/mineral_chances()
 	return list(
 		/obj/item/stack/ore/bananium = 1,
-		/obj/item/stack/ore/bluespace_crystal = 2,
 		/obj/item/stack/ore/diamond = 4,
 		/obj/item/stack/ore/gold = 20,
 		/obj/item/stack/ore/iron = 20,
@@ -486,7 +479,6 @@
 
 /turf/closed/mineral/random/snow/high_chance/mineral_chances()
 	return list(
-		/obj/item/stack/ore/bluespace_crystal = 20,
 		/obj/item/stack/ore/diamond = 30,
 		/obj/item/stack/ore/gold = 45,
 		/obj/item/stack/ore/plasma = 50,

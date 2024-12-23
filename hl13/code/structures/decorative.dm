@@ -408,7 +408,7 @@
 	. = ..()
 	AddComponent(
 		/datum/component/radioactive_emitter, \
-		cooldown_time = 2 SECONDS, \
+		cooldown_time = 4 SECONDS, \
 		range = 3, \
 		threshold = RAD_MEDIUM_INSULATION, \
 		examine_text = span_green("<i>It looks like it is emanating radiation.</i>"), \

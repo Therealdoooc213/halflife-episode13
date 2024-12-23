@@ -347,8 +347,8 @@
 		visible_message(span_danger("[creator] created a medical hologram!"))
 
 /obj/item/flashlight/seclite
-	name = "seclite"
-	desc = "A robust flashlight used by security."
+	name = "maglite"
+	desc = "A heavy and robust flashlight with superior lighting capabilities."
 	dir = EAST
 	icon_state = "seclite"
 	inhand_icon_state = "seclite"
@@ -358,7 +358,6 @@
 	force = 9 // Not as good as a stun baton.
 	light_range = 5 // A little better than the standard flashlight.
 	light_power = 0.6
-	light_color = "#99ccff"
 	hitsound = 'sound/items/weapons/genhit1.ogg'
 
 // the desk lamps are a bit special

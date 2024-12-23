@@ -158,7 +158,7 @@
 
 /obj/item/clothing/under/citizen
 	name = "citizen jumpsuit"
-	desc = "Full-body blue suit for the common citizen. Uses sensors to allow the combine to track you."
+	desc = "Full-body blue suit for the common citizen, worn down and dirtied by time and use. Uses sensors to allow the combine to track you."
 	icon_state = "citizenblue"
 	inhand_icon_state = "r_suit"
 	can_adjust = FALSE
@@ -170,14 +170,14 @@
 
 /obj/item/clothing/under/citizen/refugee
 	name = "refugee clothes"
-	desc = "Jeans and a t-shirt, free of any suit sensors the combine may use to track you."
+	desc = "Dirty blue jeans with an accompanying light colored shirt, free of any suit sensors the combine may use to track you."
 	icon_state = "refugee"
 	inhand_icon_state = "r_suit"
 	has_sensor = NO_SENSORS
 
 /obj/item/clothing/under/citizen/rebel
 	name = "citizen jumpsuit"
-	desc = "Full-body blue suit for the common citizen. The scanners have been removed forcefully, and it has been moderately reinforced."
+	desc = "Full-body blue suit for the common citizen, worn down and dirtied by time and use. The scanners have been removed forcefully, and it has been moderately reinforced."
 	icon_state = "rebelblue"
 	has_sensor = NO_SENSORS
 	armor_type = /datum/armor/rebelsuit
@@ -194,7 +194,7 @@
 
 /obj/item/clothing/under/administrator
 	name = "administrator suit"
-	desc = "A well made, though aged, burgundy suit. Specially designed for the district administrator."
+	desc = "A well made, though aged, burgundy suit. Specially tailored for the district administrator."
 	worn_icon = 'hl13/icons/mob/clothing/uniform.dmi'
 	icon = 'hl13/icons/obj/clothing/uniforms.dmi'
 	can_adjust = FALSE
@@ -206,7 +206,7 @@
 
 /obj/item/clothing/under/administrator/black
 	name = "administrator suit"
-	desc = "A well made black suit, specially designed for the district administrator."
+	desc = "A well made black suit, specially tailored for the district administrator."
 	icon_state = "formal"
 	inhand_icon_state = "lawyer_black"
 

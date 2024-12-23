@@ -1,6 +1,6 @@
 /obj/item/reagent_containers/pill/patch/medkit
 	name = "medkit"
-	desc = "A medical kit filled with biogel for quickly tending to injuries."
+	desc = "A metal frame encasing a large vial of biogel. Includes useful automatic injection probes and tools for managing the application of the gel."
 	list_reagents = list(/datum/reagent/medicine/biogel = 20)
 	icon = 'hl13/icons/obj/medkits.dmi'
 	icon_state = "medkit"
@@ -8,11 +8,11 @@
 
 /obj/item/reagent_containers/pill/patch/medkit/manufactured
 	name = "new medkit"
-	desc = "A medical kit filled with biogel for quickly tending to injuries. This one looks very new, and recently made. Could be sold."
+	desc = "A metal frame encasing a large vial of biogel. Includes useful automatic injection probes and tools for managing the application of the gel. This one looks very new, and recently made. Could be sold."
 
 /obj/item/reagent_containers/pill/patch/medkit/vial
 	name = "medvial"
-	desc = "A small vial of biogel. Quick to apply, but doesn't heal much."
+	desc = "The standalone vials found inside biogel medkits. Quicker to apply since it lacks the advanced features of medkits, but does not heal as much due to inefficient application of the gel."
 	list_reagents = list(/datum/reagent/medicine/biogel = 10)
 	self_delay = 15
 	icon_state = "medvial"

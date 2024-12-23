@@ -1,10 +1,15 @@
 /obj/item/ammo_box/magazine/usp9mm
 	name = "pistol magazine (9mm)"
 	desc = "A 18-round 9mm magazine designed for the USP Match pistol."
-	icon_state = "9x19p"
 	ammo_type = /obj/item/ammo_casing/c9mm
 	caliber = CALIBER_9MM
-	max_ammo = 18
+	max_ammo = 15
+	icon_state = "9mmaps-15"
+	base_icon_state = "9mmaps"
+
+/obj/item/ammo_box/magazine/usp9mm/update_icon_state()
+	. = ..()
+	icon_state = "[base_icon_state]-[round(ammo_count(), 5)]"
 
 /obj/item/ammo_box/magazine/ar2
 	name = "OSIPR magazine (pulse)"
@@ -28,7 +33,7 @@
 	icon_state = "smg9mm"
 	ammo_type = /obj/item/ammo_casing/c46x30mm
 	caliber = CALIBER_46X30MM
-	max_ammo = 45
+	max_ammo = 40
 
 //m4a1 Rifle
 

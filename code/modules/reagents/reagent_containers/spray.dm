@@ -190,8 +190,8 @@
 
 //space cleaner
 /obj/item/reagent_containers/spray/cleaner
-	name = "space cleaner"
-	desc = "BLAM!-brand non-foaming space cleaner!"
+	name = "cleaner spray bottle"
+	desc = "A bottle of multipurpose non-foaming cleaning solution."
 	icon_state = "cleaner"
 	volume = 100
 	list_reagents = list(/datum/reagent/space_cleaner = 100)

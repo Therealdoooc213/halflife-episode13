@@ -1,6 +1,6 @@
 /obj/item/clothing/suit/armor/civilprotection
 	name = "civil protection vest"
-	desc = "Kevlar weave protective vest. Provides a good level of protection to the chest."
+	desc = "A one size fits all type of vest, made with kevlar. Encases your upper chest to provide good protection."
 	icon_state = "civilprotection"
 	inhand_icon_state = "armoralt"
 	icon = 'hl13/icons/obj/clothing/suits.dmi'
@@ -28,7 +28,7 @@
 
 /obj/item/clothing/suit/armor/civilprotection/divisional
 	name = "divisional lead vest"
-	desc = "Kevlar weave protective vest. Provides a good level of protection to the chest."
+	desc = "A variant of the standard officer's vest dyed with red highlights to broadcast the authority of its wearer."
 	icon_state = "dv_vest"
 	inhand_icon_state = "armoralt"
 

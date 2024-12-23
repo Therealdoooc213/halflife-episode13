@@ -365,7 +365,7 @@
 	update_appearance()
 
 /obj/structure/flora/tree/jungle
-	desc = "It's seriously hampering your view of the jungle."
+	desc = "A large, verdant green tree, seemingly unbothered by the destruction the combine have wrought upon the environment."
 	icon = 'icons/obj/fluff/flora/jungletrees.dmi'
 	icon_state = "tree1"
 	pixel_x = -48

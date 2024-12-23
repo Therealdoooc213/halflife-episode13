@@ -8,7 +8,6 @@
 	vary_fire_sound = FALSE
 	accepted_magazine_type = /obj/item/ammo_box/magazine/ar2
 	force = 10
-	spread = 12
 	recoil = 0.6
 	fire_delay = 2
 	burst_size = 1
@@ -23,7 +22,7 @@
 	. = ..()
 	AddComponent(/datum/component/automatic_fire, 0.25 SECONDS)
 
-//old rifles that are exclusively loot. Similar to the AR2, but slightly less accurate, and no armor piercing by default. Slightly more damage too, but fires slower.
+//old rifles that are exclusively loot. Similar to the AR2, but slightly less accurate and slightly slower to fire.
 /obj/item/gun/ballistic/automatic/m4a1
 	name = "\improper M4A1 Rifle"
 	desc = "A old M4A1 pattern rifle. Not as good as the combine's rifles, but still powerful."
@@ -41,7 +40,7 @@
 	force = 10
 	fire_delay = 2
 	burst_size = 1
-	spread = 14
+	spread = 12
 	recoil = 0.8
 	can_suppress = FALSE
 	mag_display = TRUE
@@ -53,7 +52,7 @@
 
 /obj/item/gun/ballistic/automatic/m4a1/Initialize(mapload)
 	. = ..()
-	AddComponent(/datum/component/automatic_fire, 0.4 SECONDS)
+	AddComponent(/datum/component/automatic_fire, 0.3 SECONDS)
 
 //the crossbow
 /*
@@ -144,12 +143,12 @@
 
 /obj/item/gun/ballistic/revolver/coltpython
 	name = "\improper colt python"
-	desc = "An old colt python revolver. Uses .357 magnum ammo."
+	desc = "An old colt python revolver, accurate but has the kick of a mule. Uses .357 magnum ammo."
 	fire_sound = "hl13/sound/weapons/revolverfire.ogg"
 	icon = 'hl13/icons/obj/guns/projectile.dmi'
 	icon_state = "colt_python"
 	inhand_icon_state = "colt_python"
-	spread = 5 //less spread
+	spread = 3 //very little spread
 	recoil = 2 //lots of recoil though
 	fire_delay = 7
 	vary_fire_sound = FALSE
@@ -159,7 +158,7 @@
 
 /obj/item/gun/ballistic/shotgun/spas12
 	name = "SPAS 12"
-	desc = "A pump action shotgun."
+	desc = "A spectacularly lethal pump action shotgun, for close encounters."
 	icon = 'hl13/icons/obj/guns/projectile.dmi'
 	icon_state = "spas12"
 	slot_flags = ITEM_SLOT_SUITSTORE
@@ -174,7 +173,7 @@
 
 /obj/item/gun/ballistic/automatic/mp7
 	name = "\improper MP7 SMG"
-	desc = "A burst pattern SMG."
+	desc = "Despite its small size, this submachine gun packs a punch and has an extended mag to keep opponents suppressed."
 	icon = 'hl13/icons/obj/guns/projectile.dmi'
 	icon_state = "mp7"
 	fire_sound = "hl13/sound/weapons/smgfire.ogg"
@@ -185,7 +184,7 @@
 	show_bolt_icon = FALSE
 	burst_size = 1
 	fire_delay = 1
-	spread = 17
+	spread = 14
 	recoil = 0.4
 	vary_fire_sound = FALSE
 

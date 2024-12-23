@@ -270,7 +270,7 @@
 /turf/open/floor/plating/ground/dirt
 	gender = PLURAL
 	name = "dirt"
-	desc = "Upon closer examination, it's still dirt."
+	desc = "A floor of soil."
 	icon = 'icons/turf/floors.dmi'
 	icon_state = "dirt"
 	baseturfs = /turf/open/floor/plating/ground/dirt
@@ -303,7 +303,7 @@
 
 /turf/open/floor/plating/ground/brickroad
 	name = "\proper road"
-	desc = "A stretch of road."
+	desc = "Grey bricks of stone arranged into a stretch of road, the passage of time slowly taking its toll upon them."
 	baseturfs = /turf/open/floor/plating/ground/brickroad
 	icon = 'hl13/icons/turf/floor/stonebrick.dmi'
 	icon_state = "brick"

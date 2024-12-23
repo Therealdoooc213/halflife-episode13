@@ -236,6 +236,7 @@
 
 /obj/projectile/bullet/a556
 	name = "5.56mm bullet"
-	damage = 30
+	damage = 20
 	wound_bonus = -10
+	armour_penetration = 15
 	icon_state = "bullet_large"

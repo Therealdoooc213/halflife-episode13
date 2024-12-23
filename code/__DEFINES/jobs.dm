@@ -269,13 +269,13 @@ DEFINE_BITFIELD(job_flags, list(
 #define FACTION_STATION "Station"
 
 // Variable macros used to declare who is the supervisor for a given job, announced to the player when they join as any given job.
-#define SUPERVISOR_CAPTAIN "the Captain"
-#define SUPERVISOR_CE "the Chief Engineer"
-#define SUPERVISOR_CMO "the Chief Medical Officer"
-#define SUPERVISOR_HOP "the Head of Personnel"
-#define SUPERVISOR_HOS "the Head of Security"
-#define SUPERVISOR_QM "the Quartermaster"
-#define SUPERVISOR_RD "the Research Director"
+#define SUPERVISOR_CAPTAIN "the District Administrator"
+#define SUPERVISOR_CE "the Labor Lead"
+#define SUPERVISOR_CMO "the Labor Lead"
+#define SUPERVISOR_HOP "the Labor Lead"
+#define SUPERVISOR_HOS "the Divisional Lead"
+#define SUPERVISOR_QM "the Foreman"
+#define SUPERVISOR_RD "the Labor Lead"
 
 /// Mind traits that should be shared by every head of staff. has to be this way cause byond lists lol
 #define HEAD_OF_STAFF_MIND_TRAITS TRAIT_FAST_TYING, TRAIT_HIGH_VALUE_RANSOM

@@ -231,7 +231,7 @@
 
 /obj/structure/reagent_dispensers/watertank
 	name = "water tank"
-	desc = "A water tank."
+	desc = "A blue barrel which seemingly is made for containing water."
 	icon_state = "water_fools"
 	openable = TRUE
 	climbable = TRUE
@@ -253,7 +253,7 @@
 
 /obj/structure/reagent_dispensers/fueltank
 	name = "fuel tank"
-	desc = "A tank full of industrial welding fuel. Do not consume."
+	desc = "A dangerous looking red barrel filled with explosive fuel. Do not consume."
 	icon_state = "fuel_fools"
 	reagent_id = /datum/reagent/fuel
 	openable = TRUE

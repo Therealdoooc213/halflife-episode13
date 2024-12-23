@@ -11,7 +11,7 @@
 /// Your bank account ID and pin, can't get into it without it
 /datum/memory/key/account
 	var/remembered_id
-	var/remembered_pin
+	var/remembered_pinnum
 
 /datum/memory/key/account/New(
 	datum/mind/memorizer_mind,
@@ -24,7 +24,7 @@
 	return ..()
 
 /datum/memory/key/account/get_names()
-	return list("The bank ID of [protagonist_name], [remembered_id]. In addition the PIN, [remembered_pin].")
+	return list("The bank ID of [protagonist_name], [remembered_id]. In addition the PIN, [remembered_pinnum].")
 
 /datum/memory/key/account/get_starts()
 	return list(

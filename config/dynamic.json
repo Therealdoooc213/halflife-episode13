@@ -23,12 +23,12 @@
 				"denominator": 24
 			},
 			"protected_roles": [
-				"Prisoner",
-				"Security Officer",
-				"Warden",
+				"Refugee",
+				"Civil Protection Officer",
+				"Overseer",
 				"Detective",
-				"Head of Security",
-				"Captain"
+				"Divisional Lead",
+				"District Administrator"
 			],
 			"restricted_roles": [
 				"Cyborg"

@@ -210,7 +210,7 @@
 		account_id = bank_account.account_id
 		account_pin = bank_account.account_pin
 		bank_account.replaceable = FALSE
-		add_mob_memory(/datum/memory/key/account, remembered_id = account_id, remembered_pin = account_pin)
+		add_mob_memory(/datum/memory/key/account, remembered_id = account_id, remembered_pinnum = account_pin)
 
 	dress_up_as_job(
 		equipping = equipping,

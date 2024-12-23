@@ -488,9 +488,8 @@
 /area/halflife/indoors/slums)
 "cq" = (
 /obj/machinery/camera{
-	default_camera_icon = "Town Hall Surgery";
-	dir = 8;
-	c_tag = "Town Hall Office Hallway"
+	c_tag = "Town Hall Upstairs East";
+	dir = 8
 	},
 /turf/open/floor/plating/indoor/woodc,
 /area/halflife/indoors/townhall)
@@ -528,6 +527,15 @@
 	},
 /turf/open/water,
 /area/halflife/outdoors/plaza)
+"cz" = (
+/obj/machinery/button/elevator/directional/north{
+	id = "central_townhall_lift"
+	},
+/obj/machinery/lift_indicator/directional/north{
+	linked_elevator_id = "central_townhall_lift"
+	},
+/turf/open/floor/plating/indoor/checkered,
+/area/halflife/indoors/townhall)
 "cA" = (
 /obj/machinery/camera{
 	c_tag = "Cargo Dropship Dock South";
@@ -834,6 +842,13 @@
 "dV" = (
 /turf/open/openspace,
 /area/halflife/indoors/productioncenter)
+"dW" = (
+/obj/effect/turf_decal/trimline/dark_red/warning{
+	dir = 6
+	},
+/obj/structure/transport/linear/public,
+/turf/open/floor/plating/elevatorshaft,
+/area/halflife/indoors/townhall)
 "dX" = (
 /obj/effect/turf_decal/siding/thinplating,
 /obj/structure/halflife/trash/books/pile,
@@ -1877,6 +1892,17 @@
 	},
 /turf/open/floor/plating/indoor/woodc,
 /area/halflife/indoors/townhall)
+"iW" = (
+/obj/structure/transport/linear/public,
+/obj/effect/abstract/elevator_music_zone{
+	linked_elevator_id = "central_townhall_lift"
+	},
+/obj/effect/landmark/transport/transport_id{
+	specific_transport_id = "central_townhall_lift"
+	},
+/obj/machinery/light/floor,
+/turf/open/floor/plating/elevatorshaft,
+/area/halflife/indoors/townhall)
 "iX" = (
 /obj/docking_port/stationary{
 	dir = 8;
@@ -2526,6 +2552,12 @@
 /obj/structure/halflife/fence/vertical/wire/east,
 /turf/open/floor/plating/indoor/trainfloor,
 /area/halflife/indoors/trainstation)
+"mf" = (
+/obj/machinery/light/small/directional/east,
+/turf/open/floor/plating/indoor/metal/pipe{
+	dir = 1
+	},
+/area/halflife/indoors/townhall)
 "mg" = (
 /obj/structure/table/halflife/wood,
 /obj/item/folder/blue,
@@ -3345,6 +3377,13 @@
 	},
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors/productioncenter)
+"pG" = (
+/obj/effect/turf_decal/trimline/dark_red/warning{
+	dir = 5
+	},
+/obj/structure/transport/linear/public,
+/turf/open/floor/plating/elevatorshaft,
+/area/halflife/indoors/townhall)
 "pH" = (
 /obj/machinery/light/small/directional/south,
 /turf/open/floor/plating/indoor/woodc/mosaic,
@@ -4770,8 +4809,9 @@
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors)
 "wH" = (
-/obj/machinery/light/small/directional/west,
-/turf/open/floor/plating/indoor/concrete,
+/obj/structure/transport/linear/public,
+/obj/effect/turf_decal/trimline/dark_red/warning,
+/turf/open/floor/plating/elevatorshaft,
 /area/halflife/indoors/townhall)
 "wI" = (
 /obj/structure/window/fulltile,
@@ -6006,6 +6046,10 @@
 	},
 /turf/open/floor/plating/indoor/concrete,
 /area/halflife/outdoors/roofs)
+"Cm" = (
+/obj/machinery/door/window/elevator/left/directional/north,
+/turf/open/floor/plating/indoor/concrete,
+/area/halflife/indoors/townhall)
 "Co" = (
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 1
@@ -6176,6 +6220,15 @@
 /obj/effect/spawner/random/halflife/loot,
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors)
+"Db" = (
+/obj/machinery/button/elevator/directional/north{
+	id = "central_townhall_lift"
+	},
+/obj/machinery/lift_indicator/directional/north{
+	linked_elevator_id = "central_townhall_lift"
+	},
+/turf/open/floor/plating/indoor/concrete,
+/area/halflife/indoors/townhall)
 "Dc" = (
 /obj/structure/chair/halflife/metal/blue{
 	dir = 1
@@ -7206,6 +7259,13 @@
 /obj/machinery/light/small/directional/east,
 /turf/open/floor/plating/indoor/woodc,
 /area/halflife/indoors/townhall)
+"HS" = (
+/obj/effect/turf_decal/trimline/dark_red/warning{
+	dir = 1
+	},
+/obj/structure/transport/linear/public,
+/turf/open/floor/plating/elevatorshaft,
+/area/halflife/indoors/townhall)
 "HT" = (
 /obj/structure/table/halflife/no_smooth/large/crafting/weaponbench,
 /turf/open/floor/plating/indoor/metal/industrial,
@@ -7890,6 +7950,13 @@
 	},
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors/productioncenter)
+"La" = (
+/obj/effect/turf_decal/trimline/dark_red/warning{
+	dir = 10
+	},
+/obj/structure/transport/linear/public,
+/turf/open/floor/plating/elevatorshaft,
+/area/halflife/indoors/townhall)
 "Lc" = (
 /obj/structure/table/halflife/no_smooth/large/crafting/tinkerbench,
 /turf/open/floor/plating/indoor/concrete/small,
@@ -8156,6 +8223,13 @@
 /obj/structure/flora/bush/sparsegrass,
 /turf/open/floor/plating/ground/dirt/alt,
 /area/halflife/outdoors/alley)
+"Mm" = (
+/obj/effect/turf_decal/trimline/dark_red/warning{
+	dir = 9
+	},
+/obj/structure/transport/linear/public,
+/turf/open/floor/plating/elevatorshaft,
+/area/halflife/indoors/townhall)
 "Mn" = (
 /obj/structure/chair/halflife/metal/blue{
 	dir = 4
@@ -8460,6 +8534,10 @@
 	},
 /turf/open/floor/plating/ground/dirt/alt,
 /area/halflife/outdoors/plaza)
+"NN" = (
+/obj/machinery/light/small/directional/north,
+/turf/open/floor/plating/indoor/concrete,
+/area/halflife/indoors/townhall)
 "NO" = (
 /obj/structure/fluff/traveltile{
 	aportalgoesto = "outlands_underground";
@@ -8975,10 +9053,14 @@
 /turf/open/floor/plating/indoor/metal/industrial,
 /area/halflife/indoors/productioncenter)
 "Qh" = (
-/obj/machinery/turnstile/brig/halflife/forcefield/civilprotection/nodirectional{
-	dir = 8
+/obj/effect/turf_decal/trimline/dark_red/warning{
+	dir = 4
 	},
-/turf/open/floor/plating/indoor/concrete/bricks,
+/obj/structure/transport/linear/public,
+/obj/machinery/elevator_control_panel/directional/east{
+	linked_elevator_id = "central_townhall_lift"
+	},
+/turf/open/floor/plating/elevatorshaft,
 /area/halflife/indoors/townhall)
 "Qi" = (
 /turf/open/floor/plating/indoor/metal/plate,
@@ -9234,8 +9316,8 @@
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors/productioncenter)
 "Rv" = (
-/obj/structure/stairs/stone,
-/turf/open/floor/plating/indoor/concrete/bricks,
+/obj/machinery/door/window/elevator/left/directional/north,
+/turf/open/floor/plating/indoor/checkered,
 /area/halflife/indoors/townhall)
 "Rw" = (
 /obj/structure/table/halflife/metal/constructed,
@@ -9653,8 +9735,11 @@
 /turf/open/floor/plating/indoor/woodc/wide,
 /area/halflife/indoors/slums)
 "Tw" = (
-/obj/machinery/light/small/directional/west,
-/turf/open/floor/plating/indoor/concrete/bricks,
+/obj/effect/turf_decal/caution/stand_clear/red{
+	dir = 8
+	},
+/obj/structure/transport/linear/public,
+/turf/open/floor/plating/elevatorshaft,
 /area/halflife/indoors/townhall)
 "Ty" = (
 /obj/structure/flora/bush/sparsegrass,
@@ -10964,6 +11049,10 @@
 /area/halflife/indoors/productioncenter)
 "Zz" = (
 /turf/open/floor/plating/indoor/sterilesquares,
+/area/halflife/indoors/townhall)
+"ZA" = (
+/obj/structure/reagent_dispensers/watertank,
+/turf/open/floor/plating/indoor/grooved2,
 /area/halflife/indoors/townhall)
 "ZB" = (
 /obj/machinery/door/unpowered/halflife/seethrough/metal{
@@ -39664,7 +39753,7 @@ Wu
 gN
 ho
 XQ
-kJ
+ZA
 Sf
 DD
 VF
@@ -39887,7 +39976,7 @@ XQ
 XQ
 XQ
 XQ
-ME
+gg
 XQ
 WY
 Zz
@@ -40008,7 +40097,7 @@ XQ
 XQ
 XQ
 XQ
-ME
+Jo
 XQ
 OR
 eg
@@ -40123,13 +40212,13 @@ Iw
 Iw
 Iw
 XQ
-KE
+Mm
 Tw
-KE
+La
 XQ
-XQ
-XQ
-gg
+cz
+ME
+ME
 XQ
 Kr
 Zz
@@ -40244,12 +40333,12 @@ Iw
 Iw
 Iw
 XQ
-KE
-KE
-KE
+HS
+iW
+wH
 Rv
-XQ
-XQ
+ME
+ME
 ME
 XQ
 Nl
@@ -40365,12 +40454,12 @@ Iw
 Iw
 Iw
 XQ
-XQ
+pG
 Qh
+dW
 XQ
-XQ
-XQ
-XQ
+oz
+ME
 gH
 XQ
 XQ
@@ -40486,13 +40575,13 @@ Iw
 Iw
 Iw
 XQ
-FK
-FK
-FK
-FK
-FK
 XQ
-Jo
+XQ
+XQ
+XQ
+XQ
+XQ
+ME
 XQ
 XQ
 fl
@@ -40849,13 +40938,13 @@ Iw
 Iw
 Iw
 XQ
-KE
-KE
-eL
-KE
-KE
+FK
+FK
+mf
+FK
+FK
 XQ
-ME
+gg
 XQ
 XQ
 HN
@@ -58156,7 +58245,7 @@ XQ
 XQ
 XQ
 XQ
-OX
+XQ
 OX
 OX
 LB
@@ -58274,11 +58363,11 @@ Rz
 Rz
 Rz
 XQ
-OX
-OX
-wH
-OX
-OX
+fH
+fH
+fH
+XQ
+Db
 OX
 XQ
 Tz
@@ -58395,10 +58484,10 @@ Rz
 Rz
 Rz
 XQ
-OX
 fH
 fH
 fH
+Cm
 OX
 OX
 XQ
@@ -58516,11 +58605,11 @@ Rz
 Rz
 Rz
 XQ
-OX
-OX
-OX
-OX
-OX
+fH
+fH
+fH
+XQ
+NN
 OX
 XQ
 Rz
@@ -58637,10 +58726,10 @@ Rz
 Rz
 Rz
 XQ
-OX
-OX
-OX
-OX
+XQ
+XQ
+XQ
+XQ
 OX
 OX
 XQ
@@ -58763,7 +58852,7 @@ xj
 xj
 xj
 xj
-XQ
+OX
 XQ
 Rz
 Rz
@@ -58885,7 +58974,7 @@ fH
 fH
 fH
 XQ
-Rz
+XQ
 Rz
 Rz
 Rz

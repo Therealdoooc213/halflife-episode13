@@ -104,6 +104,7 @@
 	sound_vary = FALSE
 	aggro_sound = 'hl13/sound/creatures/fastzombiealert.ogg'
 	idle_sounds = list('hl13/sound/creatures/fastzombie_breath.ogg', 'hl13/sound/creatures/fastzombiesound1.ogg', 'hl13/sound/creatures/fastzombiesound2.ogg', 'hl13/sound/creatures/fastzombiesound3.ogg')
+	butcher_results = list(/obj/item/stack/sheet/sinew = 2)
 	var/charging = FALSE
 	var/revving_charge = FALSE
 	var/dash_speed = 1
@@ -256,7 +257,7 @@
 	combat_mode = TRUE
 	minbodytemp = 0
 	move_to_delay = 8
-	butcher_results = list(/obj/item/food/meat/slab/xen = 1)
+	butcher_results = list(/obj/item/food/meat/slab/xen = 1, /obj/item/stack/sheet/sinew = 1, /obj/item/stack/sheet/bone = 1)
 	death_sound = 'hl13/sound/creatures/headcrabdeath.ogg'
 	var/charging = FALSE
 	var/revving_charge = FALSE
@@ -497,7 +498,7 @@
 	combat_mode = TRUE
 	minbodytemp = 0
 	speed = -1
-	butcher_results = list(/obj/item/food/meat/slab/xen = 1)
+	butcher_results = list(/obj/item/food/meat/slab/xen = 1, /obj/item/stack/sheet/sinew = 1)
 	butcher_difficulty = 25
 	footstep_type = FOOTSTEP_MOB_ANTLION
 	death_sound = 'hl13/sound/creatures/antlion/pain2.ogg'

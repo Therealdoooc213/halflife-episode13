@@ -826,7 +826,7 @@ GLOBAL_LIST_INIT(bronze_recipes, list ( \
 	inhand_icon_state = null
 	mats_per_unit = list(/datum/material/bone = SHEET_MATERIAL_AMOUNT)
 	singular_name = "bone"
-	desc = "Someone's been drinking their milk."
+	desc = "Bones taken from some animal."
 	force = 7
 	throwforce = 5
 	max_amount = 12

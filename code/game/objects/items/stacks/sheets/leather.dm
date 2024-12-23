@@ -179,7 +179,7 @@ GLOBAL_LIST_INIT(carp_recipes, list ( \
  */
 /obj/item/stack/sheet/leather
 	name = "leather"
-	desc = "The by-product of mob grinding."
+	desc = "Tough hide taken from some creature."
 	singular_name = "leather piece"
 	icon_state = "sheet-leather"
 	inhand_icon_state = null
@@ -229,10 +229,10 @@ GLOBAL_LIST_INIT(leather_recipes, list ( \
  * Sinew
  */
 /obj/item/stack/sheet/sinew
-	name = "watcher sinew"
+	name = "animal sinew"
 	icon = 'icons/obj/mining.dmi'
-	desc = "Long stringy filaments which presumably came from a watcher's wings."
-	singular_name = "watcher sinew"
+	desc = "Long stringy filaments, often taken from fauna such as headcrabs."
+	singular_name = "animal sinew"
 	icon_state = "sinew"
 	novariants = TRUE
 	merge_type = /obj/item/stack/sheet/sinew

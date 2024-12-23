@@ -295,3 +295,28 @@
 	)
 	map_name = "cityalleys"
 	key = "cityalleys"
+
+/datum/lazy_template/deathmatch/sandtraps
+	name = "Sandtraps"
+	desc = "An open beach with little cover, and teeming with antlions."
+	max_players = 6
+	allowed_loadouts = list(
+		/datum/outfit/deathmatch_loadout/rebel/marine,
+		/datum/outfit/deathmatch_loadout/rebel/ranger,
+		/datum/outfit/deathmatch_loadout/combine/overwatch,
+		/datum/outfit/deathmatch_loadout/combine/overwatch/shotgunner,
+		/datum/outfit/deathmatch_loadout/civilprotection,
+		/datum/outfit/deathmatch_loadout/crowbar,
+	)
+	map_name = "sandtraps"
+	key = "sandtraps"
+
+/datum/lazy_template/deathmatch/cityalleys_uprising
+	name = "City Alleys: Uprising"
+	desc = "Start as citizens with nothing and loot the city alleys for weaponry."
+	max_players = 12
+	allowed_loadouts = list(
+		/datum/outfit/deathmatch_loadout/citizen,
+	)
+	map_name = "cityalleys_uprising"
+	key = "cityalleys_uprising"

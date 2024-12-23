@@ -41,7 +41,7 @@
 	name = "Bone Fishing Rod"
 	result = /obj/item/fishing_rod/bone
 	time = 5 SECONDS
-	reqs = list(/obj/item/stack/sheet/leather = 1,
+	reqs = list(/obj/item/stack/sheet/mineral/wood = 1,
 				/obj/item/stack/sheet/sinew = 2,
 				/obj/item/stack/sheet/bone = 2)
 	category = CAT_TOOLS
@@ -54,7 +54,7 @@
 	category = CAT_TOOLS
 
 /datum/crafting_recipe/bone_hook
-	name = "Goliath Bone Hook"
+	name = "Bone Hook"
 	result = /obj/item/fishing_hook/bone
 	reqs = list(/obj/item/stack/sheet/bone = 1)
 	time = 2 SECONDS

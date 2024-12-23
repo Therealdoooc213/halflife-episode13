@@ -33,7 +33,7 @@
 	if(HAS_TRAIT(src, TRAIT_UNKNOWN))
 		return ("Unknown")
 
-	if(wear_mask)
+	if(istype(wear_mask, /obj/item/clothing/mask))
 		if(wear_mask.voice_change && wear_id)
 			var/obj/item/card/id/idcard = wear_id.GetID()
 			if(istype(idcard))

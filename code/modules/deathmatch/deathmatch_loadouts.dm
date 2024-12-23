@@ -1272,14 +1272,8 @@
 	suit = /obj/item/clothing/suit/armor/hev/deathmatch
 	glasses = /obj/item/clothing/glasses/regular/thin
 
-/datum/outfit/deathmatch_loadout/rebel/vortigaunt
-	name = "Deathmatch: Elder Vortigaunt"
-	display_name = "Elder Vortigaunt"
-	desc = "Utilize strong vortal spells to decimate your opponents."
-	shoes = null
-	species_override = /datum/species/vortigaunt
-
-	//gets repulse in addition to other vort spells
-	spells_to_add = list(
-		/datum/action/cooldown/spell/aoe/repulse/wizard/vort
-	)
+/datum/outfit/deathmatch_loadout/citizen
+	name = "Deathmatch: Citizen"
+	display_name = "Citizen"
+	desc = "You're unarmed and angry. Find a weapon."
+	uniform = /obj/item/clothing/under/citizen

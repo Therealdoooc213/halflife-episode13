@@ -147,7 +147,6 @@
 				/obj/item/clothing/under/citizen/rebel,
 				/obj/item/weaponcrafting/frame/spas12,
 				/obj/item/weaponcrafting/frame/coltpython,
-				/datum/crafting_recipe/pipegun,
 				/obj/item/gun/ballistic/rifle/rebarxbow = 2,
 				/obj/item/weaponcrafting/frame/m4a1,
 				/obj/item/machinepiece/multifunctiontool = 2,
@@ -159,4 +158,20 @@
 				/obj/item/clothing/head/helmet/marine/pmc
 				)
 
+//guaranteed ready weapon and loot spawns
+/obj/effect/spawner/random/halflife/loot/legendary
+	name = "legendary loot"
 
+	loot = list(
+				/obj/item/gun/ballistic/automatic/pistol/usp,
+				/obj/item/crowbar/large,
+				/obj/item/melee/sledgehammer,
+				/obj/item/chainsaw,
+				/obj/item/gun/ballistic/automatic/mp7,
+				/obj/item/clothing/suit/armor/civilprotection,
+				/obj/item/gun/ballistic/rifle/rebarxbow,
+				/obj/item/grenade/syndieminibomb/bouncer,
+				/obj/item/knife/combat,
+				/obj/item/melee/baton/security/loaded,
+				/obj/item/clothing/head/helmet/marine/pmc
+				)

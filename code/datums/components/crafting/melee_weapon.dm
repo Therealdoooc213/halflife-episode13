@@ -46,8 +46,8 @@
 	result = /obj/item/spear/bonespear
 	time = 3 SECONDS
 	reqs = list(
-		/obj/item/stack/sheet/bone = 4,
-		/obj/item/stack/sheet/sinew = 1,
+		/obj/item/stack/sheet/bone = 5,
+		/obj/item/stack/sheet/sinew = 2,
 	)
 	category = CAT_WEAPON_MELEE
 
@@ -56,8 +56,8 @@
 	result = /obj/item/fireaxe/boneaxe
 	time = 5 SECONDS
 	reqs = list(
-		/obj/item/stack/sheet/bone = 6,
-		/obj/item/stack/sheet/sinew = 3,
+		/obj/item/stack/sheet/bone = 7,
+		/obj/item/stack/sheet/sinew = 4,
 	)
 	category = CAT_WEAPON_MELEE
 

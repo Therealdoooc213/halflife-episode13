@@ -55,7 +55,7 @@
 			RegisterSignal(target, COMSIG_MOVABLE_MOVED, PROC_REF(play_simplestep_machine))
 			return
 		if(FOOTSTEP_MOB_ANTLION)
-			footstep_sounds = list('hl13/sound/creatures/antlion/foot1.ogg')
+			footstep_sounds = 'hl13/sound/creatures/antlion/foot1.ogg'
 			RegisterSignal(target, COMSIG_MOVABLE_MOVED, PROC_REF(play_simplestep_machine))
 			return
 	RegisterSignal(target, COMSIG_MOVABLE_MOVED, PROC_REF(play_simplestep))

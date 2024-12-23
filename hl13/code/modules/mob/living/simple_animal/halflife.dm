@@ -8,7 +8,7 @@
 	icon_state = "zombie"
 	icon_living = "zombie"
 	icon_dead = "zombie_dead"
-	faction = list(FACTION_HOSTILE,FACTION_HEADCRAB)
+	faction = list(FACTION_HEADCRAB)
 	mob_biotypes = MOB_ORGANIC|MOB_HUMANOID
 	maxHealth = 120
 	health = 120
@@ -239,7 +239,7 @@
 	icon_state = "headcrab"
 	icon_living = "headcrab"
 	icon_dead = "headcrab_dead"
-	faction = list(FACTION_HOSTILE,FACTION_HEADCRAB)
+	faction = list(FACTION_HEADCRAB)
 	mob_biotypes = MOB_ORGANIC
 	stat_attack = UNCONSCIOUS //braains
 	maxHealth = 30
@@ -370,7 +370,7 @@
 	icon_state = "hunter"
 	icon_living = "hunter"
 	icon_dead = "hunter_dead"
-	faction = list(FACTION_HOSTILE,FACTION_COMBINE)
+	faction = list(FACTION_COMBINE)
 	mob_biotypes = MOB_ORGANIC
 	stat_attack = UNCONSCIOUS
 	maxHealth = 400
@@ -481,7 +481,7 @@
 	icon_living = "antlion"
 	icon_dead = "antlion_dead"
 	icon_gib = "antlion_gib"
-	faction = list(FACTION_HOSTILE,FACTION_ANTLION)
+	faction = list(FACTION_ANTLION)
 	mob_biotypes = MOB_ORGANIC
 	maxHealth = 50
 	health = 50
@@ -588,7 +588,7 @@
 	icon_state = "antlionworker"
 	icon_living = "antlionworker"
 	icon_dead = "antlionworker_dead"
-	faction = list(FACTION_HOSTILE,FACTION_ANTLION)
+	faction = list(FACTION_ANTLION)
 	mob_biotypes = MOB_ORGANIC
 	maxHealth = 50
 	health = 50
@@ -672,7 +672,7 @@
 	attack_verb_continuous = "cuts"
 	attack_verb_simple = "cut"
 	attack_sound = 'sound/items/weapons/bladeslice.ogg'
-	faction = list(FACTION_HOSTILE,FACTION_COMBINE)
+	faction = list(FACTION_COMBINE)
 	minbodytemp = 0
 	mob_size = MOB_SIZE_TINY
 	movement_type = FLYING

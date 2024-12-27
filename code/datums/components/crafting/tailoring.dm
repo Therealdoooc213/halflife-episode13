@@ -4,17 +4,7 @@
 	reqs = list(/obj/item/stack/sheet/durathread = 5,
 				/obj/item/stack/sheet/leather = 4)
 	time = 5 SECONDS
-	category = CAT_CLOTHING
-
-/datum/crafting_recipe/durathread_robe
-	name = "Durathread Robe"
-	result = /obj/item/clothing/suit/wizrobe/durathread
-	reqs = list(
-		/obj/item/stack/sheet/durathread = 3,
-		/obj/item/stack/sheet/leather = 6,
-	)
-	time = 5 SECONDS
-	category = CAT_CLOTHING
+	category = CAT_ARMOR
 
 /datum/crafting_recipe/durathread_helmet
 	name = "Durathread Helmet"
@@ -22,55 +12,7 @@
 	reqs = list(/obj/item/stack/sheet/durathread = 4,
 				/obj/item/stack/sheet/leather = 5)
 	time = 4 SECONDS
-	category = CAT_CLOTHING
-
-/datum/crafting_recipe/watermelon_armour
-	name = "Watermelon Armour"
-	result = /obj/item/clothing/suit/armor/durability/watermelon
-	reqs = list(/obj/item/clothing/head/helmet/durability/watermelon = 3,
-				/obj/item/stack/sheet/durathread = 1)
-	time = 4 SECONDS
-	category = CAT_CLOTHING
-
-/datum/crafting_recipe/watermelon_armour_fr
-	name = "Watermelon Armour"
-	result = /obj/item/clothing/suit/armor/durability/watermelon/fire_resist
-	reqs = list(/obj/item/clothing/head/helmet/durability/watermelon/fire_resist = 3,
-				/obj/item/stack/sheet/durathread = 1)
-	time = 4 SECONDS
-	category = CAT_CLOTHING
-
-/datum/crafting_recipe/holymelon_armour
-	name = "Holymelon Armour"
-	result = /obj/item/clothing/suit/armor/durability/holymelon
-	reqs = list(/obj/item/clothing/head/helmet/durability/holymelon = 3,
-				/obj/item/stack/sheet/durathread = 1)
-	time = 4 SECONDS
-	category = CAT_CLOTHING
-
-/datum/crafting_recipe/holymelonmelon_armour_fr
-	name = "Holymelon Armour"
-	result = /obj/item/clothing/suit/armor/durability/holymelon/fire_resist
-	reqs = list(/obj/item/clothing/head/helmet/durability/holymelon/fire_resist = 3,
-				/obj/item/stack/sheet/durathread = 1)
-	time = 4 SECONDS
-	category = CAT_CLOTHING
-
-/datum/crafting_recipe/barrelmelon_armour
-	name = "Barrelmelon Armour"
-	result = /obj/item/clothing/suit/armor/durability/barrelmelon
-	reqs = list(/obj/item/clothing/head/helmet/durability/barrelmelon = 3,
-				/obj/item/stack/sheet/durathread = 1)
-	time = 4 SECONDS
-	category = CAT_CLOTHING
-
-/datum/crafting_recipe/barrelmelon_armour_fr
-	name = "Barrelmelon Armour"
-	result = /obj/item/clothing/suit/armor/durability/barrelmelon/fire_resist
-	reqs = list(/obj/item/clothing/head/helmet/durability/barrelmelon/fire_resist = 3,
-				/obj/item/stack/sheet/durathread = 1)
-	time = 4 SECONDS
-	category = CAT_CLOTHING
+	category = CAT_ARMOR
 
 /datum/crafting_recipe/fannypack
 	name = "Fannypack"
@@ -152,14 +94,6 @@
 	reqs = list(/obj/item/clothing/glasses/sunglasses/chemical = 1)
 	category = CAT_EQUIPMENT
 
-/datum/crafting_recipe/ghostsheet
-	name = "Ghost Sheet"
-	result = /obj/item/clothing/suit/costume/ghost_sheet
-	time = 0.5 SECONDS
-	tool_behaviors = list(TOOL_WIRECUTTER)
-	reqs = list(/obj/item/bedsheet = 1)
-	category = CAT_CLOTHING
-
 /datum/crafting_recipe/prisonsuit
 	name = "Prisoner Uniform (Suit)"
 	result = /obj/item/clothing/under/rank/prisoner
@@ -181,24 +115,6 @@
 	time = 1 SECONDS
 	category = CAT_CLOTHING
 
-/datum/crafting_recipe/tv_helmet
-	name = "Television Helmet"
-	result = /obj/item/clothing/head/costume/tv_head
-	tool_behaviors = list(TOOL_SCREWDRIVER, TOOL_CROWBAR)
-	reqs = list(/obj/item/wallframe/status_display = 1)
-	time = 2 SECONDS
-	category = CAT_CLOTHING
-
-/datum/crafting_recipe/bonearmor
-	name = "Bone Armor"
-	result = /obj/item/clothing/suit/armor/bone
-	time = 3 SECONDS
-	reqs = list(
-		/obj/item/stack/sheet/bone = 6,
-		/obj/item/stack/sheet/animalhide/goliath_hide = 3,
-	)
-	category = CAT_CLOTHING
-
 /datum/crafting_recipe/bonetalisman
 	name = "Bone Talisman"
 	result = /obj/item/clothing/accessory/talisman
@@ -207,7 +123,7 @@
 		/obj/item/stack/sheet/bone = 2,
 		/obj/item/stack/sheet/sinew = 1,
 	)
-	category = CAT_CLOTHING
+	category = CAT_ARMOR
 
 /datum/crafting_recipe/bonecodpiece
 	name = "Skull Codpiece"
@@ -217,44 +133,7 @@
 		/obj/item/stack/sheet/bone = 2,
 		/obj/item/stack/sheet/animalhide/goliath_hide = 1,
 	)
-	category = CAT_CLOTHING
-
-/datum/crafting_recipe/skilt
-	name = "Sinew Kilt"
-	result = /obj/item/clothing/accessory/skilt
-	time = 2 SECONDS
-	reqs = list(
-		/obj/item/stack/sheet/bone = 1,
-		/obj/item/stack/sheet/sinew = 2,
-	)
-	category = CAT_CLOTHING
-
-/datum/crafting_recipe/bracers
-	name = "Bone Bracers"
-	result = /obj/item/clothing/gloves/bracer
-	time = 2 SECONDS
-	reqs = list(
-		/obj/item/stack/sheet/bone = 2,
-		/obj/item/stack/sheet/sinew = 1,
-	)
-	category = CAT_CLOTHING
-
-/datum/crafting_recipe/skullhelm
-	name = "Skull Helmet"
-	result = /obj/item/clothing/head/helmet/skull
-	time = 3 SECONDS
-	reqs = list(/obj/item/stack/sheet/bone = 4)
-	category = CAT_CLOTHING
-
-/datum/crafting_recipe/goliathcloak
-	name = "Goliath Cloak"
-	result = /obj/item/clothing/suit/hooded/cloak/goliath
-	time = 5 SECONDS
-	reqs = list(
-		/obj/item/stack/sheet/sinew = 3,
-		/obj/item/stack/sheet/animalhide/goliath_hide = 9,
-	)
-	category = CAT_CLOTHING
+	category = CAT_ARMOR
 
 /datum/crafting_recipe/mummy
 	name = "Mummification Bandages (Mask)"
@@ -331,27 +210,6 @@
 	)
 	category = CAT_CLOTHING
 
-/datum/crafting_recipe/pillow_suit
-	name = "pillow suit"
-	result = /obj/item/clothing/suit/pillow_suit
-	time = 2 SECONDS
-	reqs = list(
-		/obj/item/stack/sticky_tape = 10,
-		/obj/item/pillow = 5,
-	)
-	category = CAT_CLOTHING
-
-/datum/crafting_recipe/pillow_hood
-	name = "pillow hood"
-	result = /obj/item/clothing/head/pillow_hood
-	tool_behaviors = list(TOOL_WIRECUTTER, TOOL_KNIFE)
-	time = 2 SECONDS
-	reqs = list(
-		/obj/item/stack/sticky_tape = 5,
-		/obj/item/pillow = 1,
-	)
-	category = CAT_CLOTHING
-
 /datum/crafting_recipe/sturdy_shako
 	name = "Sturdy Shako"
 	result = /obj/item/clothing/head/hats/hos/shako
@@ -382,7 +240,7 @@
 		/obj/item/clothing/head/bio_hood/general = 1,
 		/obj/item/clothing/head/helmet/sec = 1,
 	)
-	category = CAT_CLOTHING
+	category = CAT_ARMOR
 
 /datum/crafting_recipe/biosuit_sec
 	name = "security biosuit"
@@ -392,46 +250,7 @@
 		/obj/item/clothing/suit/bio_suit/general = 1,
 		/obj/item/clothing/suit/armor/vest = 1,
 	)
-	category = CAT_CLOTHING
-
-/datum/crafting_recipe/balloon_helmet
-	result = /obj/item/clothing/head/helmet/balloon
-	reqs = list(
-		/obj/item/toy/balloon/long = 6,
-	)
-	time = 4 SECONDS
-	category = CAT_CLOTHING
-
-/datum/crafting_recipe/balloon_helmet/check_requirements(mob/user, list/collected_requirements)
-	. = ..()
-	if(HAS_TRAIT(user, TRAIT_BALLOON_SUTRA))
-		return TRUE
-
-/datum/crafting_recipe/balloon_tophat
-	result = /obj/item/clothing/head/hats/tophat/balloon
-	reqs = list(
-		/obj/item/toy/balloon/long = 6,
-	)
-	time = 4 SECONDS
-	category = CAT_CLOTHING
-
-/datum/crafting_recipe/balloon_tophat/check_requirements(mob/user, list/collected_requirements)
-	. = ..()
-	if(HAS_TRAIT(user, TRAIT_BALLOON_SUTRA))
-		return TRUE
-
-/datum/crafting_recipe/balloon_vest
-	result = /obj/item/clothing/suit/armor/balloon_vest
-	reqs = list(
-		/obj/item/toy/balloon/long = 18,
-	)
-	time = 8 SECONDS
-	category = CAT_CLOTHING
-
-/datum/crafting_recipe/balloon_vest/check_requirements(mob/user, list/collected_requirements)
-	. = ..()
-	if(HAS_TRAIT(user, TRAIT_BALLOON_SUTRA))
-		return TRUE
+	category = CAT_ARMOR
 
 /datum/crafting_recipe/press_armor
 	name = "press armor vest"
@@ -441,7 +260,7 @@
 	reqs = list(
 		/obj/item/clothing/suit/armor/vest = 1,
 	)
-	category = CAT_CLOTHING
+	category = CAT_ARMOR
 
 /datum/crafting_recipe/press_helmet
 	name = "press helmet vest"
@@ -451,7 +270,7 @@
 	reqs = list(
 		/obj/item/clothing/head/helmet/sec = 1,
 	)
-	category = CAT_CLOTHING
+	category = CAT_ARMOR
 
 /datum/crafting_recipe/press_vest
 	name = "press vest"
@@ -461,7 +280,7 @@
 	reqs = list(
 		/obj/item/clothing/suit/hazardvest = 1,
 	)
-	category = CAT_CLOTHING
+	category = CAT_ARMOR
 
 /datum/crafting_recipe/press_fedora
 	name = "press fedora"

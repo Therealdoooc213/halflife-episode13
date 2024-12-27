@@ -713,3 +713,130 @@
 /obj/structure/halflife/breencast/Destroy()
 	. = ..()
 	SSsociostability.modifystability(-50) //Destroying the central breencast is rather bad for stability
+
+//Appliances//
+
+//TVs//
+
+/obj/structure/halflife/tv
+	name = "base class halflife television"
+	desc = "A message asking the audience to please not use this asset appears on screen."
+	icon = 'hl13/icons/obj/television.dmi'
+	icon_state = "radking_tv"
+	max_integrity = 225
+	density = TRUE
+	anchored = TRUE
+
+/obj/structure/halflife/tv/Initialize()
+	. = ..()
+	register_context()
+
+/obj/structure/halflife/tv/screwdriver_act_secondary(mob/living/user, obj/item/weapon)
+	if(flags_1&NO_DEBRIS_AFTER_DECONSTRUCTION)
+		return TRUE
+	..()
+	weapon.play_tool_sound(src)
+	if(do_after(user, 15 SECONDS, target = src))
+		deconstruct(disassembled = TRUE)
+		return TRUE
+
+/obj/structure/halflife/tv/deconstruct(disassembled = TRUE)
+	if(!(flags_1 & NO_DEBRIS_AFTER_DECONSTRUCTION))
+		if(disassembled)
+			new /obj/item/stack/sheet/mineral/scrap_wood(loc)
+			new /obj/item/stack/sheet/scrap_metal(loc)
+			new /obj/item/stack/sheet/glass(loc)
+			new /obj/item/circuitmaterial(loc)
+			new /obj/item/circuitmaterial(loc)
+		else
+			new /obj/item/stack/sheet/mineral/scrap_wood(loc)
+			new /obj/item/stack/sheet/glass(loc)
+			new /obj/item/circuitmaterial(loc)
+	qdel(src)
+
+/obj/structure/halflife/tv/examine(mob/user)
+	. = ..()
+	. += deconstruction_hints(user)
+
+/obj/structure/halflife/tv/proc/deconstruction_hints(mob/user)
+	return span_notice("You could use a <b>screwdriver</b> to take apart [src] for parts.")
+
+/obj/structure/halflife/tv/add_context(atom/source, list/context, obj/item/held_item, mob/living/user)
+	. = ..()
+
+	switch (held_item?.tool_behaviour)
+		if (TOOL_SCREWDRIVER)
+			context[SCREENTIP_CONTEXT_RMB] = "Disassemble"
+			return CONTEXTUAL_SCREENTIP_SET
+
+/obj/structure/halflife/tv/rad_king
+	name = "\improper Advanced television"
+	desc = "A futuristic looking set from before the war. Now just collecting dust."
+	icon_state = "radking_tv"
+
+/obj/structure/halflife/tv/rad_king/deconstruct(disassembled = TRUE)
+	if(!(flags_1 & NO_DEBRIS_AFTER_DECONSTRUCTION))
+		if(disassembled)
+			new /obj/item/stack/sheet/scrap_metal(loc, 3)
+			new /obj/item/stack/sheet/scrap_metal(loc, 2)
+			new /obj/item/stack/sheet/glass(loc, 3)
+			new /obj/item/circuitmaterial(loc, 3)
+		else
+			new /obj/item/stack/sheet/scrap_metal(loc)
+			new /obj/item/stack/sheet/glass(loc)
+			new /obj/item/circuitmaterial(loc)
+	qdel(src)
+
+/obj/structure/halflife/tv/wooden
+	name = "wood television console"
+	desc = "A television console made of wood. This was probably an antique long before the bombs dropped."
+	icon_state = "wood_tv"
+
+/obj/structure/halflife/tv/wooden/deconstruct(disassembled = TRUE)
+	if(!(flags_1 & NO_DEBRIS_AFTER_DECONSTRUCTION))
+		if(disassembled)
+			new /obj/item/stack/sheet/mineral/scrap_wood(loc, 3)
+			new /obj/item/stack/sheet/scrap_metal(loc, 2)
+			new /obj/item/stack/sheet/glass(loc, 3)
+			new /obj/item/circuitmaterial(loc, 3)
+		else
+			new /obj/item/stack/sheet/scrap_metal(loc)
+			new /obj/item/stack/sheet/glass(loc)
+			new /obj/item/circuitmaterial(loc)
+	qdel(src)
+
+/obj/structure/halflife/tv/wooden/red
+	icon_state = "redwood_tv"
+
+/obj/structure/halflife/tv/wooden/cabinet
+	name = "television cabinet"
+	desc = "A wood cabinet containing a television inside."
+	icon_state = "cabinet_tv"
+
+/obj/structure/halflife/tv/tube
+	name = "tube television"
+	desc = "A classic tube television. You're not exactly sure why it's called a tube television."
+	icon_state = "tube_tv"
+
+/obj/structure/halflife/tv/tube/deconstruct(disassembled = TRUE)
+	if(!(flags_1 & NO_DEBRIS_AFTER_DECONSTRUCTION))
+		if(disassembled)
+			new /obj/item/stack/sheet/plastic(loc, 3)
+			new /obj/item/stack/sheet/scrap_metal(loc, 2)
+			new /obj/item/stack/sheet/glass(loc, 3)
+			new /obj/item/circuitmaterial(loc, 3)
+		else
+			new /obj/item/stack/sheet/scrap_metal(loc)
+			new /obj/item/stack/sheet/glass(loc)
+			new /obj/item/circuitmaterial(loc)
+	qdel(src)
+
+/obj/structure/halflife/tv/tube/small
+	name = "small tube television"
+	desc = "A small tube television. You're not exactly sure why it's called a tube television."
+	icon_state = "small_tv"
+
+/obj/structure/halflife/tv/tube/tiny
+	name = "tiny television"
+	desc = "A very small TV. Perhaps made for a very small person."
+	icon_state = "tiny_tv"

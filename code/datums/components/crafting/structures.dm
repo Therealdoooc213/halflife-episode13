@@ -50,17 +50,6 @@
 	)
 	category = CAT_STRUCTURE
 
-/datum/crafting_recipe/mechcabinet
-	name = "Mech Removal Cabinet"
-	result = /obj/item/wallframe/fireaxecabinet/mechremoval
-	time = 8 SECONDS
-	reqs = list(
-		/obj/item/stack/sheet/plasteel = 5,
-		/obj/item/stack/sheet/glass = 5,
-		/obj/item/stack/cable_coil = 10,
-	)
-	category = CAT_STRUCTURE
-
 /datum/crafting_recipe/syndicate_uplink_beacon
 	name = "Syndicate Uplink Beacon"
 	result = /obj/structure/syndicate_uplink_beacon
@@ -85,16 +74,6 @@
 	)
 	category = CAT_STRUCTURE
 	crafting_flags = CRAFT_CHECK_DENSITY
-
-/datum/crafting_recipe/adam_pedestal
-	name = "Adamantine Pedestal"
-	result = /obj/item/adamantine_pedestal
-	reqs = list(
-		/obj/item/stack/sheet/mineral/adamantine = 20,
-	)
-	time = 120 SECONDS
-	category = CAT_STRUCTURE
-
 
 /datum/crafting_recipe/sm_small
 	name = "Small Supermatter Crystal"

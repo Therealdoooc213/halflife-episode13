@@ -54,6 +54,7 @@ const CATEGORY_ICONS_CRAFTING = {
   Misc: 'shapes',
   Tribal: 'campground',
   Clothing: 'shirt',
+  Armor: 'shield',
   Drinks: 'wine-bottle',
   Chemistry: 'microscope',
   Atmospherics: 'fan',

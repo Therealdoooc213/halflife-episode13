@@ -703,8 +703,8 @@
 		operating_power--
 
 /mob/living/simple_animal/hostile/halflife/viscerator/deathmatch
-	health = 100
-	maxHealth = 100
+	health = 125
+	maxHealth = 125
 	melee_damage_lower = 25
 	melee_damage_upper = 40
 

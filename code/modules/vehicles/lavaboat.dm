@@ -29,20 +29,6 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	resistance_flags = LAVA_PROOF | FIRE_PROOF
 
-/datum/crafting_recipe/oar
-	name = "Goliath Bone Oar"
-	result = /obj/item/oar
-	reqs = list(/obj/item/stack/sheet/bone = 2)
-	time = 15
-	category = CAT_TOOLS
-
-/datum/crafting_recipe/boat
-	name = "Goliath Hide Boat"
-	result = /obj/vehicle/ridden/lavaboat
-	reqs = list(/obj/item/stack/sheet/animalhide/goliath_hide = 3)
-	time = 50
-	category = CAT_TOOLS
-
 /obj/vehicle/ridden/lavaboat/plasma
 	name = "plasma boat"
 	desc = "A boat used for traversing the streams of plasma without turning into an icecube."
@@ -50,11 +36,6 @@
 	icon_state = "goliath_boat"
 	resistance_flags = FREEZE_PROOF
 	can_buckle = TRUE
-
-/datum/crafting_recipe/boat/plasma
-	name = "Polar Bear Hide Boat"
-	result = /obj/vehicle/ridden/lavaboat/plasma
-	reqs = list(/obj/item/stack/sheet/animalhide/goliath_hide/polar_bear_hide = 3)
 
 //Dragon Boat
 

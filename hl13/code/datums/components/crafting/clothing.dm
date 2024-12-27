@@ -5,5 +5,5 @@
 	reqs = list(/obj/item/clothing/under/citizen = 1,
 				/obj/item/clothing/under/combine/civilprotection = 1)
 	time = 10 SECONDS
-	category = CAT_CLOTHING
+	category = CAT_ARMOR
 	crafting_interface = CRAFTING_BENCH_ARMTAILOR

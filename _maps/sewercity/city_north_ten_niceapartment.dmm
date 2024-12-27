@@ -59,6 +59,11 @@
 /obj/structure/bed/halflife/bedframe/wood,
 /turf/open/floor/plating/indoor/woodc/wide,
 /area/halflife/indoors)
+"D" = (
+/obj/structure/table/halflife/wood,
+/obj/structure/halflife/tv/tube,
+/turf/open/floor/plating/indoor/woodc/wide,
+/area/halflife/indoors)
 "J" = (
 /turf/closed/wall/halflife/brick,
 /area/halflife/indoors)
@@ -105,7 +110,7 @@ J
 j
 j
 J
-P
+D
 d
 v
 d

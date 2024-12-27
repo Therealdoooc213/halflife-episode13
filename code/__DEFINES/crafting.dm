@@ -65,6 +65,7 @@
 #define CAT_ROBOT "Robotics"
 #define CAT_MISC "Misc"
 #define CAT_CLOTHING "Clothing"
+#define CAT_ARMOR "Armor"
 #define CAT_CHEMISTRY "Chemistry"
 #define CAT_ATMOSPHERIC "Atmospherics"
 #define CAT_STRUCTURE "Structures"

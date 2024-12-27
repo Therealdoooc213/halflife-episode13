@@ -65,7 +65,7 @@
 /// The caliber used by the m4a1
 #define CALIBER_556NATO "556nato"
 /// OSIPR pulse rounds
-#define CALIBER_PULSROUND "pulsround"
+#define CALIBER_PULSROUND "pulse"
 
 /// For gunpoints, how many tiles around the target the shooter can roam without losing their shot
 #define GUNPOINT_SHOOTER_STRAY_RANGE 2

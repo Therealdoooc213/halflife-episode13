@@ -348,14 +348,14 @@
 
 /obj/item/flashlight/seclite
 	name = "maglite"
-	desc = "A heavy and robust flashlight with superior lighting capabilities."
+	desc = "A heavy and robust flashlight with superior lighting capabilities. Should serve well as a weapon in a pinch as well."
 	dir = EAST
 	icon_state = "seclite"
 	inhand_icon_state = "seclite"
 	worn_icon_state = "seclite"
 	lefthand_file = 'icons/mob/inhands/equipment/security_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/security_righthand.dmi'
-	force = 9 // Not as good as a stun baton.
+	force = 10 // Not as good as a stun baton.
 	light_range = 5 // A little better than the standard flashlight.
 	light_power = 0.6
 	hitsound = 'sound/items/weapons/genhit1.ogg'

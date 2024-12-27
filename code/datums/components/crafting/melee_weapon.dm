@@ -51,16 +51,6 @@
 	)
 	category = CAT_WEAPON_MELEE
 
-/datum/crafting_recipe/boneaxe
-	name = "Bone Axe"
-	result = /obj/item/fireaxe/boneaxe
-	time = 5 SECONDS
-	reqs = list(
-		/obj/item/stack/sheet/bone = 7,
-		/obj/item/stack/sheet/sinew = 4,
-	)
-	category = CAT_WEAPON_MELEE
-
 /datum/crafting_recipe/house_edge
 	name = "House Edge"
 	result = /obj/item/house_edge

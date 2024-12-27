@@ -6492,6 +6492,8 @@
 #include "hl13\code\datums\components\crafting\electronics.dm"
 #include "hl13\code\datums\components\crafting\guncrafting.dm"
 #include "hl13\code\datums\components\crafting\materials.dm"
+#include "hl13\code\datums\components\crafting\misc.dm"
+#include "hl13\code\datums\components\crafting\structures.dm"
 #include "hl13\code\datums\components\crafting\weapons.dm"
 #include "hl13\code\game\areas.dm"
 #include "hl13\code\game\objects\effects\landmarks.dm"

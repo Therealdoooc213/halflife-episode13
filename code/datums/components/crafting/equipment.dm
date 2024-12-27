@@ -23,17 +23,6 @@
 	time = 4 SECONDS
 	category = CAT_EQUIPMENT
 
-/datum/crafting_recipe/moonflowershield
-	name = "Moonflower Shield"
-	result = /obj/item/shield/buckler/moonflower
-	reqs = list(
-		/obj/item/seeds/sunflower/moonflower = 3,
-		/obj/item/grown/log/steel = 3,
-	)
-	time = 4 SECONDS
-	category = CAT_EQUIPMENT
-
-
 /datum/crafting_recipe/radiogloves
 	name = "Radio Gloves"
 	result = /obj/item/clothing/gloves/radio
@@ -92,17 +81,6 @@
 		/obj/item/electronics/airlock = 1,
 	)
 	time = 5 SECONDS
-	category = CAT_EQUIPMENT
-
-/datum/crafting_recipe/barbeque_grill
-	name = "Barbeque grill"
-	result = /obj/machinery/grill
-	reqs = list(
-		/obj/item/stack/sheet/iron = 5,
-		/obj/item/stack/rods = 5,
-		/obj/item/assembly/igniter = 1,
-	)
-	time = 7 SECONDS
 	category = CAT_EQUIPMENT
 
 /datum/crafting_recipe/secure_closet
@@ -164,17 +142,6 @@
 	)
 	category = CAT_EQUIPMENT
 
-/datum/crafting_recipe/ore_sensor
-	name = "Ore Sensor"
-	time = 3 SECONDS
-	reqs = list(
-		/datum/reagent/brimdust = 15,
-		/obj/item/stack/sheet/bone = 1,
-		/obj/item/stack/sheet/sinew = 1,
-	)
-	result = /obj/item/ore_sensor
-	category = CAT_EQUIPMENT
-
 /datum/crafting_recipe/material_sniffer
 	name = "Material Sniffer"
 	time = 3 SECONDS
@@ -206,19 +173,6 @@
 	reqs = list(/obj/item/stack/sheet/iron = 15)
 	category = CAT_EQUIPMENT
 
-/datum/crafting_recipe/ghettojetpack
-	name = "Improvised Jetpack"
-	result = /obj/item/tank/jetpack/improvised
-	time = 30
-	reqs = list(
-		/obj/item/tank/internals/oxygen = 2,
-		/obj/item/extinguisher = 1,
-		/obj/item/pipe = 3,
-		/obj/item/stack/cable_coil = MAXCOIL,
-	)
-	category = CAT_EQUIPMENT
-	tool_behaviors = list(TOOL_WRENCH, TOOL_WELDER, TOOL_WIRECUTTER)
-
 /datum/crafting_recipe/gripperoffbrand
 	name = "Improvised Gripper Gloves"
 	reqs = list(
@@ -226,21 +180,6 @@
 		/obj/item/stack/sticky_tape = 1,
 	)
 	result = /obj/item/clothing/gloves/tackler/offbrand
-	category = CAT_EQUIPMENT
-
-/**
- * Recipe used for upgrading fake N-spect scanners to bananium HONK-spect scanners
- */
-/datum/crafting_recipe/clown_scanner_upgrade
-	name = "Bananium HONK-spect scanner"
-	result = /obj/item/inspector/clown/bananium
-	reqs = list(
-		/obj/item/inspector/clown = 1,
-		/obj/item/stack/sticky_tape = 3,
-		/obj/item/stack/sheet/mineral/bananium = 5,
-	) //the chainsaw of prank tools
-	tool_paths = list(/obj/item/bikehorn)
-	time = 40 SECONDS
 	category = CAT_EQUIPMENT
 
 /datum/crafting_recipe/rebar_quiver

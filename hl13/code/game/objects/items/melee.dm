@@ -60,7 +60,7 @@
 	inhand_icon_state = "tireiron"
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
-	force = 20 /// The weapon requires two hands
+	force = 20
 	throwforce = 10
 	attack_verb_continuous = list("attacks", "bashes", "strikes", "smashes")
 	attack_verb_simple = list("attack", "bash", "strik", "smash")

@@ -556,8 +556,8 @@
 	healed_mob.adjustOxyLoss(amount_healed)
 
 /obj/item/stack/medical/bandage
-	name = "first aid bandage"
-	desc = "A DeForest brand bandage designed for basic first aid on blunt-force trauma."
+	name = "cloth bandage"
+	desc = "A pretty clean looking bandage, you're able to use it for basic first aid on blunt-force trauma."
 	icon_state = "bandage"
 	inhand_icon_state = "bandage"
 	novariants = TRUE

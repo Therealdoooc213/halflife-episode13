@@ -584,6 +584,10 @@
 	},
 /turf/open/floor/plating/indoor/concrete/small,
 /area/halflife/indoors/bunker)
+"xY" = (
+/obj/item/stack/medical/bandage,
+/turf/open/floor/plating/ground/dirt,
+/area/halflife/outdoors/forest)
 "xZ" = (
 /obj/structure/flora/bush/pale/style_random,
 /turf/open/floor/plating/ground/dirt,
@@ -1105,6 +1109,10 @@
 "Sg" = (
 /obj/structure/flora/tree/jungle,
 /turf/open/floor/plating/ground/dirt,
+/area/halflife/outdoors/forest)
+"SV" = (
+/obj/item/knife/shiv,
+/turf/open/floor/plating/ground/dirt/alt,
 /area/halflife/outdoors/forest)
 "Tc" = (
 /obj/structure/table/halflife/no_smooth/large/crafting/armorbench,
@@ -2538,7 +2546,7 @@ nA
 FC
 GX
 FC
-It
+SV
 tN
 Qb
 FC
@@ -2668,7 +2676,7 @@ GX
 wa
 GX
 GX
-tN
+Tq
 tN
 LN
 tN
@@ -2743,7 +2751,7 @@ MZ
 MZ
 zB
 XA
-tN
+EU
 PR
 tN
 It
@@ -2788,7 +2796,7 @@ LN
 IF
 FC
 VM
-Tq
+xY
 FC
 vE
 GX
@@ -4144,7 +4152,7 @@ EQ
 It
 wm
 tN
-tN
+hx
 tN
 tN
 od
@@ -8281,7 +8289,7 @@ yS
 LN
 dg
 It
-tN
+Tq
 LN
 tN
 tN
@@ -8953,7 +8961,7 @@ fv
 dZ
 dZ
 dZ
-dZ
+Yo
 fv
 wG
 el

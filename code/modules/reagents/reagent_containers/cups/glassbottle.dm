@@ -294,6 +294,7 @@
 /obj/item/reagent_containers/cup/glass/bottle/beer
 	name = "beer"
 	desc = "Beer. Simple as."
+	icon = 'hl13/icons/obj/bottles.dmi'
 	icon_state = "beer"
 	volume = 30
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer = 30)
@@ -306,7 +307,7 @@
 /obj/item/reagent_containers/cup/glass/bottle/beer/light
 	name = "Combine Approved Ethanol Beverage"
 	desc = "A very low proof and very gross beer, allowed to be served to all citizens."
-	icon_state = "litebeer"
+	icon_state = "beer_white"
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer/light = 30)
 
 /obj/item/reagent_containers/cup/glass/bottle/rootbeer
@@ -330,14 +331,16 @@
 
 /obj/item/reagent_containers/cup/glass/bottle/gin
 	name = "Griffeater gin"
-	desc = "A bottle of high quality gin, produced in the New London Space Station."
-	icon_state = "ginbottle"
+	desc = "A bottle of high quality gin."
+	icon = 'hl13/icons/obj/bottles.dmi'
+	icon_state = "gin"
 	list_reagents = list(/datum/reagent/consumable/ethanol/gin = 100)
 
 /obj/item/reagent_containers/cup/glass/bottle/whiskey
 	name = "Uncle Git's special reserve"
-	desc = "A premium single-malt whiskey, gently matured inside the tunnels of a nuclear shelter. TUNNEL WHISKEY RULES."
-	icon_state = "whiskeybottle"
+	desc = "A old bottle of premium grade whiskey."
+	icon = 'hl13/icons/obj/bottles.dmi'
+	icon_state = "whiskey"
 	list_reagents = list(/datum/reagent/consumable/ethanol/whiskey = 100)
 
 /obj/item/reagent_containers/cup/glass/bottle/kong
@@ -353,19 +356,19 @@
 /obj/item/reagent_containers/cup/glass/bottle/vodka
 	name = "Tunguska triple distilled"
 	desc = "Aah, vodka. Prime choice of drink AND fuel by Russians worldwide."
-	icon_state = "vodkabottle"
+	icon = 'hl13/icons/obj/bottles.dmi'
+	icon_state = "vodka"
 	list_reagents = list(/datum/reagent/consumable/ethanol/vodka = 100)
 
 /obj/item/reagent_containers/cup/glass/bottle/vodka/badminka
 	name = "Badminka vodka"
 	desc = "The label's written in Cyrillic. All you can make out is the name and a word that looks vaguely like 'Vodka'."
-	icon_state = "badminka"
-	list_reagents = list(/datum/reagent/consumable/ethanol/vodka = 100)
 
 /obj/item/reagent_containers/cup/glass/bottle/tequila
 	name = "Caccavo guaranteed quality tequila"
 	desc = "Made from premium petroleum distillates, pure thalidomide and other fine quality ingredients!"
-	icon_state = "tequilabottle"
+	icon = 'hl13/icons/obj/bottles.dmi'
+	icon_state = "tequila"
 	list_reagents = list(/datum/reagent/consumable/ethanol/tequila = 100)
 
 /obj/item/reagent_containers/cup/glass/bottle/bottleofnothing
@@ -422,13 +425,15 @@
 /obj/item/reagent_containers/cup/glass/bottle/vermouth
 	name = "Goldeneye vermouth"
 	desc = "Sweet, sweet dryness~"
-	icon_state = "vermouthbottle"
+	icon = 'hl13/icons/obj/bottles.dmi'
+	icon_state = "vermouth"
 	list_reagents = list(/datum/reagent/consumable/ethanol/vermouth = 100)
 
 /obj/item/reagent_containers/cup/glass/bottle/kahlua
 	name = "Robert Robust's coffee liqueur"
-	desc = "A widely known, Mexican coffee-flavoured liqueur. In production since 1936, HONK."
-	icon_state = "kahluabottle"
+	desc = "A widely known, Mexican coffee-flavoured liqueur. In production since 1936."
+	icon = 'hl13/icons/obj/bottles.dmi'
+	icon_state = "kaluha"
 	list_reagents = list(/datum/reagent/consumable/ethanol/kahlua = 100)
 	drink_type = VEGETABLES
 
@@ -440,14 +445,16 @@
 
 /obj/item/reagent_containers/cup/glass/bottle/cognac
 	name = "Chateau de Baton premium cognac"
-	desc = "A sweet and strongly alchoholic drink, made after numerous distillations and years of maturing. You might as well not scream 'SHITCURITY' this time."
-	icon_state = "cognacbottle"
+	desc = "A sweet and strongly alchoholic drink, made after numerous distillations and years of maturing."
+	icon = 'hl13/icons/obj/bottles.dmi'
+	icon_state = "cognac"
 	list_reagents = list(/datum/reagent/consumable/ethanol/cognac = 100)
 
 /obj/item/reagent_containers/cup/glass/bottle/wine
 	name = "Doublebeard's bearded special wine"
 	desc = "A faint aura of unease and asspainery surrounds the bottle."
-	icon_state = "winebottle"
+	icon = 'hl13/icons/obj/bottles.dmi'
+	icon_state = "wine"
 	list_reagents = list(/datum/reagent/consumable/ethanol/wine = 100)
 	drink_type = FRUIT | ALCOHOL
 
@@ -488,7 +495,8 @@
 /obj/item/reagent_containers/cup/glass/bottle/absinthe
 	name = "Extra-strong absinthe"
 	desc = "A strong alcoholic drink brewed and distributed by"
-	icon_state = "absinthebottle"
+	icon = 'hl13/icons/obj/bottles.dmi'
+	icon_state = "absinthe"
 	list_reagents = list(/datum/reagent/consumable/ethanol/absinthe = 100)
 
 /obj/item/reagent_containers/cup/glass/bottle/absinthe/Initialize(mapload)
@@ -538,14 +546,14 @@
 /obj/item/reagent_containers/cup/glass/bottle/absinthe/premium
 	name = "Gwyn's premium absinthe"
 	desc = "A potent alcoholic beverage, almost makes you forget the ash in your lungs."
-	icon_state = "absinthepremium"
+	icon_state = "absinthe"
 
 /obj/item/reagent_containers/cup/glass/bottle/absinthe/premium/redact()
 	return
 
 /obj/item/reagent_containers/cup/glass/bottle/lizardwine
 	name = "bottle of lizard wine"
-	desc = "An alcoholic beverage from Space China, made by infusing lizard tails in ethanol. Inexplicably popular among command staff."
+	desc = "An alcoholic beverage from China, made by infusing lizard tails in ethanol. Inexplicably popular among command staff."
 	icon_state = "lizardwine"
 	list_reagents = list(/datum/reagent/consumable/ethanol/lizardwine = 100)
 	drink_type = FRUIT | ALCOHOL
@@ -572,7 +580,8 @@
 /obj/item/reagent_containers/cup/glass/bottle/sake
 	name = "Ryo's traditional sake"
 	desc = "Sweet as can be, and burns like fire going down."
-	icon_state = "sakebottle"
+	icon = 'hl13/icons/obj/bottles.dmi'
+	icon_state = "sake"
 	list_reagents = list(/datum/reagent/consumable/ethanol/sake = 100)
 
 /obj/item/reagent_containers/cup/glass/bottle/sake/Initialize(mapload)
@@ -616,7 +625,8 @@
 /obj/item/reagent_containers/cup/glass/bottle/navy_rum
 	name = "Pride of the Union Navy-Strength Rum"
 	desc = "Ironically named, given it's made in Bermuda."
-	icon_state = "navy_rum_bottle"
+	icon = 'hl13/icons/obj/bottles.dmi'
+	icon_state = "rum"
 	list_reagents = list(/datum/reagent/consumable/ethanol/navy_rum = 100)
 
 /obj/item/reagent_containers/cup/glass/bottle/grenadine
@@ -647,9 +657,9 @@
 /obj/item/reagent_containers/cup/glass/bottle/champagne
 	name = "Eau d' Dandy Brut Champagne"
 	desc = "Finely sourced from only the most pretentious French vineyards."
-	icon_state = "champagne_bottle"
-	base_icon_state = "champagne_bottle"
-	reagent_flags = TRANSPARENT
+	icon = 'hl13/icons/obj/bottles.dmi'
+	icon_state = "champagne"
+	base_icon_state = "champagne"
 	spillable = FALSE
 	list_reagents = list(/datum/reagent/consumable/ethanol/champagne = 100)
 	///Used for sabrage; increases the chance of success per 1 force of the attacking sharp item
@@ -825,7 +835,8 @@
 /obj/item/reagent_containers/cup/glass/bottle/moonshine
 	name = "moonshine jug"
 	desc = "It is said that the ancient Applalacians used these stoneware jugs to capture lightning in a bottle."
-	icon_state = "moonshinebottle"
+	icon = 'hl13/icons/obj/bottles.dmi'
+	icon_state = "moonshine"
 	list_reagents = list(/datum/reagent/consumable/ethanol/moonshine = 100)
 
 /obj/item/reagent_containers/cup/glass/bottle/moonshine/add_message_overlay()

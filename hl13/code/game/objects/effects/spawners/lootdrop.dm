@@ -5,6 +5,8 @@
 
 	loot = list(
 				/obj/item/crowbar/large = 2,
+				/obj/item/melee/tireiron,
+				/obj/item/melee/baton,
 				/obj/item/circuitmaterial = 3,
 				/obj/item/light/bulb = 2,
 				/obj/item/circuitmaterial/advanced,
@@ -53,6 +55,21 @@
 				/obj/item/storage/medkit/toxin
 				)
 
+//only scrap items, pretty much always needs crafting to be made useful
+/obj/effect/spawner/random/halflife/loot/scrap
+	name = "scrap loot"
+	spawn_loot_count = 1
+
+	loot = list(
+				/obj/item/circuitmaterial = 2,
+				/obj/item/light/bulb,
+				/obj/item/circuitmaterial/advanced,
+				/obj/item/stack/cable_coil,
+				/obj/item/stack/sheet/cloth,
+				/obj/item/stack/sheet/scrap_metal = 2,
+				/obj/item/stack/sheet/glass,
+				/obj/item/stack/sheet/mineral/scrap_wood = 2
+				)
 
 //only consumable loot. Food, drinks, drugs, cigarettes, etc.
 /obj/effect/spawner/random/halflife/loot/consumables
@@ -155,6 +172,7 @@
 				/obj/item/machinepiece/multifunctiontool = 2,
 				/obj/item/grenade/syndieminibomb/bouncer,
 				/obj/item/knife/combat = 2,
+				/obj/item/fireaxe,
 				/obj/item/switchblade,
 				/obj/item/melee/baton/security/loaded,
 				/obj/item/stack/telecrystal/five,
@@ -169,6 +187,7 @@
 	loot = list(
 				/obj/item/gun/ballistic/automatic/pistol/usp,
 				/obj/item/crowbar/large,
+				/obj/item/fireaxe,
 				/obj/item/melee/sledgehammer,
 				/obj/item/chainsaw,
 				/obj/item/gun/ballistic/automatic/mp7,

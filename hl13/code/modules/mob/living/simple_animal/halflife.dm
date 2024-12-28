@@ -658,6 +658,7 @@
 	pass_flags = PASSTABLE | PASSMOB
 	combat_mode = TRUE
 	mob_biotypes = MOB_ROBOTIC
+	loot = list(/obj/item/circuitmaterial)
 	health = 45
 	maxHealth = 45
 	rapid_melee = 2
@@ -684,8 +685,8 @@
 	del_on_death = 1
 	death_message = "is smashed into pieces!"
 	var/operating_power = 100
-	var/low_power_melee_damage_lower = 8
-	var/low_power_melee_damage_upper = 14
+	var/low_power_melee_damage_lower = 7
+	var/low_power_melee_damage_upper = 12
 
 /mob/living/simple_animal/hostile/halflife/viscerator/Initialize(mapload)
 	. = ..()

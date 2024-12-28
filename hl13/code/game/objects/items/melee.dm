@@ -21,7 +21,7 @@
 /obj/item/melee/sledgehammer/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/two_handed, \
-		force_wielded = 18, \
+		force_wielded = 30, \
 		wield_callback = CALLBACK(src, PROC_REF(on_wield)), \
 		unwield_callback = CALLBACK(src, PROC_REF(on_unwield)), \
 		require_twohands = TRUE, \
@@ -51,3 +51,16 @@
 			if(iswallturf(target))
 				target.take_damage(force * demolition_mod, BRUTE, MELEE, FALSE, null, armour_penetration) // Sledgehammers are quite good at smashing walls
 		playsound(src, 'sound/effects/bang.ogg', 50, 1)
+
+/obj/item/melee/tireiron
+	name = "tire iron"
+	desc = "Once used for car tires, you can now use it to bash people's heads in."
+	icon = 'hl13/icons/obj/melee.dmi'
+	icon_state = "tireiron"
+	inhand_icon_state = "tireiron"
+	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
+	force = 20 /// The weapon requires two hands
+	throwforce = 10
+	attack_verb_continuous = list("attacks", "bashes", "strikes", "smashes")
+	attack_verb_simple = list("attack", "bash", "strik", "smash")

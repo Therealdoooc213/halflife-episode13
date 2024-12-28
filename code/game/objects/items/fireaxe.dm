@@ -28,7 +28,7 @@ GLOBAL_DATUM(bridge_axe, /obj/item/fireaxe)
 	/// How much damage to do unwielded
 	var/force_unwielded = 5
 	/// How much damage to do wielded
-	var/force_wielded = 24
+	var/force_wielded = 26
 
 /datum/armor/item_fireaxe
 	fire = 100

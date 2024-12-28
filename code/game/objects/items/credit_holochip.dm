@@ -1,6 +1,6 @@
 /obj/item/holochip
 	name = "credit holochip"
-	desc = "A hard-light chip encoded with an amount of credits. It is a modern replacement for physical money that can be directly converted to virtual currency and viceversa. Keep away from magnets."
+	desc = "An advanced holographic projector which simulates credit vouchers. Acts the same as physical currency, but is easier for the combine to produce and keep track of."
 	icon = 'icons/obj/economy.dmi'
 	icon_state = "holochip"
 	base_icon_state = "holochip"

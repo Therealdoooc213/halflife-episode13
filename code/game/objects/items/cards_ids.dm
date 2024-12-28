@@ -480,8 +480,6 @@
 	context[SCREENTIP_CONTEXT_RMB] = "Project pay stand"
 	if(isnull(registered_account) || registered_account.replaceable) //Same check we use when we check if we can assign an account
 		context[SCREENTIP_CONTEXT_ALT_RMB] = "Assign account"
-	else if(registered_account.account_balance > 0)
-		context[SCREENTIP_CONTEXT_ALT_LMB] = "Withdraw credits"
 	return CONTEXTUAL_SCREENTIP_SET
 
 /obj/item/card/id/proc/try_project_paystand(mob/user, turf/target)
@@ -721,28 +719,7 @@
 		if(choice == "Link Account")
 			set_new_account(user)
 			return CLICK_ACTION_SUCCESS
-	var/amount_to_remove = tgui_input_number(user, "How much do you want to withdraw? (Max: [registered_account.account_balance] cr)", "Withdraw Funds", max_value = registered_account.account_balance)
-	if(!amount_to_remove || QDELETED(user) || QDELETED(src) || issilicon(user) || loc != user)
-		return CLICK_ACTION_BLOCKING
-	if(!alt_click_can_use_id(user))
-		return CLICK_ACTION_BLOCKING
-	if(registered_account.adjust_money(-amount_to_remove, "System: Withdrawal"))
-		var/obj/item/holochip/holochip = new (user.drop_location(), amount_to_remove)
-		user.put_in_hands(holochip)
-		to_chat(user, span_notice("You withdraw [amount_to_remove] credits into a holochip."))
-		SSblackbox.record_feedback("amount", "credits_removed", amount_to_remove)
-		log_econ("[amount_to_remove] credits were removed from [src] owned by [src.registered_name]")
-		return CLICK_ACTION_SUCCESS
-	else
-		var/difference = amount_to_remove - registered_account.account_balance
-		registered_account.bank_card_talk(span_warning("ERROR: The linked account requires [difference] more credit\s to perform that withdrawal."), TRUE)
-		return CLICK_ACTION_BLOCKING
-
-/obj/item/card/id/click_alt_secondary(mob/user)
-	if(!alt_click_can_use_id(user))
-		return
-	if(!registered_account || registered_account.replaceable)
-		set_new_account(user)
+	return CLICK_ACTION_BLOCKING
 
 /obj/item/card/id/proc/pay_debt(user)
 	var/amount_to_pay = tgui_input_number(user, "How much do you want to pay? (Max: [registered_account.account_balance] cr)", "Debt Payment", max_value = min(registered_account.account_balance, registered_account.account_debt))

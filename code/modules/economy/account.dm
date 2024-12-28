@@ -60,9 +60,6 @@
 	update_account_job_lists(job)
 	pay_token = uppertext("[copytext(newname, 1, 2)][copytext(newname, -1)]-[random_capital_letter()]-[rand(1111,9999)]")
 
-	for(var/i in 1 to 4)
-		account_pin = "[account_pin][rand(0, 9)]"
-
 /datum/bank_account/Destroy()
 	if(add_to_accounts)
 		SSeconomy.bank_accounts_by_id -= "[account_id]"
@@ -212,7 +209,7 @@
 	if(amount_of_paychecks == 1)
 		money_to_transfer = clamp(money_to_transfer, 0, PAYCHECK_CREW) //We want to limit single, passive paychecks to regular crew income.
 	if(free)
-		adjust_money(money_to_transfer, "Nanotrasen: Shift Payment")
+		adjust_money(money_to_transfer, "Credit Stipend")
 		SSblackbox.record_feedback("amount", "free_income", money_to_transfer)
 		SSeconomy.station_target += money_to_transfer
 		log_econ("[money_to_transfer] credits were given to [src.account_holder]'s account from income.")
@@ -221,12 +218,12 @@
 		var/datum/bank_account/department_account = SSeconomy.get_dep_account(account_job.paycheck_department)
 		if(department_account)
 			if(!transfer_money(department_account, money_to_transfer))
-				bank_card_talk("ERROR: Payday aborted, departmental funds insufficient.")
+				bank_card_talk("ERROR: Credit stipend transfer halted, departmental funds insufficient.")
 				return FALSE
 			else
-				bank_card_talk("Payday processed, account now holds [account_balance] cr.")
+				bank_card_talk("Credit stipend succesfully transferred, account now holds [account_balance] cr.")
 				return TRUE
-	bank_card_talk("ERROR: Payday aborted, unable to contact departmental account.")
+	bank_card_talk("ERROR: Credit stipend transfer halted, unable to contact departmental account.")
 	return FALSE
 
 /**

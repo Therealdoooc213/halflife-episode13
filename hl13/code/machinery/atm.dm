@@ -1,6 +1,6 @@
 /obj/machinery/atm
 	name = "automated teller machine"
-	desc = "An age-old technology for managing one's wealth."
+	desc = "A wall mounted teller machine installed by the combine. You can give it your citizen card or a currency to withdraw or deposit into your account."
 	icon = 'hl13/icons/obj/terminals.dmi'
 	icon_state = "atm"
 	base_icon_state = "atm"
@@ -16,248 +16,195 @@
 	resistance_flags = INDESTRUCTIBLE
 	idle_power_usage = 10
 
-	/// The bank account being interfaced
-	var/datum/bank_account/authenticated_account
-	/// The card that is currently inserted
-	var/obj/item/card/id/inserted_card
+	var/obj/item/card/id/CID = null
+	var/emagaccount = null
+	var/totalmoney = null
 
-	/// Particle system for EMAGging
-	var/datum/effect_system/spark_spread/spark_system
-
-	var/entered_pin
-	var/reject_topic = FALSE
-
-/*
-
-/obj/machinery/atm/Initialize(mapload)
-	. = ..()
-	var/static/count = 1
-	name = "[station_name()] A.T.M #[count]"
-	count++
-
-	spark_system = new /datum/effect_system/spark_spread
-	spark_system.set_up(5, 0, src)
-	spark_system.attach(src)
-
-/obj/machinery/atm/Destroy()
-	QDEL_NULL(inserted_card)
-	authenticated_account = null
-	QDEL_NULL(spark_system)
-	return ..()
-
-/obj/machinery/atm/examine(mob/user)
-	. = ..()
-	if(inserted_card)
-		. += span_notice("There is a card in the card slot.")
-
-/obj/machinery/atm/update_icon_state()
-	if(stat & NOPOWER)
-		icon_state = "[base_icon_state]_off"
-	else
-		icon_state = base_icon_state
-
-	return ..()
-
-/obj/machinery/atm/process()
-	if(stat & NOPOWER)
-		return
-
-	use_power(IDLE_POWER_USE)
-
-/obj/machinery/atm/emag_act(mob/user, obj/item/card/emag/emag_card)
-	. = ..()
-	if(obj_flags & EMAGGED)
-		to_chat(user, span_warning("This machine has already been hacked."))
-		return
-
-	obj_flags |= EMAGGED
-	spark_system.start()
-	dispense_cash(rand(20, 200))
-
-/obj/machinery/atm/attackby(obj/item/I, mob/user, params)
-	if(!isidcard(I) && !iscash(I))
-		return ..()
-
-	if(stat & NOPOWER)
-		to_chat(user, span_warning("You attempt to insert [I] into [src], but nothing happens."))
-		return TRUE
-
-	if(isidcard(I))
-		if(inserted_card)
-			to_chat(user, span_warning("You attempt to insert [I] into [src], but there's already something in the slot."))
-			return TRUE
-		if(!user.transferItemToLoc(I, src))
-			return TRUE
-
-		inserted_card = I
-		updateUsrDialog()
+/obj/machinery/atm/attackby(obj/item/W, mob/user, params)
+	var/all_accounts = flatten_list(SSeconomy.bank_accounts_by_id)
+	if(istype(W, /obj/item/card/id))
+		CID = W
 		playsound(loc, 'hl13/sound/machines/atm/cardreader_insert.ogg', 50)
-		to_chat(user, span_notice("You insert [I] into [src]."))
-		return TRUE
+		if(!CID.registered_account.account_pin)
+			var/passchoice = input(user, "Please select a password:", "Password Selection") as null|text
+			if(!passchoice)
+				invalid_number()
+				return
+			CID.registered_account.account_pin = passchoice
+			return
+		var/enteredpass = input(user, "Please enter your password:", "Password Entry") as null|text
+		if(!enteredpass)
+			invalid_number()
+			return
+		if(enteredpass != CID.registered_account.account_pin)
+			playsound(loc, 'hl13/sound/machines/atm/cardreader_read.ogg', 50)
+			visible_message("<span class='warning'>Incorrect Password.</span>", null, null, 5, null, null, null, null, TRUE)
+			return
+		var/nextquestion = input(user, "Please select a function:", "Function Selection") as null|anything in list("withdraw", "change password", "direct deposit")
+		switch(nextquestion)
+			if("withdraw")
+				var/withdrawfund = input(user, "Please select the amount to withdraw:", "Withdraw Money") as null|num
+				if(!withdrawfund)
+					invalid_number()
+					return
+				if(withdrawfund <= 0 || withdrawfund > CID.registered_account.account_balance)
+					invalid_number()
+					return
+				CID.registered_account.account_balance -= withdrawfund
+				var/obj/item/holochip/HC = new /obj/item/holochip(get_turf(src))
+				user.put_in_inactive_hand(HC)
+				successful_transaction()
+				HC.credits = withdrawfund
+			if("change password")
+				var/passchoicenew = input(user, "Please select a password:", "Password Selection") as null|text
+				if(!passchoicenew)
+					invalid_number()
+					return
+				CID.registered_account.account_pin = passchoicenew
+				return
+			if("direct deposit")
+				var/selectaccount = input(user, "Please enter an account number:", "Account Selection") as null|num
+				if(!selectaccount)
+					not_selected_account()
+					return
+				for(var/i in all_accounts)
+					var/datum/bank_account/BA = i
+					if(selectaccount != BA.account_id)
+						continue
+					var/ddeposit = input(user, "Please select the amount to withdraw:", "Withdraw Money") as null|num
+					if(!ddeposit)
+						invalid_number()
+						return
+					if(ddeposit <= 0 || ddeposit > CID.registered_account.account_balance)
+						invalid_number()
+						return
+					CID.registered_account.account_balance -= ddeposit
+					totalmoney = ddeposit
+					emagcheck()
+					if(!emagaccount)
+						BA.account_balance += totalmoney
+					successful_transaction()
+					break
+	if(istype(W, /obj/item/holochip))
+		var/obj/item/holochip/HC = W
+		if(HC.credits <= 0 || !HC.credits)
+			return
+		var/selectaccount = input(user, "Please enter an account number:", "Account Selection") as null|num
+		var/chosenitem = user.get_active_held_item()
+		if(!chosenitem)
+			return
+		if(!selectaccount)
+			not_selected_account()
+			return
+		for(var/i in all_accounts)
+			var/datum/bank_account/BA = i
+			if(selectaccount != BA.account_id)
+				continue
+			totalmoney = HC.credits
+			emagcheck()
+			if(!emagaccount)
+				BA.account_balance += totalmoney
+			successful_transaction()
+			QDEL_NULL(HC)
+			break
+	if(istype(W, /obj/item/stack/spacecash))
+		var/obj/item/stack/spacecash/SC = W
+		if(SC.get_item_credit_value() <= 0 || !SC.get_item_credit_value())
+			return
+		var/selectaccount = input(user, "Please enter an account number:", "Account Selection") as null|num
+		var/chosenitem = user.get_active_held_item()
+		if(!chosenitem)
+			return
+		if(!selectaccount)
+			not_selected_account()
+			return
+		for(var/i in all_accounts)
+			var/datum/bank_account/BA = i
+			if(selectaccount != BA.account_id)
+				continue
+			totalmoney = SC.get_item_credit_value()
+			emagcheck()
+			if(!emagaccount)
+				BA.account_balance += totalmoney
+			successful_transaction()
+			QDEL_NULL(SC)
+			break
+	if(istype(W, /obj/item/coin))
+		var/obj/item/coin/CM = W
+		if(CM.get_item_credit_value() <= 0 || !CM.get_item_credit_value())
+			return
+		var/selectaccount = input(user, "Please enter an account number:", "Account Selection") as null|num
+		var/chosenitem = user.get_active_held_item()
+		if(!chosenitem)
+			return
+		if(!selectaccount)
+			not_selected_account()
+			return
+		for(var/i in all_accounts)
+			var/datum/bank_account/BA = i
+			if(selectaccount != BA.account_id)
+				continue
+			totalmoney = CM.get_item_credit_value()
+			emagcheck()
+			if(!emagaccount)
+				BA.account_balance += totalmoney
+			successful_transaction()
+			QDEL_NULL(CM)
+			break
+	if(istype(W, /obj/item/storage/bag/money))
+		var/selectaccount = input(user, "Please enter an account number:", "Account Selection") as null|num
+		if(!selectaccount)
+			not_selected_account()
+			return
+		for(var/i in all_accounts)
+			var/datum/bank_account/BA = i
+			if(selectaccount != BA.account_id)
+				continue
+			var/obj/item/storage/bag/money/money_bag = W
+			var/list/money_contained = money_bag.contents
+			var/total = 0
+			for (var/obj/item/physical_money in money_contained)
+				var/cash_money = physical_money.get_item_credit_value()
+				total += cash_money
+				QDEL_NULL(physical_money)
+			totalmoney = total
+			emagcheck()
+			if(!emagaccount)
+				BA.account_balance += totalmoney
+			successful_transaction()
+			break
 
-	if(iscash(I))
-		if(!authenticated_account)
-			to_chat(user, span_warning("You attempt to insert [I] into [src], but nothing happens."))
-			return TRUE
+/obj/machinery/atm/proc/invalid_number()
+	playsound(loc, 'hl13/sound/machines/atm/cardreader_read.ogg', 50)
+	visible_message("<span class='warning'>Invalid number entered.</span>", null, null, 5, null, null, null, null, TRUE)
 
-		if(!user.transferItemToLoc(I, src))
-			return TRUE
+/obj/machinery/atm/proc/successful_transaction()
+	playsound(loc, 'hl13/sound/machines/atm/cash_insert.ogg', 50)
+	visible_message("<span class='warning'>Successful Transaction.</span>", null, null, 5, null, null, null, null, TRUE)
 
-		var/value = I.get_item_credit_value()
-		qdel(I)
-		authenticated_account.adjust_money(value)
+/obj/machinery/atm/proc/not_selected_account()
+	playsound(loc, 'hl13/sound/machines/atm/cardreader_read.ogg', 50)
+	visible_message("<span class='warning'>You must select an account to deposit.</span>", null, null, 5, null, null, null, null, TRUE)
+	return
 
-		to_chat(user, span_notice("You deposit [value] into [src]."))
-		updateUsrDialog()
-		playsound(loc, 'hl13/sound/machines/atm/cash_insert.ogg', 50)
-		return TRUE
-
-/// Dispense the given amount of cash and give feedback.
-/obj/machinery/atm/proc/dispense_cash(amt)
-	if(!amt)
-		return
-
-	playsound(loc, 'hl13/sound/machines/atm/cash_desert.ogg', 50)
-	reject_topic = TRUE
-	sleep(1 SECONDS)
-	reject_topic = FALSE
-	visible_message(span_notice("[src] dispenses a wad of money."), vision_distance = COMBAT_MESSAGE_RANGE)
-
-	SSeconomy.spawn_cash_for_amount(amt, drop_location())
-
-/obj/machinery/atm/proc/try_authenticate(pin)
-	if((stat & NOPOWER) || !inserted_card?.registered_account)
+/obj/machinery/atm/emag_act(mob/user)
+	. = ..()
+	if(emagaccount)
+		to_chat(user, "<span class='warning'>This ATM is already emagged!</span>")
 		return FALSE
-
-	if(inserted_card.registered_account.account_pin != pin)
-		return FALSE
-
-	authenticated_account = inserted_card.registered_account
+	emagaccount = input("Choose which account to deposit to:", "Safety Protocols Disengaged") as null|num
+	if(!emagaccount)
+		to_chat(user, "<span class='warning'>You failed to select an account!</span>")
+	flick("atm_emagging", src)
+	icon_state = "atm_emag"
 	return TRUE
 
-/obj/machinery/atm/ui_interact(mob/user, datum/tgui/ui)
-	var/datum/browser/popup = new(user, "atm", name, 460, 270)
-	popup.set_content(jointext(get_content(), ""))
-	popup.open()
-
-/obj/machinery/atm/Topic(href, href_list)
-	. = ..()
-	if(. || reject_topic)
-		return
-
-	if(href_list["eject_id"])
-		if(isnull(inserted_card))
-			return TRUE
-		inserted_card.forceMove(drop_location())
-		inserted_card = null
-		playsound(loc, 'hl13/sound/machines/atm/cardreader_desert.ogg', 50)
-		updateUsrDialog()
-		return TRUE
-
-	if(href_list["enter_pin"])
-		open_pinpad_ui(usr)
-		return TRUE
-
-	if(href_list["type"])
-		var/key = href_list["type"]
-		switch(key)
-			if("E")
-				if(try_authenticate(entered_pin))
-					entered_pin = ""
-					playsound(loc, 'hl13/sound/machines/atm/cardreader_read.ogg', 50)
-					updateUsrDialog()
-					sleep(world.tick_lag)
-					usr << browse(null, "window=atm-pinpad")
-				else
-					entered_pin = "ERROR"
-					open_pinpad_ui(usr)
-
-			if("C")
-				entered_pin = ""
-				open_pinpad_ui(usr)
-
-			else
-				if(!sanitize_text(key))
-					return TRUE
-				if(length(entered_pin) >= 5)
-					return TRUE
-
-				entered_pin = "[entered_pin][key]"
-				open_pinpad_ui(usr)
-
-		return TRUE
-
-	if(href_list["logout"])
-		authenticated_account = null
-		updateUsrDialog()
-		return TRUE
-
-	if(href_list["withdraw"])
-		var/amt = tgui_input_number(usr, "Enter amount (1-100)", "Withdraw", 0, 100, 0)
-		if(!amt)
-			return TRUE
-
-		amt = min(amt, authenticated_account.account_balance)
-		authenticated_account.adjust_money(-amt)
-		dispense_cash(amt)
-		updateUsrDialog()
-		return TRUE
-
-/obj/machinery/atm/proc/get_content()
-	PRIVATE_PROC(TRUE)
-	. = list()
-	. += "<div style='width:100%;height: 100%'>"
-	. += "<fieldset class='computerPane' style='height: 100%'>"
-	. += {"
-		<legend class='computerLegend'>
-			<b>Automated Teller Machine</b>
-		</legend>
-	"}
-
-	. += "<div class='computerLegend' style='margin: auto; width:70%; height: 70px'>"
-	if(authenticated_account)
-		. += {"
-				Welcome, <b>[authenticated_account.account_holder]</b>.<br><br>
-				Your balance is: <b>[authenticated_account.account_balance]</b>
-		"}
-
-	. += "</div>"
-	. += jointext(buttons(), "")
-	. += "</fieldset>"
-	. += "</div>"
-
-/obj/machinery/atm/proc/buttons()
-	PRIVATE_PROC(TRUE)
-	RETURN_TYPE(/list)
-	. = list()
-
-	. += "<div style = 'text-align: center'>[button_element(src, "Eject Card", "eject_id=1")]</div>"
-
-	if(!authenticated_account)
-		. += "<div style = 'text-align: center'>[button_element(src, "Enter PIN", "enter_pin=1")]</div><br>"
-	else
-		. += "<div style = 'text-align: center'>[button_element(src, "Withdraw", "withdraw=1")]</div>"
-		. += "<div style = 'text-align: center'>[button_element(src, "Logout", "logout=1")]</div>"
-
-/obj/machinery/atm/proc/open_pinpad_ui(mob/user)
-	PRIVATE_PROC(TRUE)
-	var/datum/browser/popup = new(user, "atm-pinpad", "Enter Pin", 300, 280)
-	var/dat = "<TT><B>[src]</B><BR>\n\n"
-	dat += {"
-<HR>\n>[entered_pin]<BR>\n<A href='?src=[REF(src)];type=1'>1</A>
--<A href='?src=[REF(src)];type=2'>2</A>
--<A href='?src=[REF(src)];type=3'>3</A><BR>\n
-<A href='?src=[REF(src)];type=4'>4</A>
--<A href='?src=[REF(src)];type=5'>5</A>
--<A href='?src=[REF(src)];type=6'>6</A><BR>\n
-<A href='?src=[REF(src)];type=7'>7</A>
--<A href='?src=[REF(src)];type=8'>8</A>
--<A href='?src=[REF(src)];type=9'>9</A><BR>\n
-<A href='?src=[REF(src)];type=C'>C</A>
--<A href='?src=[REF(src)];type=0'>0</A>
--<A href='?src=[REF(src)];type=E'>E</A><BR>\n</TT>"}
-
-	popup.set_content(dat)
-	popup.open()
-
-*/
+/obj/machinery/atm/proc/emagcheck()
+	if(emagaccount)
+		var/all_accounts = flatten_list(SSeconomy.bank_accounts_by_id)
+		for(var/i in all_accounts)
+			var/datum/bank_account/BA = i
+			if(emagaccount != BA.account_id)
+				continue
+			BA.account_balance += totalmoney
+			break

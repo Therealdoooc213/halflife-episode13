@@ -84,8 +84,6 @@
 
 	var/account_id
 
-	var/account_pin
-
 	var/hardcore_survival_score = 0
 
 	/// How many "units of blood" we have on our hands

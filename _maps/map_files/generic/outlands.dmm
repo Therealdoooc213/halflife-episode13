@@ -179,6 +179,10 @@
 /obj/effect/spawner/random/halflife/loot/ammo,
 /turf/open/floor/plating/ground/dirt,
 /area/halflife/outdoors/forest)
+"hx" = (
+/obj/effect/spawner/random/halflife/loot/scrap,
+/turf/open/floor/plating/ground/dirt,
+/area/halflife/outdoors/forest)
 "hC" = (
 /obj/structure/halflife/trash/papers/three,
 /turf/open/floor/plating/indoor/concrete/small,
@@ -591,6 +595,10 @@
 	},
 /turf/open/floor/plating/indoor/metal/walkway,
 /area/halflife/outdoors/forest)
+"yi" = (
+/obj/item/stack/medical/gauze,
+/turf/open/floor/plating/ground/dirt,
+/area/halflife/outdoors/forest)
 "yu" = (
 /obj/structure/shipping_container/gorlex,
 /turf/open/floor/plating/ground/dirt,
@@ -796,6 +804,10 @@
 	dir = 8
 	},
 /turf/open/floor/plating/ground/brickroad,
+/area/halflife/outdoors/forest)
+"If" = (
+/obj/effect/spawner/random/halflife/loot/scrap,
+/turf/open/floor/plating/ground/dirt/alt,
 /area/halflife/outdoors/forest)
 "Ij" = (
 /obj/structure/chair/office/halflife/blue{
@@ -2648,7 +2660,7 @@ It
 tN
 tN
 FC
-tN
+yi
 tN
 rF
 tN
@@ -2740,7 +2752,7 @@ It
 It
 tN
 tN
-tN
+hx
 tN
 tN
 AK
@@ -3240,7 +3252,7 @@ WY
 WY
 WY
 tN
-It
+If
 tN
 tN
 tN
@@ -4009,7 +4021,7 @@ tN
 wm
 tN
 tN
-tN
+hx
 tN
 uj
 WY
@@ -4773,7 +4785,7 @@ It
 It
 It
 It
-It
+wa
 It
 cL
 IF

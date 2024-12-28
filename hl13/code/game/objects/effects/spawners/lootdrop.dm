@@ -5,6 +5,7 @@
 
 	loot = list(
 				/obj/item/crowbar/large = 2,
+				/obj/item/seeds/potato,
 				/obj/item/melee/tireiron,
 				/obj/item/melee/baton,
 				/obj/item/circuitmaterial = 3,

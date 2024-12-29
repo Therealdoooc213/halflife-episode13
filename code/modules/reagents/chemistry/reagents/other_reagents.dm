@@ -2625,22 +2625,6 @@
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
 	metabolized_traits = list(TRAIT_PACIFISM)
 
-/datum/reagent/bz_metabolites
-	name = "BZ Metabolites"
-	description = "A harmless metabolite of BZ gas."
-	color = "#FAFF00"
-	taste_description = "acrid cinnamon"
-	metabolization_rate = 0.2 * REAGENTS_METABOLISM
-	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED|REAGENT_NO_RANDOM_RECIPE
-	metabolized_traits = list(TRAIT_CHANGELING_HIVEMIND_MUTE)
-
-/datum/reagent/bz_metabolites/on_mob_life(mob/living/carbon/target, seconds_per_tick, times_fired)
-	. = ..()
-	if(target.mind)
-		var/datum/antagonist/changeling/changeling = IS_CHANGELING(target)
-		if(changeling)
-			changeling.adjust_chemicals(-2 * REM * seconds_per_tick)
-
 /datum/reagent/pax/peaceborg
 	name = "Synthpax"
 	description = "A colorless liquid that suppresses violence in its subjects. Cheaper to synthesize than normal Pax, but wears off faster."
